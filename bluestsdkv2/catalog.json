@@ -1,0 +1,374 @@
+{
+    "ble": [
+      {
+        "ble_dev_id": "0x0C",
+        "ble_fw_id": "0x01",
+        "brd_name": "Polaris",
+        "characteristics": [
+          {
+            "name": "Ext configuration",
+            "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "GNSS",
+            "uuid": "00000018-0002-11e1-ac36-0002a5d5c51b"
+          }
+        ],
+        "fw_name": "Astra1 - Asset tracking",
+        "fw_version": "1.0.0",
+        "option_bytes": [
+          {
+            "format": "int",
+            "name": "battery",
+            "negative_offset": 0,
+            "scale_factor": 1,
+            "type": "%"
+          },
+          {
+            "format": "enum_string",
+            "name": "Use case",
+            "string_values": [
+              {
+                "display_name": "FLEET_MNG",
+                "value": 0
+              },
+              {
+                "display_name": "LIVESTOCK_MON",
+                "value": 1
+              },
+              {
+                "display_name": "GOODS_MONITORING",
+                "value": 2
+              },
+              {
+                "display_name": "LOGISTICS",
+                "value": 3
+              },
+              {
+                "display_name": "CUSTOM",
+                "value": 4
+              }
+            ],
+            "type": "string"
+          },
+          {
+            "format": "enum_icon",
+            "icon_values": [
+              {
+                "comment": "LoRa joined",
+                "icon_code": 20,
+                "value": 1
+              },
+              {
+                "comment": "LoRa NOT joined",
+                "icon_code": 21,
+                "value": 2
+              },
+              {
+                "comment": "GPS fix OK",
+                "icon_code": 15,
+                "value": 3
+              },
+              {
+                "comment": "GPS no fix",
+                "icon_code": 16,
+                "value": 4
+              },
+              {
+                "comment": "GPS disabled",
+                "icon_code": 17,
+                "value": 5
+              },
+              {
+                "comment": "System in low power",
+                "icon_code": 26,
+                "value": 6
+              },
+              {
+                "comment": "NFC enabled",
+                "icon_code": 10,
+                "value": 7
+              }
+            ],
+            "name": "status",
+            "type": "icon"
+          }
+        ]
+      },
+      {
+        "ble_dev_id": "0x09",
+        "ble_fw_id": "0x04",
+        "brd_name": "STWIN1B",
+        "characteristics": [
+          {
+            "name": "HS Datalog Config",
+            "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "Ext configuration",
+            "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "STREDL",
+            "uuid": "00000017-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "SD logging",
+            "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
+          }
+        ],
+        "dtmi": "dtmi:diegoDtdlv2:STEVALSTWINKT1B_HSD_STREDL;1",
+        "fw_name": "FP-SNS-DATALOG1",
+        "fw_version": "1.2.0",
+        "option_bytes": [
+          {
+            "format": "int",
+            "name": "battery",
+            "negative_offset": 0,
+            "scale_factor": 10,
+            "type": "%"
+          },
+          {
+            "format": "enum_string",
+            "name": "alarm",
+            "string_values": [
+              {
+                "display_name": "No Alarm",
+                "value": 0
+              },
+              {
+                "display_name": "Low Battery",
+                "value": 1
+              },
+              {
+                "display_name": "SD Full",
+                "value": 2
+              }
+            ],
+            "type": "string"
+          },
+          {
+            "format": "enum_icon",
+            "icon_values": [
+              {
+                "comment": "icon for Log on going",
+                "icon_code": 1,
+                "value": 0
+              },
+              {
+                "comment": "icon for low battery",
+                "icon_code": 4,
+                "value": 1
+              },
+              {
+                "comment": "icon for SD full",
+                "icon_code": 10,
+                "value": 2
+              }
+            ],
+            "name": "status",
+            "type": "icon"
+          }
+        ]
+      },
+      {
+        "ble_dev_id": "0x09",
+        "ble_fw_id": "0x05",
+        "brd_name": "STWIN1B",
+        "characteristics": [
+          {
+            "name": "Cartesiam",
+            "uuid": "00000019-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "FFT Amplitude",
+            "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "Ext configuration",
+            "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "Motor Time Parameter",
+            "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "Predictive Speed Status",
+            "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "Predictive Acceleration Status",
+            "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "Predictive Frequency Domain Status",
+            "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b"
+          }
+        ],
+        "fw_name": "FP-AI-PREDMNT2",
+        "fw_version": "0.0.1"
+      },
+      {
+        "ble_dev_id": "0x0C",
+        "ble_fw_id": "0xFE",
+        "brd_name": "Polaris",
+        "characteristics": [
+          {
+            "name": "Ext configuration",
+            "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "GNSS",
+            "uuid": "00000018-0002-11e1-ac36-0002a5d5c51b"
+          }
+        ],
+        "fw_name": "Astra1 - Asset tracking",
+        "fw_version": "0.1.0",
+        "option_bytes": [
+          {
+            "format": "int",
+            "name": "battery",
+            "negative_offset": 0,
+            "scale_factor": 1,
+            "type": "%"
+          },
+          {
+            "format": "enum_string",
+            "name": "Use case",
+            "string_values": [
+              {
+                "display_name": "FLEET_MNG",
+                "value": 0
+              },
+              {
+                "display_name": "LIVESTOCK_MON",
+                "value": 1
+              },
+              {
+                "display_name": "GOODS_MONITORING",
+                "value": 2
+              },
+              {
+                "display_name": "LOGISTICS",
+                "value": 3
+              },
+              {
+                "display_name": "CUSTOM",
+                "value": 4
+              }
+            ],
+            "type": "string"
+          },
+          {
+            "format": "enum_string",
+            "name": "System status",
+            "string_values": [
+              {
+                "display_name": "System in low power",
+                "value": 0
+              },
+              {
+                "display_name": "LoRa joined, GPS FIX OK",
+                "value": 1
+              },
+              {
+                "display_name": "LoRa joined, GPS NO FIX",
+                "value": 2
+              },
+              {
+                "display_name": "LoRa joined",
+                "value": 3
+              },
+              {
+                "display_name": "LoRa NOT joined, GPS FIX OK",
+                "value": 4
+              },
+              {
+                "display_name": "LoRa NOT joined, GPS NO FIX",
+                "value": 5
+              },
+              {
+                "display_name": "LoRa NOT joined",
+                "value": 6
+              }
+            ],
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "ble_dev_id": "0x09",
+        "ble_fw_id": "0xFF",
+        "brd_name": "STWIN1B",
+        "characteristics": [
+          {
+            "name": "temperature",
+            "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "humidity",
+            "properties": [
+              {
+                "format": [
+                  {
+                    "length": 2,
+                    "name": "timestamp"
+                  },
+                  {
+                    "length": 2,
+                    "name": "humidity"
+                  }
+                ],
+                "length": 4
+              }
+            ],
+            "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+          },
+          {
+            "name": "pressure",
+            "properties": [
+              {
+                "format": [
+                  {
+                    "length": 2,
+                    "name": "timestamp"
+                  },
+                  {
+                    "length": 4,
+                    "name": "pressure"
+                  }
+                ],
+                "length": 6
+              }
+            ],
+            "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+          }
+        ],
+        "dtmi": "dtmi:diegoDtdlv2:STEVALSTWINKT1Draftv4;1",
+        "fw_name": "testSalvo",
+        "fw_version": "0.0.1",
+        "option_bytes": [
+          {
+            "format": "enum_string",
+            "name": "status",
+            "string_values": [
+              {
+                "display_name": "Ready",
+                "value": 0
+              },
+              {
+                "display_name": "Connected",
+                "value": 1
+              }
+            ],
+            "type": "string"
+          },
+          {},
+          {}
+        ]
+      }
+    ],
+    "checksum": "bcefe91306b0fad392c9d86fe85df754",
+    "date": "2021-09-06T11:45:32.290825Z",
+    "version": "0.1.5"
+  }
