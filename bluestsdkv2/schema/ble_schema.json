@@ -1,0 +1,181 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Main schema for BLE contribution",
+    "description": "Schema to validate user contributions to the firmware and board catalog",
+    "default": {},
+    "required": [
+        "ble_dev_id",
+        "ble_fw_id",
+        "brd_name",
+        "characteristics",
+        "fw_name",
+        "fw_version",
+        "option_bytes"
+    ],
+    "properties": {
+        "ble_dev_id": {
+            "$id": "#/properties/ble_dev_id",
+            "type": "string",
+            "title": "BLE device id",
+            "description": "Unique identifier of the board in the BlueST SDK namespace, hex string beginning with '0x'."
+        },
+        "ble_fw_id": {
+            "$id": "#/properties/ble_fw_id",
+            "type": "string",
+            "title": "BLE firmware id",
+            "description": "Unique identifier of the firmware that runs on a specific board, hex string beginning with '0x'."
+        },
+        "brd_name": {
+            "$id": "#/properties/brd_name",
+            "type": "string",
+            "title": "Board name",
+            "description": "Name of the board."
+        },
+        "characteristics": {
+            "$id": "#/properties/characteristics",
+            "type": "array",
+            "title": "BLE characteristics implemented by the firmware",
+            "description": "Array of BLE characteristic objects.",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/characteristics/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/characteristics/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "required": [
+                            "name",
+                            "uuid"
+                        ],
+                        "properties": {
+                            "name": {
+                                "$id": "#/properties/characteristics/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                            },
+                            "uuid": {
+                                "$id": "#/properties/characteristics/items/anyOf/0/properties/uuid",
+                                "type": "string",
+                                "title": "The uuid schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "fw_name": {
+            "$id": "#/properties/fw_name",
+            "type": "string",
+            "title": "Firmware name",
+            "description": "The name of the firmware.",
+            "default": ""
+        },
+        "fw_version": {
+            "$id": "#/properties/fw_version",
+            "type": "string",
+            "title": "Firmware version",
+            "description": "Version of the firmware.",
+            "default": ""
+        },
+        "option_bytes": {
+            "$id": "#/properties/option_bytes",
+            "type": "array",
+            "title": "BlueST SDK v2 advertisement frame option bytes",
+            "description": "Description of how the three option bytes should be interpreted by clients.",
+            "default": [],
+            "maxItems": 3,
+            "minItems": 3,
+            "items": {
+                "$ref": "#/definitions/OptionByte"
+            }
+        }
+    },
+    "definitions": {
+        "OptionByte": {
+            "type": "object",
+            "properties": {
+                "format": {
+                    "enum": [ "int", "enum_string", "enum_icon" ]
+                },
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "enum": [ "%", "icon", "string" ]
+                }
+            },
+            "allOf": [
+                {
+                    "if": {
+                        "properties": { "format": { "const": "int"}}
+                    },
+                    "then": {
+                        "properties": { 
+                            "negative_offset": { "type": "integer"},
+                            "scale_factor": { "type": "number"}
+                        },
+                        "required": [ "name", "format", "negative_offset", "scale_factor", "type" ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": { "format": { "const": "enum_string"}}
+                    },
+                    "then": {
+                        "properties": {
+                            "string_values": { 
+                                "type": "array",
+                                "items": { "$ref": "#/definitions/EnumStringValue"}
+                            },
+                            "type": { "const": "string" }
+                        },
+                        "required": [ "name", "format", "string_values", "type" ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": { "format": { "const": "enum_icon"}}
+                    },
+                    "then": {
+                        "properties": {
+                            "icon_values": {
+                                "type": "array",
+                                "items": {"$ref": "#/definitions/EnumIconValue"}
+                            },
+                            "type": { "const": "icon"}
+                        },
+                        "required": [ "name", "format", "icon_values", "type" ]
+                    }
+                }
+            ]
+        },
+        "EnumStringValue": {
+            "type": "object",
+            "properties": {
+                "display_name": { "type": "string"},
+                "value": { "type": "integer"}
+            },
+            "additionalProperties": false
+        },
+        "EnumIconValue": {
+            "type": "object",
+            "properties": {
+                "icon_code": { "type": "integer"},
+                "value": { "type": "integer"},
+                "comment": { "type": "string"}
+            },
+            "additionalProperties": false
+        }
+    }
+}

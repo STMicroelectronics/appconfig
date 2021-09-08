@@ -1,0 +1,49 @@
+{
+    "$schema": "../schema/ble_schema.json",
+    "ble_dev_id": "0x0D",
+    "ble_fw_id": "0x11",
+    "brd_name": "My board",
+    "fw_name": "My firmware",
+    "fw_version": "0.2.2",
+    "characteristics": [
+
+    ],
+    "option_bytes": [
+        {
+            "name": "byte1",
+            "format": "int",
+            "negative_offset": 0,
+            "scale_factor": 10,
+            "type": "%"
+        },
+        {
+            "name": "byte2",
+            "format": "enum_icon",
+            "icon_values": [
+                {
+                    "icon_code": 1,
+                    "value": 22,
+                    "comment": "asdasfafs"
+                }
+            ],
+            "type": "icon"
+        },
+        {
+            "name": "byte3",
+            "format": "enum_icon",
+            "icon_values": [
+                {
+                    "comment": "one",
+                    "icon_code": 45,
+                    "value": 0
+                },
+                {
+                    "comment": "two",
+                    "icon_code": 31,
+                    "value": 1
+                }
+            ],
+            "type": "icon"
+        }
+    ]
+}
