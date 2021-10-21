@@ -1,374 +1,2562 @@
 {
-    "ble": [
-      {
-        "ble_dev_id": "0x0C",
-        "ble_fw_id": "0x01",
-        "brd_name": "Polaris",
-        "characteristics": [
-          {
-            "name": "Ext configuration",
-            "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "GNSS",
-            "uuid": "00000018-0002-11e1-ac36-0002a5d5c51b"
-          }
-        ],
-        "fw_name": "Astra1 - Asset tracking",
-        "fw_version": "1.0.0",
-        "option_bytes": [
-          {
-            "format": "int",
-            "name": "battery",
-            "negative_offset": 0,
-            "scale_factor": 1,
-            "type": "%"
-          },
-          {
-            "format": "enum_string",
-            "name": "Use case",
-            "string_values": [
-              {
-                "display_name": "FLEET_MNG",
-                "value": 0
-              },
-              {
-                "display_name": "LIVESTOCK_MON",
-                "value": 1
-              },
-              {
-                "display_name": "GOODS_MONITORING",
-                "value": 2
-              },
-              {
-                "display_name": "LOGISTICS",
-                "value": 3
-              },
-              {
-                "display_name": "CUSTOM",
-                "value": 4
-              }
-            ],
-            "type": "string"
-          },
-          {
-            "format": "enum_icon",
-            "icon_values": [
-              {
-                "comment": "LoRa joined",
-                "icon_code": 20,
-                "value": 1
-              },
-              {
-                "comment": "LoRa NOT joined",
-                "icon_code": 21,
-                "value": 2
-              },
-              {
-                "comment": "GPS fix OK",
-                "icon_code": 15,
-                "value": 3
-              },
-              {
-                "comment": "GPS no fix",
-                "icon_code": 16,
-                "value": 4
-              },
-              {
-                "comment": "GPS disabled",
-                "icon_code": 17,
-                "value": 5
-              },
-              {
-                "comment": "System in low power",
-                "icon_code": 26,
-                "value": 6
-              },
-              {
-                "comment": "NFC enabled",
-                "icon_code": 10,
-                "value": 7
-              }
-            ],
-            "name": "status",
-            "type": "icon"
-          }
-        ]
-      },
-      {
-        "ble_dev_id": "0x09",
-        "ble_fw_id": "0x04",
-        "brd_name": "STWIN1B",
-        "characteristics": [
-          {
-            "name": "HS Datalog Config",
-            "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "Ext configuration",
-            "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "STREDL",
-            "uuid": "00000017-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "SD logging",
-            "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
-          }
-        ],
-        "dtmi": "dtmi:diegoDtdlv2:STEVALSTWINKT1B_HSD_STREDL;1",
-        "fw_name": "FP-SNS-DATALOG1",
-        "fw_version": "1.2.0",
-        "option_bytes": [
-          {
-            "format": "int",
-            "name": "battery",
-            "negative_offset": 0,
-            "scale_factor": 10,
-            "type": "%"
-          },
-          {
-            "format": "enum_string",
-            "name": "alarm",
-            "string_values": [
-              {
-                "display_name": "No Alarm",
-                "value": 0
-              },
-              {
-                "display_name": "Low Battery",
-                "value": 1
-              },
-              {
-                "display_name": "SD Full",
-                "value": 2
-              }
-            ],
-            "type": "string"
-          },
-          {
-            "format": "enum_icon",
-            "icon_values": [
-              {
-                "comment": "icon for Log on going",
-                "icon_code": 1,
-                "value": 0
-              },
-              {
-                "comment": "icon for low battery",
-                "icon_code": 4,
-                "value": 1
-              },
-              {
-                "comment": "icon for SD full",
-                "icon_code": 10,
-                "value": 2
-              }
-            ],
-            "name": "status",
-            "type": "icon"
-          }
-        ]
-      },
-      {
-        "ble_dev_id": "0x09",
-        "ble_fw_id": "0x05",
-        "brd_name": "STWIN1B",
-        "characteristics": [
-          {
-            "name": "Cartesiam",
-            "uuid": "00000019-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "FFT Amplitude",
-            "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "Ext configuration",
-            "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "Motor Time Parameter",
-            "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "Predictive Speed Status",
-            "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "Predictive Acceleration Status",
-            "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "Predictive Frequency Domain Status",
-            "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b"
-          }
-        ],
-        "fw_name": "FP-AI-PREDMNT2",
-        "fw_version": "0.0.1"
-      },
-      {
-        "ble_dev_id": "0x0C",
-        "ble_fw_id": "0xFE",
-        "brd_name": "Polaris",
-        "characteristics": [
-          {
-            "name": "Ext configuration",
-            "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "GNSS",
-            "uuid": "00000018-0002-11e1-ac36-0002a5d5c51b"
-          }
-        ],
-        "fw_name": "Astra1 - Asset tracking",
-        "fw_version": "0.1.0",
-        "option_bytes": [
-          {
-            "format": "int",
-            "name": "battery",
-            "negative_offset": 0,
-            "scale_factor": 1,
-            "type": "%"
-          },
-          {
-            "format": "enum_string",
-            "name": "Use case",
-            "string_values": [
-              {
-                "display_name": "FLEET_MNG",
-                "value": 0
-              },
-              {
-                "display_name": "LIVESTOCK_MON",
-                "value": 1
-              },
-              {
-                "display_name": "GOODS_MONITORING",
-                "value": 2
-              },
-              {
-                "display_name": "LOGISTICS",
-                "value": 3
-              },
-              {
-                "display_name": "CUSTOM",
-                "value": 4
-              }
-            ],
-            "type": "string"
-          },
-          {
-            "format": "enum_string",
-            "name": "System status",
-            "string_values": [
-              {
-                "display_name": "System in low power",
-                "value": 0
-              },
-              {
-                "display_name": "LoRa joined, GPS FIX OK",
-                "value": 1
-              },
-              {
-                "display_name": "LoRa joined, GPS NO FIX",
-                "value": 2
-              },
-              {
-                "display_name": "LoRa joined",
-                "value": 3
-              },
-              {
-                "display_name": "LoRa NOT joined, GPS FIX OK",
-                "value": 4
-              },
-              {
-                "display_name": "LoRa NOT joined, GPS NO FIX",
-                "value": 5
-              },
-              {
-                "display_name": "LoRa NOT joined",
-                "value": 6
-              }
-            ],
-            "type": "string"
-          }
-        ]
-      },
-      {
-        "ble_dev_id": "0x09",
-        "ble_fw_id": "0xFF",
-        "brd_name": "STWIN1B",
-        "characteristics": [
-          {
-            "name": "temperature",
-            "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "humidity",
-            "properties": [
-              {
-                "format": [
-                  {
-                    "length": 2,
-                    "name": "timestamp"
-                  },
-                  {
-                    "length": 2,
-                    "name": "humidity"
-                  }
-                ],
-                "length": 4
-              }
-            ],
-            "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
-          },
-          {
-            "name": "pressure",
-            "properties": [
-              {
-                "format": [
-                  {
-                    "length": 2,
-                    "name": "timestamp"
-                  },
-                  {
-                    "length": 4,
-                    "name": "pressure"
-                  }
-                ],
-                "length": 6
-              }
-            ],
-            "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
-          }
-        ],
-        "dtmi": "dtmi:diegoDtdlv2:STEVALSTWINKT1Draftv4;1",
-        "fw_name": "testSalvo",
-        "fw_version": "0.0.1",
-        "option_bytes": [
-          {
-            "format": "enum_string",
-            "name": "status",
-            "string_values": [
-              {
-                "display_name": "Ready",
-                "value": 0
-              },
-              {
-                "display_name": "Connected",
-                "value": 1
-              }
-            ],
-            "type": "string"
-          },
-          {},
-          {}
-        ]
-      }
-    ],
-    "checksum": "bcefe91306b0fad392c9d86fe85df754",
-    "date": "2021-09-06T11:45:32.290825Z",
-    "version": "0.1.5"
-  }
+  "bluestsdk_v1": [
+    {
+      "ble_dev_id": "0x03",
+      "ble_fw_id": "F446_FP-SNS-ALLMEMS1_4.1.0",
+      "brd_name": "BlueCoin",
+      "characteristics": [
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion Compact",
+          "uuid": "00000100-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Direction of Arrival",
+          "uuid": "10000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Beam Forming",
+          "uuid": "00000800-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Audio ADPCM",
+          "uuid": "08000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Audio ADPCM Sync",
+          "uuid": "40000000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [
+        {
+          "description": "",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
+          "name": "ST Default PnP App",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/43b0eb5e-dd28-44b7-b00c-8fe2cb91d87e",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
+        }
+      ],
+      "fota": "no",
+      "fw_name": "FP-SNS-ALLMEMS1",
+      "fw_version": "4.1.0",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x02",
+      "ble_fw_id": "L476_FP-SNS-ALLMEMS1_4.1.0",
+      "brd_name": "SensorTile",
+      "characteristics": [
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion Compact",
+          "uuid": "00000100-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Direction of Arrival",
+          "uuid": "10000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Beam Forming",
+          "uuid": "00000800-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Audio ADPCM",
+          "uuid": "08000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Audio ADPCM Sync",
+          "uuid": "40000000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [
+        {
+          "description": "",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
+          "name": "ST Default PnP App",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/43b0eb5e-dd28-44b7-b00c-8fe2cb91d87e",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
+        }
+      ],
+      "fota": "no",
+      "fw_name": "FP-SNS-ALLMEMS1",
+      "fw_version": "4.1.0",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x06",
+      "ble_fw_id": "L4R9_BLELowPower_1.0.0",
+      "brd_name": "Sensortile.box",
+      "characteristics": [
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Audio Classification",
+          "uuid": "02000000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [
+        {
+          "description": "",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
+          "name": "ST Default PnP App",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/43b0eb5e-dd28-44b7-b00c-8fe2cb91d87e",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
+        }
+      ],
+      "fota": "no",
+      "fw_name": "FP-AI-CTXAWARE1",
+      "fw_version": "1.0.0",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x08",
+      "ble_fw_id": "L4R9_FP-IND-PREDMNT1_2.4.0",
+      "brd_name": "STWIN",
+      "characteristics": [
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Motor Time Parameter",
+          "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Predictive Speed Status",
+          "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Predictive Acceleration Status",
+          "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Predictive Frequency Domain Status",
+          "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [
+        {
+          "description": "",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
+          "name": "ST Default PnP App",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/43b0eb5e-dd28-44b7-b00c-8fe2cb91d87e",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
+        }
+      ],
+      "fota": "no",
+      "fw_name": "FP-IND-PREDMNT1",
+      "fw_version": "2.4.0",
+      "partial_fota": "no"
+    }
+  ],
+  "bluestsdk_v2": [
+    {
+      "ble_dev_id": "0x0F",
+      "ble_fw_id": "0x01",
+      "brd_name": "Proteus",
+      "characteristics": [
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Predictive Frequency Domain Status",
+          "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Predictive Acceleration Status",
+          "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Predictive Speed Status",
+          "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Acceleration event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Motor Time Parameter",
+          "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [
+        {
+          "description": "PoC",
+          "dtmi": "dtmi:proteusPoc:PROTEUSdraftv254f;1",
+          "name": "Proteus PoC",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/833f2c88-b5c5-402d-adfd-b81ed5dfed05",
+          "url": "https://proteus-poc.azureiotcentral.com"
+        },
+        {
+          "description": "This app supports mobile and gateway access",
+          "dtmi": "dtmi:proteusPoc:PROTEUSdraftv254f;1",
+          "name": "Condition Based Monitoring",
+          "shareable_link": null,
+          "url": "https://cbm-web.azureiotcentral.com"
+        }
+      ],
+      "fota": "no",
+      "fw_name": "Proteus",
+      "fw_version": "0.1.0",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x0C",
+      "ble_fw_id": "0x01",
+      "brd_name": "Polaris",
+      "characteristics": [
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "GNSS",
+          "uuid": "00000018-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [
+        {
+          "description": null,
+          "dtmi": null,
+          "name": null,
+          "shareable_link": null,
+          "url": null
+        }
+      ],
+      "fota": "no",
+      "fw_name": "Astra1 - Asset tracking",
+      "fw_version": "1.0.0",
+      "option_bytes": [
+        {
+          "format": "int",
+          "name": "battery",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
+        },
+        {
+          "format": "enum_string",
+          "name": "Use case",
+          "string_values": [
+            {
+              "display_name": "FLEET_MNG",
+              "value": 0
+            },
+            {
+              "display_name": "LIVESTOCK_MON",
+              "value": 1
+            },
+            {
+              "display_name": "GOODS_MONITORING",
+              "value": 2
+            },
+            {
+              "display_name": "LOGISTICS",
+              "value": 3
+            },
+            {
+              "display_name": "CUSTOM",
+              "value": 4
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "LoRa joined",
+              "icon_code": 20,
+              "value": 1
+            },
+            {
+              "comment": "LoRa NOT joined",
+              "icon_code": 21,
+              "value": 2
+            },
+            {
+              "comment": "GPS fix OK",
+              "icon_code": 15,
+              "value": 3
+            },
+            {
+              "comment": "GPS no fix",
+              "icon_code": 16,
+              "value": 4
+            },
+            {
+              "comment": "GPS disabled",
+              "icon_code": 17,
+              "value": 5
+            },
+            {
+              "comment": "System in low power",
+              "icon_code": 26,
+              "value": 6
+            },
+            {
+              "comment": "NFC enabled",
+              "icon_code": 10,
+              "value": 7
+            }
+          ],
+          "name": "status",
+          "type": "icon"
+        }
+      ],
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x09",
+      "ble_fw_id": "0x04",
+      "brd_name": "STWIN1B",
+      "characteristics": [
+        {
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "STREDL",
+          "uuid": "00000017-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [
+        {
+          "description": "Main IoT Central app for Vespucci project.",
+          "dtmi": "dtmi:vespucci:steval_stwinkt1b:fp_sns_datalog1_stredl;1",
+          "name": "vespucci",
+          "shareable_link": null,
+          "url": "https://vespucci.azureiotcentral.com/"
+        }
+      ],
+      "fota": "yes",
+      "fw_name": "FP-SNS-DATALOG1",
+      "fw_version": "1.2.0-vespucci",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x09",
+      "ble_fw_id": "0x06",
+      "brd_name": "STWIN1B",
+      "characteristics": [
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Machine Learning Core",
+          "uuid": "0000000F-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [
+        {
+          "description": "Main IoT Central app for Vespucci project.",
+          "dtmi": "dtmi:vespucci:steval_stwinkt1b:fp_sns_datalog1;1",
+          "name": "vespucci",
+          "shareable_link": null,
+          "url": "https://vespucci.azureiotcentral.com/"
+        }
+      ],
+      "fota": "fast",
+      "fw_name": "FP-SNS-DATALOG1",
+      "fw_version": "1.3.0",
+      "option_bytes": [
+        {
+          "format": "int",
+          "name": "battery:",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
+        },
+        {
+          "format": "enum_string",
+          "name": "alarm:",
+          "string_values": [
+            {
+              "display_name": "No Alarm",
+              "value": 0
+            },
+            {
+              "display_name": "Logging Ongoing",
+              "value": 1
+            },
+            {
+              "display_name": "Low Battery",
+              "value": 2
+            },
+            {
+              "display_name": "SD Full",
+              "value": 3
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "USB Plug",
+              "icon_code": 3,
+              "value": 0
+            },
+            {
+              "comment": "Battery",
+              "icon_code": 1,
+              "value": 1
+            },
+            {
+              "comment": "icon for Log ongoing",
+              "icon_code": 10,
+              "value": 2
+            },
+            {
+              "comment": "icon for low battery",
+              "icon_code": 0,
+              "value": 3
+            },
+            {
+              "comment": "icon for SD full",
+              "icon_code": 11,
+              "value": 4
+            }
+          ],
+          "name": "status",
+          "type": "icon"
+        }
+      ],
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x0C",
+      "ble_fw_id": "0xFE",
+      "brd_name": "Polaris",
+      "characteristics": [
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "GNSS",
+          "uuid": "00000018-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [
+        {
+          "description": null,
+          "dtmi": null,
+          "name": null,
+          "shareable_link": null,
+          "url": null
+        }
+      ],
+      "fota": "no",
+      "fw_name": "Astra1 - Asset tracking",
+      "fw_version": "0.1.0",
+      "option_bytes": [
+        {
+          "format": "int",
+          "name": "battery",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
+        },
+        {
+          "format": "enum_string",
+          "name": "Use case",
+          "string_values": [
+            {
+              "display_name": "FLEET_MNG",
+              "value": 0
+            },
+            {
+              "display_name": "LIVESTOCK_MON",
+              "value": 1
+            },
+            {
+              "display_name": "GOODS_MONITORING",
+              "value": 2
+            },
+            {
+              "display_name": "LOGISTICS",
+              "value": 3
+            },
+            {
+              "display_name": "CUSTOM",
+              "value": 4
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_string",
+          "name": "System status",
+          "string_values": [
+            {
+              "display_name": "System in low power",
+              "value": 0
+            },
+            {
+              "display_name": "LoRa joined, GPS FIX OK",
+              "value": 1
+            },
+            {
+              "display_name": "LoRa joined, GPS NO FIX",
+              "value": 2
+            },
+            {
+              "display_name": "LoRa joined",
+              "value": 3
+            },
+            {
+              "display_name": "LoRa NOT joined, GPS FIX OK",
+              "value": 4
+            },
+            {
+              "display_name": "LoRa NOT joined, GPS NO FIX",
+              "value": 5
+            },
+            {
+              "display_name": "LoRa NOT joined",
+              "value": 6
+            }
+          ],
+          "type": "string"
+        }
+      ],
+      "partial_fota": "no"
+    }
+  ],
+  "characteristics": [
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "RFU",
+      "uuid": "80000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Header+RawData",
+      "format_notify": [
+        {
+          "length": 2,
+          "name": "NumSample",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16"
+        },
+        {
+          "length": 1,
+          "name": "NumComponents",
+          "type": "UInt8"
+        },
+        {
+          "length": 4,
+          "name": "FrequencyStep",
+          "type": "Float"
+        },
+        {
+          "name": "RawData",
+          "unit": "RawData"
+        }
+      ],
+      "name": "FFT Amplitude",
+      "uuid": "80000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 2000,
+          "min": 0,
+          "name": "Norm",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16"
+        }
+      ],
+      "name": "MEMS Normalization",
+      "uuid": "10000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Audio Scene Classification Unknown/Outdoor/Indoor/InCar/BabyIsCrying/ASC_On/ASC_Off",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 6,
+          "min": 0,
+          "name": "Audio Classification",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "max": 1,
+          "min": 0,
+          "name": "Audio Algorithm",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "BabyCrying/Normal"
+        }
+      ],
+      "name": "Audio Classification",
+      "uuid": "02000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 2000,
+          "min": 0,
+          "name": "Norm",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16"
+        }
+      ],
+      "name": "Gyroscope Normalization (RFU)",
+      "uuid": "00008000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 4,
+          "max": 360,
+          "min": 0,
+          "name": "Yaw",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float"
+        },
+        {
+          "length": 4,
+          "max": 180,
+          "min": -180,
+          "name": "Pitch",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float"
+        },
+        {
+          "length": 4,
+          "max": 90,
+          "min": -90,
+          "name": "Roll",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float"
+        }
+      ],
+      "name": "Euler Angle",
+      "uuid": "00004000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Stepper Motor Control",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 1,
+          "min": 0,
+          "name": "State",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "bolean"
+        }
+      ],
+      "name": "Stepper Motor",
+      "uuid": "00002000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Magnetometer Normalization",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 2000,
+          "min": 0,
+          "name": "Norm",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16"
+        }
+      ],
+      "name": "Magnetometer Normalization (RFU)",
+      "uuid": "00000800-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "TS, lat (4B - 10^7), long(4B - 10^7), elevation(4B - 10^3), num sat(1B), RSSI (1B)",
+      "format_notify": [
+        {
+          "length": 4,
+          "name": "Latitude",
+          "offset": 0,
+          "scalefactor": 10000000,
+          "type": "Int32",
+          "unit": "Lat"
+        },
+        {
+          "length": 4,
+          "name": "Longitude",
+          "offset": 0,
+          "scalefactor": 10000000,
+          "type": "Int32",
+          "unit": "Lon"
+        },
+        {
+          "length": 4,
+          "name": "Altitude",
+          "offset": 0,
+          "scalefactor": 1000,
+          "type": "Int32",
+          "unit": "m"
+        },
+        {
+          "length": 1,
+          "name": "Number Satellites",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8"
+        },
+        {
+          "length": 1,
+          "name": "Signal Quality",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "dB-Hz"
+        }
+      ],
+      "name": "GNSS",
+      "uuid": "00000018-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Cartesiam anomaly detection libraries",
+      "format_notify": null,
+      "name": "Cartesiam",
+      "uuid": "00000019-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "STRED-L registers output",
+      "format_notify": [
+        {
+          "length": 1,
+          "name": "Reg Out 0",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 1",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 2",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 3",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 4",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 5",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 6",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 7",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 8",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        }
+      ],
+      "name": "STREDL",
+      "uuid": "00000017-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "Debug Console stderr",
+      "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "Debug Console stdin/stdout",
+      "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "Debug console",
+      "uuid": "00000000-000E-11e1-9ab4-0002a5d5c51b"
+    },
+    {
+      "description": "Electric Charge Variation",
+      "format_notify": [
+        {
+          "length": 4,
+          "name": "QVAR",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int32"
+        },
+        {
+          "length": 1,
+          "name": "Flag not Specified",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8"
+        },
+        {
+          "length": 4,
+          "name": "DQVAR",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int32"
+        },
+        {
+          "length": 4,
+          "name": "Parameter not Specified",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt32"
+        }
+      ],
+      "name": "QVAR",
+      "uuid": "00000016-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 4,
+          "max": 400000,
+          "min": 0,
+          "name": "Lux",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt32",
+          "unit": "Lux"
+        },
+        {
+          "length": 2,
+          "max": 12,
+          "min": 0,
+          "name": "UV Index",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16"
+        },
+        {
+          "length": 2,
+          "max": 20000,
+          "min": 0,
+          "name": "Correlated Color Temperature",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "K"
+        }
+      ],
+      "name": "Color Ambient Light",
+      "uuid": "00000015-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "Ext Configuration",
+      "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Time Of Flight Multi Objects Detection",
+      "format_notify": [
+        {
+          "length": 2,
+          "name": "Distance Obj1",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "mm"
+        },
+        {
+          "length": 2,
+          "name": "Distance Obj2",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "mm"
+        },
+        {
+          "length": 2,
+          "name": "Distance Obj3",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "mm"
+        },
+        {
+          "length": 2,
+          "name": "Distance Obj4",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "mm"
+        },
+        {
+          "length": 1,
+          "name": "Presences number",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8"
+        }
+      ],
+      "name": "ToF Multiobject",
+      "uuid": "00000013-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "UNUSED",
+      "uuid": "00000012-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "HS Datalog Config",
+      "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Finite State Machine's registers output",
+      "format_notify": [
+        {
+          "length": 1,
+          "name": "Reg Out 0",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 1",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 2",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 3",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 4",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 5",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 6",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 7",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 8",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 9",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 10",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 11",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 12",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 13",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 14",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 15",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 16",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        }
+      ],
+      "name": "Finite State Machine",
+      "uuid": "00000010-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Machine Learning Core's registers output",
+      "format_notify": [
+        {
+          "length": 1,
+          "name": "Reg Out 0",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 1",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 2",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 3",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 4",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 5",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 6",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 7",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Reg Out 8",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "Enum"
+        }
+      ],
+      "name": "Machine Learning Core",
+      "uuid": "0000000F-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 3,
+          "min": 0,
+          "name": "Fitness Actitity",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "Enum"
+        },
+        {
+          "length": 2,
+          "name": "Activity Counter",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16"
+        }
+      ],
+      "name": "Fitness Activity",
+      "uuid": "0000000E-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 4,
+          "max": 360,
+          "min": 0,
+          "name": "Yaw",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float"
+        },
+        {
+          "length": 4,
+          "max": 180,
+          "min": -180,
+          "name": "Pitch",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float"
+        },
+        {
+          "length": 4,
+          "max": 90,
+          "min": -90,
+          "name": "Roll",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float"
+        }
+      ],
+      "name": "Euler Angle",
+      "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 3,
+          "min": 0,
+          "name": "Algorithm Type",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "name": "Algorithm Results",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "Enum"
+        }
+      ],
+      "name": "Motion Algorithm",
+      "uuid": "0000000A-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 1,
+          "name": "Status Freq  x/y/z",
+          "offset": 0,
+          "scalefactor": 0,
+          "type": "UInt8",
+          "unit": "Enum packed 2 bits each"
+        },
+        {
+          "length": 2,
+          "name": "Freq X",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "UInt16",
+          "unit": "Hz"
+        },
+        {
+          "length": 2,
+          "name": "Max Amplitude X",
+          "offset": 0,
+          "scalefactor": 0.01,
+          "type": "Unit16",
+          "unit": "m/S2"
+        },
+        {
+          "length": 2,
+          "name": "Freq Y",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "UInt16",
+          "unit": "Hz"
+        },
+        {
+          "length": 2,
+          "name": "Max Amplitude Y",
+          "offset": 0,
+          "scalefactor": 0.01,
+          "type": "Unit16",
+          "unit": "m/S2"
+        },
+        {
+          "length": 2,
+          "name": "Freq Z",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "UInt16",
+          "unit": "Hz"
+        },
+        {
+          "length": 2,
+          "name": "Max Amplitude Z",
+          "offset": 0,
+          "scalefactor": 0.01,
+          "type": "Unit16",
+          "unit": "m/S2"
+        }
+      ],
+      "name": "Predictive Frequency Domain Status",
+      "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 1,
+          "name": "Acc Status x/y/z",
+          "offset": 0,
+          "scalefactor": 0,
+          "type": "UInt8",
+          "unit": "Enum packed 2 bits each"
+        },
+        {
+          "length": 4,
+          "name": "Acc Peak X",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "m/S2"
+        },
+        {
+          "length": 4,
+          "name": "Acc Peak Y",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "m/S2"
+        },
+        {
+          "length": 4,
+          "name": "Acc Peak Z",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "m/S2"
+        }
+      ],
+      "name": "Predictive Acceleration Status",
+      "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 1,
+          "name": "time Status x/y/z",
+          "offset": 0,
+          "scalefactor": 0,
+          "type": "UInt8",
+          "unit": "Enum packed 2 bits each"
+        },
+        {
+          "length": 4,
+          "name": "RMS Speed X",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "mm/s"
+        },
+        {
+          "length": 4,
+          "name": "RMS Speed Y",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "mm/s"
+        },
+        {
+          "length": 4,
+          "name": "RMS Speed Z",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "mm/s"
+        }
+      ],
+      "name": "Predictive Speed Status",
+      "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Motion Time Parameter",
+      "format_notify": [
+        {
+          "length": 4,
+          "max": 2000,
+          "min": -2000,
+          "name": "Acc X Peak",
+          "offset": 0,
+          "scalefactor": 0.01,
+          "type": "Float",
+          "unit": "m/s2"
+        },
+        {
+          "length": 4,
+          "max": 2000,
+          "min": -2000,
+          "name": "Acc Y Peak",
+          "offset": 0,
+          "scalefactor": 0.01,
+          "type": "Float",
+          "unit": "m/s2"
+        },
+        {
+          "length": 4,
+          "max": 2000,
+          "min": -2000,
+          "name": "Acc Z Peak",
+          "offset": 0,
+          "scalefactor": 0.01,
+          "type": "Float",
+          "unit": "m/s2"
+        },
+        {
+          "length": 4,
+          "max": 2000,
+          "min": 0,
+          "name": "RMS Speed X",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "mm/s"
+        },
+        {
+          "length": 4,
+          "max": 2000,
+          "min": 0,
+          "name": "RMS Speed Y",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "mm/s"
+        },
+        {
+          "length": 4,
+          "max": 2000,
+          "min": 0,
+          "name": "RMS Speed Z",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "mm/s"
+        }
+      ],
+      "name": "Motor Time Parameter",
+      "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Header+RawData",
+      "format_notify": [
+        {
+          "length": 2,
+          "name": "NumSample",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16"
+        },
+        {
+          "length": 1,
+          "name": "NumComponents",
+          "type": "UInt8"
+        },
+        {
+          "length": 4,
+          "name": "FrequencyStep",
+          "type": "Float"
+        },
+        {
+          "name": "RawData",
+          "unit": "RawData"
+        }
+      ],
+      "name": "FFT Amplitude",
+      "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "SD Log control (SENSING1)",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 4,
+          "min": 0,
+          "name": "Log Status",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "Enum"
+        }
+      ],
+      "name": "AI Logging",
+      "uuid": "00000004-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Audio Scene Classification Unknown/Outdoor/Indoor/InCar/BabyIsCrying/ASC_On/ASC_Off",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 6,
+          "min": 0,
+          "name": "Audio Classification",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "Enum"
+        },
+        {
+          "length": 1,
+          "max": 1,
+          "min": 0,
+          "name": "Audio Algorithm",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "BabyCrying/Normal"
+        }
+      ],
+      "name": "Audio Classification",
+      "uuid": "00000003-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "Audio OPUS Conf",
+      "uuid": "00000002-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Audio Opus Data",
+      "format_notify": [
+        {
+          "name": "RawDataPacket",
+          "type": "RawData"
+        }
+      ],
+      "name": "Audio OPUS",
+      "uuid": "00000001-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 4,
+          "name": "Steps",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt32",
+          "unit": "step"
+        },
+        {
+          "length": 2,
+          "name": "Frequency",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "Steps/min"
+        }
+      ],
+      "name": "Pedometer",
+      "uuid": "00000001-0001-11e1-ac36-0002a5d5c5"
+    },
+    {
+      "description": "Unknown/PickUp/Glance/WakeUp",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 3,
+          "min": 0,
+          "name": "Gesture",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8"
+        }
+      ],
+      "name": "MEMS Gesture",
+      "uuid": "00000002-0001-11e1-ac36-0002a5d5c5"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 3,
+          "min": 0,
+          "name": "Gesture",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8"
+        }
+      ],
+      "name": "Proximity Gesture",
+      "uuid": "00000004-0001-11e1-ac36-0002a5d5c5"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 6,
+          "min": 0,
+          "name": "Gesture",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8"
+        }
+      ],
+      "name": "Carry Position",
+      "uuid": "00000008-0001-11e1-ac36-0002a5d5c5"
+    },
+    {
+      "description": "Compass",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 360,
+          "min": 0,
+          "name": "Angle",
+          "offset": 0,
+          "scalefactor": 0.01,
+          "type": "UInt16",
+          "unit": "degree"
+        }
+      ],
+      "name": "Compass",
+      "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 10,
+          "min": 0,
+          "name": "Intensity",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8"
+        }
+      ],
+      "name": "Motion Intensity",
+      "uuid": "00000020-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "MEMS sensor fusion",
+      "format_notify": [
+        {
+          "length": 4,
+          "max": 1,
+          "min": -1,
+          "name": "qi",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "quaternion"
+        },
+        {
+          "length": 4,
+          "max": 1,
+          "min": -1,
+          "name": "qj",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "quaternion"
+        },
+        {
+          "length": 4,
+          "max": 1,
+          "min": -1,
+          "name": "qk",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "quaternion"
+        },
+        {
+          "length": 4,
+          "max": 1,
+          "min": -1,
+          "name": "qs",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Float",
+          "unit": "quaternion"
+        }
+      ],
+      "name": "MEMS Sensor Fusion",
+      "uuid": "00000080-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 2,
+          "name": "qi",
+          "offset": 0,
+          "scalefactor": 1e-05,
+          "type": "Int16",
+          "unit": "quaternion"
+        },
+        {
+          "length": 2,
+          "name": "qj",
+          "offset": 0,
+          "scalefactor": 1e-05,
+          "type": "Int16",
+          "unit": "quaternion"
+        },
+        {
+          "length": 2,
+          "name": "qk",
+          "offset": 0,
+          "scalefactor": 1e-05,
+          "type": "Int16",
+          "unit": "quaternion"
+        },
+        {
+          "length": 2,
+          "name": "qj",
+          "offset": 0,
+          "scalefactor": 1e-05,
+          "type": "Int16",
+          "unit": "quaternion"
+        },
+        {
+          "length": 2,
+          "name": "qk",
+          "offset": 0,
+          "scalefactor": 1e-05,
+          "type": "Int16",
+          "unit": "quaternion"
+        },
+        {
+          "length": 2,
+          "name": "qj",
+          "offset": 0,
+          "scalefactor": 1e-05,
+          "type": "Int16",
+          "unit": "quaternion"
+        },
+        {
+          "length": 2,
+          "name": "qk",
+          "offset": 0,
+          "scalefactor": 1e-05,
+          "type": "Int16",
+          "unit": "quaternion"
+        }
+      ],
+      "name": "MEMS Sensor Fusion Compact",
+      "uuid": "00000100-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "deprecated",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 1,
+          "min": 0,
+          "name": "FreeFall",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "bolean"
+        }
+      ],
+      "name": "Free Fall",
+      "uuid": "00000200-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Beam Forming Direction Top/TopRight/Right/BottomRight/Bottom/BottomLeft/Left/TopLeft",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 7,
+          "min": 0,
+          "name": "BeamForming",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "direction"
+        }
+      ],
+      "name": "Beam Forming",
+      "uuid": "00000800-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "SD  Log control (ALLMEMS1/ALLMEMS2)",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 1,
+          "min": 0,
+          "name": "Enable",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "bolean"
+        },
+        {
+          "length": 2,
+          "name": "LoggedFeatures",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "bit mask"
+        },
+        {
+          "length": 2,
+          "name": "LogInterval",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "seconds"
+        }
+      ],
+      "name": "SD Logging",
+      "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "RFU (OTA reboot?)",
+      "uuid": "00002000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": null,
+      "name": "RFU",
+      "uuid": "00004000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "CO concentration",
+      "format_notify": [
+        {
+          "length": 4,
+          "max": 1000000,
+          "min": 0,
+          "name": "concentration",
+          "offset": 0,
+          "scalefactor": 0.01,
+          "type": "Float",
+          "unit": "ppm"
+        }
+      ],
+      "name": "CO Sensor",
+      "uuid": "00008000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Temperature 1",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 120,
+          "min": -40,
+          "name": "temperature",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16",
+          "unit": "\u00b0C"
+        }
+      ],
+      "name": "Temperature",
+      "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 100,
+          "min": 0,
+          "name": "Level",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16",
+          "unit": "%"
+        },
+        {
+          "length": 2,
+          "name": "Voltage",
+          "offset": 0,
+          "scalefactor": 0.001,
+          "type": "Int16",
+          "unit": "V"
+        },
+        {
+          "length": 2,
+          "name": "Current",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16",
+          "unit": "mA"
+        },
+        {
+          "length": 1,
+          "name": "Status",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "Enum"
+        }
+      ],
+      "name": "Battery",
+      "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "xyz magnetometer data",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 2000,
+          "min": -2000,
+          "name": "X",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int16",
+          "unit": "mGa"
+        },
+        {
+          "length": 2,
+          "max": 2000,
+          "min": -2000,
+          "name": "Y",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int16",
+          "unit": "mGa"
+        },
+        {
+          "length": 2,
+          "max": 2000,
+          "min": -2000,
+          "name": "Z",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int16",
+          "unit": "mGa"
+        }
+      ],
+      "name": "Magnetometer",
+      "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "xyz gyroscope data",
+      "format_notify": [
+        {
+          "length": 2,
+          "name": "X",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16",
+          "unit": "dps"
+        },
+        {
+          "length": 2,
+          "name": "Y",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16",
+          "unit": "dps"
+        },
+        {
+          "length": 2,
+          "name": "Z",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16",
+          "unit": "dps"
+        }
+      ],
+      "name": "Gyroscope",
+      "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 1000,
+          "min": 0,
+          "name": "Luminosity",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "Lux"
+        }
+      ],
+      "name": "Luminosity",
+      "uuid": "01000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Proximity distance (value & ~0x8000)",
+      "format_notify": [
+        {
+          "length": 2,
+          "name": "proximity",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "mm"
+        }
+      ],
+      "name": "Proximity",
+      "uuid": "02000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Microphone dB level",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 128,
+          "min": 0,
+          "name": "Mic Level",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "dB"
+        },
+        {
+          "length": 1,
+          "max": 128,
+          "min": 0,
+          "name": "Mic Level",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "dB"
+        },
+        {
+          "length": 1,
+          "max": 128,
+          "min": 0,
+          "name": "Mic Level",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "dB"
+        },
+        {
+          "length": 1,
+          "max": 128,
+          "min": 0,
+          "name": "Mic Level",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "dB"
+        },
+        {
+          "length": 1,
+          "max": 128,
+          "min": 0,
+          "name": "Mic Level",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "dB"
+        },
+        {
+          "length": 1,
+          "max": 128,
+          "min": 0,
+          "name": "Mic Level",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8",
+          "unit": "dB"
+        }
+      ],
+      "name": "Mic Level",
+      "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "",
+      "format_notify": [
+        {
+          "name": "RawData",
+          "type": "RawData"
+        }
+      ],
+      "name": "Audio ADPCM",
+      "uuid": "08000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Sound arrival direction",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 360,
+          "min": 0,
+          "name": "Direction",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int16",
+          "unit": "\u00b0"
+        }
+      ],
+      "name": "Direction of Arrival",
+      "uuid": "10000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "bitmask",
+      "format_notify": [
+        {
+          "length": 1,
+          "name": "Switch Status",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt8",
+          "unit": "MaskOfBits"
+        }
+      ],
+      "name": "Switch",
+      "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "audio synchronization parameters necessary to ADPCM audio decompression",
+      "format_notify": [
+        {
+          "length": 2,
+          "name": "ADPCM_index",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16"
+        },
+        {
+          "length": 4,
+          "name": "ADPCM_predSample",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt32"
+        }
+      ],
+      "name": "Audio ADPCM Sync",
+      "uuid": "40000000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "atmospheric pressure (value * 100)",
+      "format_notify": [
+        {
+          "length": 4,
+          "max": 2000,
+          "min": 0,
+          "name": "Pressure",
+          "offset": 0,
+          "scalefactor": 0.01,
+          "type": "Int32",
+          "unit": "mBar"
+        }
+      ],
+      "name": "Pressure",
+      "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Relative humidity [%] (value * 10)",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 100,
+          "min": 0,
+          "name": "humidity",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "UInt16",
+          "unit": "%"
+        }
+      ],
+      "name": "Humidity",
+      "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "temperature2 (value * 10)",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 100,
+          "min": 0,
+          "name": "temperature",
+          "offset": 0,
+          "scalefactor": 0.1,
+          "type": "Int16",
+          "unit": "\u00b0C"
+        }
+      ],
+      "name": "Temperature",
+      "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "NoActivity/Stationary/Walking/FastWalking/Jogging/Biking/Driving/Stairs/AdultInCar",
+      "format_notify": [
+        {
+          "length": 1,
+          "max": 8,
+          "min": 0,
+          "name": "Gesture",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int8"
+        }
+      ],
+      "name": "Activity Detection",
+      "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "event detected by the accelerometer hardware, can contain an event, the number of steps or both",
+      "format_notify": [
+        {
+          "length": 1,
+          "name": "AccEvent",
+          "offset": 0,
+          "type": "UInt8",
+          "unit": "Enum"
+        },
+        {
+          "length": 2,
+          "name": "Steps",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "UInt16",
+          "unit": "step"
+        }
+      ],
+      "name": "Acceleration Event",
+      "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "x,y,z accelerometer data",
+      "format_notify": [
+        {
+          "length": 2,
+          "max": 16000,
+          "min": -16000,
+          "name": "X",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int16",
+          "unit": "mg"
+        },
+        {
+          "length": 2,
+          "max": 2000,
+          "min": -2000,
+          "name": "Y",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int16",
+          "unit": "mg"
+        },
+        {
+          "length": 2,
+          "max": 2000,
+          "min": -2000,
+          "name": "Z",
+          "offset": 0,
+          "scalefactor": 1,
+          "type": "Int16",
+          "unit": "mg"
+        }
+      ],
+      "name": "Accelerometer",
+      "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+    }
+  ],
+  "checksum": "aeb8a946993fc40255c7ad9a937e35bb",
+  "date": "2021-10-21T09:16:47.464945Z",
+  "version": "0.2.0"
+}
