@@ -68,10 +68,10 @@
       ],
       "cloud_apps": [
         {
-          "description": "",
+          "description": "Default IoT Central application for testing different ST sensor board types",
           "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
           "name": "ST Default PnP App",
-          "shareable_link": "https://apps.azureiotcentral.com/build/new/43b0eb5e-dd28-44b7-b00c-8fe2cb91d87e",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
           "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
@@ -148,10 +148,10 @@
       ],
       "cloud_apps": [
         {
-          "description": "",
+          "description": "Default IoT Central application for testing different ST sensor board types",
           "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
           "name": "ST Default PnP App",
-          "shareable_link": "https://apps.azureiotcentral.com/build/new/43b0eb5e-dd28-44b7-b00c-8fe2cb91d87e",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
           "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
@@ -212,10 +212,10 @@
       ],
       "cloud_apps": [
         {
-          "description": "",
+          "description": "Default IoT Central application for testing different ST sensor board types",
           "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
           "name": "ST Default PnP App",
-          "shareable_link": "https://apps.azureiotcentral.com/build/new/43b0eb5e-dd28-44b7-b00c-8fe2cb91d87e",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
           "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
@@ -288,10 +288,10 @@
       ],
       "cloud_apps": [
         {
-          "description": "",
+          "description": "Default IoT Central application for testing different ST sensor board types",
           "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
           "name": "ST Default PnP App",
-          "shareable_link": "https://apps.azureiotcentral.com/build/new/43b0eb5e-dd28-44b7-b00c-8fe2cb91d87e",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
           "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
@@ -373,8 +373,39 @@
         }
       ],
       "fota": "no",
-      "fw_name": "Proteus",
-      "fw_version": "0.1.0",
+      "fw_name": "STSW-Proteus1",
+      "fw_version": "1.0.0",
+      "option_bytes": [
+        {
+          "format": "int",
+          "name": "battery",
+          "negative_offset": 0,
+          "scale_factor": 10,
+          "type": "%"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "No Alarm",
+              "icon_code": 7,
+              "value": 0
+            },
+            {
+              "comment": "Warning",
+              "icon_code": 5,
+              "value": 1
+            },
+            {
+              "comment": "Alarm",
+              "icon_code": 6,
+              "value": 2
+            }
+          ],
+          "name": "asset status",
+          "type": "icon"
+        }
+      ],
       "partial_fota": "no"
     },
     {
@@ -602,16 +633,28 @@
               "value": 0
             },
             {
-              "display_name": "Logging Ongoing",
+              "display_name": "Battery Charging",
               "value": 1
             },
             {
-              "display_name": "Low Battery",
+              "display_name": "No Battery",
               "value": 2
             },
             {
-              "display_name": "SD Full",
+              "display_name": "Logging Ongoing",
               "value": 3
+            },
+            {
+              "display_name": "Low Battery",
+              "value": 4
+            },
+            {
+              "display_name": "Missing SD Card",
+              "value": 5
+            },
+            {
+              "display_name": "SD Card Full",
+              "value": 6
             }
           ],
           "type": "string"
@@ -620,29 +663,39 @@
           "format": "enum_icon",
           "icon_values": [
             {
-              "comment": "USB Plug",
-              "icon_code": 3,
+              "comment": "USB Plug, No Battery",
+              "icon_code": 18,
               "value": 0
+            },
+            {
+              "comment": "USB Plug, Battery in charge",
+              "icon_code": 3,
+              "value": 1
             },
             {
               "comment": "Battery",
               "icon_code": 1,
-              "value": 1
+              "value": 2
             },
             {
               "comment": "icon for Log ongoing",
               "icon_code": 10,
-              "value": 2
+              "value": 3
             },
             {
               "comment": "icon for low battery",
               "icon_code": 0,
-              "value": 3
+              "value": 4
             },
             {
-              "comment": "icon for SD full",
+              "comment": "icon for Missing SD Card",
+              "icon_code": 5,
+              "value": 5
+            },
+            {
+              "comment": "icon for SD Card full",
               "icon_code": 11,
-              "value": 4
+              "value": 6
             }
           ],
           "name": "status",
@@ -786,12 +839,14 @@
   "characteristics": [
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "RFU",
       "uuid": "80000000-0001-11e1-ac36-0002a5d5c51b"
     },
     {
       "description": "Header+RawData",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 2,
@@ -820,6 +875,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 2,
@@ -836,6 +892,7 @@
     },
     {
       "description": "Audio Scene Classification Unknown/Outdoor/Indoor/InCar/BabyIsCrying/ASC_On/ASC_Off",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -863,6 +920,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 2,
@@ -879,6 +937,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 4,
@@ -913,6 +972,7 @@
     },
     {
       "description": "Stepper Motor Control",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -930,6 +990,7 @@
     },
     {
       "description": "Magnetometer Normalization",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 2,
@@ -946,6 +1007,7 @@
     },
     {
       "description": "TS, lat (4B - 10^7), long(4B - 10^7), elevation(4B - 10^3), num sat(1B), RSSI (1B)",
+      "dtmi_name": "gnss",
       "format_notify": [
         {
           "length": 4,
@@ -992,12 +1054,14 @@
     },
     {
       "description": "Cartesiam anomaly detection libraries",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "Cartesiam",
       "uuid": "00000019-0002-11e1-ac36-0002a5d5c51b"
     },
     {
       "description": "STRED-L registers output",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1077,24 +1141,28 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "Debug Console stderr",
       "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "Debug Console stdin/stdout",
       "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "Debug console",
       "uuid": "00000000-000E-11e1-9ab4-0002a5d5c51b"
     },
     {
       "description": "Electric Charge Variation",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 4,
@@ -1130,6 +1198,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 4,
@@ -1166,12 +1235,14 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "Ext Configuration",
       "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
     },
     {
       "description": "Time Of Flight Multi Objects Detection",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 2,
@@ -1218,18 +1289,21 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "UNUSED",
       "uuid": "00000012-0002-11e1-ac36-0002a5d5c51b"
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "HS Datalog Config",
       "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
     },
     {
       "description": "Finite State Machine's registers output",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1373,6 +1447,7 @@
     },
     {
       "description": "Machine Learning Core's registers output",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1452,6 +1527,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1476,6 +1552,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 4,
@@ -1510,6 +1587,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1535,6 +1613,7 @@
     },
     {
       "description": "",
+      "dtmi_name": "predictivefrequencydomainstatus",
       "format_notify": [
         {
           "length": 1,
@@ -1598,6 +1677,7 @@
     },
     {
       "description": "",
+      "dtmi_name": "predictiveaccelerationstatus",
       "format_notify": [
         {
           "length": 1,
@@ -1637,6 +1717,7 @@
     },
     {
       "description": "",
+      "dtmi_name": "predictivespeedstatus",
       "format_notify": [
         {
           "length": 1,
@@ -1676,6 +1757,7 @@
     },
     {
       "description": "Motion Time Parameter",
+      "dtmi_name": "motortimeparameter",
       "format_notify": [
         {
           "length": 4,
@@ -1743,6 +1825,7 @@
     },
     {
       "description": "Header+RawData",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 2,
@@ -1771,6 +1854,7 @@
     },
     {
       "description": "SD Log control (SENSING1)",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1788,6 +1872,7 @@
     },
     {
       "description": "Audio Scene Classification Unknown/Outdoor/Indoor/InCar/BabyIsCrying/ASC_On/ASC_Off",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1815,12 +1900,14 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "Audio OPUS Conf",
       "uuid": "00000002-0002-11e1-ac36-0002a5d5c51b"
     },
     {
       "description": "Audio Opus Data",
+      "dtmi_name": null,
       "format_notify": [
         {
           "name": "RawDataPacket",
@@ -1832,6 +1919,7 @@
     },
     {
       "description": "",
+      "dtmi_name": "pedometer",
       "format_notify": [
         {
           "length": 4,
@@ -1855,6 +1943,7 @@
     },
     {
       "description": "Unknown/PickUp/Glance/WakeUp",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1871,6 +1960,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1887,6 +1977,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1903,6 +1994,7 @@
     },
     {
       "description": "Compass",
+      "dtmi_name": "compass",
       "format_notify": [
         {
           "length": 2,
@@ -1920,6 +2012,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -1936,6 +2029,7 @@
     },
     {
       "description": "MEMS sensor fusion",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 4,
@@ -1983,6 +2077,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 2,
@@ -2046,6 +2141,7 @@
     },
     {
       "description": "deprecated",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -2063,6 +2159,7 @@
     },
     {
       "description": "Beam Forming Direction Top/TopRight/Right/BottomRight/Bottom/BottomLeft/Left/TopLeft",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -2080,6 +2177,7 @@
     },
     {
       "description": "SD  Log control (ALLMEMS1/ALLMEMS2)",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -2113,18 +2211,21 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "RFU (OTA reboot?)",
       "uuid": "00002000-0001-11e1-ac36-0002a5d5c51b"
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": null,
       "name": "RFU",
       "uuid": "00004000-0001-11e1-ac36-0002a5d5c51b"
     },
     {
       "description": "CO concentration",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 4,
@@ -2142,6 +2243,7 @@
     },
     {
       "description": "Temperature 1",
+      "dtmi_name": "temperature",
       "format_notify": [
         {
           "length": 2,
@@ -2159,6 +2261,7 @@
     },
     {
       "description": "",
+      "dtmi_name": "battery",
       "format_notify": [
         {
           "length": 2,
@@ -2200,6 +2303,7 @@
     },
     {
       "description": "xyz magnetometer data",
+      "dtmi_name": "magnetometer",
       "format_notify": [
         {
           "length": 2,
@@ -2237,6 +2341,7 @@
     },
     {
       "description": "xyz gyroscope data",
+      "dtmi_name": "gyroscope",
       "format_notify": [
         {
           "length": 2,
@@ -2268,6 +2373,7 @@
     },
     {
       "description": "",
+      "dtmi_name": "luminosity",
       "format_notify": [
         {
           "length": 2,
@@ -2285,6 +2391,7 @@
     },
     {
       "description": "Proximity distance (value & ~0x8000)",
+      "dtmi_name": "proximity",
       "format_notify": [
         {
           "length": 2,
@@ -2300,6 +2407,7 @@
     },
     {
       "description": "Microphone dB level",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -2367,6 +2475,7 @@
     },
     {
       "description": "",
+      "dtmi_name": null,
       "format_notify": [
         {
           "name": "RawData",
@@ -2378,6 +2487,7 @@
     },
     {
       "description": "Sound arrival direction",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 2,
@@ -2395,6 +2505,7 @@
     },
     {
       "description": "bitmask",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -2410,6 +2521,7 @@
     },
     {
       "description": "audio synchronization parameters necessary to ADPCM audio decompression",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 2,
@@ -2431,6 +2543,7 @@
     },
     {
       "description": "atmospheric pressure (value * 100)",
+      "dtmi_name": "pressure",
       "format_notify": [
         {
           "length": 4,
@@ -2448,6 +2561,7 @@
     },
     {
       "description": "Relative humidity [%] (value * 10)",
+      "dtmi_name": "humidity",
       "format_notify": [
         {
           "length": 2,
@@ -2465,6 +2579,7 @@
     },
     {
       "description": "temperature2 (value * 10)",
+      "dtmi_name": "temperature2",
       "format_notify": [
         {
           "length": 2,
@@ -2482,6 +2597,7 @@
     },
     {
       "description": "NoActivity/Stationary/Walking/FastWalking/Jogging/Biking/Driving/Stairs/AdultInCar",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -2498,6 +2614,7 @@
     },
     {
       "description": "event detected by the accelerometer hardware, can contain an event, the number of steps or both",
+      "dtmi_name": null,
       "format_notify": [
         {
           "length": 1,
@@ -2520,6 +2637,7 @@
     },
     {
       "description": "x,y,z accelerometer data",
+      "dtmi_name": "accelerometer",
       "format_notify": [
         {
           "length": 2,
@@ -2556,7 +2674,7 @@
       "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
     }
   ],
-  "checksum": "aeb8a946993fc40255c7ad9a937e35bb",
-  "date": "2021-10-21T09:16:47.464945Z",
-  "version": "0.2.0"
+  "checksum": "3a7cd675de9c3aa1d6d2ce352853afd2",
+  "date": "2021-10-26T17:06:09.674916Z",
+  "version": "0.2.1"
 }
