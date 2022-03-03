@@ -303,14 +303,286 @@
   ],
   "bluestsdk_v2": [
     {
-      "ble_dev_id": "0x0F",
+      "ble_dev_id": "0x7F",
       "ble_fw_id": "0x01",
-      "brd_name": "Proteus",
+      "brd_name": "Nucleo STM32F401RE",
       "characteristics": [
         {
           "name": "Temperature",
           "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
         },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion",
+          "uuid": "00000080-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Carry Position",
+          "uuid": "00000008-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "MEMS Gesture",
+          "uuid": "00000002-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "Pedometer",
+          "uuid": "00000001-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "Motion Intensity",
+          "uuid": "00000020-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "fota": "fast",
+      "fw_name": "FP-SNS-MOTENV1",
+      "fw_version": "4.2.0",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x7E",
+      "ble_fw_id": "0x01",
+      "brd_name": "Nucleo STM32L476RG",
+      "characteristics": [
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion",
+          "uuid": "00000080-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Carry Position",
+          "uuid": "00000008-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "MEMS Gesture",
+          "uuid": "00000002-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "Pedometer",
+          "uuid": "00000001-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "Motion Intensity",
+          "uuid": "00000020-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "fota": "fast",
+      "fw_name": "FP-SNS-MOTENV1",
+      "fw_version": "4.2.0",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x7D",
+      "ble_fw_id": "0x01",
+      "brd_name": "Nucleo STM32L053R8",
+      "characteristics": [
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "fota": "no",
+      "fw_name": "FP-SNS-MOTENV1",
+      "fw_version": "4.2.0",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x7C",
+      "ble_fw_id": "0x01",
+      "brd_name": "Nucleo STM32F446RE",
+      "characteristics": [
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion",
+          "uuid": "00000080-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Direction of Arrival",
+          "uuid": "10000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "fota": "fast",
+      "fw_name": "FP-SNS-ALLMEMS1",
+      "fw_version": "4.2.0",
+      "option_bytes": [
+        {
+          "format": "enum_string",
+          "name": "Expansion Board",
+          "string_values": [
+            {
+              "display_name": "X-NUCLEO-IKS01A2",
+              "value": 0
+            },
+            {
+              "display_name": "X-NUCLEO-IKS01A3",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x0F",
+      "ble_fw_id": "0x01",
+      "brd_name": "STEVAL-PROTEUS",
+      "characteristics": [
         {
           "name": "Ext Configuration",
           "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
@@ -366,6 +638,10 @@
         {
           "name": "RebootOTAModeFeature",
           "uuid": "0000fe11-8e22-4541-9d4c-21edae82ed19"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
         }
       ],
       "cloud_apps": [
@@ -385,12 +661,14 @@
         }
       ],
       "fota": "wb_mode",
-      "fw_name": "STSW-Proteus1",
+      "fw_name": "STSW-PROTEUS",
       "fw_version": "1.0.0",
       "option_bytes": [
         {
+          "escape_message": "",
+          "escape_value": 255,
           "format": "int",
-          "name": "battery",
+          "name": "Battery Level: ",
           "negative_offset": 0,
           "scale_factor": 10,
           "type": "%"
@@ -414,8 +692,35 @@
               "value": 2
             }
           ],
-          "name": "asset status",
+          "name": "Equipment Status",
           "type": "icon"
+        },
+        {
+          "format": "enum_string",
+          "name": "Battery Status: ",
+          "string_values": [
+            {
+              "display_name": "Low Battery",
+              "value": 0
+            },
+            {
+              "display_name": "Discharging",
+              "value": 1
+            },
+            {
+              "display_name": "End of Charging",
+              "value": 2
+            },
+            {
+              "display_name": "Charging",
+              "value": 3
+            },
+            {
+              "display_name": "Not Plugged",
+              "value": 4
+            }
+          ],
+          "type": "string"
         }
       ],
       "partial_fota": "no"
@@ -464,15 +769,6 @@
         {
           "name": "Battery",
           "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
-        }
-      ],
-      "cloud_apps": [
-        {
-          "description": null,
-          "dtmi": null,
-          "name": null,
-          "shareable_link": null,
-          "url": null
         }
       ],
       "fota": "wb_mode",
@@ -559,6 +855,192 @@
       "partial_fota": "no"
     },
     {
+      "ble_dev_id": "0x7F",
+      "ble_fw_id": "0x02",
+      "brd_name": "Nucleo STM32F401RE",
+      "characteristics": [
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion",
+          "uuid": "00000080-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Direction of Arrival",
+          "uuid": "10000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "fota": "fast",
+      "fw_name": "FP-SNS-ALLMEMS1",
+      "fw_version": "4.2.0",
+      "option_bytes": [
+        {
+          "format": "enum_string",
+          "name": "Expansion Board",
+          "string_values": [
+            {
+              "display_name": "X-NUCLEO-IKS01A2",
+              "value": 0
+            },
+            {
+              "display_name": "X-NUCLEO-IKS01A3",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x7E",
+      "ble_fw_id": "0x02",
+      "brd_name": "Nucleo STM32L476RG",
+      "characteristics": [
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion",
+          "uuid": "00000080-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Euler Angle",
+          "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Direction of Arrival",
+          "uuid": "10000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Carry Position",
+          "uuid": "00000008-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "MEMS Gesture",
+          "uuid": "00000002-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Motion Intensity",
+          "uuid": "00000020-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Motion Algorithm",
+          "uuid": "0000000A-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Fitness Activity",
+          "uuid": "0000000E-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "fota": "fast",
+      "fw_name": "FP-SNS-ALLMEMS1",
+      "fw_version": "4.2.0",
+      "option_bytes": [
+        {
+          "format": "enum_string",
+          "name": "Expansion Board",
+          "string_values": [
+            {
+              "display_name": "X-NUCLEO-IKS01A2",
+              "value": 0
+            },
+            {
+              "display_name": "X-NUCLEO-IKS01A3",
+              "value": 1
+            }
+          ]
+        }
+      ],
+      "partial_fota": "no"
+    },
+    {
       "ble_dev_id": "0x09",
       "ble_fw_id": "0x04",
       "brd_name": "STWIN1B",
@@ -592,6 +1074,97 @@
       "fota": "yes",
       "fw_name": "FP-SNS-DATALOG1",
       "fw_version": "1.2.0-vespucci",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x06",
+      "ble_fw_id": "0x04",
+      "brd_name": "Sensortile.box",
+      "characteristics": [
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion",
+          "uuid": "00000080-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Euler Angle",
+          "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Carry Position",
+          "uuid": "00000008-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "MEMS Gesture",
+          "uuid": "00000002-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Motion Intensity",
+          "uuid": "00000020-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Motion Algorithm",
+          "uuid": "0000000A-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Fitness Activity",
+          "uuid": "0000000E-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "fota": "fast",
+      "fw_name": "FP-SNS-ALLMEMS1",
+      "fw_version": "4.2.0",
       "partial_fota": "no"
     },
     {
@@ -717,6 +1290,174 @@
       "partial_fota": "no"
     },
     {
+      "ble_dev_id": "0x03",
+      "ble_fw_id": "0x06",
+      "brd_name": "BlueCoin",
+      "characteristics": [
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion",
+          "uuid": "00000080-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Direction of Arrival",
+          "uuid": "10000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "fota": "yes",
+      "fw_name": "FP-SNS-ALLMEMS1",
+      "fw_version": "4.2.0",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x09",
+      "ble_fw_id": "0x07",
+      "brd_name": "STWIN1B",
+      "cloud_apps": [
+        {
+          "description": "Show digital twin usage; support for gateways; export data to 3D viz service",
+          "dtmi": "dtmi:quasar:...",
+          "name": "quasar",
+          "shareable_link": null,
+          "url": "https://quasar.azureiotcentral.com/"
+        }
+      ],
+      "fota": "no",
+      "fw_name": "quasar",
+      "fw_version": "1.0.0",
+      "partial_fota": "no"
+    },
+    {
+      "ble_dev_id": "0x02",
+      "ble_fw_id": "0x08",
+      "brd_name": "SensorTile",
+      "characteristics": [
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion",
+          "uuid": "00000080-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Euler Angle",
+          "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Carry Position",
+          "uuid": "00000008-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "MEMS Gesture",
+          "uuid": "00000002-0001-11e1-ac36-0002a5d5c5"
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Motion Intensity",
+          "uuid": "00000020-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Motion Algorithm",
+          "uuid": "0000000A-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Fitness Activity",
+          "uuid": "0000000E-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "SD Logging",
+          "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "fota": "yes",
+      "fw_name": "FP-SNS-ALLMEMS1",
+      "fw_version": "4.2.0",
+      "partial_fota": "no"
+    },
+    {
       "ble_dev_id": "0x0C",
       "ble_fw_id": "0xFD",
       "brd_name": "Astra",
@@ -734,15 +1475,6 @@
           "uuid": "0000fe24-8e22-4541-9d4c-21edae82ed19"
         }
       ],
-      "cloud_apps": [
-        {
-          "description": null,
-          "dtmi": null,
-          "name": null,
-          "shareable_link": null,
-          "url": null
-        }
-      ],
       "fota": "wb_ready",
       "fw_name": "FOTA-mode",
       "fw_version": "1.0.0",
@@ -751,7 +1483,7 @@
     {
       "ble_dev_id": "0x0F",
       "ble_fw_id": "0xFE",
-      "brd_name": "Proteus",
+      "brd_name": "STEVAL-PROTEUS",
       "characteristics": [
         {
           "name": "OTAControlFeature",
@@ -764,15 +1496,6 @@
         {
           "name": "OTAFileUpload",
           "uuid": "0000fe24-8e22-4541-9d4c-21edae82ed19"
-        }
-      ],
-      "cloud_apps": [
-        {
-          "description": null,
-          "dtmi": null,
-          "name": null,
-          "shareable_link": null,
-          "url": null
         }
       ],
       "fota": "wb_ready",
@@ -824,15 +1547,6 @@
         {
           "name": "Battery",
           "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
-        }
-      ],
-      "cloud_apps": [
-        {
-          "description": null,
-          "dtmi": null,
-          "name": null,
-          "shareable_link": null,
-          "url": null
         }
       ],
       "fota": "no",
@@ -2696,13 +3410,13 @@
       "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
     },
     {
-      "description": "temperature2 (value * 10)",
+      "description": "Temperature 2 (value * 10)",
       "dtmi_name": "temperature2",
       "format_notify": [
         {
           "length": 2,
-          "max": 100,
-          "min": 0,
+          "max": 120,
+          "min": -40,
           "name": "temperature",
           "offset": 0,
           "scalefactor": 0.1,
@@ -2792,7 +3506,7 @@
       "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
     }
   ],
-  "checksum": "815aeaa461e26d1105c167251a9e2d39",
-  "date": "2021-11-04T10:29:58.227213Z",
-  "version": "0.2.1"
+  "checksum": "a1d9207966ef0737424b81d9c237d8e6",
+  "date": "2022-02-25T14:43:41.809693Z",
+  "version": "0.2.5"
 }
