@@ -75,14 +75,11 @@
           "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
-      "fota": "no",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {},
       "fw_desc": "",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.1.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x02",
@@ -159,14 +156,11 @@
           "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
-      "fota": "no",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {},
       "fw_desc": "",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.1.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x06",
@@ -227,14 +221,11 @@
           "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
-      "fota": "no",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {},
       "fw_desc": "New RPN (Link) - STM32Cube function pack for ultra-low power context awareness with distributed artificial intelligence (AI): acoustic analysis with NN on MCU and motion analysis with ML on IMU",
       "fw_name": "FP-AI-CTXAWARE1",
       "fw_version": "1.0.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x08",
@@ -307,14 +298,11 @@
           "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
-      "fota": "no",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {},
       "fw_desc": "Acc FFT, Acc time stats (RMS, peaks) streaming over Wi-Fi",
       "fw_name": "FP-IND-PREDMNT1",
       "fw_version": "2.4.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     }
   ],
   "bluestsdk_v2": [
@@ -389,15 +377,18 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/motenv1_iks01a3_4_2_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "Fast FOTA, BlueST SDK v2",
       "fw_name": "FP-SNS-MOTENV1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/motenv1_iks01a3_4_2_0.bin",
       "fw_version": "4.2.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x7E",
@@ -470,15 +461,18 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/motenv1_iks01a3_4_2_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "Fast FOTA, BlueST SDK v2",
       "fw_name": "FP-SNS-MOTENV1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/motenv1_iks01a3_4_2_0.bin",
       "fw_version": "4.2.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x7D",
@@ -523,14 +517,11 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "no",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {},
       "fw_desc": "Fast FOTA, BlueST SDK v2",
       "fw_name": "FP-SNS-MOTENV1",
       "fw_version": "4.2.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x7C",
@@ -592,12 +583,16 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f446re/allmems1_iks01a3_4_2_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f446re/allmems1_iks01a3_4_2_0.bin",
       "fw_version": "4.2.0",
       "option_bytes": [
         {
@@ -614,8 +609,7 @@
             }
           ]
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x10",
@@ -673,9 +667,14 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "wb_mode",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_mode"
+      },
       "fw_desc": "Predictive Maintenance over LoRa",
       "fw_name": "STSYS-SBU06",
       "fw_version": "1.0.0",
@@ -731,8 +730,7 @@
           "name": "LoRa Join Status",
           "type": "icon"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x0F",
@@ -809,12 +807,16 @@
           "url": "https://proteus-poc.azureiotcentral.com"
         }
       ],
-      "fota": "wb_mode",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/stsw_proteus_1_0_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_mode"
+      },
       "fw_desc": "STM32WB predictive maintenance applications",
       "fw_name": "STSW-PROTEUS",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/stsw_proteus_1_0_0.bin",
       "fw_version": "1.0.0",
       "option_bytes": [
         {
@@ -875,8 +877,7 @@
           ],
           "type": "string"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x0E",
@@ -922,9 +923,14 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BleDualProgram_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
@@ -944,8 +950,7 @@
           ],
           "type": "string"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x0C",
@@ -995,12 +1000,16 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "wb_mode",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-astra1/astra1_1_0_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_mode"
+      },
       "fw_desc": "STM32Cube function pack for the STEVAL-ASTRA1B multi-connectivity asset tracking reference design",
       "fw_name": "FP-ATR-ASTRA1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-astra1/astra1_1_0_0.bin",
       "fw_version": "1.0.0",
       "option_bytes": [
         {
@@ -1079,8 +1088,7 @@
           "name": "status",
           "type": "icon"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x7F",
@@ -1142,12 +1150,16 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/allmems1_iks01a3_4_2_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/allmems1_iks01a3_4_2_0.bin",
       "fw_version": "4.2.0",
       "option_bytes": [
         {
@@ -1164,8 +1176,7 @@
             }
           ]
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x7E",
@@ -1255,12 +1266,16 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/allmems1_iks01a3_4_2_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/allmems1_iks01a3_4_2_0.bin",
       "fw_version": "4.2.0",
       "option_bytes": [
         {
@@ -1277,8 +1292,7 @@
             }
           ]
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x0E",
@@ -1324,9 +1338,14 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BLESensors_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
@@ -1346,8 +1365,145 @@
           ],
           "type": "string"
         }
+      ]
+    },
+    {
+      "ble_dev_id": "0x0C",
+      "ble_fw_id": "0x02",
+      "brd_name": "Astra",
+      "changelog": "V1.1.0 / 03-Jun-2022 -> Firmware package compatible with CubeMX CMSIS pack structure\r\nV1.0.1 / 09-May-2022 -> Bugfix on temperature reading, GNSS and power management data acquisition and LoRa configuration",
+      "characteristics": [
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature(2)",
+          "uuid": "00040000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Humidity",
+          "uuid": "00080000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "GNSS",
+          "uuid": "00000018-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        }
       ],
-      "partial_fota": 0
+      "cloud_apps": [],
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-astra1/fp-atr-astra1_1_1_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_mode"
+      },
+      "fw_desc": "STM32Cube function pack for the STEVAL-ASTRA1B multi-connectivity asset tracking reference design",
+      "fw_name": "FP-ATR-ASTRA1",
+      "fw_version": "1.1.0",
+      "option_bytes": [
+        {
+          "format": "int",
+          "name": "battery",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
+        },
+        {
+          "format": "enum_string",
+          "name": "Use case",
+          "string_values": [
+            {
+              "display_name": "FLEET_MNG",
+              "value": 0
+            },
+            {
+              "display_name": "LIVESTOCK_MON",
+              "value": 1
+            },
+            {
+              "display_name": "GOODS_MONITORING",
+              "value": 2
+            },
+            {
+              "display_name": "LOGISTICS",
+              "value": 3
+            },
+            {
+              "display_name": "CUSTOM",
+              "value": 4
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "LoRa joined",
+              "icon_code": 20,
+              "value": 1
+            },
+            {
+              "comment": "LoRa NOT joined",
+              "icon_code": 21,
+              "value": 2
+            },
+            {
+              "comment": "GPS fix OK",
+              "icon_code": 15,
+              "value": 3
+            },
+            {
+              "comment": "GPS no fix",
+              "icon_code": 16,
+              "value": 4
+            },
+            {
+              "comment": "GPS disabled",
+              "icon_code": 17,
+              "value": 5
+            },
+            {
+              "comment": "System in low power",
+              "icon_code": 26,
+              "value": 6
+            },
+            {
+              "comment": "NFC enabled",
+              "icon_code": 10,
+              "value": 7
+            }
+          ],
+          "name": "status",
+          "type": "icon"
+        }
+      ]
     },
     {
       "ble_dev_id": "0x7F",
@@ -1369,15 +1525,18 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "yes",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/flight1_4_2_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "yes"
+      },
       "fw_desc": "candidate release",
       "fw_name": "FP-SNS-FLIGHT1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/flight1_4_2_0.bin",
       "fw_version": "4.2.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x7E",
@@ -1399,15 +1558,18 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "yes",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/flight1_4_2_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "yes"
+      },
       "fw_desc": "candidate release",
       "fw_name": "FP-SNS-FLIGHT1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/flight1_4_2_0.bin",
       "fw_version": "4.2.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x0E",
@@ -1437,9 +1599,14 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BLEMLC_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
@@ -1459,8 +1626,7 @@
           ],
           "type": "string"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x0E",
@@ -1502,9 +1668,14 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BLEDefaultFw_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
@@ -1524,8 +1695,7 @@
           ],
           "type": "string"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x09",
@@ -1558,14 +1728,11 @@
           "url": "https://vespucci.azureiotcentral.com/"
         }
       ],
-      "fota": "yes",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {},
       "fw_desc": "HSD with STREDL support",
       "fw_name": "FP-SNS-DATALOG1",
       "fw_version": "1.2.0-vespucci",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x06",
@@ -1655,15 +1822,18 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/allmems1_4_2_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/allmems1_4_2_0.bin",
       "fw_version": "4.2.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x0E",
@@ -1681,9 +1851,14 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BLEGpEx_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
@@ -1703,8 +1878,7 @@
           ],
           "type": "string"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x06",
@@ -1730,12 +1904,16 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "STM32Cube High Speed Datalog function pack for STWIN evaluation kits",
       "fw_name": "FP-SNS-DATALOG1",
-      "fw_url": "",
       "fw_version": "1.4.0",
       "option_bytes": [
         {
@@ -1822,8 +2000,7 @@
           "name": "status",
           "type": "icon"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x09",
@@ -1831,20 +2008,20 @@
       "brd_name": "STWIN1B",
       "characteristics": [
         {
-          "name": "Debug Console stdin/stdout",
-          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
-        },
-        {
-          "name": "Debug Console stderr",
-          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
         },
         {
           "name": "Machine Learning Core",
           "uuid": "0000000F-0002-11e1-ac36-0002a5d5c51b"
         },
         {
-          "name": "HS Datalog Config",
-          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         }
       ],
       "cloud_apps": [
@@ -1856,12 +2033,16 @@
           "url": "https://vespucci.azureiotcentral.com/"
         }
       ],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/stmicroelectronics/appconfig/bluestsdkv2/bin/datalog1_3_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "fast fota\r\nbluest sdkv2 support\r\nFOTA size limitation 1MB",
       "fw_name": "FP-SNS-DATALOG1",
-      "fw_url": "https://github.com/stmicroelectronics/appconfig/bluestsdkv2/bin/datalog1_3_0.bin",
       "fw_version": "1.3.0",
       "option_bytes": [
         {
@@ -1948,8 +2129,7 @@
           "name": "status",
           "type": "icon"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x03",
@@ -2007,15 +2187,18 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "yes",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-bcnkt01v1/allmems1_4_2_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "yes"
+      },
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
-      "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-bcnkt01v1/allmems1_4_2_0.bin",
       "fw_version": "4.2.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x09",
@@ -2032,14 +2215,11 @@
           "url": "https://quasar.azureiotcentral.com/"
         }
       ],
-      "fota": "no",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {},
       "fw_desc": "low power firmware for Quasar demo; uses STREDL and sends events on BLE advertisements",
       "fw_name": "quasar",
       "fw_version": "1.0.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x09",
@@ -2065,9 +2245,14 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "fast",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
       "fw_desc": "STM32Cube High Speed Datalog function pack for STWIN evaluation kits",
       "fw_name": "FP-SNS-DATALOG1",
       "fw_version": "1.4.0",
@@ -2156,8 +2341,7 @@
           "name": "status",
           "type": "icon"
         }
-      ],
-      "partial_fota": 0
+      ]
     },
     {
       "ble_dev_id": "0x02",
@@ -2247,14 +2431,18 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "yes",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 8,
+      "fota": {
+        "bootloader_type": "custom",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "yes"
+      },
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.2.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x0C",
@@ -2275,14 +2463,18 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "wb_ready",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_ready"
+      },
       "fw_desc": "STM32WB temporary stub to enable firmware update ",
       "fw_name": "FOTA-mode",
       "fw_version": "1.0.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x0F",
@@ -2303,14 +2495,18 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "wb_ready",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": null,
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_ready"
+      },
       "fw_desc": "STM32WB temporary stub to enable firmware update ",
       "fw_name": "FOTA-mode",
       "fw_version": "1.0.0",
-      "option_bytes": [],
-      "partial_fota": 0
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x0C",
@@ -2359,9 +2555,7 @@
         }
       ],
       "cloud_apps": [],
-      "fota": "no",
-      "fota_max_chunk_length": 0,
-      "fota_max_divisor_constraint": 0,
+      "fota": {},
       "fw_desc": "Polaris firmware (testing one)",
       "fw_name": "Astra1 - Asset tracking",
       "fw_version": "0.1.0",
@@ -2435,8 +2629,7 @@
           ],
           "type": "string"
         }
-      ],
-      "partial_fota": 0
+      ]
     }
   ],
   "characteristics": [
@@ -2794,6 +2987,20 @@
       ],
       "name": "Compass",
       "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Cube.AI anomaly detection",
+      "dtmi_name": null,
+      "format_notify": null,
+      "name": "CUBE.AI AD",
+      "uuid": "0000001f-0002-11e1-ac36-0002a5d5c51b"
+    },
+    {
+      "description": "Cube.AI classification",
+      "dtmi_name": null,
+      "format_notify": null,
+      "name": "CUBE.AI NC",
+      "uuid": "00000020-0002-11e1-ac36-0002a5d5c51b"
     },
     {
       "description": "",
@@ -3777,14 +3984,14 @@
       "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b"
     },
     {
-      "description": "Cartesiam NanoEdge AI anomaly detection libraries",
+      "description": "NanoEdge AI anomaly detection libraries",
       "dtmi_name": null,
       "format_notify": null,
       "name": "NEAI AD",
       "uuid": "00000019-0002-11e1-ac36-0002a5d5c51b"
     },
     {
-      "description": "Cartesiam NanoEdge AI classification",
+      "description": "NanoEdge AI classification",
       "dtmi_name": null,
       "format_notify": null,
       "name": "NEAI Classification",
@@ -4354,7 +4561,7 @@
       "uuid": "00000012-0002-11e1-ac36-0002a5d5c51b"
     }
   ],
-  "checksum": "3c2cd2f7b321f69e852b60466973eef3",
-  "date": "2022-05-29T17:07:57.564278Z",
-  "version": "0.2.8"
+  "checksum": "9c04eafc46ff8f0998e9e056db3bc7eb",
+  "date": "2022-07-06T10:21:33.523428Z",
+  "version": "0.2.9"
 }
