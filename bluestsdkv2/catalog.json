@@ -1295,6 +1295,97 @@
       ]
     },
     {
+      "ble_dev_id": "0x0F",
+      "ble_fw_id": "0x02",
+      "brd_name": "STEVAL-PROTEUS",
+      "characteristics": [
+        {
+          "name": "NEAI AD",
+          "uuid": "00000019-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "RebootOTAModeFeature",
+          "uuid": "0000fe11-8e22-4541-9d4c-21edae82ed19"
+        }
+      ],
+      "cloud_apps": [],
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/fp-ai-pdmwbsoc_1_0_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_mode"
+      },
+      "fw_desc": "Anomaly detection by NanoEdge AI",
+      "fw_name": "FP-AI-PDMWBSOC",
+      "fw_version": "1.0.0",
+      "option_bytes": [
+        {
+          "format": "enum_string",
+          "name": " Neai Phase  :",
+          "string_values": [
+            {
+              "display_name": "Idle",
+              "value": 0
+            },
+            {
+              "display_name": "Learning",
+              "value": 1
+            },
+            {
+              "display_name": "Detecting",
+              "value": 2
+            },
+            {
+              "display_name": "Idle Trained",
+              "value": 3
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "Normal",
+              "icon_code": 7,
+              "value": 0
+            },
+            {
+              "comment": "Anomaly",
+              "icon_code": 5,
+              "value": 1
+            },
+            {
+              "comment": "Detection Pause",
+              "icon_code": 31,
+              "value": 2
+            }
+          ],
+          "name": "Neai Status",
+          "type": "icon"
+        },
+        {
+          "escape_message": "",
+          "escape_value": 255,
+          "format": "int",
+          "name": "Battery Level: ",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
+        }
+      ]
+    },
+    {
       "ble_dev_id": "0x0E",
       "ble_fw_id": "0x02",
       "brd_name": "STWIN.BOX",
@@ -2008,20 +2099,20 @@
       "brd_name": "STWIN1B",
       "characteristics": [
         {
-          "name": "HS Datalog Config",
-          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
-        },
-        {
-          "name": "Machine Learning Core",
-          "uuid": "0000000F-0002-11e1-ac36-0002a5d5c51b"
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
           "name": "Debug Console stderr",
           "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
-          "name": "Debug Console stdin/stdout",
-          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+          "name": "Machine Learning Core",
+          "uuid": "0000000F-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
         }
       ],
       "cloud_apps": [
@@ -4561,7 +4652,7 @@
       "uuid": "00000012-0002-11e1-ac36-0002a5d5c51b"
     }
   ],
-  "checksum": "9c04eafc46ff8f0998e9e056db3bc7eb",
-  "date": "2022-07-06T10:21:33.523428Z",
+  "checksum": "b9f69db6283691042072a00cebd1063b",
+  "date": "2022-07-27T16:22:29.274656Z",
   "version": "0.2.9"
 }
