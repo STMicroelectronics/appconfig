@@ -3,7 +3,7 @@
     {
       "ble_dev_id": "0x03",
       "ble_fw_id": "F446_FP-SNS-ALLMEMS1_4.1.0",
-      "brd_name": "BlueCoin",
+      "brd_name": "STEVAL-BCNKT01V1",
       "characteristics": [
         {
           "name": "Pressure",
@@ -79,12 +79,13 @@
       "fw_desc": "",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.1.0",
+      "id": 14,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x02",
       "ble_fw_id": "L476_FP-SNS-ALLMEMS1_4.1.0",
-      "brd_name": "SensorTile",
+      "brd_name": "STEVAL-STLKT01V1",
       "characteristics": [
         {
           "name": "Pressure",
@@ -160,12 +161,13 @@
       "fw_desc": "",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.1.0",
+      "id": 15,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x06",
       "ble_fw_id": "L4R9_BLELowPower_1.0.0",
-      "brd_name": "Sensortile.box",
+      "brd_name": "STEVAL-MKSBOX1V1",
       "characteristics": [
         {
           "name": "Pressure",
@@ -225,12 +227,13 @@
       "fw_desc": "New RPN (Link) - STM32Cube function pack for ultra-low power context awareness with distributed artificial intelligence (AI): acoustic analysis with NN on MCU and motion analysis with ML on IMU",
       "fw_name": "FP-AI-CTXAWARE1",
       "fw_version": "1.0.0",
+      "id": 39,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x08",
       "ble_fw_id": "L4R9_FP-IND-PREDMNT1_2.4.0",
-      "brd_name": "STWIN",
+      "brd_name": "STEVAL-STWINKT1",
       "characteristics": [
         {
           "name": "Ext Configuration",
@@ -302,6 +305,7 @@
       "fw_desc": "Acc FFT, Acc time stats (RMS, peaks) streaming over Wi-Fi",
       "fw_name": "FP-IND-PREDMNT1",
       "fw_version": "2.4.0",
+      "id": 38,
       "option_bytes": []
     }
   ],
@@ -309,7 +313,7 @@
     {
       "ble_dev_id": "0x7F",
       "ble_fw_id": "0x01",
-      "brd_name": "Nucleo STM32F401RE",
+      "brd_name": "NUCLEO-STM32F401RE",
       "characteristics": [
         {
           "name": "Temperature",
@@ -388,12 +392,13 @@
       "fw_desc": "Fast FOTA, BlueST SDK v2",
       "fw_name": "FP-SNS-MOTENV1",
       "fw_version": "4.2.0",
+      "id": 42,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x7E",
       "ble_fw_id": "0x01",
-      "brd_name": "Nucleo STM32L476RG",
+      "brd_name": "NUCLEO-STM32L476RG",
       "characteristics": [
         {
           "name": "Temperature",
@@ -472,12 +477,13 @@
       "fw_desc": "Fast FOTA, BlueST SDK v2",
       "fw_name": "FP-SNS-MOTENV1",
       "fw_version": "4.2.0",
+      "id": 43,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x7D",
       "ble_fw_id": "0x01",
-      "brd_name": "Nucleo STM32L053R8",
+      "brd_name": "NUCLEO-STM32L053R8",
       "characteristics": [
         {
           "name": "Temperature",
@@ -521,12 +527,13 @@
       "fw_desc": "Fast FOTA, BlueST SDK v2",
       "fw_name": "FP-SNS-MOTENV1",
       "fw_version": "4.2.0",
+      "id": 44,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x7C",
       "ble_fw_id": "0x01",
-      "brd_name": "Nucleo STM32F446RE",
+      "brd_name": "NUCLEO-STM32F446RE",
       "changelog": "ATTENTION: firmware update for Nucleo boards is only available when using expansion IKS01A3.\r\n\r\nSource Code Refactoring according to STM32CubeMX code generation using .ioc file; Added header license neutral; Added license files; Updated X-CUBE-MEMS1 Firmware Package",
       "characteristics": [
         {
@@ -594,6 +601,7 @@
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.2.0",
+      "id": 47,
       "option_bytes": [
         {
           "format": "enum_string",
@@ -614,7 +622,7 @@
     {
       "ble_dev_id": "0x10",
       "ble_fw_id": "0X01",
-      "brd_name": "STSYS-SBU06",
+      "brd_name": "STDES-CBMLoRaBLE",
       "changelog": "Initial version",
       "characteristics": [
         {
@@ -676,8 +684,9 @@
         "type": "wb_mode"
       },
       "fw_desc": "Predictive Maintenance over LoRa",
-      "fw_name": "STSYS-SBU06",
+      "fw_name": "STDES-CBMLoRaBLE",
       "fw_version": "1.0.0",
+      "id": 66,
       "option_bytes": [
         {
           "format": "int",
@@ -735,7 +744,7 @@
     {
       "ble_dev_id": "0x0F",
       "ble_fw_id": "0x01",
-      "brd_name": "STEVAL-PROTEUS",
+      "brd_name": "STEVAL-PROTEUS1",
       "characteristics": [
         {
           "name": "Ext Configuration",
@@ -818,6 +827,7 @@
       "fw_desc": "STM32WB predictive maintenance applications",
       "fw_name": "STSW-PROTEUS",
       "fw_version": "1.0.0",
+      "id": 36,
       "option_bytes": [
         {
           "escape_message": "",
@@ -882,7 +892,7 @@
     {
       "ble_dev_id": "0x0E",
       "ble_fw_id": "0x01",
-      "brd_name": "STWIN.BOX",
+      "brd_name": "STEVAL-STWINBX1",
       "changelog": "This is an initial draft release",
       "characteristics": [
         {
@@ -934,6 +944,7 @@
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BleDualProgram_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
+      "id": 55,
       "option_bytes": [
         {
           "format": "enum_string",
@@ -955,7 +966,7 @@
     {
       "ble_dev_id": "0x0C",
       "ble_fw_id": "0x01",
-      "brd_name": "Astra",
+      "brd_name": "STEVAL-ASTRA1B",
       "changelog": "New RPN",
       "characteristics": [
         {
@@ -1011,6 +1022,7 @@
       "fw_desc": "STM32Cube function pack for the STEVAL-ASTRA1B multi-connectivity asset tracking reference design",
       "fw_name": "FP-ATR-ASTRA1",
       "fw_version": "1.0.0",
+      "id": 34,
       "option_bytes": [
         {
           "format": "int",
@@ -1093,7 +1105,7 @@
     {
       "ble_dev_id": "0x7F",
       "ble_fw_id": "0x02",
-      "brd_name": "Nucleo STM32F401RE",
+      "brd_name": "NUCLEO-STM32F401RE",
       "changelog": "ATTENTION: firmware update for Nucleo boards is only available when using expansion IKS01A3.\r\n\r\nSource Code Refactoring according to STM32CubeMX code generation using .ioc file; Added header license neutral; Added license files; Updated X-CUBE-MEMS1 Firmware Package",
       "characteristics": [
         {
@@ -1161,6 +1173,7 @@
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.2.0",
+      "id": 46,
       "option_bytes": [
         {
           "format": "enum_string",
@@ -1181,7 +1194,7 @@
     {
       "ble_dev_id": "0x7E",
       "ble_fw_id": "0x02",
-      "brd_name": "Nucleo STM32L476RG",
+      "brd_name": "NUCLEO-STM32L476RG",
       "changelog": "ATTENTION: firmware update for Nucleo boards is only available when using expansion IKS01A3.\r\n\r\nSource Code Refactoring according to STM32CubeMX code generation using .ioc file; Added header license neutral; Added license files; Updated X-CUBE-MEMS1 Firmware Package",
       "characteristics": [
         {
@@ -1277,6 +1290,7 @@
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.2.0",
+      "id": 48,
       "option_bytes": [
         {
           "format": "enum_string",
@@ -1297,7 +1311,7 @@
     {
       "ble_dev_id": "0x0F",
       "ble_fw_id": "0x02",
-      "brd_name": "STEVAL-PROTEUS",
+      "brd_name": "STEVAL-PROTEUS1",
       "characteristics": [
         {
           "name": "NEAI AD",
@@ -1328,6 +1342,7 @@
       "fw_desc": "Anomaly detection by NanoEdge AI",
       "fw_name": "FP-AI-PDMWBSOC",
       "fw_version": "1.0.0",
+      "id": 70,
       "option_bytes": [
         {
           "format": "enum_string",
@@ -1388,7 +1403,7 @@
     {
       "ble_dev_id": "0x0E",
       "ble_fw_id": "0x02",
-      "brd_name": "STWIN.BOX",
+      "brd_name": "STEVAL-STWINBX1",
       "changelog": "This is an initial draft release",
       "characteristics": [
         {
@@ -1440,6 +1455,7 @@
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BLESensors_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
+      "id": 56,
       "option_bytes": [
         {
           "format": "enum_string",
@@ -1461,7 +1477,7 @@
     {
       "ble_dev_id": "0x0C",
       "ble_fw_id": "0x02",
-      "brd_name": "Astra",
+      "brd_name": "STEVAL-ASTRA1B",
       "changelog": "V1.1.0 / 03-Jun-2022 -> Firmware package compatible with CubeMX CMSIS pack structure\r\nV1.0.1 / 09-May-2022 -> Bugfix on temperature reading, GNSS and power management data acquisition and LoRa configuration",
       "characteristics": [
         {
@@ -1517,6 +1533,7 @@
       "fw_desc": "STM32Cube function pack for the STEVAL-ASTRA1B multi-connectivity asset tracking reference design",
       "fw_name": "FP-ATR-ASTRA1",
       "fw_version": "1.1.0",
+      "id": 69,
       "option_bytes": [
         {
           "format": "int",
@@ -1599,7 +1616,7 @@
     {
       "ble_dev_id": "0x7F",
       "ble_fw_id": "0x03",
-      "brd_name": "Nucleo STM32F401RE",
+      "brd_name": "NUCLEO-STM32F401RE",
       "changelog": "Maintenance release; STM32Cube middleware and HAL drivers update; code rebasing on latest available X-CUBEs; IDEs update; ",
       "characteristics": [
         {
@@ -1627,12 +1644,13 @@
       "fw_desc": "candidate release",
       "fw_name": "FP-SNS-FLIGHT1",
       "fw_version": "4.2.0",
+      "id": 53,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x7E",
       "ble_fw_id": "0x03",
-      "brd_name": "Nucleo STM32L476RG",
+      "brd_name": "NUCLEO-STM32L476RG",
       "changelog": "Maintenance release; STM32Cube middleware and HAL drivers update; code rebasing on latest available X-CUBEs; IDEs update; ",
       "characteristics": [
         {
@@ -1660,12 +1678,89 @@
       "fw_desc": "candidate release",
       "fw_name": "FP-SNS-FLIGHT1",
       "fw_version": "4.2.0",
+      "id": 54,
       "option_bytes": []
+    },
+    {
+      "ble_dev_id": "0x0F",
+      "ble_fw_id": "0x03",
+      "brd_name": "STEVAL-PROTEUS1",
+      "changelog": "NEAI NC",
+      "characteristics": [],
+      "cloud_apps": [],
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/fp-ai-pdmwbsoc_1_1_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_mode"
+      },
+      "fw_desc": "Anomaly detection by NanoEdge AI",
+      "fw_name": "FP-AI-PDMWBSOC",
+      "fw_version": "1.1.0",
+      "id": 71,
+      "option_bytes": [
+        {
+          "format": "enum_string",
+          "name": " Neai Phase  :",
+          "string_values": [
+            {
+              "display_name": "Idle",
+              "value": 0
+            },
+            {
+              "display_name": "Learning",
+              "value": 1
+            },
+            {
+              "display_name": "Detecting",
+              "value": 2
+            },
+            {
+              "display_name": "Idle Trained",
+              "value": 3
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "Normal",
+              "icon_code": 7,
+              "value": 0
+            },
+            {
+              "comment": "Anomaly",
+              "icon_code": 5,
+              "value": 1
+            },
+            {
+              "comment": "Detection Pause",
+              "icon_code": 31,
+              "value": 2
+            }
+          ],
+          "name": "Neai Status",
+          "type": "icon"
+        },
+        {
+          "escape_message": "",
+          "escape_value": 255,
+          "format": "int",
+          "name": "Battery Level: ",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
+        }
+      ]
     },
     {
       "ble_dev_id": "0x0E",
       "ble_fw_id": "0x03",
-      "brd_name": "STWIN.BOX",
+      "brd_name": "STEVAL-STWINBX1",
       "changelog": "This is an initial draft release",
       "characteristics": [
         {
@@ -1701,6 +1796,7 @@
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BLEMLC_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
+      "id": 57,
       "option_bytes": [
         {
           "format": "enum_string",
@@ -1722,7 +1818,7 @@
     {
       "ble_dev_id": "0x0E",
       "ble_fw_id": "0x04",
-      "brd_name": "STWIN.BOX",
+      "brd_name": "STEVAL-STWINBX1",
       "changelog": "This is an initial draft release",
       "characteristics": [
         {
@@ -1770,6 +1866,7 @@
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BLEDefaultFw_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
+      "id": 58,
       "option_bytes": [
         {
           "format": "enum_string",
@@ -1791,7 +1888,7 @@
     {
       "ble_dev_id": "0x09",
       "ble_fw_id": "0x04",
-      "brd_name": "STWIN1B",
+      "brd_name": "STEVAL-STWINKT1B",
       "characteristics": [
         {
           "name": "HS Datalog Config",
@@ -1823,12 +1920,13 @@
       "fw_desc": "HSD with STREDL support",
       "fw_name": "FP-SNS-DATALOG1",
       "fw_version": "1.2.0-vespucci",
+      "id": 27,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x06",
       "ble_fw_id": "0x04",
-      "brd_name": "Sensortile.box",
+      "brd_name": "STEVAL-MKSBOX1V1",
       "changelog": "ATTENTION: firmware update for Nucleo boards is only available when using expansion IKS01A3.\r\n\r\nSource Code Refactoring according to STM32CubeMX code generation using .ioc file; Added header license neutral; Added license files; Updated X-CUBE-MEMS1 Firmware Package",
       "characteristics": [
         {
@@ -1924,12 +2022,13 @@
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.2.0",
+      "id": 51,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x0E",
       "ble_fw_id": "0x05",
-      "brd_name": "STWIN.BOX",
+      "brd_name": "STEVAL-STWINBX1",
       "changelog": "This is an initial draft release",
       "characteristics": [
         {
@@ -1953,6 +2052,7 @@
       "fw_desc": "Firmware for all box boards",
       "fw_name": "BLEGpEx_FP-SNS-STBOX1",
       "fw_version": "1.0.0",
+      "id": 59,
       "option_bytes": [
         {
           "format": "enum_string",
@@ -1974,7 +2074,7 @@
     {
       "ble_dev_id": "0x06",
       "ble_fw_id": "0x05",
-      "brd_name": "Sensortile.box",
+      "brd_name": "STEVAL-MKSBOX1V1",
       "changelog": "RC",
       "characteristics": [
         {
@@ -2006,6 +2106,7 @@
       "fw_desc": "STM32Cube High Speed Datalog function pack for STWIN evaluation kits",
       "fw_name": "FP-SNS-DATALOG1",
       "fw_version": "1.4.0",
+      "id": 67,
       "option_bytes": [
         {
           "format": "int",
@@ -2096,23 +2197,23 @@
     {
       "ble_dev_id": "0x09",
       "ble_fw_id": "0x06",
-      "brd_name": "STWIN1B",
+      "brd_name": "STEVAL-STWINKT1B",
       "characteristics": [
         {
-          "name": "Debug Console stdin/stdout",
-          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
-        },
-        {
-          "name": "Debug Console stderr",
-          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
         },
         {
           "name": "Machine Learning Core",
           "uuid": "0000000F-0002-11e1-ac36-0002a5d5c51b"
         },
         {
-          "name": "HS Datalog Config",
-          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         }
       ],
       "cloud_apps": [
@@ -2135,6 +2236,7 @@
       "fw_desc": "fast fota\r\nbluest sdkv2 support\r\nFOTA size limitation 1MB",
       "fw_name": "FP-SNS-DATALOG1",
       "fw_version": "1.3.0",
+      "id": 52,
       "option_bytes": [
         {
           "format": "int",
@@ -2225,7 +2327,7 @@
     {
       "ble_dev_id": "0x03",
       "ble_fw_id": "0x06",
-      "brd_name": "BlueCoin",
+      "brd_name": "STEVAL-BCNKT01V1",
       "changelog": "ATTENTION: firmware update for Nucleo boards is only available when using expansion IKS01A3.\r\n\r\nSource Code Refactoring according to STM32CubeMX code generation using .ioc file; Added header license neutral; Added license files; Updated X-CUBE-MEMS1 Firmware Package",
       "characteristics": [
         {
@@ -2289,12 +2391,13 @@
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.2.0",
+      "id": 49,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x09",
       "ble_fw_id": "0x07",
-      "brd_name": "STWIN1B",
+      "brd_name": "STEVAL-STWINKT1B",
       "changelog": "Dec 2021 demo",
       "characteristics": [],
       "cloud_apps": [
@@ -2310,12 +2413,13 @@
       "fw_desc": "low power firmware for Quasar demo; uses STREDL and sends events on BLE advertisements",
       "fw_name": "quasar",
       "fw_version": "1.0.0",
+      "id": 45,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x09",
       "ble_fw_id": "0x08",
-      "brd_name": "STWIN1B",
+      "brd_name": "STEVAL-STWINKT1B",
       "changelog": "RC",
       "characteristics": [
         {
@@ -2347,6 +2451,7 @@
       "fw_desc": "STM32Cube High Speed Datalog function pack for STWIN evaluation kits",
       "fw_name": "FP-SNS-DATALOG1",
       "fw_version": "1.4.0",
+      "id": 68,
       "option_bytes": [
         {
           "format": "int",
@@ -2437,7 +2542,7 @@
     {
       "ble_dev_id": "0x02",
       "ble_fw_id": "0x08",
-      "brd_name": "SensorTile",
+      "brd_name": "STEVAL-STLKT01V1",
       "changelog": "ATTENTION: firmware update for Nucleo boards is only available when using expansion IKS01A3.\r\n\r\nSource Code Refactoring according to STM32CubeMX code generation using .ioc file; Added header license neutral; Added license files; Updated X-CUBE-MEMS1 Firmware Package",
       "characteristics": [
         {
@@ -2533,12 +2638,13 @@
       "fw_desc": "STM32 ODE function pack for IoT node with BLE connectivity, digital microphone, environmental and motion sensors",
       "fw_name": "FP-SNS-ALLMEMS1",
       "fw_version": "4.2.0",
+      "id": 50,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x0C",
       "ble_fw_id": "0xFD",
-      "brd_name": "Astra",
+      "brd_name": "STEVAL-ASTRA1B",
       "characteristics": [
         {
           "name": "OTAControlFeature",
@@ -2565,12 +2671,13 @@
       "fw_desc": "STM32WB temporary stub to enable firmware update ",
       "fw_name": "FOTA-mode",
       "fw_version": "1.0.0",
+      "id": 41,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x0F",
       "ble_fw_id": "0xFE",
-      "brd_name": "STEVAL-PROTEUS",
+      "brd_name": "STEVAL-PROTEUS1",
       "characteristics": [
         {
           "name": "OTAControlFeature",
@@ -2597,12 +2704,13 @@
       "fw_desc": "STM32WB temporary stub to enable firmware update ",
       "fw_name": "FOTA-mode",
       "fw_version": "1.0.0",
+      "id": 40,
       "option_bytes": []
     },
     {
       "ble_dev_id": "0x0C",
       "ble_fw_id": "0xFE",
-      "brd_name": "Astra",
+      "brd_name": "STEVAL-ASTRA1B",
       "characteristics": [
         {
           "name": "Ext Configuration",
@@ -2650,6 +2758,7 @@
       "fw_desc": "Polaris firmware (testing one)",
       "fw_name": "Astra1 - Asset tracking",
       "fw_version": "0.1.0",
+      "id": 35,
       "option_bytes": [
         {
           "format": "int",
@@ -4652,7 +4761,8 @@
       "uuid": "00000012-0002-11e1-ac36-0002a5d5c51b"
     }
   ],
-  "checksum": "b9f69db6283691042072a00cebd1063b",
-  "date": "2022-07-27T16:22:29.274656Z",
-  "version": "0.2.9"
+  "checksum": "2448abaa50016056c214dae527faddce",
+  "date": "2022-10-06T14:09:14.705954Z",
+  "version": "0.3.0"
 }
+
