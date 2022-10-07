@@ -1690,7 +1690,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/fp-ai-pdmwbsoc_1_1_0.bin",
+        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
