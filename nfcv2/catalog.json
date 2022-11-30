@@ -311,10 +311,10 @@
           "sensor_name": "LSM6DSO32X",
           "type": "acc/gyro",
           "display_name": "IMU Acc",
-          "id": 3,
+          "id": 4,
           "incompatibility": [
             {
-              "id": 5
+              "id": 6
             }
           ],
           "plottable": true,
@@ -398,10 +398,10 @@
           "sensor_name": "LSM6DSO32X 6D",
           "type": "acc/gyro",
           "display_name": "6D Orientation",
-          "id": 4,
+          "id": 5,
           "incompatibility": [
             {
-              "id": 5
+              "id": 6
             }
           ],
           "plottable": false,
@@ -463,13 +463,13 @@
           "sensor_name": "LSM6DSO32X MLC",
           "type": "acc/gyro",
           "display_name": "Tilt 0 90' Rec",
-          "id": 5,
+          "id": 6,
           "incompatibility": [
             {
-              "id": 4
+              "id": 5
             },
             {
-              "id": 3
+              "id": 4
             }
           ],
           "plottable": true,
