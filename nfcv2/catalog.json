@@ -309,7 +309,7 @@
         },
         {
           "sensor_name": "LSM6DSO32X",
-          "type": "acc/gyro",
+          "type": "imu_acc",
           "display_name": "IMU Acc",
           "id": 4,
           "incompatibility": [
@@ -396,7 +396,7 @@
         },
         {
           "sensor_name": "LSM6DSO32X 6D",
-          "type": "acc/gyro",
+          "type": "6d_acc",
           "display_name": "6D Orientation",
           "id": 5,
           "incompatibility": [
@@ -461,7 +461,7 @@
         },
         {
           "sensor_name": "LSM6DSO32X MLC",
-          "type": "acc/gyro",
+          "type": "tilt_acc",
           "display_name": "Tilt 0 90' Rec",
           "id": 6,
           "incompatibility": [
@@ -837,7 +837,7 @@
         },
         {
           "sensor_name": "LSM6DSO32X",
-          "type": "acc/gyro",
+          "type": "imu_acc",
           "display_name": "IMU Acc",
           "id": 4,
           "incompatibility": [
@@ -924,7 +924,7 @@
         },
         {
           "sensor_name": "LSM6DSO32X 6D",
-          "type": "acc/gyro",
+          "type": "6d_acc",
           "display_name": "6D Orientation",
           "id": 5,
           "incompatibility": [
@@ -989,7 +989,7 @@
         },
         {
           "sensor_name": "LSM6DSO32X MLC",
-          "type": "acc/gyro",
+          "type": "tilt_acc",
           "display_name": "Tilt 0 90' Rec",
           "id": 6,
           "incompatibility": [
@@ -1066,7 +1066,7 @@
       "virtual_sensors": [
         {
           "sensor_name": "Battery %",
-          "type": "battery",
+          "type": "battery_percentage",
           "display_name": "Battery Percentage",
           "id": 0,
           "incompatibility": [],
@@ -1174,7 +1174,7 @@
         },
         {
           "sensor_name": "Battery Voltage",
-          "type": "battery",
+          "type": "battery_voltage",
           "display_name": "Battery Voltage",
           "id": 1,
           "incompatibility": [],
@@ -1689,7 +1689,7 @@
         },
         {
           "sensor_name": "LSM6DSO32X",
-          "type": "acc/gyro",
+          "type": "imu_acc",
           "display_name": "IMU Acc",
           "id": 6,
           "incompatibility": [
@@ -1776,7 +1776,7 @@
         },
         {
           "sensor_name": "LSM6DSO32X 6D",
-          "type": "acc/gyro",
+          "type": "6d_acc",
           "display_name": "6D Orientation",
           "id": 7,
           "incompatibility": [
