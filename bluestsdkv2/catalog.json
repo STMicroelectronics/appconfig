@@ -677,7 +677,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -935,7 +934,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -1446,7 +1444,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -1524,7 +1521,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -1690,7 +1686,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/fp-ai-pdmwbsoc_1_1_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -1787,7 +1782,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -1857,7 +1851,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -2055,7 +2048,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -2109,7 +2101,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -2660,7 +2651,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -2901,7 +2891,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -3027,7 +3016,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "",
         "max_chunk_length": 8,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -3076,7 +3064,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -3109,7 +3096,6 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
