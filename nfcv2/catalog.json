@@ -462,7 +462,7 @@
         {
           "sensor_name": "LSM6DSO32X MLC",
           "type": "tilt_acc",
-          "display_name": "Tilt 0 90' Rec",
+          "display_name": "Tilt 0 90° Rec",
           "id": 6,
           "incompatibility": [
             {
@@ -480,7 +480,7 @@
             "scale_factor": 1,
             "min": 0,
             "max": 90,
-            "unit": "Acc. Tilt 35°",
+            "unit": "°",
             "th_low": {
               "display_name": "Tilt Th Low",
               "format": "int",
@@ -521,7 +521,7 @@
                 "bit_length": 8,
                 "offset": 0,
                 "scale_factor": 1,
-                "unit": "'Acc. Tilt 35°"
+                "unit": "°"
               }
             }
           ]
@@ -990,7 +990,7 @@
         {
           "sensor_name": "LSM6DSO32X MLC",
           "type": "tilt_acc",
-          "display_name": "Tilt 0 90' Rec",
+          "display_name": "Tilt 0 90° Rec",
           "id": 6,
           "incompatibility": [
             {
@@ -1008,7 +1008,7 @@
             "scale_factor": 1,
             "min": 0,
             "max": 90,
-            "unit": "Acc. Tilt 35°",
+            "unit": "°",
             "th_low": {
               "display_name": "Tilt Th Low",
               "format": "int",
@@ -1049,7 +1049,7 @@
                 "bit_length": 8,
                 "offset": 0,
                 "scale_factor": 1,
-                "unit": "'Acc. Tilt 35°"
+                "unit": "°"
               }
             }
           ]
