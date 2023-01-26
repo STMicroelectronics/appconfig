@@ -3673,7 +3673,7 @@
               "displayName": {
                 "en": "SD Card"
               },
-              "enumValue": "0",
+              "enumValue": 0,
               "name": "sd"
             },
             {
@@ -3681,7 +3681,7 @@
               "displayName": {
                 "en": "USB"
               },
-              "enumValue": "1",
+              "enumValue": 1,
               "name": "usb"
             }
           ],
