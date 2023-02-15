@@ -2116,7 +2116,7 @@
           "display_name": "Asset Tracking",
           "id": 7,
           "incompatibility": [],
-          "plottable": true,
+          "plottable": false,
           "threshold": {
             "bit_length_id": 4,
             "bit_length_mod": 2,
@@ -2124,7 +2124,7 @@
             "scale_factor": 1,
             "min": 0,
             "max": 12,
-            "unit": "°",
+            "unit": "enum",
             "th_low": {
               "display_name": "AT Th Low",
               "format": "int",
