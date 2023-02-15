@@ -1898,9 +1898,6 @@
           "id": 4,
           "incompatibility": [
             {
-              "id": 7
-            },
-            {
               "id": 6
             }
           ],
@@ -1988,9 +1985,6 @@
           "id": 5,
           "incompatibility": [
             {
-              "id": 7
-            },
-            {
               "id": 6
             }
           ],
@@ -2055,9 +2049,6 @@
           "display_name": "Tilt 0 90° Rec",
           "id": 6,
           "incompatibility": [
-            {
-              "id": 7
-            },
             {
               "id": 5
             },
@@ -2124,17 +2115,7 @@
           "type": "at_acc",
           "display_name": "Asset Tracking",
           "id": 7,
-          "incompatibility": [
-            {
-              "id": 6
-            },
-            {
-              "id": 5
-            },
-            {
-              "id": 4
-            }
-          ],
+          "incompatibility": [],
           "plottable": true,
           "threshold": {
             "bit_length_id": 4,
