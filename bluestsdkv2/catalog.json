@@ -1798,7 +1798,7 @@
           "escape_message": ""
         }
       ],
-      "dtmi": "dtmi:appconfig:steval-proteus1:pdmwbsoc;1"
+      "dtmi": "dtmi:appconfig:steval_proteus1:pdmwbsoc;1"
     },
     {
       "ble_dev_id": "0x0E",
