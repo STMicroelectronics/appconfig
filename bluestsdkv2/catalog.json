@@ -3551,7 +3551,7 @@
       "fw_desc": "Example of ultrasound condition monitoring that calculates the FFT of the IMP23ABSU ultrasound analog microphone signal",
       "fw_name": "Ultrasound-FFT_FP-SNS-DATALOG2",
       "fw_version": "1.0.1",
-      "option_bytes": "[]"
+      "option_bytes": []
     },
     {
       "ble_dev_id": "0x0C",
