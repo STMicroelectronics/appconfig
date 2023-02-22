@@ -1708,7 +1708,7 @@
           "url": "https://proteus-poc2.azureiotcentral.com"
         }
       ],
-      "dtmi": "dtmi:appconfig:steval_proteus:pdmwbsoc;1",
+      "dtmi": "dtmi:appconfig:steval_proteus1:pdmwbsoc;1",
       "fota": {
         "bootloader_type": "wb",
         "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/fp-ai-pdmwbsoc_2_0_0.bin",
@@ -5671,6 +5671,6 @@
     }
   ],
   "checksum": "7d2c2ac1feb7084c6e5baeae99591a46",
-  "date": "2023-02-17T15:08:01.421042Z",
-  "version": "0.3.2"
+  "date": "2023-02-22T08:49:01.800235Z",
+  "version": "0.3.3"
 }
