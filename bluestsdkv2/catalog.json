@@ -2536,7 +2536,6 @@
       "dtmi": "dtmi:appconfig:steval_stwinbx1:datalog2_fpSnsDatalog2;1",
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/Datalog2_FP-SNS-DATALOG2_1_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -2760,7 +2759,6 @@
       "dtmi": "dtmi:appconfig:steval_stwinbx1:datalog2Ispu_fpSnsDatalog2;1",
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/Datalog2-ISPU_FP-SNS-DATALOG2_1_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -3165,7 +3163,6 @@
       "dtmi": "dtmi:appconfig:steval_stwinbx1:ultrasoundFft_fpSnsDatalog2;1",
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/Ultrasound-FFT_FP-SNS-DATALOG2_1_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
