@@ -823,7 +823,7 @@
       ],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/stsw_proteus_1_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/stsw_proteus_1_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -1338,7 +1338,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/fp-ai-pdmwbsoc_1_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/fp-ai-pdmwbsoc_1_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -1728,7 +1728,7 @@
       ],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus/fp-ai-pdmwbsoc_2_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/fp-ai-pdmwbsoc_2_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
