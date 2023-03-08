@@ -1,3 +1,5 @@
 # appconfig
-Generic collection of configurations for mobile and cloud apps
+Generic collection of configuration files for mobile and cloud apps.
+
+2022 (C) STMicroelectronics
 
