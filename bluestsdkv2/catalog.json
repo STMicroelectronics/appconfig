@@ -1596,7 +1596,16 @@
           "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
         }
       ],
-      "cloud_apps": [],
+      "cloud_apps": [
+        {
+          "description": "Default IoT Central application for testing different ST sensor board types",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
+          "dtmi_type": "iotc",
+          "name": "ST Default PnP App",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
+        }
+      ],
       "fota": {
         "bootloader_type": "none",
         "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/BLESensors_FP-SNS-STBOX1_1_5_0.bin",
@@ -4662,7 +4671,16 @@
           "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
         }
       ],
-      "cloud_apps": [],
+      "cloud_apps": [
+        {
+          "description": "Default IoT Central application for testing different ST sensor board types",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
+          "dtmi_type": "iotc",
+          "name": "ST Default PnP App",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
+        }
+      ],
       "fota": {
         "bootloader_type": "none",
         "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/BLESensors_FP-SNS-STBOX1_1_5_0.bin",
@@ -4720,7 +4738,16 @@
           "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
         }
       ],
-      "cloud_apps": [],
+      "cloud_apps": [
+        {
+          "description": "Default IoT Central application for testing different ST sensor board types",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
+          "dtmi_type": "iotc",
+          "name": "ST Default PnP App",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
+        }
+      ],
       "fota": {
         "bootloader_type": "none",
         "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/BLESensors_FP-SNS-STBOX1_1_5_0.bin",
@@ -4844,7 +4871,16 @@
           "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
         }
       ],
-      "cloud_apps": [],
+      "cloud_apps": [
+        {
+          "description": "Default IoT Central application for testing different ST sensor board types",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
+          "dtmi_type": "iotc",
+          "name": "ST Default PnP App",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
+        }
+      ],
       "fota": {
         "bootloader_type": "none",
         "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/BLEDefaultFw_FP-SNS-STBOX1_1_5_0.bin",
@@ -7397,6 +7433,6 @@
     }
   ],
   "checksum": "2d4804e0894369ca8a342422ac907ba3",
-  "date": "2023-03-31T07:30:55.205621Z",
-  "version": "0.4.0"
+  "date": "2023-05-02T07:30:55.205621Z",
+  "version": "0.4.1"
 }
