@@ -1875,12 +1875,12 @@
         }
       ],
       "cloud_apps": [
-        {
+       {
           "description": "PROTEUS-POC2",
-          "dtmi": "dtmi:proteusPoc2:pdmwbsoc_v2_0_0_Cloud;1",
+          "dtmi": "dtmi:proteusPoc2:pdmwbsoc_cloud;1",
           "dtmi_type": "iotc",
           "name": "Proteus development",
-          "shareable_link": "https://apps.azureiotcentral.com/build/new/454952ac-8d93-4606-88e2-803aaefb4f9b",
+         "shareable_link": "https://apps.azureiotcentral.com/build/new/963412e1-0394-4a6b-b22e-b266dcb9e4cc",
           "url": "https://proteus-poc2.azureiotcentral.com"
         }
       ],
@@ -7432,7 +7432,7 @@
       "uuid": "00000012-0002-11e1-ac36-0002a5d5c51b"
     }
   ],
-  "checksum": "2d4804e0894369ca8a342422ac907ba3",
-  "date": "2023-05-02T07:30:55.205621Z",
-  "version": "0.4.1"
+  "checksum": "224804e0894369ca8a342422ac907ba3",
+  "date": "2023-07-02T07:30:55.205621Z",
+  "version": "0.4.2"
 }
