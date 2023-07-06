@@ -937,7 +937,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BleDualProgram_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BleDualProgram",
       "fw_version": "1.4.0",
       "option_bytes": [
         {
@@ -1010,7 +1010,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BleDualProgram_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BleDualProgram",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -1581,7 +1581,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLESensors_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLESensors",
       "fw_version": "1.4.0",
       "option_bytes": [
         {
@@ -1663,7 +1663,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLESensors_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLESensors",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -2067,7 +2067,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLEMLC_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLEMLC",
       "fw_version": "1.4.0",
       "option_bytes": [
         {
@@ -2120,7 +2120,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLEMLC_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLEMLC",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -2641,7 +2641,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLEDefaultFw_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLEDefaultFw",
       "fw_version": "1.4.0",
       "option_bytes": [
         {
@@ -2690,7 +2690,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLEPiano_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLEPiano",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -2991,7 +2991,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLESensorsPnPL_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLESensorsPnPL",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -3255,7 +3255,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLESensorsPnPL_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLESensorsPnPL",
       "fw_version": "1.4.0",
       "option_bytes": [
         {
@@ -3317,7 +3317,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "fw_name": "Datalog2_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
       "fw_version": "1.1.0",
       "option_bytes": [
         {
@@ -3576,14 +3576,14 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/BLEDualProgram_FP-SNS-STBOX1_1_4_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/FP-SNS-STBOX1_BLEDualProgram_1_4_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BleDualProgram_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BleDualProgram",
       "fw_version": "1.4.0",
       "option_bytes": [
         {
@@ -3786,7 +3786,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "fw_name": "Datalog2_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
       "fw_version": "1.0.0",
       "option_bytes": [
         {
@@ -4009,14 +4009,14 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/BLELowPowerRTOS_FP-SNS-STBOX1_1_4_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/FP-SNS-STBOX1_BLELowPowerRTOS_1_4_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLELowPowerRTOS_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLELowPowerRTOS",
       "fw_version": "1.4.0",
       "option_bytes": []
     },
@@ -4062,7 +4062,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
-      "fw_name": "Datalog2-ISPU_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
       "fw_version": "1.0.0",
       "option_bytes": [
         {
@@ -4325,14 +4325,14 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwin_mksbox1v1/BLEMLC_FP-SNS-STBOX1_1_4_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwin_mksbox1v1/FP-SNS-STBOX1_BLEMLC_1_4_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLEMLC_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLEMLC",
       "fw_version": "1.4.0",
       "option_bytes": []
     },
@@ -4454,7 +4454,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "fw_name": "Datalog2_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
       "fw_version": "1.2.0",
       "option_bytes": [
         {
@@ -4544,14 +4544,14 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/BLESensors_FP-SNS-STBOX1_1_4_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/FP-SNS-STBOX1_BLESensors_1_4_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLESensors_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLESensors",
       "fw_version": "1.4.0",
       "option_bytes": []
     },
@@ -4597,7 +4597,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "fw_name": "Datalog2_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
       "fw_version": "1.0.1",
       "option_bytes": [
         {
@@ -4848,14 +4848,14 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/BLEDualProgram_FP-SNS-STBOX1_1_5_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/FP-SNS-STBOX1_BLEDualProgram_1_5_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BleDualProgram_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BleDualProgram",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -4917,7 +4917,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
-      "fw_name": "Datalog2-ISPU_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
       "fw_version": "1.0.1",
       "option_bytes": [
         {
@@ -5066,14 +5066,14 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/BLELowPowerRTOS_FP-SNS-STBOX1_1_5_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/FP-SNS-STBOX1_BLELowPowerRTOS_1_5_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLELowPowerRTOS_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLELowPowerRTOS",
       "fw_version": "1.5.0",
       "option_bytes": []
     },
@@ -5119,14 +5119,14 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwin_mksbox1v1/BLEMLC_FP-SNS-STBOX1_1_5_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwin_mksbox1v1/FP-SNS-STBOX1_BLEMLC_1_5_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLEMLC_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLEMLC",
       "fw_version": "1.5.0",
       "option_bytes": []
     },
@@ -5183,7 +5183,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BleDualProgram_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BleDualProgram",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -5262,14 +5262,14 @@
       ],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/BLESensors_FP-SNS-STBOX1_1_5_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/FP-SNS-STBOX1_BLESensors_1_5_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLESensors_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLESensors",
       "fw_version": "1.5.0",
       "option_bytes": []
     },
@@ -5335,7 +5335,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLESensors_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLESensors",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -5514,7 +5514,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLEMLC_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLEMLC",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -5588,7 +5588,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLEDefaultFw_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLEDefaultFw",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -5662,7 +5662,7 @@
         "type": "fast"
       },
       "fw_desc": "Firmware for all box boards",
-      "fw_name": "BLESensorsPnPL_FP-SNS-STBOX1",
+      "fw_name": "FP-SNS-STBOX1_BLESensorsPnPL",
       "fw_version": "1.5.0",
       "option_bytes": [
         {
@@ -5724,7 +5724,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "fw_name": "Datalog2_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
       "fw_version": "1.1.0",
       "option_bytes": [
         {
@@ -5865,7 +5865,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
-      "fw_name": "Datalog2-ISPU_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
       "fw_version": "1.1.0",
       "option_bytes": [
         {
@@ -5981,7 +5981,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "fw_name": "Datalog2_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
       "fw_version": "1.2.0",
       "option_bytes": [
         {
@@ -6097,7 +6097,7 @@
         "type": "fast"
       },
       "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
-      "fw_name": "Datalog2-ISPU_FP-SNS-DATALOG2",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
       "fw_version": "1.2.0",
       "option_bytes": [
         {
@@ -8686,7 +8686,7 @@
       "uuid": "00000012-0002-11e1-ac36-0002a5d5c51b"
     }
   ],
-  "checksum": "30609986465af9e84bedade63855579d",
-  "date": "2023-07-06T07:47:47.848023Z",
-  "version": "0.5.1"
+  "checksum": "33309986465af9e84bedade63855579d",
+  "date": "2023-07-06T08:47:48.540811Z",
+  "version": "0.5.2"
 }
