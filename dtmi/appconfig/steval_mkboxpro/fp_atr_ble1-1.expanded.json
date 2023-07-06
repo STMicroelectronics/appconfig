@@ -1,64 +1,64 @@
 [
   {
-    "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1;1",
+    "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:stts22h_vs;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:stts22h_vs;1",
         "@type": "Component",
         "displayName": {
           "en": "STTS22H"
         },
         "name": "stts22h_vs",
-        "schema": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs;1"
+        "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:lps22df_vs;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:lps22df_vs;1",
         "@type": "Component",
         "displayName": {
           "en": "LPS22DF"
         },
         "name": "lps22df_vs",
-        "schema": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs;1"
+        "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:lsm6dsv16x_mlc_vs;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:lsm6dsv16x_mlc_vs;1",
         "@type": "Component",
         "displayName": {
           "en": "LSM6DSV16X MLC"
         },
         "name": "lsm6dsv16x_mlc_vs",
-        "schema": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs;1"
+        "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:lsm6dsv16x_6d_vs;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:lsm6dsv16x_6d_vs;1",
         "@type": "Component",
         "displayName": {
           "en": "LSM6DSV16X 6D"
         },
         "name": "lsm6dsv16x_6d_vs",
-        "schema": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs;1"
+        "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:lsm6dsv16x_wu_vs;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:lsm6dsv16x_wu_vs;1",
         "@type": "Component",
         "displayName": {
           "en": "LSM6DSV16X WakeUp"
         },
         "name": "lsm6dsv16x_wu_vs",
-        "schema": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs;1"
+        "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:control;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:control;1",
         "@type": "Component",
         "displayName": {
           "en": "Control"
         },
         "name": "control",
-        "schema": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:control;1"
+        "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:DeviceInformation;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:DeviceInformation;1",
         "@type": "Component",
         "displayName": {
           "en": "Device Information"
@@ -80,11 +80,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs;1",
+    "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs:enable;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -97,21 +97,21 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage;1",
         "@type": "Property",
         "displayName": {
           "en": "Thresholds Usage"
         },
         "name": "thresholds_usage",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema;1",
+          "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema:external_range;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema:external_range;1",
               "displayName": {
                 "en": "External Range"
               },
@@ -119,7 +119,7 @@
               "name": "external_range"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema:internal_range;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema:internal_range;1",
               "displayName": {
                 "en": "Internal Range"
               },
@@ -127,7 +127,7 @@
               "name": "internal_range"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema:less_than;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema:less_than;1",
               "displayName": {
                 "en": "Less Than"
               },
@@ -135,7 +135,7 @@
               "name": "less_than"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema:bigger_than;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs:thresholds_usage:schema:bigger_than;1",
               "displayName": {
                 "en": "Bigger Than"
               },
@@ -148,7 +148,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs:threshold_low;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs:threshold_low;1",
         "@type": [
           "Property",
           "Temperature",
@@ -167,7 +167,7 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:stts22h_vs:threshold_high;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs:threshold_high;1",
         "@type": [
           "Property",
           "Temperature",
@@ -195,11 +195,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs;1",
+    "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs:enable;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -212,21 +212,21 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage;1",
         "@type": "Property",
         "displayName": {
           "en": "Thresholds Usage"
         },
         "name": "thresholds_usage",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema;1",
+          "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema:external_range;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema:external_range;1",
               "displayName": {
                 "en": "External Range"
               },
@@ -234,7 +234,7 @@
               "name": "external_range"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema:internal_range;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema:internal_range;1",
               "displayName": {
                 "en": "Internal Range"
               },
@@ -242,7 +242,7 @@
               "name": "internal_range"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema:less_than;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema:less_than;1",
               "displayName": {
                 "en": "Less Than"
               },
@@ -250,7 +250,7 @@
               "name": "less_than"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema:bigger_than;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs:thresholds_usage:schema:bigger_than;1",
               "displayName": {
                 "en": "Bigger Than"
               },
@@ -263,7 +263,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs:threshold_low;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs:threshold_low;1",
         "@type": [
           "Property",
           "Pressure",
@@ -282,7 +282,7 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lps22df_vs:threshold_high;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs:threshold_high;1",
         "@type": [
           "Property",
           "Pressure",
@@ -310,11 +310,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs;1",
+    "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:enable;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -327,21 +327,21 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage;1",
         "@type": "Property",
         "displayName": {
           "en": "Thresholds Usage"
         },
         "name": "thresholds_usage",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema;1",
+          "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema:external_range;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema:external_range;1",
               "displayName": {
                 "en": "External Range"
               },
@@ -349,7 +349,7 @@
               "name": "external_range"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema:internal_range;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema:internal_range;1",
               "displayName": {
                 "en": "Internal Range"
               },
@@ -357,7 +357,7 @@
               "name": "internal_range"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema:less_than;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema:less_than;1",
               "displayName": {
                 "en": "Less Than"
               },
@@ -365,7 +365,7 @@
               "name": "less_than"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema:bigger_than;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:thresholds_usage:schema:bigger_than;1",
               "displayName": {
                 "en": "Bigger Than"
               },
@@ -378,7 +378,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:threshold_low;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:threshold_low;1",
         "@type": [
           "Property",
           "NumberValue",
@@ -397,7 +397,7 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:threshold_high;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs:threshold_high;1",
         "@type": [
           "Property",
           "NumberValue",
@@ -422,11 +422,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs;1",
+    "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:enable;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -439,21 +439,21 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage;1",
         "@type": "Property",
         "displayName": {
           "en": "Thresholds Usage"
         },
         "name": "thresholds_usage",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema;1",
+          "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema:external_range;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema:external_range;1",
               "displayName": {
                 "en": "External Range"
               },
@@ -461,7 +461,7 @@
               "name": "external_range"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema:internal_range;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema:internal_range;1",
               "displayName": {
                 "en": "Internal Range"
               },
@@ -469,7 +469,7 @@
               "name": "internal_range"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema:less_than;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema:less_than;1",
               "displayName": {
                 "en": "Less Than"
               },
@@ -477,7 +477,7 @@
               "name": "less_than"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema:bigger_than;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:thresholds_usage:schema:bigger_than;1",
               "displayName": {
                 "en": "Bigger Than"
               },
@@ -490,7 +490,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low;1",
         "@type": [
           "Property",
           "State"
@@ -500,11 +500,11 @@
         },
         "name": "threshold_low",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema;1",
+          "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema;1",
           "@type": "Enum",
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Right;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Right;1",
               "displayName": {
                 "en": "Right"
               },
@@ -512,7 +512,7 @@
               "name": "Right"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Top;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Top;1",
               "displayName": {
                 "en": "Top"
               },
@@ -520,7 +520,7 @@
               "name": "Top"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Left;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Left;1",
               "displayName": {
                 "en": "Left"
               },
@@ -528,7 +528,7 @@
               "name": "Left"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Bottom;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Bottom;1",
               "displayName": {
                 "en": "Bottom"
               },
@@ -536,7 +536,7 @@
               "name": "Bottom"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Up;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Up;1",
               "displayName": {
                 "en": "Up"
               },
@@ -544,7 +544,7 @@
               "name": "Up"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Down;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_low:schema:Down;1",
               "displayName": {
                 "en": "Down"
               },
@@ -560,7 +560,7 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high;1",
         "@type": [
           "Property",
           "State"
@@ -570,11 +570,11 @@
         },
         "name": "threshold_high",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema;1",
+          "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema;1",
           "@type": "Enum",
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Right;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Right;1",
               "displayName": {
                 "en": "Right"
               },
@@ -582,7 +582,7 @@
               "name": "Right"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Top;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Top;1",
               "displayName": {
                 "en": "Top"
               },
@@ -590,7 +590,7 @@
               "name": "Top"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Left;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Left;1",
               "displayName": {
                 "en": "Left"
               },
@@ -598,7 +598,7 @@
               "name": "Left"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Bottom;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Bottom;1",
               "displayName": {
                 "en": "Bottom"
               },
@@ -606,7 +606,7 @@
               "name": "Bottom"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Up;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Up;1",
               "displayName": {
                 "en": "Up"
               },
@@ -614,7 +614,7 @@
               "name": "Up"
             },
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Down;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs:threshold_high:schema:Down;1",
               "displayName": {
                 "en": "Down"
               },
@@ -636,11 +636,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs;1",
+    "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:enable;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -653,21 +653,21 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:thresholds_usage;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:thresholds_usage;1",
         "@type": "Property",
         "displayName": {
           "en": "Thresholds Usage"
         },
         "name": "thresholds_usage",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:thresholds_usage:schema;1",
+          "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:thresholds_usage:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:thresholds_usage:schema:bigger_than;1",
+              "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:thresholds_usage:schema:bigger_than;1",
               "displayName": {
                 "en": "Bigger Than"
               },
@@ -680,7 +680,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:threshold_low;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs:threshold_low;1",
         "@type": [
           "Property",
           "NumberValue",
@@ -704,11 +704,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:control;1",
+    "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:control:start_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:start_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -725,7 +725,7 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:control:stop_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:stop_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -734,7 +734,7 @@
         "name": "stop_log"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:control:read_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:read_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -743,7 +743,7 @@
         "name": "read_log"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:control:delete_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:delete_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -752,7 +752,7 @@
         "name": "delete_log"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:control:log_status;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:log_status;1",
         "@type": [
           "Property",
           "StringValue"
@@ -765,7 +765,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:control:pause_resume_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:pause_resume_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -774,7 +774,7 @@
         "name": "pause_resume_log"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_prox:fp_atr_ble1:sensors:control:SampleInterval;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:SampleInterval;1",
         "@type": [
           "Property",
           "NumberValue",
