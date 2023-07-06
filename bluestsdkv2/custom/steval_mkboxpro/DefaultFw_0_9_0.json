@@ -1,0 +1,40 @@
+{
+  "bluestsdk_v2": [
+    {
+      "ble_dev_id": "0x0D",
+      "ble_fw_id": "0xFF",
+      "brd_name": "SensorTile.Box-Pro",
+      "fw_name": "STSW-MKBOXPRO-1",
+      "fw_version": "0.9.0",
+      "partial_fota": 0,
+	  "fota" : {
+          "partial_fota": 0,
+          "type": "fast",
+          "max_chunk_length": 244,
+          "max_divisor_constraint": 0
+          },
+	  "option_bytes": [
+	  	  {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "SD present",
+              "icon_code": 10,
+              "value": 1
+            },
+			{
+              "comment": "SD not present",
+              "icon_code": 255,
+              "value": 0
+            }
+          ],
+          "name": "sd_status",
+          "type": "icon"
+          }
+		],
+	  "characteristics": [],
+	  "cloud_apps": [],
+	  "fw_desc": ""
+    }
+  ]
+}
