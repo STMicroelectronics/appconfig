@@ -383,7 +383,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/motenv1_iks01a3_4_2_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/FP-SNS-MOTENV1_iks01a3_4_2_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -467,7 +467,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/motenv1_iks01a3_4_2_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/FP-SNS-MOTENV1_iks01a3_4_2_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -589,7 +589,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f446re/allmems1_iks01a3_4_2_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f446re/FP-SNS-ALLMEMS1_iks01a3_4_2_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -1080,7 +1080,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-astra1/astra1_1_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-astra1/FP-ATR-ASTRA1_1_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -1230,7 +1230,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/allmems1_iks01a3_4_2_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/FP-SNS-ALLMEMS1_iks01a3_4_2_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -1346,7 +1346,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/allmems1_iks01a3_4_2_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/FP-SNS-ALLMEMS1_iks01a3_4_2_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -1462,7 +1462,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/fp-ai-pdmwbsoc_1_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/FP-AI-PDMWBSOC_1_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -1843,7 +1843,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/flight1_4_2_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/FP-SNS-FLIGHT1_4_2_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -1876,7 +1876,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/flight1_4_2_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/FP-SNS-FLIGHT1_4_2_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -1960,7 +1960,7 @@
       "dtmi": "dtmi:appconfig:steval_proteus1:fp_ai_pdmwbsoc;1",
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/fp-ai-pdmwbsoc_2_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/FP-AI-PDMWBSOC_2_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -2522,7 +2522,7 @@
       "dtmi": "dtmi:appconfig:steval_proteus1:fp_ai_pdmwbsoc2;1",
       "fota": {
         "bootloader_type": "wb",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/fp-ai-pdmwbsoc2_1_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/FP-AI-PDMWBSOC2_1_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -2838,7 +2838,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/allmems1_4_2_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mksbox1v1/FP-SNS-ALLMEMS1_4_2_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -2871,7 +2871,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/flight1_5_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/FP-SNS-FLIGHT1_5_0_0.bin",
         "max_chunk_length": 220,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -2915,7 +2915,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/flight1_5_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/FP-SNS-FLIGHT1_5_0_0.bin",
         "max_chunk_length": 220,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -3142,7 +3142,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/flight1_5_0_2.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/FP-SNS-FLIGHT1_5_0_2.bin",
         "max_chunk_length": 220,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -3174,7 +3174,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/flight1_5_0_2.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32l476rg/FP-SNS-FLIGHT1_5_0_2.bin",
         "max_chunk_length": 220,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -3450,7 +3450,7 @@
       ],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/stmicroelectronics/appconfig/bluestsdkv2/bin/datalog1_3_0.bin",
+        "fw_url": null,
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -3661,7 +3661,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "custom",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-bcnkt01v1/allmems1_4_2_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-bcnkt01v1/FP-SNS-ALLMEMS1_4_2_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 8,
         "partial_fota": 0,
@@ -3912,7 +3912,7 @@
       "dtmi": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1;1",
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/fp-atr-ble1_2_0_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/FP-ATR-BLE1_2_0_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -8686,7 +8686,7 @@
       "uuid": "00000012-0002-11e1-ac36-0002a5d5c51b"
     }
   ],
-  "checksum": "33309986465af9e84bedade63855579d",
-  "date": "2023-07-06T08:47:48.540811Z",
-  "version": "0.5.2"
+  "checksum": "44409986465af9e84bedade63855579d",
+  "date": "2023-07-07T08:47:48.540811Z",
+  "version": "0.5.3"
 }
