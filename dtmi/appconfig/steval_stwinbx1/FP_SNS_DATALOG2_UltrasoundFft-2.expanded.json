@@ -1,46 +1,46 @@
 [
   {
-    "@id": "dtmi:appconfig:steval_stwinbx1:fft_ultrasound_dpu;1",
+    "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft;2",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:fft_ultrasound_dpu:firmware_info;1",
-        "@type": "Component",
-        "displayName": {
-          "en": "Firmware Information"
-        },
-        "name": "firmware_info",
-        "schema": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:firmware_info;1"
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:fft_ultrasound_dpu:fft_dpu;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:fft_dpu;2",
         "@type": "Component",
         "displayName": {
           "en": "Ultrasound FFT"
         },
         "name": "fft_dpu",
-        "schema": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu;1"
+        "schema": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu;2"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:fft_ultrasound_dpu:log_controller;1",
-        "@type": "Component",
-        "displayName": {
-          "en": "Log Controller"
-        },
-        "name": "log_controller",
-        "schema": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller;1"
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:fft_ultrasound_dpu:imp23absu_mic;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:imp23absu_mic;2",
         "@type": "Component",
         "displayName": {
           "en": "IMP23ABSU_MIC"
         },
         "name": "imp23absu_mic",
-        "schema": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic;1"
+        "schema": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic;2"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:fft_ultrasound_dpu:DeviceInformation;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:log_controller;2",
+        "@type": "Component",
+        "displayName": {
+          "en": "Log Controller"
+        },
+        "name": "log_controller",
+        "schema": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:other:log_controller;2"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:firmware_info;2",
+        "@type": "Component",
+        "displayName": {
+          "en": "Firmware Information"
+        },
+        "name": "firmware_info",
+        "schema": "dtmi:stdev:other:firmware_info;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:DeviceInformation;2",
         "@type": "Component",
         "displayName": {
           "en": "Device Information"
@@ -49,17 +49,17 @@
         "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:fft_ultrasound_dpu:acquisition_info;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:acquisition_info;2",
         "@type": "Component",
         "displayName": {
           "en": "Acquisition Information"
         },
         "name": "acquisition_info",
-        "schema": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info;1"
+        "schema": "dtmi:stdev:other:acquisition_info;1"
       }
     ],
     "displayName": {
-      "en": "FFT_Ultrasound_DPU"
+      "en": "fpSnsDatalog2_ultrasoundFft-2"
     },
     "@context": [
       "dtmi:iotcentral:context;2",
@@ -71,102 +71,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:firmware_info;1",
+    "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu;2",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:firmware_info:alias;1",
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
-        "displayName": {
-          "en": "Alias"
-        },
-        "name": "alias",
-        "schema": "string",
-        "writable": true
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:firmware_info:fw_name;1",
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
-        "displayName": {
-          "en": "Firmware Name"
-        },
-        "name": "fw_name",
-        "schema": "string",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:firmware_info:fw_version;1",
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
-        "displayName": {
-          "en": "Firmware Version"
-        },
-        "name": "fw_version",
-        "schema": "string",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:firmware_info:serial_number;1",
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
-        "displayName": {
-          "en": "Serial Number"
-        },
-        "name": "serial_number",
-        "schema": "string",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:firmware_info:device_url;1",
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
-        "displayName": {
-          "en": "Device URL"
-        },
-        "name": "device_url",
-        "schema": "string",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:firmware_info:fw_url;1",
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
-        "displayName": {
-          "en": "Firmware URL"
-        },
-        "name": "fw_url",
-        "schema": "string",
-        "writable": false
-      }
-    ],
-    "displayName": {
-      "en": "Firmware Information"
-    }
-  },
-  {
-    "@context": [
-      "dtmi:iotcentral:context;2",
-      "dtmi:dtdl:context;2"
-    ],
-    "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu;1",
-    "@type": "Interface",
-    "contents": [
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:enable;2",
         "@type": [
           "Property",
           "BooleanValue"
@@ -179,7 +88,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:usb_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:usb_dps;2",
         "@type": [
           "Property",
           "NumberValue"
@@ -192,7 +101,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:data_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:data_type;2",
         "@type": [
           "Property",
           "StringValue"
@@ -205,7 +114,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:packet_size;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:packet_size;2",
         "@type": [
           "Property",
           "NumberValue"
@@ -218,7 +127,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:dim;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:dim;2",
         "@type": [
           "Property",
           "NumberValue"
@@ -231,7 +140,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:fft_length;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:fft_length;2",
         "@type": [
           "Property",
           "NumberValue"
@@ -244,21 +153,21 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:algorithm_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:algorithm_type;2",
         "@type": "Property",
         "displayName": {
           "en": "Algorithm Type"
         },
         "name": "algorithm_type",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:algorithm_type:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:algorithm_type:schema;2",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:algorithm_type:schema:fft;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:algorithm_type:schema:fft;2",
               "displayName": {
                 "en": "FFT "
               },
@@ -271,7 +180,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:algorithms:fft_dpu:fft_sample_freq;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:algorithms:fft_dpu:fft_sample_freq;2",
         "@type": [
           "Property",
           "NumberValue"
@@ -293,11 +202,242 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller;1",
+    "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic;2",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller:save_config;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:odr;2",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:odr:schema;2",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:odr:schema:hz192000;2",
+              "displayName": {
+                "en": "192000"
+              },
+              "enumValue": 4,
+              "name": "hz192000"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:aop;2",
+        "@type": "Property",
+        "displayName": {
+          "en": "AOP"
+        },
+        "name": "aop",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:aop:schema;2",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:aop:schema:dbspl130;2",
+              "displayName": {
+                "en": "130"
+              },
+              "enumValue": 0,
+              "name": "dbspl130"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": false,
+        "displayUnit": {
+          "en": "Waveform"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:enable;2",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:samples_per_ts;2",
+        "@type": "Property",
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:samples_per_ts:schema;2",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:samples_per_ts:schema:val;2",
+              "displayName": {
+                "en": "Value"
+              },
+              "name": "val",
+              "schema": "integer"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:samples_per_ts:schema:min;2",
+              "displayName": {
+                "en": "Min"
+              },
+              "name": "min",
+              "schema": "integer"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:samples_per_ts:schema:max;2",
+              "displayName": {
+                "en": "Max"
+              },
+              "name": "max",
+              "schema": "integer"
+            }
+          ],
+          "writable": true
+        },
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:dim;2",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:ioffset;2",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:measodr;2",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measodr",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:usb_dps;2",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "USB Data Packet Size"
+        },
+        "name": "usb_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:sd_dps;2",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "SD Data Packet Size"
+        },
+        "name": "sd_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:sensitivity;2",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:sensors:imp23absu_mic:data_type;2",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "IMP23ABSU_MIC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:other:log_controller;2",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:vespucci:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller:controller_type;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Controller Type"
+        },
+        "name": "controller_type",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:other:log_controller:save_config;2",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -306,7 +446,7 @@
         "name": "save_config"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller:log_status;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:other:log_controller:log_status;2",
         "@type": [
           "Property",
           "BooleanValue"
@@ -319,7 +459,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller:sd_mounted;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:other:log_controller:sd_mounted;2",
         "@type": [
           "Property",
           "BooleanValue"
@@ -332,7 +472,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller:start_log;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:other:log_controller:start_log;2",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -371,7 +511,7 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller:stop_log;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:other:log_controller:stop_log;2",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -380,7 +520,7 @@
         "name": "stop_log"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller:set_time;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_UltrasoundFft:other:log_controller:set_time;2",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -398,19 +538,6 @@
           "name": "datetime",
           "schema": "string"
         }
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:log_controller:controller_type;1",
-        "@type": [
-          "Property",
-          "NumberValue"
-        ],
-        "displayName": {
-          "en": "Controller Type"
-        },
-        "name": "controller_type",
-        "schema": "integer",
-        "writable": false
       }
     ],
     "displayName": {
@@ -422,217 +549,90 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic;1",
+    "@id": "dtmi:stdev:other:firmware_info;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:odr;1",
-        "@type": "Property",
-        "displayName": {
-          "en": "ODR"
-        },
-        "name": "odr",
-        "schema": {
-          "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:odr:schema;1",
-          "@type": "Enum",
-          "displayName": {
-            "en": "Enum"
-          },
-          "enumValues": [
-            {
-              "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:odr:schema:hz192000;1",
-              "displayName": {
-                "en": "192000"
-              },
-              "enumValue": 4,
-              "name": "hz192000"
-            }
-          ],
-          "valueSchema": "integer"
-        },
-        "unit": "hertz",
-        "writable": true
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:aop;1",
-        "@type": "Property",
-        "displayName": {
-          "en": "AOP"
-        },
-        "name": "aop",
-        "schema": {
-          "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:aop:schema;1",
-          "@type": "Enum",
-          "displayName": {
-            "en": "Enum"
-          },
-          "enumValues": [
-            {
-              "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:aop:schema:dbspl130;1",
-              "displayName": {
-                "en": "130"
-              },
-              "enumValue": 0,
-              "name": "dbspl130"
-            }
-          ],
-          "valueSchema": "integer"
-        },
-        "writable": false,
-        "displayUnit": {
-          "en": "Waveform"
-        }
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:enable;1",
-        "@type": [
-          "Property",
-          "BooleanValue"
-        ],
-        "displayName": {
-          "en": "Enabled"
-        },
-        "name": "enable",
-        "schema": "boolean",
-        "writable": true
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:samples_per_ts;1",
-        "@type": "Property",
-        "displayName": {
-          "en": "Samples per Timestamp"
-        },
-        "name": "samples_per_ts",
-        "schema": {
-          "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:samples_per_ts:schema;1",
-          "@type": "Object",
-          "displayName": {
-            "en": "Object"
-          },
-          "fields": [
-            {
-              "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:samples_per_ts:schema:val;1",
-              "displayName": {
-                "en": "Value"
-              },
-              "name": "val",
-              "schema": "integer"
-            },
-            {
-              "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:samples_per_ts:schema:min;1",
-              "displayName": {
-                "en": "Min"
-              },
-              "name": "min",
-              "schema": "integer"
-            },
-            {
-              "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:samples_per_ts:schema:max;1",
-              "displayName": {
-                "en": "Max"
-              },
-              "name": "max",
-              "schema": "integer"
-            }
-          ],
-          "writable": true
-        },
-        "writable": true
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:dim;1",
-        "@type": [
-          "Property",
-          "NumberValue"
-        ],
-        "displayName": {
-          "en": "Dimensions"
-        },
-        "name": "dim",
-        "schema": "integer",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:ioffset;1",
-        "@type": [
-          "Property",
-          "NumberValue"
-        ],
-        "displayName": {
-          "en": "Initial Offset"
-        },
-        "name": "ioffset",
-        "schema": "double",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:measodr;1",
-        "@type": [
-          "Property",
-          "NumberValue"
-        ],
-        "displayName": {
-          "en": "Measured ODR"
-        },
-        "name": "measodr",
-        "schema": "double",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:usb_dps;1",
-        "@type": [
-          "Property",
-          "NumberValue"
-        ],
-        "displayName": {
-          "en": "USB Data Packet Size"
-        },
-        "name": "usb_dps",
-        "schema": "integer",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:sd_dps;1",
-        "@type": [
-          "Property",
-          "NumberValue"
-        ],
-        "displayName": {
-          "en": "SD Data Packet Size"
-        },
-        "name": "sd_dps",
-        "schema": "integer",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:sensitivity;1",
-        "@type": [
-          "Property",
-          "NumberValue"
-        ],
-        "displayName": {
-          "en": "Sensitivity"
-        },
-        "name": "sensitivity",
-        "schema": "double",
-        "writable": false
-      },
-      {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:sensors:imp23absu_mic:data_type;1",
+        "@id": "dtmi:stdev:other:firmware_info:alias;1",
         "@type": [
           "Property",
           "StringValue"
         ],
         "displayName": {
-          "en": "Data Type"
+          "en": "Alias"
         },
-        "name": "data_type",
+        "name": "alias",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:stdev:other:firmware_info:fw_name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Firmware Name"
+        },
+        "name": "fw_name",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:stdev:other:firmware_info:fw_version;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Firmware Version"
+        },
+        "name": "fw_version",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:stdev:other:firmware_info:serial_number;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Serial Number"
+        },
+        "name": "serial_number",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:stdev:other:firmware_info:device_url;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Device URL"
+        },
+        "name": "device_url",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:stdev:other:firmware_info:fw_url;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Firmware URL"
+        },
+        "name": "fw_url",
         "schema": "string",
         "writable": false
       }
     ],
     "displayName": {
-      "en": "IMP23ABSU_MIC"
+      "en": "Firmware Information"
     }
   },
   {
@@ -644,10 +644,7 @@
     "@type": "Interface",
     "contents": [
       {
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
+        "@type": "Property",
         "description": {
           "en": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Contoso."
         },
@@ -659,10 +656,7 @@
         "writable": false
       },
       {
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
+        "@type": "Property",
         "description": {
           "en": "Device model name or ID. Ex. Surface Book 2."
         },
@@ -674,10 +668,7 @@
         "writable": false
       },
       {
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
+        "@type": "Property",
         "description": {
           "en": "Version of the software on your device. This could be the version of your firmware. Ex. 1.3.45"
         },
@@ -689,10 +680,7 @@
         "writable": false
       },
       {
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
+        "@type": "Property",
         "description": {
           "en": "Name of the operating system on the device. Ex. Windows 10 IoT Core."
         },
@@ -704,10 +692,7 @@
         "writable": false
       },
       {
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
+        "@type": "Property",
         "description": {
           "en": "Architecture of the processor on the device. Ex. x64 or ARM."
         },
@@ -719,10 +704,7 @@
         "writable": false
       },
       {
-        "@type": [
-          "Property",
-          "StringValue"
-        ],
+        "@type": "Property",
         "description": {
           "en": "Name of the manufacturer of the processor on the device. Ex. Intel."
         },
@@ -734,10 +716,7 @@
         "writable": false
       },
       {
-        "@type": [
-          "Property",
-          "NumberValue"
-        ],
+        "@type": "Property",
         "description": {
           "en": "Total available storage on the device in kilobytes. Ex. 2048000 kilobytes."
         },
@@ -749,10 +728,7 @@
         "writable": false
       },
       {
-        "@type": [
-          "Property",
-          "NumberValue"
-        ],
+        "@type": "Property",
         "description": {
           "en": "Total available memory on the device in kilobytes. Ex. 256000 kilobytes."
         },
@@ -773,11 +749,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info;1",
+    "@id": "dtmi:stdev:other:acquisition_info;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:name;1",
+        "@id": "dtmi:stdev:other:acquisition_info:name;1",
         "@type": [
           "Property",
           "StringValue"
@@ -790,7 +766,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:description;1",
+        "@id": "dtmi:stdev:other:acquisition_info:description;1",
         "@type": [
           "Property",
           "StringValue"
@@ -803,7 +779,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:uuid;1",
+        "@id": "dtmi:stdev:other:acquisition_info:uuid;1",
         "@type": [
           "Property",
           "StringValue"
@@ -816,7 +792,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:start_time;1",
+        "@id": "dtmi:stdev:other:acquisition_info:start_time;1",
         "@type": [
           "Property",
           "StringValue"
@@ -829,7 +805,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:end_time;1",
+        "@id": "dtmi:stdev:other:acquisition_info:end_time;1",
         "@type": [
           "Property",
           "StringValue"
@@ -842,7 +818,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:data_ext;1",
+        "@id": "dtmi:stdev:other:acquisition_info:data_ext;1",
         "@type": [
           "Property",
           "StringValue"
@@ -855,7 +831,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:tags;1",
+        "@id": "dtmi:stdev:other:acquisition_info:tags;1",
         "@type": "Property",
         "comment": "JSON Value",
         "displayName": {
@@ -866,21 +842,21 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:interface;1",
+        "@id": "dtmi:stdev:other:acquisition_info:interface;1",
         "@type": "Property",
         "displayName": {
           "en": "Acquisition Interface"
         },
         "name": "interface",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:interface:schema;1",
+          "@id": "dtmi:stdev:other:acquisition_info:interface:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:interface:schema:sd;1",
+              "@id": "dtmi:stdev:other:acquisition_info:interface:schema:sd;1",
               "displayName": {
                 "en": "SD Card"
               },
@@ -888,7 +864,7 @@
               "name": "sd"
             },
             {
-              "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:interface:schema:usb;1",
+              "@id": "dtmi:stdev:other:acquisition_info:interface:schema:usb;1",
               "displayName": {
                 "en": "USB"
               },
@@ -901,7 +877,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinbx1:ultrasoundFFT_DPU:other:acquisition_info:schema_version;1",
+        "@id": "dtmi:stdev:other:acquisition_info:schema_version;1",
         "@type": [
           "Property",
           "StringValue"

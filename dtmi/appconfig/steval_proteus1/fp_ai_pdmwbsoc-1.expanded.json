@@ -1,10 +1,10 @@
 [
   {
-    "@id": "dtmi:appconfig:steval_proteus1/pdmwbsoc;1",
+    "@id": "dtmi:appconfig:steval_proteus1:fp_ai_pdmwbsoc;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_proteus1/pdmwbsoc:applications_stblesensor;1",
+        "@id": "dtmi:appconfig:steval_proteus1:fp_ai_pdmwbsoc:applications_stblesensor;1",
         "@type": "Component",
         "displayName": {
           "en": "Applications ST BLE Sensor"
@@ -13,7 +13,7 @@
         "schema": "dtmi:proteusPoc2:applications_stblesensor;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_proteus1/pdmwbsoc:neai_anomaly_detection;1",
+        "@id": "dtmi:appconfig:steval_proteus1:fp_ai_pdmwbsoc:neai_anomaly_detection;1",
         "@type": "Component",
         "displayName": {
           "en": "NEAI Anomaly Detection"
@@ -22,7 +22,7 @@
         "schema": "dtmi:proteusPoc2:neai_anomaly_detection;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_proteus1/pdmwbsoc:iis3dwb_acc;1",
+        "@id": "dtmi:appconfig:steval_proteus1:fp_ai_pdmwbsoc:iis3dwb_acc;1",
         "@type": "Component",
         "displayName": {
           "en": "IIS3DWB_ACC"
@@ -31,7 +31,7 @@
         "schema": "dtmi:proteusPoc2:iis3dwb_acc;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_proteus1/pdmwbsoc:ism330dhcx_acc;1",
+        "@id": "dtmi:appconfig:steval_proteus1:fp_ai_pdmwbsoc:ism330dhcx_acc;1",
         "@type": "Component",
         "displayName": {
           "en": "ISM330DHCX_ACC"
