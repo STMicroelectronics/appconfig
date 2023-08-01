@@ -617,7 +617,7 @@
     },
     {
       "ble_dev_id": "0x11",
-      "ble_fw_id": "0x01",
+      "ble_fw_id": "0x08",
       "brd_name": "STEVAL-MKBOXPRO",
       "changelog": "New release",
       "characteristics": [
