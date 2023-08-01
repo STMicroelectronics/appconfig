@@ -2124,16 +2124,52 @@
             "scale_factor": 1,
             "min": 0,
             "max": 12,
-            "unit": "enum",
+            "unit": "",
             "th_low": {
               "display_name": "AT Th Low",
-              "format": "int",
-              "bit_length": 8
+              "bit_length": 8,
+              "format": "enum_string",
+              "string_values": [
+                {
+                  "display_name": "0. Stationary - Upright",
+                  "value": 0
+                },
+                {
+                  "display_name": "4. Stationary - Not upright",
+                  "value": 4
+                },
+                {
+                  "display_name": "8. In motion",
+                  "value": 8
+                },
+                {
+                  "display_name": "12. Shaken",
+                  "value": 12
+                }
+              ]
             },
             "th_high": {
               "display_name": "AT Th High",
-              "format": "int",
-              "bit_length": 8
+              "bit_length": 8,
+              "format": "enum_string",
+              "string_values": [
+                {
+                  "display_name": "0. Stationary - Upright",
+                  "value": 0
+                },
+                {
+                  "display_name": "4. Stationary - Not upright",
+                  "value": 4
+                },
+                {
+                  "display_name": "8. In motion",
+                  "value": 8
+                },
+                {
+                  "display_name": "12. Shaken",
+                  "value": 12
+                }
+              ]
             }
           },
           "sample_format": [
@@ -2161,11 +2197,29 @@
               "type": "sample",
               "format": {
                 "display_name": "AT Rec",
-                "format_type": "int",
                 "bit_length": 8,
                 "offset": 0,
                 "scale_factor": 1,
-                "unit": "Enum"
+                "unit": "",
+                "format_type": "enum_string",
+                "string_values": [
+                  {
+                    "display_name": "Stationary - Upright",
+                    "value": 0
+                  },
+                  {
+                    "display_name": "Stationary - Not upright",
+                    "value": 4
+                  },
+                  {
+                    "display_name": "In motion",
+                    "value": 8
+                  },
+                  {
+                    "display_name": "Shaken",
+                    "value": 12
+                  }
+                ]
               }
             }
           ]
