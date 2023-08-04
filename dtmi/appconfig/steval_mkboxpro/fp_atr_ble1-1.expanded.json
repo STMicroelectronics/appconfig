@@ -18,7 +18,7 @@
         "displayName": {
           "en": "LPS22DF"
         },
-        "name": "lps22df_vs",
+        "name": "lps22df_press",
         "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lps22df_vs;1"
       },
       {
@@ -27,7 +27,7 @@
         "displayName": {
           "en": "LSM6DSV16X MLC"
         },
-        "name": "lsm6dsv16x_mlc_vs",
+        "name": "lsm6dsv16x_mlc",
         "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_mlc_vs;1"
       },
       {
@@ -36,7 +36,7 @@
         "displayName": {
           "en": "LSM6DSV16X 6D"
         },
-        "name": "lsm6dsv16x_6d_vs",
+        "name": "lsm6dsv16x_6d_mlc",
         "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs;1"
       },
       {
@@ -45,7 +45,7 @@
         "displayName": {
           "en": "LSM6DSV16X WakeUp"
         },
-        "name": "lsm6dsv16x_wu_vs",
+        "name": "lsm6dsv16x_wu_mlc",
         "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs;1"
       },
       {
@@ -54,7 +54,7 @@
         "displayName": {
           "en": "Control"
         },
-        "name": "control",
+        "name": "control_controller",
         "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control;1"
       },
       {
