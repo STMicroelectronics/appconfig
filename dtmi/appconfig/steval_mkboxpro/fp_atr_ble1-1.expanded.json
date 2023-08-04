@@ -9,7 +9,7 @@
         "displayName": {
           "en": "STTS22H"
         },
-        "name": "stts22h_vs",
+        "name": "stts22h_temp",
         "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:stts22h_vs;1"
       },
       {
