@@ -36,7 +36,7 @@
         "displayName": {
           "en": "LSM6DSV16X 6D"
         },
-        "name": "lsm6dsv16x_6d_mlc",
+        "name": "lsm6dsv16x_6d_class",
         "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_6d_vs;1"
       },
       {
@@ -45,7 +45,7 @@
         "displayName": {
           "en": "LSM6DSV16X WakeUp"
         },
-        "name": "lsm6dsv16x_wu_mlc",
+        "name": "lsm6dsv16x_wu_class",
         "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:lsm6dsv16x_wu_vs;1"
       },
       {
@@ -54,8 +54,8 @@
         "displayName": {
           "en": "Control"
         },
-        "name": "control_controller",
-        "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control;1"
+        "name": "control",
+        "schema": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:other:control;1"
       },
       {
         "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:DeviceInformation;1",
@@ -704,11 +704,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control;1",
+    "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:other:control;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:start_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:other:control:start_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -725,7 +725,7 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:stop_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:other:control:stop_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -734,7 +734,7 @@
         "name": "stop_log"
       },
       {
-        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:read_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:other:control:read_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -743,7 +743,7 @@
         "name": "read_log"
       },
       {
-        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:delete_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:other:control:delete_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -752,7 +752,7 @@
         "name": "delete_log"
       },
       {
-        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:log_status;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:other:control:log_status;1",
         "@type": [
           "Property",
           "StringValue"
@@ -765,7 +765,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:pause_resume_log;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:other:control:pause_resume_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -774,7 +774,7 @@
         "name": "pause_resume_log"
       },
       {
-        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:sensors:control:SampleInterval;1",
+        "@id": "dtmi:appconfig:steval_mkboxpro:fp_atr_ble1:other:control:SampleInterval;1",
         "@type": [
           "Property",
           "NumberValue",
