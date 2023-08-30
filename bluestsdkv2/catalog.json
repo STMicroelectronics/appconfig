@@ -3054,7 +3054,7 @@
         "partial_fota": 0,
         "type": "yes"
       },
-      "fw_desc": "The FP-SNS-FLIGHT1 is an STM32Cube function pack, which lets your IoT node connect to a smartphone via BLE and uses a suitable Android\u2122 or iOS\u2122 application like the STBLESensor app to view real-time object distance data read by the Time-of-Flight sensor.",
+      "fw_desc": "The FP-SNS-FLIGHT1 is an STM32Cube function pack, which lets your IoT node connect to a smartphone via BLE and uses a suitable Android™ or iOS™ application like the STBLESensor app to view real-time object distance data read by the Time-of-Flight sensor.",
       "fw_name": "FP-SNS-FLIGHT1",
       "fw_version": "5.0.0",
       "option_bytes": [
@@ -3098,7 +3098,7 @@
         "partial_fota": 0,
         "type": "yes"
       },
-      "fw_desc": "The FP-SNS-FLIGHT1 is an STM32Cube function pack, which lets your IoT node connect to a smartphone via BLE and uses a suitable Android\u2122 or iOS\u2122 application like the STBLESensor app to view real-time object distance data read by the Time-of-Flight sensor.",
+      "fw_desc": "The FP-SNS-FLIGHT1 is an STM32Cube function pack, which lets your IoT node connect to a smartphone via BLE and uses a suitable Android™ or iOS™ application like the STBLESensor app to view real-time object distance data read by the Time-of-Flight sensor.",
       "fw_name": "FP-SNS-FLIGHT1",
       "fw_version": "5.0.0",
       "option_bytes": [
@@ -3325,7 +3325,7 @@
         "partial_fota": 0,
         "type": "fast"
       },
-      "fw_desc": "The FP-SNS-FLIGHT1 is an STM32Cube function pack, which lets your IoT node connect to a smartphone via BLE and uses a suitable Android\u2122 or iOS\u2122 application like the STBLESensor app to view real-time object distance data read by the Time-of-Flight sensor.",
+      "fw_desc": "The FP-SNS-FLIGHT1 is an STM32Cube function pack, which lets your IoT node connect to a smartphone via BLE and uses a suitable Android™ or iOS™ application like the STBLESensor app to view real-time object distance data read by the Time-of-Flight sensor.",
       "fw_name": "FP-SNS-FLIGHT1",
       "fw_version": "5.0.2",
       "option_bytes": [
@@ -3357,7 +3357,7 @@
         "partial_fota": 0,
         "type": "fast"
       },
-      "fw_desc": "The FP-SNS-FLIGHT1 is an STM32Cube function pack, which lets your IoT node connect to a smartphone via BLE and uses a suitable Android\u2122 or iOS\u2122 application like the STBLESensor app to view real-time object distance data read by the Time-of-Flight sensor.",
+      "fw_desc": "The FP-SNS-FLIGHT1 is an STM32Cube function pack, which lets your IoT node connect to a smartphone via BLE and uses a suitable Android™ or iOS™ application like the STBLESensor app to view real-time object distance data read by the Time-of-Flight sensor.",
       "fw_name": "FP-SNS-FLIGHT1",
       "fw_version": "5.0.2",
       "option_bytes": [
@@ -6786,10 +6786,349 @@
           "type": "string"
         }
       ]
+    },
+    {
+      "ble_dev_id": "0x0D",
+      "ble_fw_id": "0x0A",
+      "brd_name": "STEVAL-MKBOXPRO",
+      "changelog": "Patch Release",
+      "characteristics": [
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Machine Learning Core",
+          "uuid": "0000000F-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [],
+      "dtmi": "dtmi:appconfig:steval_mkboxpro:FP_SNS_DATALOG2_Datalog2;2",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/FP-SNS-DATALOG2_Datalog2_1_2_1.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.2.1",
+      "option_bytes": [
+        {
+          "format": "enum_string",
+          "name": "Running on: ",
+          "string_values": [
+            {
+              "display_name": "Bank 1",
+              "value": 1
+            },
+            {
+              "display_name": "Bank 2",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "Stop",
+              "icon_code": 32,
+              "value": 0
+            },
+            {
+              "comment": "Logging",
+              "icon_code": 30,
+              "value": 1
+            },
+            {
+              "comment": "Paused",
+              "icon_code": 31,
+              "value": 2
+            }
+          ],
+          "name": "Log status"
+        }
+      ]
+    },
+    {
+      "ble_dev_id": "0x0E",
+      "ble_fw_id": "0x17",
+      "brd_name": "STEVAL-STWINBX1",
+      "changelog": "Patch Relase",
+      "characteristics": [],
+      "cloud_apps": [],
+      "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2;3",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-DATALOG2_Datalog2_1_2_1.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.2.1",
+      "option_bytes": [
+        {
+          "format": "int",
+          "name": "battery:",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
+        },
+        {
+          "format": "enum_string",
+          "name": "alarm:",
+          "string_values": [
+            {
+              "display_name": "No Alarm",
+              "value": 0
+            },
+            {
+              "display_name": "Battery Charging",
+              "value": 1
+            },
+            {
+              "display_name": "No Battery",
+              "value": 2
+            },
+            {
+              "display_name": "Logging Ongoing",
+              "value": 3
+            },
+            {
+              "display_name": "Low Battery",
+              "value": 4
+            },
+            {
+              "display_name": "Missing SD Card",
+              "value": 5
+            },
+            {
+              "display_name": "SD Card Full",
+              "value": 6
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "USB Plug, No Battery",
+              "icon_code": 18,
+              "value": 0
+            },
+            {
+              "comment": "USB Plug, Battery in charge",
+              "icon_code": 3,
+              "value": 1
+            },
+            {
+              "comment": "Battery",
+              "icon_code": 1,
+              "value": 2
+            },
+            {
+              "comment": "icon for Log ongoing",
+              "icon_code": 10,
+              "value": 3
+            },
+            {
+              "comment": "icon for low battery",
+              "icon_code": 0,
+              "value": 4
+            },
+            {
+              "comment": "icon for Missing SD Card",
+              "icon_code": 5,
+              "value": 5
+            },
+            {
+              "comment": "icon for SD Card full",
+              "icon_code": 11,
+              "value": 6
+            },
+            {
+              "comment": "icon for full battery",
+              "icon_code": 2,
+              "value": 7
+            },
+            {
+              "comment": "icon for error",
+              "icon_code": 6,
+              "value": 8
+            }
+          ],
+          "name": "status",
+          "type": "icon"
+        }
+      ]
+    },
+    {
+      "ble_dev_id": "0x0E",
+      "ble_fw_id": "0x18",
+      "brd_name": "STEVAL-STWINBX1",
+      "changelog": "Patch Relase",
+      "characteristics": [
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Machine Learning Core",
+          "uuid": "0000000F-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [],
+      "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2_ISPU;3",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-DATALOG2_Datalog2-ISPU_1_2_1.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
+      "fw_version": "1.2.1",
+      "option_bytes": [
+        {
+          "format": "int",
+          "name": "battery:",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
+        },
+        {
+          "format": "enum_string",
+          "name": "alarm:",
+          "string_values": [
+            {
+              "display_name": "No Alarm",
+              "value": 0
+            },
+            {
+              "display_name": "Battery Charging",
+              "value": 1
+            },
+            {
+              "display_name": "No Battery",
+              "value": 2
+            },
+            {
+              "display_name": "Logging Ongoing",
+              "value": 3
+            },
+            {
+              "display_name": "Low Battery",
+              "value": 4
+            },
+            {
+              "display_name": "Missing SD Card",
+              "value": 5
+            },
+            {
+              "display_name": "SD Card Full",
+              "value": 6
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "USB Plug, No Battery",
+              "icon_code": 18,
+              "value": 0
+            },
+            {
+              "comment": "USB Plug, Battery in charge",
+              "icon_code": 3,
+              "value": 1
+            },
+            {
+              "comment": "Battery",
+              "icon_code": 1,
+              "value": 2
+            },
+            {
+              "comment": "icon for Log ongoing",
+              "icon_code": 10,
+              "value": 3
+            },
+            {
+              "comment": "icon for low battery",
+              "icon_code": 0,
+              "value": 4
+            },
+            {
+              "comment": "icon for Missing SD Card",
+              "icon_code": 5,
+              "value": 5
+            },
+            {
+              "comment": "icon for SD Card full",
+              "icon_code": 11,
+              "value": 6
+            },
+            {
+              "comment": "icon for full battery",
+              "icon_code": 2,
+              "value": 7
+            },
+            {
+              "comment": "icon for error",
+              "icon_code": 6,
+              "value": 8
+            }
+          ],
+          "name": "status",
+          "type": "icon"
+        }
+      ]
     }
   ],
   "boards": [
-   {
+    {
       "ble_dev_id": "0x81",
       "brd_name": "P-NUCLEO-WB55",
       "components": [
@@ -6804,7 +7143,7 @@
       "unique_dev_id": 120,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=7sIBVNtNp6E",
-      "release_date" : "2018_Q2"
+      "release_date": "2018_Q2"
     },
     {
       "ble_dev_id": "0x82",
@@ -6819,7 +7158,7 @@
       "unique_dev_id": 121,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=7sIBVNtNp6E",
-      "release_date" : "2018_Q2"
+      "release_date": "2018_Q2"
     },
     {
       "ble_dev_id": "0x83",
@@ -6836,7 +7175,7 @@
       "unique_dev_id": 122,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=7sIBVNtNp6E",
-      "release_date" : "2018_Q2"
+      "release_date": "2018_Q2"
     },
     {
       "ble_dev_id": "0x84",
@@ -6853,7 +7192,7 @@
       "unique_dev_id": 122,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=7sIBVNtNp6E",
-      "release_date" : "2021_Q1"
+      "release_date": "2021_Q1"
     },
     {
       "ble_dev_id": "0x85",
@@ -6868,7 +7207,7 @@
       "unique_dev_id": 123,
       "usb_dev_id": null,
       "video_url": null,
-      "release_date" : "2021_Q1"
+      "release_date": "2021_Q1"
     },
     {
       "ble_dev_id": "0x8B",
@@ -6885,7 +7224,7 @@
       "unique_dev_id": 124,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=7sIBVNtNp6E",
-      "release_date" : "2023_Q1"
+      "release_date": "2023_Q1"
     },
     {
       "ble_dev_id": "0x8C",
@@ -6900,7 +7239,7 @@
       "unique_dev_id": 125,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=7sIBVNtNp6E",
-      "release_date" : "2024_Q1"
+      "release_date": "2024_Q1"
     },
     {
       "ble_dev_id": "0x01",
@@ -6921,7 +7260,7 @@
       "unique_dev_id": 4,
       "usb_dev_id": null,
       "video_url": null,
-      "release_date" : "2016_Q1"
+      "release_date": "2016_Q1"
     },
     {
       "ble_dev_id": "0x09",
@@ -6947,7 +7286,7 @@
       "unique_dev_id": 1,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=J3M0_9EdOqU",
-      "release_date" : "2020_Q4"
+      "release_date": "2020_Q4"
     },
     {
       "ble_dev_id": "0x08",
@@ -6973,12 +7312,12 @@
       "unique_dev_id": 8,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=J3M0_9EdOqU",
-      "release_date" : "2019_Q2"
+      "release_date": "2019_Q2"
     },
     {
       "ble_dev_id": "0x12",
       "brd_name": "STEVAL-STWINBX1",
-      "brd_variant" : "STEVAL$STWINBX1B",
+      "brd_variant": "STEVAL$STWINBX1B",
       "components": [
         "ISM330DHCX",
         "IIS3DWB",
@@ -7002,12 +7341,12 @@
       "unique_dev_id": 16,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=GGRZAxo2P88",
-      "release_date" : "2024_Q1"
+      "release_date": "2024_Q1"
     },
     {
       "ble_dev_id": "0x0E",
       "brd_name": "STEVAL-STWINBX1",
-      "brd_variant" : "STEVAL$STWINBX1A",
+      "brd_variant": "STEVAL$STWINBX1A",
       "components": [
         "ISM330DHCX",
         "IIS3DWB",
@@ -7031,7 +7370,7 @@
       "unique_dev_id": 2,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=GGRZAxo2P88",
-      "release_date" : "2022_Q4"
+      "release_date": "2022_Q4"
     },
     {
       "ble_dev_id": "0x02",
@@ -7052,7 +7391,7 @@
       "unique_dev_id": 5,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=C9cuRzYCiAs",
-      "release_date" : "2016_Q2"
+      "release_date": "2016_Q2"
     },
     {
       "ble_dev_id": "0x0F",
@@ -7074,7 +7413,7 @@
       "unique_dev_id": 13,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=FKKic867pRM",
-      "release_date" : "2022_Q2"
+      "release_date": "2022_Q2"
     },
     {
       "ble_dev_id": "0x06",
@@ -7099,12 +7438,12 @@
       "unique_dev_id": 7,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=jJZNMsNRG1U",
-      "release_date" : "2021_Q1"
+      "release_date": "2021_Q1"
     },
     {
       "ble_dev_id": "0x11",
       "brd_name": "STEVAL-MKBOXPRO",
-      "brd_variant" : "STEVAL$MKBOXPROB",
+      "brd_variant": "STEVAL$MKBOXPROB",
       "components": [
         "STTS22H",
         "LSM6DSV16X",
@@ -7124,12 +7463,12 @@
       "unique_dev_id": 15,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=F4c9V1791Vw",
-      "release_date" : "2023_Q4"
+      "release_date": "2023_Q4"
     },
     {
       "ble_dev_id": "0x0D",
       "brd_name": "STEVAL-MKBOXPRO",
-      "brd_variant" : "STEVAL$MKBOXPROA",
+      "brd_variant": "STEVAL$MKBOXPROA",
       "components": [
         "STTS22H",
         "LSM6DSV16X",
@@ -7149,7 +7488,7 @@
       "unique_dev_id": 3,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=F4c9V1791Vw",
-      "release_date" : "2023_Q2"
+      "release_date": "2023_Q2"
     },
     {
       "ble_dev_id": "0x03",
@@ -7171,7 +7510,7 @@
       "unique_dev_id": 6,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=JJOvbyOZarg",
-      "release_date" : "2017_Q2"
+      "release_date": "2017_Q2"
     },
     {
       "ble_dev_id": "0x0C",
@@ -7195,7 +7534,7 @@
       "unique_dev_id": 10,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=ZUi4LOi2gic",
-      "release_date" : "2022_Q1"
+      "release_date": "2022_Q1"
     },
     {
       "ble_dev_id": "0x10",
@@ -7217,7 +7556,7 @@
       "unique_dev_id": 14,
       "usb_dev_id": null,
       "video_url": null,
-      "release_date" : "2022_Q4"
+      "release_date": "2022_Q4"
     },
     {
       "ble_dev_id": "0x7E",
@@ -7234,7 +7573,7 @@
       "unique_dev_id": 19,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=m94CCYyX5DM",
-      "release_date" : "2014_Q4"
+      "release_date": "2014_Q4"
     },
     {
       "ble_dev_id": "0x7D",
@@ -7251,7 +7590,7 @@
       "unique_dev_id": 18,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=m94CCYyX5DM",
-      "release_date" : "2014_Q2"
+      "release_date": "2014_Q2"
     },
     {
       "ble_dev_id": "0x7C",
@@ -7268,7 +7607,7 @@
       "unique_dev_id": 17,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=m94CCYyX5DM",
-      "release_date" : "2015_Q2"
+      "release_date": "2015_Q2"
     },
     {
       "ble_dev_id": "0x7F",
@@ -7285,7 +7624,7 @@
       "unique_dev_id": 20,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=m94CCYyX5DM",
-      "release_date" : "2014_Q2"
+      "release_date": "2014_Q2"
     }
   ],
   "characteristics": [
@@ -7684,7 +8023,7 @@
           "offset": 0,
           "scalefactor": 1,
           "type": "Int16",
-          "unit": "\u00b0"
+          "unit": "°"
         }
       ],
       "name": "Direction of Arrival",
@@ -8447,7 +8786,7 @@
           "length": 2,
           "name": "qi",
           "offset": 0,
-          "scalefactor": 1e-05,
+          "scalefactor": 0.00001,
           "type": "Int16",
           "unit": "quaternion"
         },
@@ -8455,7 +8794,7 @@
           "length": 2,
           "name": "qj",
           "offset": 0,
-          "scalefactor": 1e-05,
+          "scalefactor": 0.00001,
           "type": "Int16",
           "unit": "quaternion"
         },
@@ -8463,7 +8802,7 @@
           "length": 2,
           "name": "qk",
           "offset": 0,
-          "scalefactor": 1e-05,
+          "scalefactor": 0.00001,
           "type": "Int16",
           "unit": "quaternion"
         },
@@ -8471,7 +8810,7 @@
           "length": 2,
           "name": "qj",
           "offset": 0,
-          "scalefactor": 1e-05,
+          "scalefactor": 0.00001,
           "type": "Int16",
           "unit": "quaternion"
         },
@@ -8479,7 +8818,7 @@
           "length": 2,
           "name": "qk",
           "offset": 0,
-          "scalefactor": 1e-05,
+          "scalefactor": 0.00001,
           "type": "Int16",
           "unit": "quaternion"
         },
@@ -8487,7 +8826,7 @@
           "length": 2,
           "name": "qj",
           "offset": 0,
-          "scalefactor": 1e-05,
+          "scalefactor": 0.00001,
           "type": "Int16",
           "unit": "quaternion"
         },
@@ -8495,7 +8834,7 @@
           "length": 2,
           "name": "qk",
           "offset": 0,
-          "scalefactor": 1e-05,
+          "scalefactor": 0.00001,
           "type": "Int16",
           "unit": "quaternion"
         }
@@ -9181,7 +9520,7 @@
           "offset": 0,
           "scalefactor": 0.1,
           "type": "Int16",
-          "unit": "\u00b0C"
+          "unit": "°C"
         }
       ],
       "name": "Temperature",
@@ -9199,7 +9538,7 @@
           "offset": 0,
           "scalefactor": 0.1,
           "type": "Int16",
-          "unit": "\u00b0C"
+          "unit": "°C"
         }
       ],
       "name": "Temperature(2)",
