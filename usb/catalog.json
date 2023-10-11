@@ -1,0 +1,177 @@
+{
+  "checksum": "f11e28769913c50d4d74a9d0f72309aa",
+  "date": "2023-09-08T08:05:06.386024Z",
+  "usb": [
+    {
+      "baudrate": 115200,
+      "brd_name": "STWIN",
+      "fw_desc": "STM32Cube function pack for multi sensors node with signal processing to enable predictive maintenance",
+      "fw_name": "FP-AI-MONITOR1",
+      "fw_version": "1.1.0",
+      "protocol": "serial",
+      "usb_product_id": "",
+      "usb_vendor_id": ""
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.1.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.0.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
+      "fw_version": "1.0.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Example of ultrasound condition monitoring that calculates the FFT of the IMP23ABSU ultrasound analog microphone signal",
+      "fw_name": "Ultrasound-FFT_FP-SNS-DATALOG2",
+      "fw_version": "1.0.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.0.1",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
+      "fw_version": "1.0.1",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Example of ultrasound condition monitoring that calculates the FFT of the IMP23ABSU ultrasound analog microphone signal",
+      "fw_name": "Ultrasound-FFT_FP-SNS-DATALOG2",
+      "fw_version": "1.0.1",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.1.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
+      "fw_version": "1.1.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Example of ultrasound condition monitoring that calculates the FFT of the IMP23ABSU ultrasound analog microphone signal",
+      "fw_name": "Ultrasound-FFT_FP-SNS-DATALOG2",
+      "fw_version": "1.1.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.2.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.2.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
+      "fw_version": "1.2.0",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.2.1",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "1.2.1",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    },
+    {
+      "baudrate": 921600,
+      "brd_name": "STEVAL-STWINBX1",
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors plus external ISPU expansion board",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2-ISPU",
+      "fw_version": "1.2.1",
+      "protocol": "libusb",
+      "usb_product_id": "0x5744",
+      "usb_vendor_id": "0x0483"
+    }
+  ],
+  "version": "0.5.8"
+}
