@@ -2950,8 +2950,901 @@
       "nfc_dev_id": "0x03",
       "nfc_fw_id": "0x01",
       "brd_name": "STEVAL-MKBOXPRO",
+      "brd_variant": "STEVAL$MKBOXPROA",
       "fw_name": "FP-ATR-BLE1",
       "fw_version": "2.0.0",
+      "bit_length_virtual_sensors_id": 3,
+      "virtual_sensors": [
+        {
+          "sensor_name": "STS22H",
+          "type": "tem",
+          "display_name": "Temperature",
+          "id": 0,
+          "incompatibility": [],
+          "plottable": true,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": -10,
+            "scale_factor": 0.2,
+            "min": -10,
+            "max": 60,
+            "unit": "°C",
+            "th_low": {
+              "display_name": "Temp Th Low",
+              "format": "int",
+              "bit_length": 9
+            },
+            "th_high": {
+              "display_name": "Temp Th High",
+              "format": "int",
+              "bit_length": 9
+            }
+          },
+          "max_min_format": [
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Temp Min DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "min",
+              "format": {
+                "display_name": "Temp Min Value",
+                "format_type": "int",
+                "bit_length": 9,
+                "offset": -10,
+                "scale_factor": 0.2,
+                "unit": "°C"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Temp Max DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "max",
+              "format": {
+                "display_name": "Temp Max Value",
+                "format_type": "int",
+                "bit_length": 9,
+                "offset": -10,
+                "scale_factor": 0.2,
+                "unit": "°C"
+              }
+            }
+          ],
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "Temperature Value",
+                "format_type": "int",
+                "bit_length": 9,
+                "offset": -10,
+                "scale_factor": 0.2,
+                "unit": "°C"
+              }
+            }
+          ]
+        },
+        {
+          "sensor_name": "LPS22DF",
+          "type": "pre",
+          "display_name": "Pressure",
+          "id": 1,
+          "incompatibility": [],
+          "plottable": true,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": 260,
+            "scale_factor": 0.5,
+            "min": 260,
+            "max": 1260,
+            "unit": "hPa",
+            "th_low": {
+              "display_name": "Press Th Low",
+              "format": "int",
+              "bit_length": 11
+            },
+            "th_high": {
+              "display_name": "Press Th High",
+              "format": "int",
+              "bit_length": 11
+            }
+          },
+          "max_min_format": [
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Press Min DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "min",
+              "format": {
+                "display_name": "Press Min Value",
+                "format_type": "int",
+                "bit_length": 11,
+                "offset": 260,
+                "scale_factor": 0.5,
+                "unit": "hPa"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 1
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Press Max DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "max",
+              "format": {
+                "display_name": "Press Max Value",
+                "format_type": "int",
+                "bit_length": 11,
+                "offset": 260,
+                "scale_factor": 0.5,
+                "unit": "hPa"
+              }
+            }
+          ],
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "Pressure Value",
+                "format_type": "int",
+                "bit_length": 11,
+                "offset": 260,
+                "scale_factor": 0.5,
+                "unit": "hPa"
+              }
+            }
+          ]
+        },
+        {
+          "sensor_name": "LSM6DSV16X",
+          "type": "imu_acc",
+          "display_name": "IMU Acc",
+          "id": 2,
+          "incompatibility": [
+            {
+              "id": 4
+            }
+          ],
+          "plottable": true,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": 0,
+            "scale_factor": 1,
+            "min": 0,
+            "max": 16000,
+            "unit": "mg",
+            "th_low": {
+              "display_name": "Acc Th Low",
+              "format": "int",
+              "bit_length": 15
+            }
+          },
+          "max_min_format": [
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Acc Max DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 12
+              }
+            },
+            {
+              "type": "max",
+              "format": {
+                "display_name": "Acc Max Value",
+                "format_type": "int",
+                "bit_length": 15,
+                "offset": 0,
+                "scale_factor": 1,
+                "unit": "mg"
+              }
+            }
+          ],
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "Acc Value",
+                "format_type": "int",
+                "bit_length": 15,
+                "offset": 0,
+                "scale_factor": 1,
+                "unit": "mg"
+              }
+            }
+          ]
+        },
+        {
+          "sensor_name": "LSM6DSV16X 6D",
+          "type": "6d_acc",
+          "display_name": "6D Orientation",
+          "id": 3,
+          "incompatibility": [
+            {
+              "id": 4
+            }
+          ],
+          "plottable": false,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": 0,
+            "scale_factor": 1,
+            "min": 0,
+            "max": 6,
+            "unit": "6DPosition",
+            "th_low": {
+              "display_name": "6D Th Low",
+              "format": "int",
+              "bit_length": 8
+            },
+            "th_high": {
+              "display_name": "6D Th High",
+              "format": "int",
+              "bit_length": 8
+            }
+          },
+          "max_min_format": [],
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "6D Orientation Value",
+                "format_type": "int",
+                "bit_length": 8,
+                "offset": 0,
+                "scale_factor": 1,
+                "unit": "6DPosition"
+              }
+            }
+          ]
+        },
+        {
+          "sensor_name": "LSM6DSV16X MLC",
+          "type": "tilt_acc",
+          "display_name": "Tilt 0 90° Rec",
+          "id": 4,
+          "incompatibility": [
+            {
+              "id": 2
+            },
+            {
+              "id": 3
+            }
+          ],
+          "plottable": true,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": 0,
+            "scale_factor": 1,
+            "min": 0,
+            "max": 90,
+            "unit": "°",
+            "th_low": {
+              "display_name": "Tilt Th Low",
+              "format": "int",
+              "bit_length": 8
+            },
+            "th_high": {
+              "display_name": "Tilt Th High",
+              "format": "int",
+              "bit_length": 8
+            }
+          },
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "Tilt Rec",
+                "format_type": "int",
+                "bit_length": 8,
+                "offset": 0,
+                "scale_factor": 1,
+                "unit": "°"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nfc_dev_id": "0x03",
+      "nfc_fw_id": "0x02",
+      "brd_name": "STEVAL-MKBOXPRO",
+      "brd_variant": "STEVAL$MKBOXPROA",
+      "fw_name": "FP-ATR-BLE1",
+      "fw_version": "2.1.0",
+      "bit_length_virtual_sensors_id": 3,
+      "virtual_sensors": [
+        {
+          "sensor_name": "STS22H",
+          "type": "tem",
+          "display_name": "Temperature",
+          "id": 0,
+          "incompatibility": [],
+          "plottable": true,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": -10,
+            "scale_factor": 0.2,
+            "min": -10,
+            "max": 60,
+            "unit": "°C",
+            "th_low": {
+              "display_name": "Temp Th Low",
+              "format": "int",
+              "bit_length": 9
+            },
+            "th_high": {
+              "display_name": "Temp Th High",
+              "format": "int",
+              "bit_length": 9
+            }
+          },
+          "max_min_format": [
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Temp Min DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "min",
+              "format": {
+                "display_name": "Temp Min Value",
+                "format_type": "int",
+                "bit_length": 9,
+                "offset": -10,
+                "scale_factor": 0.2,
+                "unit": "°C"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Temp Max DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "max",
+              "format": {
+                "display_name": "Temp Max Value",
+                "format_type": "int",
+                "bit_length": 9,
+                "offset": -10,
+                "scale_factor": 0.2,
+                "unit": "°C"
+              }
+            }
+          ],
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "Temperature Value",
+                "format_type": "int",
+                "bit_length": 9,
+                "offset": -10,
+                "scale_factor": 0.2,
+                "unit": "°C"
+              }
+            }
+          ]
+        },
+        {
+          "sensor_name": "LPS22DF",
+          "type": "pre",
+          "display_name": "Pressure",
+          "id": 1,
+          "incompatibility": [],
+          "plottable": true,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": 260,
+            "scale_factor": 0.5,
+            "min": 260,
+            "max": 1260,
+            "unit": "hPa",
+            "th_low": {
+              "display_name": "Press Th Low",
+              "format": "int",
+              "bit_length": 11
+            },
+            "th_high": {
+              "display_name": "Press Th High",
+              "format": "int",
+              "bit_length": 11
+            }
+          },
+          "max_min_format": [
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Press Min DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "min",
+              "format": {
+                "display_name": "Press Min Value",
+                "format_type": "int",
+                "bit_length": 11,
+                "offset": 260,
+                "scale_factor": 0.5,
+                "unit": "hPa"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 1
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Press Max DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "max",
+              "format": {
+                "display_name": "Press Max Value",
+                "format_type": "int",
+                "bit_length": 11,
+                "offset": 260,
+                "scale_factor": 0.5,
+                "unit": "hPa"
+              }
+            }
+          ],
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "Pressure Value",
+                "format_type": "int",
+                "bit_length": 11,
+                "offset": 260,
+                "scale_factor": 0.5,
+                "unit": "hPa"
+              }
+            }
+          ]
+        },
+        {
+          "sensor_name": "LSM6DSV16X",
+          "type": "imu_acc",
+          "display_name": "IMU Acc",
+          "id": 2,
+          "incompatibility": [
+            {
+              "id": 4
+            }
+          ],
+          "plottable": true,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": 0,
+            "scale_factor": 1,
+            "min": 0,
+            "max": 16000,
+            "unit": "mg",
+            "th_low": {
+              "display_name": "Acc Th Low",
+              "format": "int",
+              "bit_length": 15
+            }
+          },
+          "max_min_format": [
+            {
+              "type": "delta_time",
+              "format": {
+                "display_name": "Acc Max DeltaTime",
+                "format_type": "short_delta_time",
+                "bit_length": 20,
+                "comment": "Unix Timestamp expressed in minute"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 12
+              }
+            },
+            {
+              "type": "max",
+              "format": {
+                "display_name": "Acc Max Value",
+                "format_type": "int",
+                "bit_length": 15,
+                "offset": 0,
+                "scale_factor": 1,
+                "unit": "mg"
+              }
+            }
+          ],
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "Acc Value",
+                "format_type": "int",
+                "bit_length": 15,
+                "offset": 0,
+                "scale_factor": 1,
+                "unit": "mg"
+              }
+            }
+          ]
+        },
+        {
+          "sensor_name": "LSM6DSV16X 6D",
+          "type": "6d_acc",
+          "display_name": "6D Orientation",
+          "id": 3,
+          "incompatibility": [
+            {
+              "id": 4
+            }
+          ],
+          "plottable": false,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": 0,
+            "scale_factor": 1,
+            "min": 0,
+            "max": 6,
+            "unit": "6DPosition",
+            "th_low": {
+              "display_name": "6D Th Low",
+              "format": "int",
+              "bit_length": 8
+            },
+            "th_high": {
+              "display_name": "6D Th High",
+              "format": "int",
+              "bit_length": 8
+            }
+          },
+          "max_min_format": [],
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "6D Orientation Value",
+                "format_type": "int",
+                "bit_length": 8,
+                "offset": 0,
+                "scale_factor": 1,
+                "unit": "6DPosition"
+              }
+            }
+          ]
+        },
+        {
+          "sensor_name": "LSM6DSV16X MLC",
+          "type": "tilt_acc",
+          "display_name": "Tilt 0 90° Rec",
+          "id": 4,
+          "incompatibility": [
+            {
+              "id": 2
+            },
+            {
+              "id": 3
+            }
+          ],
+          "plottable": true,
+          "threshold": {
+            "bit_length_id": 3,
+            "bit_length_mod": 2,
+            "offset": 0,
+            "scale_factor": 1,
+            "min": 0,
+            "max": 90,
+            "unit": "°",
+            "th_low": {
+              "display_name": "Tilt Th Low",
+              "format": "int",
+              "bit_length": 8
+            },
+            "th_high": {
+              "display_name": "Tilt Th High",
+              "format": "int",
+              "bit_length": 8
+            }
+          },
+          "sample_format": [
+            {
+              "type": "id",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "delta_time",
+              "format": {
+                "format_type": "delta_time",
+                "bit_length": 26,
+                "comment": "Unix Timestamp expressed in seconds"
+              }
+            },
+            {
+              "type": "padding",
+              "format": {
+                "bit_length": 3
+              }
+            },
+            {
+              "type": "sample",
+              "format": {
+                "display_name": "Tilt Rec",
+                "format_type": "int",
+                "bit_length": 8,
+                "offset": 0,
+                "scale_factor": 1,
+                "unit": "°"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nfc_dev_id": "0x04",
+      "nfc_fw_id": "0x01",
+      "brd_name": "STEVAL-MKBOXPRO",
+      "brd_variant": "STEVAL$MKBOXPROB",
+      "fw_name": "FP-ATR-BLE1",
+      "fw_version": "2.1.0",
       "bit_length_virtual_sensors_id": 3,
       "virtual_sensors": [
         {
@@ -3393,6 +4286,6 @@
     }
   ],
   "checksum": "2448abaa50016056c214dae527faddce",
-  "date": "2022-10-06T14:09:14.705954Z",
-  "version": "0.1.0"
+  "date": "2023-10-18T14:09:14.705954Z",
+  "version": "0.2.0"
 }
