@@ -3921,6 +3921,7 @@
         }
       ],
       "cloud_apps": [],
+      "dtmi": "dtmi:appconfig:steval_mkboxpro:FP_SNS_STBOX1_BLESensorPnPL;1",
       "fota": {
         "bootloader_type": "none",
         "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/FP-SNS-STBOX1_BLESensorsPnPL_1_6_0.bin",
@@ -6459,6 +6460,7 @@
         }
       ],
       "cloud_apps": [],
+      "dtmi": "dtmi:appconfig:steval-stwinbx1:FP_SNS_STBOX1_BLESensorPnPL;1",
       "fota": {
         "bootloader_type": "none",
         "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-STBOX1_BLESensorsPnPL_1_6_0.bin",
@@ -7308,6 +7310,7 @@
         }
       ],
       "cloud_apps": [],
+      "dtmi": "dtmi:appconfig:steval_mkboxpro:FP_SNS_STBOX1_BLESensorPnPL;1",
       "fota": {
         "bootloader_type": "none",
         "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/FP-SNS-STBOX1_BLESensorsPnPL_1_6_0.bin",
@@ -11751,7 +11754,7 @@
       }
     }
   ],
-  "checksum": "05ed5d5d297bb195cbb5cb5a3118b244",
-  "date": "2023-10-25T11:51:12.319182Z",
+  "checksum": "05ed5d5d297bb195cbb5cb5a3118b245",
+  "date": "2023-10-26T11:51:12.319182Z",
   "version": "0.5.8"
 }
