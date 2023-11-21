@@ -6460,7 +6460,7 @@
         }
       ],
       "cloud_apps": [],
-      "dtmi": "dtmi:appconfig:steval-stwinbx1:FP_SNS_STBOX1_BLESensorPnPL;1",
+      "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_STBOX1_BLESensorPnPL;1",
       "fota": {
         "bootloader_type": "none",
         "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-STBOX1_BLESensorsPnPL_1_6_0.bin",
