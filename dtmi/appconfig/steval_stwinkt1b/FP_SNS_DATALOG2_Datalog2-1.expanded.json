@@ -1,6 +1,7 @@
 [
   {
     "@id": "dtmi:appconfig:steval_stwinkt1b:FP_SNS_DATALOG2_Datalog2;1",
+    "@type": "Interface",
     "contents": [
       {
         "@id": "dtmi:appconfig:steval_stwinkt1b:FP_SNS_DATALOG2_Datalog2:iis3dwb_acc;1",
