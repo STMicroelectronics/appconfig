@@ -2870,7 +2870,7 @@
           "sensor_name": "LockUnlock",
           "type": "control",
           "display_name": "Lock Status",
-          "id": 8,
+          "id": 10,
           "incompatibility": [],
           "plottable": false,
           "threshold": {
