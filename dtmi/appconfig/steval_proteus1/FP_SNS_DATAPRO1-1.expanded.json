@@ -1,0 +1,2768 @@
+[
+  {
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:iis3dwb_acc;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "IIS3DWB_ACC"
+        },
+        "name": "iis3dwb_acc",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:ism330dhcx_acc;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "ISM330DHCX_ACC"
+        },
+        "name": "ism330dhcx_acc",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:ism330dhcx_gyro;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "ISM330DHCX_GYRO"
+        },
+        "name": "ism330dhcx_gyro",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:iis2dlpc_acc;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "IIS2DLPC_ACC"
+        },
+        "name": "iis2dlpc_acc",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:stts22h_temp;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "STTS22H_TEMP"
+        },
+        "name": "stts22h_temp",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:control;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Control"
+        },
+        "name": "control",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:settings;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Settings"
+        },
+        "name": "settings",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:automode;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "AutoMode"
+        },
+        "name": "automode",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:automode;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:log_controller;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Log Controller"
+        },
+        "name": "log_controller",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:log_controller;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:tags_info;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Tags Information"
+        },
+        "name": "tags_info",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:acquisition_info;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Acquisition Information"
+        },
+        "name": "acquisition_info",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:firmware_info;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Firmware Information"
+        },
+        "name": "firmware_info",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:firmware_info;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:device_info;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Device Information"
+        },
+        "name": "device_info",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:applications_stblesensor;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Applications ST BLE Sensor"
+        },
+        "name": "applications_stblesensor",
+        "schema": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor;1"
+      }
+    ],
+    "displayName": {
+      "en": "FP-SNS-DATAPRO1"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:odr;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:odr:schema:hz26667;1",
+              "displayName": {
+                "en": "26667"
+              },
+              "enumValue": 0,
+              "name": "hz26667"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:fs:schema:g2;1",
+              "displayName": {
+                "en": "2"
+              },
+              "enumValue": 0,
+              "name": "g2"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:fs:schema:g4;1",
+              "displayName": {
+                "en": "4"
+              },
+              "enumValue": 1,
+              "name": "g4"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:fs:schema:g8;1",
+              "displayName": {
+                "en": "8"
+              },
+              "enumValue": 2,
+              "name": "g8"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:fs:schema:g16;1",
+              "displayName": {
+                "en": "16"
+              },
+              "enumValue": 3,
+              "name": "g16"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "gForce",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:dim;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:ioffset;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "unit": "second",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:measodr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measodr",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:usb_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "USB DPS"
+        },
+        "name": "usb_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:em_dsp;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Embedded Memory DPS"
+        },
+        "name": "em_dsp",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:sensor_annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Sensor Annotation"
+        },
+        "name": "sensor_annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis3dwb_acc:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "IIS3DWB_ACC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz12_5;1",
+              "displayName": {
+                "en": "12.5"
+              },
+              "enumValue": 0,
+              "name": "hz12_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz26;1",
+              "displayName": {
+                "en": "26"
+              },
+              "enumValue": 1,
+              "name": "hz26"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz52;1",
+              "displayName": {
+                "en": "52"
+              },
+              "enumValue": 2,
+              "name": "hz52"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz104;1",
+              "displayName": {
+                "en": "104"
+              },
+              "enumValue": 3,
+              "name": "hz104"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz208;1",
+              "displayName": {
+                "en": "208"
+              },
+              "enumValue": 4,
+              "name": "hz208"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz416;1",
+              "displayName": {
+                "en": "416"
+              },
+              "enumValue": 5,
+              "name": "hz416"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz833;1",
+              "displayName": {
+                "en": "833"
+              },
+              "enumValue": 6,
+              "name": "hz833"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz1666;1",
+              "displayName": {
+                "en": "1666"
+              },
+              "enumValue": 7,
+              "name": "hz1666"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz3332;1",
+              "displayName": {
+                "en": "3332"
+              },
+              "enumValue": 8,
+              "name": "hz3332"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:odr:schema:hz6667;1",
+              "displayName": {
+                "en": "6667"
+              },
+              "enumValue": 9,
+              "name": "hz6667"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:fs:schema:g2;1",
+              "displayName": {
+                "en": "2"
+              },
+              "enumValue": 0,
+              "name": "g2"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:fs:schema:g4;1",
+              "displayName": {
+                "en": "4"
+              },
+              "enumValue": 1,
+              "name": "g4"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:fs:schema:g8;1",
+              "displayName": {
+                "en": "8"
+              },
+              "enumValue": 2,
+              "name": "g8"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:fs:schema:g16;1",
+              "displayName": {
+                "en": "16"
+              },
+              "enumValue": 3,
+              "name": "g16"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "gForce",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:dim;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:ioffset;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "unit": "second",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:measodr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measodr",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:usb_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "USB DPS"
+        },
+        "name": "usb_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:em_dsp;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Embedded Memory DPS"
+        },
+        "name": "em_dsp",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:sensor_annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Sensor Annotation"
+        },
+        "name": "sensor_annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_acc:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "ISM330DHCX_ACC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz12_5;1",
+              "displayName": {
+                "en": "12.5"
+              },
+              "enumValue": 0,
+              "name": "hz12_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz26;1",
+              "displayName": {
+                "en": "26"
+              },
+              "enumValue": 1,
+              "name": "hz26"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz52;1",
+              "displayName": {
+                "en": "52"
+              },
+              "enumValue": 2,
+              "name": "hz52"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz104;1",
+              "displayName": {
+                "en": "104"
+              },
+              "enumValue": 3,
+              "name": "hz104"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz208;1",
+              "displayName": {
+                "en": "208"
+              },
+              "enumValue": 4,
+              "name": "hz208"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz416;1",
+              "displayName": {
+                "en": "416"
+              },
+              "enumValue": 5,
+              "name": "hz416"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz833;1",
+              "displayName": {
+                "en": "833"
+              },
+              "enumValue": 6,
+              "name": "hz833"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz1666;1",
+              "displayName": {
+                "en": "1666"
+              },
+              "enumValue": 7,
+              "name": "hz1666"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz3332;1",
+              "displayName": {
+                "en": "3332"
+              },
+              "enumValue": 8,
+              "name": "hz3332"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:odr:schema:hz6667;1",
+              "displayName": {
+                "en": "6667"
+              },
+              "enumValue": 9,
+              "name": "hz6667"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:fs:schema:dps125;1",
+              "displayName": {
+                "en": "125"
+              },
+              "enumValue": 0,
+              "name": "dps125"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:fs:schema:dps250;1",
+              "displayName": {
+                "en": "250"
+              },
+              "enumValue": 1,
+              "name": "dps250"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:fs:schema:dps500;1",
+              "displayName": {
+                "en": "500"
+              },
+              "enumValue": 2,
+              "name": "dps500"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:fs:schema:dps1000;1",
+              "displayName": {
+                "en": "1000"
+              },
+              "enumValue": 3,
+              "name": "dps1000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:fs:schema:dps2000;1",
+              "displayName": {
+                "en": "2000"
+              },
+              "enumValue": 4,
+              "name": "dps2000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:fs:schema:dps4000;1",
+              "displayName": {
+                "en": "4000"
+              },
+              "enumValue": 5,
+              "name": "dps4000"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": true,
+        "displayUnit": {
+          "en": "mdps"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:dim;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:ioffset;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "unit": "second",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:measodr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measodr",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:usb_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "USB DPS"
+        },
+        "name": "usb_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:em_dsp;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Embedded Memory DPS"
+        },
+        "name": "em_dsp",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:sensor_annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Sensor Annotation"
+        },
+        "name": "sensor_annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:ism330dhcx_gyro:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "ISM330DHCX_GYRO"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr:schema:hz12_5;1",
+              "displayName": {
+                "en": "12.5"
+              },
+              "enumValue": 0,
+              "name": "hz12_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr:schema:hz25;1",
+              "displayName": {
+                "en": "25"
+              },
+              "enumValue": 1,
+              "name": "hz25"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr:schema:hz50;1",
+              "displayName": {
+                "en": "50"
+              },
+              "enumValue": 2,
+              "name": "hz50"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr:schema:hz100;1",
+              "displayName": {
+                "en": "100"
+              },
+              "enumValue": 3,
+              "name": "hz100"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr:schema:hz200;1",
+              "displayName": {
+                "en": "200"
+              },
+              "enumValue": 4,
+              "name": "hz200"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr:schema:hz400;1",
+              "displayName": {
+                "en": "400"
+              },
+              "enumValue": 5,
+              "name": "hz400"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr:schema:hz800;1",
+              "displayName": {
+                "en": "800"
+              },
+              "enumValue": 6,
+              "name": "hz800"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:odr:schema:hz1600;1",
+              "displayName": {
+                "en": "1600"
+              },
+              "enumValue": 7,
+              "name": "hz1600"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:fs:schema:g2;1",
+              "displayName": {
+                "en": "2"
+              },
+              "enumValue": 0,
+              "name": "g2"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:fs:schema:g4;1",
+              "displayName": {
+                "en": "4"
+              },
+              "enumValue": 1,
+              "name": "g4"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:fs:schema:g8;1",
+              "displayName": {
+                "en": "8"
+              },
+              "enumValue": 2,
+              "name": "g8"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:fs:schema:g16;1",
+              "displayName": {
+                "en": "16"
+              },
+              "enumValue": 3,
+              "name": "g16"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "gForce",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:dim;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:ioffset;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "unit": "second",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:measodr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measodr",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:usb_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "USB DPS"
+        },
+        "name": "usb_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:em_dsp;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Embedded Memory DPS"
+        },
+        "name": "em_dsp",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:sensor_annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Sensor Annotation"
+        },
+        "name": "sensor_annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:iis2dlpc_acc:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "IIS2DLPC_ACC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:odr;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:odr:schema:hz1;1",
+              "displayName": {
+                "en": "1"
+              },
+              "enumValue": 0,
+              "name": "hz1"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:fs:schema:cdeg100;1",
+              "displayName": {
+                "en": "100"
+              },
+              "enumValue": 0,
+              "name": "cdeg100"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "degreeCelsius",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:dim;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:ioffset;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "unit": "second",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:measodr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measodr",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:usb_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "USB DPS"
+        },
+        "name": "usb_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:em_dsp;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Embedded Memory DPS"
+        },
+        "name": "em_dsp",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:sensor_annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Sensor Annotation"
+        },
+        "name": "sensor_annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:sensors:stts22h_temp:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "STTS22H_TEMP"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:memory_mb;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Free space on NOR Flash Memory"
+        },
+        "displayName": {
+          "en": "Memory [MB]"
+        },
+        "name": "memory_mb",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:no_datalog_folders;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "No. of Datalog Folders"
+        },
+        "name": "no_datalog_folders",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_folder_id;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Datalog Folder ID"
+        },
+        "name": "datalog_folder_id",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:folder;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Folder"
+        },
+        "name": "folder",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_file_to_recover;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Datalog File To Recover"
+        },
+        "name": "datalog_file_to_recover",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_file_to_recover:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_file_to_recover:schema:iis3dwb_acc;1",
+              "displayName": {
+                "en": "IIS3DWB_ACC.dat"
+              },
+              "enumValue": "iis3dwb_acc",
+              "name": "iis3dwb_acc"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_file_to_recover:schema:ism330dhcx_acc;1",
+              "displayName": {
+                "en": "ISM330DHCX_ACC.dat"
+              },
+              "enumValue": "ism330dhcx_acc",
+              "name": "ism330dhcx_acc"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_file_to_recover:schema:ism330dhcx_gyro;1",
+              "displayName": {
+                "en": "ISM330DHCX_GYRO.dat"
+              },
+              "enumValue": "ism330dhcx_gyro",
+              "name": "ism330dhcx_gyro"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_file_to_recover:schema:iis2dlpc_acc;1",
+              "displayName": {
+                "en": "IIS2DLPC_ACC.dat"
+              },
+              "enumValue": "iis2dlpc_acc",
+              "name": "iis2dlpc_acc"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_file_to_recover:schema:stts22h_temp;1",
+              "displayName": {
+                "en": "STTS22H_TEMP.dat"
+              },
+              "enumValue": "stts22h_temp",
+              "name": "stts22h_temp"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_file_to_recover:schema:device_config;1",
+              "displayName": {
+                "en": "DeviceConfig.json"
+              },
+              "enumValue": "device_config",
+              "name": "device_config"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:datalog_file_to_recover:schema:acquisition_info;1",
+              "displayName": {
+                "en": "AcquisitionInfo.json"
+              },
+              "enumValue": "acquisition_info",
+              "name": "acquisition_info"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:file;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "File"
+        },
+        "name": "file",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:control:transfer;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Transfer"
+        },
+        "name": "transfer"
+      }
+    ],
+    "displayName": {
+      "en": "Control"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:save_sensor_config;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Save Sensor Configuration"
+        },
+        "name": "save_sensor_config"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:delete_sensor_config;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Delete Sensor Configuration"
+        },
+        "name": "delete_sensor_config"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:delete_acquisition_folders;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Delete Acquisition Folders"
+        },
+        "name": "delete_acquisition_folders"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:format_volume;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Format FatFs Volume"
+        },
+        "name": "format_volume"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:erase_memory;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Erase NOR Flash Memory"
+        },
+        "name": "erase_memory"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:usb_function;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "USB Function (reset needed)"
+        },
+        "name": "usb_function",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:usb_function:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:usb_function:schema:usb_not_used;1",
+              "displayName": {
+                "en": "USB Not Used"
+              },
+              "enumValue": "usb_not_used",
+              "name": "usb_not_used"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:usb_function:schema:usb_msc;1",
+              "displayName": {
+                "en": "USB-MSC"
+              },
+              "enumValue": "usb_msc",
+              "name": "usb_msc"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:usb_function:schema:usb_wcid;1",
+              "displayName": {
+                "en": "USB-WCID"
+              },
+              "enumValue": "usb_wcid",
+              "name": "usb_wcid"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:settings:system_reset;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "System Reset"
+        },
+        "name": "system_reset"
+      }
+    ],
+    "displayName": {
+      "en": "Settings"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:automode;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:automode:enabled;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enabled",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:automode:nof_acquisitions;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Number of acquisitions"
+        },
+        "name": "nof_acquisitions",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:automode:start_delay_ms;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Start delay"
+        },
+        "name": "start_delay_ms",
+        "schema": "integer",
+        "unit": "millisecond",
+        "writable": true,
+        "displayUnit": {
+          "en": "ms"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:automode:datalog_time_length;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Datalog time length"
+        },
+        "name": "datalog_time_length",
+        "schema": "integer",
+        "unit": "millisecond",
+        "writable": true,
+        "displayUnit": {
+          "en": "ms"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:automode:idle_time_length;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Idle time length"
+        },
+        "name": "idle_time_length",
+        "schema": "integer",
+        "unit": "millisecond",
+        "writable": true,
+        "displayUnit": {
+          "en": "ms"
+        }
+      }
+    ],
+    "displayName": {
+      "en": "AutoMode"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:log_controller;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:log_controller:log_status;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Log Status"
+        },
+        "name": "log_status",
+        "schema": "boolean",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:log_controller:sd_mounted;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Embedded Memory Ready"
+        },
+        "name": "sd_mounted",
+        "schema": "boolean",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:log_controller:start_log;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Start Acquisition"
+        },
+        "name": "start_log",
+        "request": {
+          "@type": [
+            "CommandPayload",
+            "Initialized"
+          ],
+          "displayName": {
+            "en": "Log Interface"
+          },
+          "name": "interface",
+          "initialValue": 0,
+          "schema": {
+            "@type": "Enum",
+            "displayName": {
+              "en": "Enum"
+            },
+            "enumValues": [
+              {
+                "displayName": {
+                  "en": "Embedded Memory"
+                },
+                "enumValue": 0,
+                "name": "em"
+              },
+              {
+                "displayName": {
+                  "en": "USB"
+                },
+                "enumValue": 1,
+                "name": "usb"
+              }
+            ],
+            "valueSchema": "integer"
+          }
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:log_controller:stop_log;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Stop Acquisition"
+        },
+        "name": "stop_log"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:log_controller:set_time;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set Time"
+        },
+        "name": "set_time",
+        "request": {
+          "@type": "CommandPayload",
+          "description": {
+            "en": "yyyyMMdd_hh_mm_ss"
+          },
+          "displayName": {
+            "en": "datetime"
+          },
+          "name": "datetime",
+          "schema": "string"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:log_controller:controller_type;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Controller Type"
+        },
+        "name": "controller_type",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Log Controller"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:max_tags_num;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Maximum Tag number per acquisition"
+        },
+        "name": "max_tags_num",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag0;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "SW Tag Class 0"
+        },
+        "name": "sw_tag0",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag0:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag0:schema:label;1",
+              "displayName": {
+                "en": "Label"
+              },
+              "name": "label",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag0:schema:enabled;1",
+              "displayName": {
+                "en": "Enabled"
+              },
+              "name": "enabled",
+              "schema": "boolean"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag0:schema:status;1",
+              "displayName": {
+                "en": "Status"
+              },
+              "name": "status",
+              "schema": "boolean"
+            }
+          ]
+        },
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag1;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "SW Tag Class 1"
+        },
+        "name": "sw_tag1",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag1:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag1:schema:label;1",
+              "displayName": {
+                "en": "Label"
+              },
+              "name": "label",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag1:schema:enabled;1",
+              "displayName": {
+                "en": "Enabled"
+              },
+              "name": "enabled",
+              "schema": "boolean"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag1:schema:status;1",
+              "displayName": {
+                "en": "Status"
+              },
+              "name": "status",
+              "schema": "boolean"
+            }
+          ]
+        },
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag2;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "SW Tag Class 2"
+        },
+        "name": "sw_tag2",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag2:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag2:schema:label;1",
+              "displayName": {
+                "en": "Label"
+              },
+              "name": "label",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag2:schema:enabled;1",
+              "displayName": {
+                "en": "Enabled"
+              },
+              "name": "enabled",
+              "schema": "boolean"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag2:schema:status;1",
+              "displayName": {
+                "en": "Status"
+              },
+              "name": "status",
+              "schema": "boolean"
+            }
+          ]
+        },
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag3;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "SW Tag Class 3"
+        },
+        "name": "sw_tag3",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag3:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag3:schema:label;1",
+              "displayName": {
+                "en": "Label"
+              },
+              "name": "label",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag3:schema:enabled;1",
+              "displayName": {
+                "en": "Enabled"
+              },
+              "name": "enabled",
+              "schema": "boolean"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag3:schema:status;1",
+              "displayName": {
+                "en": "Status"
+              },
+              "name": "status",
+              "schema": "boolean"
+            }
+          ]
+        },
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag4;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "SW Tag Class 4"
+        },
+        "name": "sw_tag4",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag4:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag4:schema:label;1",
+              "displayName": {
+                "en": "Label"
+              },
+              "name": "label",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag4:schema:enabled;1",
+              "displayName": {
+                "en": "Enabled"
+              },
+              "name": "enabled",
+              "schema": "boolean"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:tags_info:sw_tag4:schema:status;1",
+              "displayName": {
+                "en": "Status"
+              },
+              "name": "status",
+              "schema": "boolean"
+            }
+          ]
+        },
+        "writable": true
+      }
+    ],
+    "displayName": {
+      "en": "Tags Information"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition Name"
+        },
+        "name": "name",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:description;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition Description"
+        },
+        "name": "description",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:uuid;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition UUID"
+        },
+        "name": "uuid",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:start_time;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition Start Time"
+        },
+        "name": "start_time",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:end_time;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition End Time"
+        },
+        "name": "end_time",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:data_ext;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Exported Data Extension"
+        },
+        "name": "data_ext",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:data_fmt;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Exported Data Format"
+        },
+        "name": "data_fmt",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:tags;1",
+        "@type": "Property",
+        "comment": "JSON Value",
+        "displayName": {
+          "en": "Tag List"
+        },
+        "name": "tags",
+        "schema": "vector",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:interface;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Acquisition Interface"
+        },
+        "name": "interface",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:interface:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:interface:schema:em;1",
+              "displayName": {
+                "en": "Embedded Memory"
+              },
+              "enumValue": "em",
+              "name": "em"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:interface:schema:usb;1",
+              "displayName": {
+                "en": "USB"
+              },
+              "enumValue": "usb",
+              "name": "usb"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:acquisition_info:schema_version;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Schema Version"
+        },
+        "name": "schema_version",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Acquisition Information"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:firmware_info;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:firmware_info:alias;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Alias"
+        },
+        "name": "alias",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:firmware_info:fw_name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Firmware Name"
+        },
+        "name": "fw_name",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:firmware_info:fw_version;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Firmware Version"
+        },
+        "name": "fw_version",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:firmware_info:serial_number;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Serial Number"
+        },
+        "name": "serial_number",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:firmware_info:device_url;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Device URL"
+        },
+        "name": "device_url",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:firmware_info:fw_url;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Firmware URL"
+        },
+        "name": "fw_url",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:firmware_info:mac_address;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "MAC Address"
+        },
+        "name": "mac_address",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Firmware Information"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info:manufacturer;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Contoso."
+        },
+        "displayName": {
+          "en": "Manufacturer"
+        },
+        "name": "manufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info:dev_model;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Device model name or ID. Ex. Surface Book 2."
+        },
+        "displayName": {
+          "en": "Device Model"
+        },
+        "name": "dev_model",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info:sw_version;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Version of the software on your device. This could be the version of your firmware. Ex. 1.3.45"
+        },
+        "displayName": {
+          "en": "Software Version"
+        },
+        "name": "sw_version",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info:os_name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Name of the operating system on the device. Ex. Windows 10 IoT Core."
+        },
+        "displayName": {
+          "en": "Operating System Name"
+        },
+        "name": "os_name",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info:processor_architecture;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Architecture of the processor on the device. Ex. x64 or ARM."
+        },
+        "displayName": {
+          "en": "Processor Architecture"
+        },
+        "name": "processor_architecture",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info:processor_manufacturer;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Name of the manufacturer of the processor on the device. Ex. Intel."
+        },
+        "displayName": {
+          "en": "Processor Manufacturer"
+        },
+        "name": "processor_manufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info:total_storage;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Total available storage on the device in kilobytes. Ex. 2048000 kilobytes."
+        },
+        "displayName": {
+          "en": "Total Storage"
+        },
+        "name": "total_storage",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:device_info:total_memory;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Total available memory on the device in kilobytes. Ex. 256000 kilobytes."
+        },
+        "displayName": {
+          "en": "Total Memory"
+        },
+        "name": "total_memory",
+        "schema": "double",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Device Information"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Proteus Datalog"
+        },
+        "name": "proteus_data_logging",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging:schema:iis3dwb_acc;1",
+              "displayName": {
+                "en": "IIS3DWB_ACC"
+              },
+              "name": "iis3dwb_acc",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging:schema:ism330dhcx_acc;1",
+              "displayName": {
+                "en": "ISM330DHCX_ACC"
+              },
+              "name": "ism330dhcx_acc",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging:schema:ism330dhcx_gyro;1",
+              "displayName": {
+                "en": "ISM330DHCX_GYRO"
+              },
+              "name": "ism330dhcx_gyro",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging:schema:iis2dlpc_acc;1",
+              "displayName": {
+                "en": "IIS2DLPC_ACC"
+              },
+              "name": "iis2dlpc_acc",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging:schema:stts22h_temp;1",
+              "displayName": {
+                "en": "STTS22H_TEMP"
+              },
+              "name": "stts22h_temp",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging:schema:settings;1",
+              "displayName": {
+                "en": "Settings"
+              },
+              "name": "settings",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging:schema:firmware_info;1",
+              "displayName": {
+                "en": "Firmware Information"
+              },
+              "name": "firmware_info",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1:other:applications_stblesensor:proteus_data_logging:schema:device_info;1",
+              "displayName": {
+                "en": "Device Information"
+              },
+              "name": "device_info",
+              "schema": "string"
+            }
+          ]
+        },
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Applications ST BLE Sensor"
+    }
+  }
+]
