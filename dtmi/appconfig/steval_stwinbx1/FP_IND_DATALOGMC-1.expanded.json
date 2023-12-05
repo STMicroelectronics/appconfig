@@ -1,127 +1,127 @@
 [
   {
-    "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC;1",
+    "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:slow_mc_telemetries;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:slow_mc_telemetries;1",
         "@type": "Component",
         "displayName": {
           "en": "Slow Motor Telemetries"
         },
         "name": "slow_mc_telemetries",
-        "schema": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries;2"
+        "schema": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries;2"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:fast_mc_telemetries;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:fast_mc_telemetries;1",
         "@type": "Component",
         "displayName": {
           "en": "Fast Motor Telemetries "
         },
         "name": "fast_mc_telemetries",
-        "schema": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries;1"
+        "schema": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries;1"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:iis3dwb_acc;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:iis3dwb_acc;1",
         "@type": "Component",
         "displayName": {
           "en": "IIS3DWB_ACC"
         },
         "name": "iis3dwb_acc",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc;4"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc;4"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:ilps22qs_press;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:ilps22qs_press;1",
         "@type": "Component",
         "displayName": {
           "en": "ILPS22QS_PRESS"
         },
         "name": "ilps22qs_press",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press;3"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press;3"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:imp23absu_mic;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:imp23absu_mic;1",
         "@type": "Component",
         "displayName": {
           "en": "IMP23ABSU_MIC"
         },
         "name": "imp23absu_mic",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic;4"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic;4"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:ism330dhcx_acc;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:ism330dhcx_acc;1",
         "@type": "Component",
         "displayName": {
           "en": "ISM330DHCX_ACC"
         },
         "name": "ism330dhcx_acc",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc;3"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc;3"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:ism330dhcx_gyro;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:ism330dhcx_gyro;1",
         "@type": "Component",
         "displayName": {
           "en": "ISM330DHCX_GYRO"
         },
         "name": "ism330dhcx_gyro",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro;3"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro;3"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:ism330dhcx_mlc;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:ism330dhcx_mlc;1",
         "@type": "Component",
         "displayName": {
           "en": "ISM330DHCX_MLC"
         },
         "name": "ism330dhcx_mlc",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc;3"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc;3"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:stts22h_temp;3",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:stts22h_temp;3",
         "@type": "Component",
         "displayName": {
           "en": "STTS22H_TEMP"
         },
         "name": "stts22h_temp",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp;3"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp;3"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:log_controller;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:log_controller;1",
         "@type": "Component",
         "displayName": {
           "en": "Log Controller"
         },
         "name": "log_controller",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller;2"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller;2"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:motor_controller;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:motor_controller;1",
         "@type": "Component",
         "displayName": {
           "en": "Motor Controller"
         },
         "name": "motor_controller",
-        "schema": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller;1"
+        "schema": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller;1"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:tags_info;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:tags_info;1",
         "@type": "Component",
         "displayName": {
           "en": "Tags Information"
         },
         "name": "tags_info",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info;1"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info;1"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:acquisition_info;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:acquisition_info;1",
         "@type": "Component",
         "displayName": {
           "en": "Acquisition Information"
         },
         "name": "acquisition_info",
-        "schema": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info;1"
+        "schema": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info;1"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:firmware_info;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:firmware_info;1",
         "@type": "Component",
         "displayName": {
           "en": "Firmware Information"
@@ -130,7 +130,7 @@
         "schema": "dtmi:vespucci:other:firmware_info;3"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:DeviceInformation;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:DeviceInformation;1",
         "@type": "Component",
         "displayName": {
           "en": "Device Information"
@@ -152,11 +152,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries;2",
+    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries;2",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:usb_dps;2",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:usb_dps;2",
         "@type": [
           "Property",
           "NumberValue"
@@ -169,7 +169,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:sd_dps;2",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:sd_dps;2",
         "@type": [
           "Property",
           "NumberValue"
@@ -182,7 +182,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:enable;2",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:enable;2",
         "@type": [
           "Property",
           "Initialized",
@@ -197,7 +197,7 @@
         "initialValue": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:data_type;2",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:data_type;2",
         "@type": [
           "Property",
           "StringValue"
@@ -210,21 +210,21 @@
         "writable": false
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream;2",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream;2",
         "@type": "Property",
         "displayName": {
           "en": "Slow Telemetries Configuration"
         },
         "name": "st_ble_stream",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema;2",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema;2",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:id;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:id;2",
               "displayName": {
                 "en": "id"
               },
@@ -232,20 +232,20 @@
               "schema": "integer"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature;2",
               "displayName": {
                 "en": "Temperature"
               },
               "name": "temperature",
               "schema": {
-                "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:enable;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:enable;2",
                     "displayName": {
                       "en": "enable"
                     },
@@ -253,7 +253,7 @@
                     "schema": "boolean"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:unit;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:unit;2",
                     "displayName": {
                       "en": "unit"
                     },
@@ -261,7 +261,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:format;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:format;2",
                     "displayName": {
                       "en": "format"
                     },
@@ -272,20 +272,20 @@
               }
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed;2",
               "displayName": {
                 "en": "Ref Speed"
               },
               "name": "ref_speed",
               "schema": {
-                "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:enable;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:enable;2",
                     "displayName": {
                       "en": "enable"
                     },
@@ -293,7 +293,7 @@
                     "schema": "boolean"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:unit;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:unit;2",
                     "displayName": {
                       "en": "unit"
                     },
@@ -301,7 +301,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:format;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:format;2",
                     "displayName": {
                       "en": "format"
                     },
@@ -312,20 +312,20 @@
               }
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed;2",
               "displayName": {
                 "en": "Speed"
               },
               "name": "speed",
               "schema": {
-                "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:enable;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:enable;2",
                     "displayName": {
                       "en": "enable"
                     },
@@ -333,7 +333,7 @@
                     "schema": "boolean"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:unit;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:unit;2",
                     "displayName": {
                       "en": "unit"
                     },
@@ -341,7 +341,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:format;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:format;2",
                     "displayName": {
                       "en": "format"
                     },
@@ -352,20 +352,20 @@
               }
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage;2",
               "displayName": {
                 "en": "Bus Voltage"
               },
               "name": "bus_voltage",
               "schema": {
-                "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:enable;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:enable;2",
                     "displayName": {
                       "en": "enable"
                     },
@@ -373,7 +373,7 @@
                     "schema": "boolean"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:unit;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:unit;2",
                     "displayName": {
                       "en": "unit"
                     },
@@ -381,7 +381,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:format;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:format;2",
                     "displayName": {
                       "en": "format"
                     },
@@ -392,20 +392,20 @@
               }
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault;2",
               "displayName": {
                 "en": "Fault"
               },
               "name": "fault",
               "schema": {
-                "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:enable;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:enable;2",
                     "displayName": {
                       "en": "enable"
                     },
@@ -413,7 +413,7 @@
                     "schema": "boolean"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:unit;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:unit;2",
                     "displayName": {
                       "en": "unit"
                     },
@@ -421,7 +421,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:format;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:format;2",
                     "displayName": {
                       "en": "format"
                     },
@@ -445,11 +445,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries;1",
+    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:usb_dps;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:usb_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -462,7 +462,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sd_dps;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:sd_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -475,7 +475,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:enable;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -488,7 +488,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:data_type;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:data_type;1",
         "@type": [
           "Property",
           "StringValue"
@@ -501,7 +501,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:dim;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:dim;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -514,7 +514,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -524,14 +524,14 @@
         },
         "name": "i_q",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -539,7 +539,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -551,7 +551,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -561,14 +561,14 @@
         },
         "name": "i_d",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -576,7 +576,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -588,7 +588,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -598,14 +598,14 @@
         },
         "name": "i_q_ref",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -613,7 +613,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_q_ref:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -625,7 +625,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -635,14 +635,14 @@
         },
         "name": "i_d_ref",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -650,7 +650,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_d_ref:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -662,7 +662,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -672,14 +672,14 @@
         },
         "name": "v_q",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -687,7 +687,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_q:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -699,7 +699,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -709,14 +709,14 @@
         },
         "name": "v_d",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -724,7 +724,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_d:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -736,7 +736,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -746,14 +746,14 @@
         },
         "name": "i_a",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -761,7 +761,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_a:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -773,7 +773,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -783,14 +783,14 @@
         },
         "name": "i_b",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -798,7 +798,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:i_b:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -810,7 +810,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -820,14 +820,14 @@
         },
         "name": "v_a",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -835,7 +835,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_a:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -847,7 +847,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b;1",
         "@type": "Property",
         "description": {
           "en": "fast_mc_telemetry"
@@ -857,14 +857,14 @@
         },
         "name": "v_b",
         "schema": {
-          "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema;1",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema:enabled;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -872,7 +872,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema:unit;1",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:fast_mc_telemetries:v_b:schema:unit;1",
               "displayName": {
                 "en": "Unit"
               },
@@ -893,25 +893,25 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc;4",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc;4",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:odr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:odr;1",
         "@type": "Property",
         "displayName": {
           "en": "ODR"
         },
         "name": "odr",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:odr:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:odr:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:odr:schema:hz26667;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:odr:schema:hz26667;1",
               "displayName": {
                 "en": "26667"
               },
@@ -925,21 +925,21 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs;1",
         "@type": "Property",
         "displayName": {
           "en": "FS"
         },
         "name": "fs",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g2;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g2;1",
               "displayName": {
                 "en": "2"
               },
@@ -947,7 +947,7 @@
               "name": "g2"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g4;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g4;1",
               "displayName": {
                 "en": "4"
               },
@@ -955,7 +955,7 @@
               "name": "g4"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g8;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g8;1",
               "displayName": {
                 "en": "8"
               },
@@ -963,7 +963,7 @@
               "name": "g8"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g16;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:fs:schema:g16;1",
               "displayName": {
                 "en": "16"
               },
@@ -977,7 +977,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -990,7 +990,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:samples_per_ts;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:samples_per_ts;1",
         "@type": [
           "Property",
           "Initialized",
@@ -1007,7 +1007,7 @@
         "minValue": 0
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:dim;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:dim;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1020,7 +1020,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:ioffset;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:ioffset;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1034,7 +1034,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:measodr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:measodr;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1048,7 +1048,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:usb_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:usb_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1061,7 +1061,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sd_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sd_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1074,7 +1074,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sensitivity;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sensitivity;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1087,7 +1087,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:data_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:data_type;1",
         "@type": [
           "Property",
           "StringValue"
@@ -1100,7 +1100,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sensor_annotation;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sensor_annotation;1",
         "@type": [
           "Property",
           "StringValue"
@@ -1113,7 +1113,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sensor_category;3",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:iis3dwb_acc:sensor_category;3",
         "@type": [
           "Property",
           "NumberValue"
@@ -1138,11 +1138,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press;3",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press;3",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr;1",
         "@type": [
           "Property",
           "Initialized"
@@ -1152,14 +1152,14 @@
         },
         "name": "odr",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz1;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz1;1",
               "displayName": {
                 "en": "1"
               },
@@ -1167,7 +1167,7 @@
               "name": "hz1"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz4;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz4;1",
               "displayName": {
                 "en": "4"
               },
@@ -1175,7 +1175,7 @@
               "name": "hz4"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz10;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz10;1",
               "displayName": {
                 "en": "10"
               },
@@ -1183,7 +1183,7 @@
               "name": "hz10"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz25;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz25;1",
               "displayName": {
                 "en": "25"
               },
@@ -1191,7 +1191,7 @@
               "name": "hz25"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz50;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz50;1",
               "displayName": {
                 "en": "50"
               },
@@ -1199,7 +1199,7 @@
               "name": "hz50"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz75;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz75;1",
               "displayName": {
                 "en": "75"
               },
@@ -1207,7 +1207,7 @@
               "name": "hz75"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz100;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz100;1",
               "displayName": {
                 "en": "100"
               },
@@ -1215,7 +1215,7 @@
               "name": "hz100"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz200;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:odr:schema:hz200;1",
               "displayName": {
                 "en": "200"
               },
@@ -1230,7 +1230,7 @@
         "initialValue": 7
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:fs;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:fs;1",
         "@type": [
           "Property",
           "Initialized"
@@ -1240,14 +1240,14 @@
         },
         "name": "fs",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:fs:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:fs:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:fs:schema:hpa1260;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:fs:schema:hpa1260;1",
               "displayName": {
                 "en": "1260"
               },
@@ -1255,7 +1255,7 @@
               "name": "hpa1260"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:fs:schema:hpa4060;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:fs:schema:hpa4060;1",
               "displayName": {
                 "en": "4060"
               },
@@ -1272,7 +1272,7 @@
         "initialValue": 1
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:enable;1",
         "@type": [
           "Property",
           "BooleanValue",
@@ -1287,7 +1287,7 @@
         "initialValue": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:samples_per_ts;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:samples_per_ts;1",
         "@type": [
           "Property",
           "Initialized",
@@ -1304,7 +1304,7 @@
         "minValue": 0
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:dim;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:dim;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1317,7 +1317,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:ioffset;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:ioffset;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1331,7 +1331,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:measodr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:measodr;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1345,7 +1345,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:usb_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:usb_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1358,7 +1358,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:sd_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:sd_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1371,7 +1371,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:sensitivity;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:sensitivity;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1384,7 +1384,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:data_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:data_type;1",
         "@type": [
           "Property",
           "StringValue"
@@ -1397,7 +1397,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:sensor_annotation;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:sensor_annotation;1",
         "@type": [
           "Property",
           "StringValue"
@@ -1410,7 +1410,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:sensor_category;3",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ilps22qs_press:sensor_category;3",
         "@type": [
           "Property",
           "NumberValue"
@@ -1435,25 +1435,25 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic;4",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic;4",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr;1",
         "@type": "Property",
         "displayName": {
           "en": "ODR"
         },
         "name": "odr",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz16000;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz16000;1",
               "displayName": {
                 "en": "16000"
               },
@@ -1461,7 +1461,7 @@
               "name": "hz16000"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz32000;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz32000;1",
               "displayName": {
                 "en": "32000"
               },
@@ -1469,7 +1469,7 @@
               "name": "hz32000"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz48000;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz48000;1",
               "displayName": {
                 "en": "48000"
               },
@@ -1477,7 +1477,7 @@
               "name": "hz48000"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz96000;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz96000;1",
               "displayName": {
                 "en": "96000"
               },
@@ -1485,7 +1485,7 @@
               "name": "hz96000"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz192000;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:odr:schema:hz192000;1",
               "displayName": {
                 "en": "192000"
               },
@@ -1499,7 +1499,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:aop;4",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:aop;4",
         "@type": [
           "Property",
           "NumberValue"
@@ -1515,7 +1515,7 @@
         }
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -1528,7 +1528,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:volume;4",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:volume;4",
         "@type": [
           "Property",
           "Initialized",
@@ -1546,21 +1546,21 @@
         "minValue": 0
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:resolution;4",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:resolution;4",
         "@type": "Property",
         "displayName": {
           "en": "Resolution"
         },
         "name": "resolution",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:resolution:schema;4",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:resolution:schema;4",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:resolution:schema:bit16;4",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:resolution:schema:bit16;4",
               "displayName": {
                 "en": "16"
               },
@@ -1574,7 +1574,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:samples_per_ts;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:samples_per_ts;1",
         "@type": [
           "Property",
           "Initialized",
@@ -1591,7 +1591,7 @@
         "minValue": 0
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:dim;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:dim;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1604,7 +1604,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:ioffset;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:ioffset;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1618,7 +1618,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:usb_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:usb_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1631,7 +1631,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:sd_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:sd_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1644,7 +1644,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:sensitivity;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:sensitivity;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1657,7 +1657,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:data_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:data_type;1",
         "@type": [
           "Property",
           "StringValue"
@@ -1670,7 +1670,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:sensor_annotation;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:sensor_annotation;1",
         "@type": [
           "Property",
           "StringValue"
@@ -1683,7 +1683,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:sensor_category;3",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:imp23absu_mic:sensor_category;3",
         "@type": [
           "Property",
           "NumberValue"
@@ -1708,11 +1708,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc;3",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc;3",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr;1",
         "@type": [
           "Property",
           "Initialized"
@@ -1722,14 +1722,14 @@
         },
         "name": "odr",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz12_5;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz12_5;1",
               "displayName": {
                 "en": "12.5"
               },
@@ -1737,7 +1737,7 @@
               "name": "hz12_5"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz26;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz26;1",
               "displayName": {
                 "en": "26"
               },
@@ -1745,7 +1745,7 @@
               "name": "hz26"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz52;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz52;1",
               "displayName": {
                 "en": "52"
               },
@@ -1753,7 +1753,7 @@
               "name": "hz52"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz104;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz104;1",
               "displayName": {
                 "en": "104"
               },
@@ -1761,7 +1761,7 @@
               "name": "hz104"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz208;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz208;1",
               "displayName": {
                 "en": "208"
               },
@@ -1769,7 +1769,7 @@
               "name": "hz208"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz416;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz416;1",
               "displayName": {
                 "en": "416"
               },
@@ -1777,7 +1777,7 @@
               "name": "hz416"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz833;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz833;1",
               "displayName": {
                 "en": "833"
               },
@@ -1785,7 +1785,7 @@
               "name": "hz833"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz1666;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz1666;1",
               "displayName": {
                 "en": "1666"
               },
@@ -1793,7 +1793,7 @@
               "name": "hz1666"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz3332;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz3332;1",
               "displayName": {
                 "en": "3332"
               },
@@ -1801,7 +1801,7 @@
               "name": "hz3332"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz6667;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:odr:schema:hz6667;1",
               "displayName": {
                 "en": "6667"
               },
@@ -1816,7 +1816,7 @@
         "initialValue": 9
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs;1",
         "@type": [
           "Property",
           "Initialized"
@@ -1826,14 +1826,14 @@
         },
         "name": "fs",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema:g2;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema:g2;1",
               "displayName": {
                 "en": "2"
               },
@@ -1841,7 +1841,7 @@
               "name": "g2"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema:g4;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema:g4;1",
               "displayName": {
                 "en": "4"
               },
@@ -1849,7 +1849,7 @@
               "name": "g4"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema:g8;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema:g8;1",
               "displayName": {
                 "en": "8"
               },
@@ -1857,7 +1857,7 @@
               "name": "g8"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema:g16;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:fs:schema:g16;1",
               "displayName": {
                 "en": "16"
               },
@@ -1872,7 +1872,7 @@
         "initialValue": 3
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:enable;1",
         "@type": [
           "Property",
           "BooleanValue",
@@ -1887,7 +1887,7 @@
         "initialValue": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:samples_per_ts;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:samples_per_ts;1",
         "@type": [
           "Property",
           "Initialized",
@@ -1904,7 +1904,7 @@
         "minValue": 0
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:dim;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:dim;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1917,7 +1917,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:ioffset;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:ioffset;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1931,7 +1931,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:measodr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:measodr;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1945,7 +1945,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:usb_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:usb_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1958,7 +1958,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:sd_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:sd_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1971,7 +1971,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:sensitivity;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:sensitivity;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -1984,7 +1984,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:data_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:data_type;1",
         "@type": [
           "Property",
           "StringValue"
@@ -1997,7 +1997,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:sensor_annotation;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:sensor_annotation;1",
         "@type": [
           "Property",
           "StringValue"
@@ -2010,7 +2010,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:sensor_category;3",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_acc:sensor_category;3",
         "@type": [
           "Property",
           "NumberValue"
@@ -2035,11 +2035,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro;3",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro;3",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr;1",
         "@type": [
           "Property",
           "Initialized"
@@ -2049,14 +2049,14 @@
         },
         "name": "odr",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz12_5;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz12_5;1",
               "displayName": {
                 "en": "12.5"
               },
@@ -2064,7 +2064,7 @@
               "name": "hz12_5"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz26;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz26;1",
               "displayName": {
                 "en": "26"
               },
@@ -2072,7 +2072,7 @@
               "name": "hz26"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz52;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz52;1",
               "displayName": {
                 "en": "52"
               },
@@ -2080,7 +2080,7 @@
               "name": "hz52"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz104;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz104;1",
               "displayName": {
                 "en": "104"
               },
@@ -2088,7 +2088,7 @@
               "name": "hz104"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz208;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz208;1",
               "displayName": {
                 "en": "208"
               },
@@ -2096,7 +2096,7 @@
               "name": "hz208"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz416;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz416;1",
               "displayName": {
                 "en": "416"
               },
@@ -2104,7 +2104,7 @@
               "name": "hz416"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz833;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz833;1",
               "displayName": {
                 "en": "833"
               },
@@ -2112,7 +2112,7 @@
               "name": "hz833"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz1666;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz1666;1",
               "displayName": {
                 "en": "1666"
               },
@@ -2120,7 +2120,7 @@
               "name": "hz1666"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz3332;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz3332;1",
               "displayName": {
                 "en": "3332"
               },
@@ -2128,7 +2128,7 @@
               "name": "hz3332"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz6667;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:odr:schema:hz6667;1",
               "displayName": {
                 "en": "6667"
               },
@@ -2143,7 +2143,7 @@
         "initialValue": 9
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs;1",
         "@type": [
           "Property",
           "Initialized"
@@ -2153,14 +2153,14 @@
         },
         "name": "fs",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps125;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps125;1",
               "displayName": {
                 "en": "125"
               },
@@ -2168,7 +2168,7 @@
               "name": "dps125"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps250;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps250;1",
               "displayName": {
                 "en": "250"
               },
@@ -2176,7 +2176,7 @@
               "name": "dps250"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps500;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps500;1",
               "displayName": {
                 "en": "500"
               },
@@ -2184,7 +2184,7 @@
               "name": "dps500"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps1000;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps1000;1",
               "displayName": {
                 "en": "1000"
               },
@@ -2192,7 +2192,7 @@
               "name": "dps1000"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps2000;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps2000;1",
               "displayName": {
                 "en": "2000"
               },
@@ -2200,7 +2200,7 @@
               "name": "dps2000"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps4000;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:fs:schema:dps4000;1",
               "displayName": {
                 "en": "4000"
               },
@@ -2217,7 +2217,7 @@
         "initialValue": 5
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:enable;1",
         "@type": [
           "Property",
           "BooleanValue",
@@ -2232,7 +2232,7 @@
         "initialValue": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:samples_per_ts;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:samples_per_ts;1",
         "@type": [
           "Property",
           "Initialized",
@@ -2249,7 +2249,7 @@
         "minValue": 0
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:dim;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:dim;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2262,7 +2262,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:ioffset;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:ioffset;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2276,7 +2276,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:measodr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:measodr;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2290,7 +2290,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:usb_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:usb_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2303,7 +2303,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:sd_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:sd_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2316,7 +2316,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:sensitivity;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:sensitivity;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2329,7 +2329,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:data_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:data_type;1",
         "@type": [
           "Property",
           "StringValue"
@@ -2342,7 +2342,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:sensor_annotation;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:sensor_annotation;1",
         "@type": [
           "Property",
           "StringValue"
@@ -2355,7 +2355,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:sensor_category;3",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_gyro:sensor_category;3",
         "@type": [
           "Property",
           "NumberValue"
@@ -2380,11 +2380,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc;3",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc;3",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -2397,7 +2397,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:samples_per_ts;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:samples_per_ts;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2412,7 +2412,7 @@
         "minValue": 1
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:load_file;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:load_file;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -2458,7 +2458,7 @@
         }
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:ucf_status;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:ucf_status;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -2471,7 +2471,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:dim;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:dim;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2484,7 +2484,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:ioffset;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:ioffset;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2498,7 +2498,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:data_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:data_type;1",
         "@type": [
           "Property",
           "StringValue"
@@ -2511,7 +2511,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:usb_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:usb_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2524,7 +2524,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:sd_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:sd_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2537,7 +2537,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:sensor_annotation;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:sensor_annotation;1",
         "@type": [
           "Property",
           "StringValue"
@@ -2550,7 +2550,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:sensor_category;3",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:ism330dhcx_mlc:sensor_category;3",
         "@type": [
           "Property",
           "NumberValue"
@@ -2575,11 +2575,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp;3",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp;3",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr;1",
         "@type": [
           "Property",
           "Initialized"
@@ -2589,14 +2589,14 @@
         },
         "name": "odr",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz1;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz1;1",
               "displayName": {
                 "en": "1"
               },
@@ -2604,7 +2604,7 @@
               "name": "hz1"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz25;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz25;1",
               "displayName": {
                 "en": "25"
               },
@@ -2612,7 +2612,7 @@
               "name": "hz25"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz50;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz50;1",
               "displayName": {
                 "en": "50"
               },
@@ -2620,7 +2620,7 @@
               "name": "hz50"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz100;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz100;1",
               "displayName": {
                 "en": "100"
               },
@@ -2628,7 +2628,7 @@
               "name": "hz100"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz200;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:odr:schema:hz200;1",
               "displayName": {
                 "en": "200"
               },
@@ -2643,21 +2643,21 @@
         "initialValue": 4
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:fs;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:fs;1",
         "@type": "Property",
         "displayName": {
           "en": "FS"
         },
         "name": "fs",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:fs:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:fs:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:fs:schema:cdeg100;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:fs:schema:cdeg100;1",
               "displayName": {
                 "en": "100"
               },
@@ -2671,7 +2671,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:enable;1",
         "@type": [
           "Property",
           "BooleanValue",
@@ -2686,7 +2686,7 @@
         "initialValue": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:samples_per_ts;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:samples_per_ts;1",
         "@type": [
           "Property",
           "Initialized",
@@ -2703,7 +2703,7 @@
         "minValue": 0
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:dim;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:dim;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2716,7 +2716,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:ioffset;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:ioffset;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2730,7 +2730,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:measodr;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:measodr;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2744,7 +2744,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:usb_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:usb_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2757,7 +2757,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sd_dps;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sd_dps;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2770,7 +2770,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sensitivity;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sensitivity;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2783,7 +2783,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:data_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:data_type;1",
         "@type": [
           "Property",
           "StringValue"
@@ -2796,7 +2796,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sensor_annotation;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sensor_annotation;1",
         "@type": [
           "Property",
           "StringValue"
@@ -2809,7 +2809,7 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sensor_category;3",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:sensors:stts22h_temp:sensor_category;3",
         "@type": [
           "Property",
           "NumberValue"
@@ -2834,11 +2834,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller;2",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller;2",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:save_config;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:save_config;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -2847,7 +2847,7 @@
         "name": "save_config"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:log_status;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:log_status;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -2860,7 +2860,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:sd_mounted;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:sd_mounted;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -2873,7 +2873,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:start_log;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:start_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -2912,7 +2912,7 @@
         }
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:stop_log;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:stop_log;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -2921,7 +2921,7 @@
         "name": "stop_log"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:set_time;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:set_time;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -2941,7 +2941,7 @@
         }
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:controller_type;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:controller_type;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -2954,7 +2954,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:switch_bank;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:log_controller:switch_bank;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -2972,11 +2972,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller;1",
+    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:start_motor;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:start_motor;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -2985,7 +2985,7 @@
         "name": "start_motor"
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:stop_motor;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:stop_motor;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -2994,7 +2994,7 @@
         "name": "stop_motor"
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_reset;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_reset;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -3003,7 +3003,7 @@
         "name": "motor_reset"
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:ack_fault;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:ack_fault;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -3012,7 +3012,7 @@
         "name": "ack_fault"
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_status;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_status;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -3025,7 +3025,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:dtmi:vespucci:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_speed;1",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:other:motor_controller:motor_speed;1",
         "@type": [
           "Property",
           "Initialized",
@@ -3051,11 +3051,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info;1",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:max_tags_num;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:max_tags_num;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -3068,21 +3068,21 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0;1",
         "@type": "Property",
         "displayName": {
           "en": "SW Tag Class 0"
         },
         "name": "sw_tag0",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0:schema:label;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0:schema:label;1",
               "displayName": {
                 "en": "Label"
               },
@@ -3090,7 +3090,7 @@
               "schema": "string"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0:schema:enabled;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -3098,7 +3098,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0:schema:status;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag0:schema:status;1",
               "displayName": {
                 "en": "Status"
               },
@@ -3110,21 +3110,21 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1;1",
         "@type": "Property",
         "displayName": {
           "en": "SW Tag Class 1"
         },
         "name": "sw_tag1",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1:schema:label;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1:schema:label;1",
               "displayName": {
                 "en": "Label"
               },
@@ -3132,7 +3132,7 @@
               "schema": "string"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1:schema:enabled;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -3140,7 +3140,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1:schema:status;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag1:schema:status;1",
               "displayName": {
                 "en": "Status"
               },
@@ -3152,21 +3152,21 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2;1",
         "@type": "Property",
         "displayName": {
           "en": "SW Tag Class 2"
         },
         "name": "sw_tag2",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2:schema:label;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2:schema:label;1",
               "displayName": {
                 "en": "Label"
               },
@@ -3174,7 +3174,7 @@
               "schema": "string"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2:schema:enabled;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -3182,7 +3182,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2:schema:status;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag2:schema:status;1",
               "displayName": {
                 "en": "Status"
               },
@@ -3194,21 +3194,21 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3;1",
         "@type": "Property",
         "displayName": {
           "en": "SW Tag Class 3"
         },
         "name": "sw_tag3",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3:schema:label;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3:schema:label;1",
               "displayName": {
                 "en": "Label"
               },
@@ -3216,7 +3216,7 @@
               "schema": "string"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3:schema:enabled;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -3224,7 +3224,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3:schema:status;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag3:schema:status;1",
               "displayName": {
                 "en": "Status"
               },
@@ -3236,21 +3236,21 @@
         "writable": true
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4;1",
         "@type": "Property",
         "displayName": {
           "en": "SW Tag Class 4"
         },
         "name": "sw_tag4",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4:schema:label;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4:schema:label;1",
               "displayName": {
                 "en": "Label"
               },
@@ -3258,7 +3258,7 @@
               "schema": "string"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4:schema:enabled;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4:schema:enabled;1",
               "displayName": {
                 "en": "Enabled"
               },
@@ -3266,7 +3266,7 @@
               "schema": "boolean"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4:schema:status;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:tags_info:sw_tag4:schema:status;1",
               "displayName": {
                 "en": "Status"
               },
@@ -3287,11 +3287,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info;1",
+    "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:name;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:name;1",
         "@type": [
           "Property",
           "StringValue",
@@ -3306,7 +3306,7 @@
         "initialValue": "STWIN.Box_acquisition"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:description;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:description;1",
         "@type": [
           "Property",
           "StringValue",
@@ -3321,7 +3321,7 @@
         "initialValue": "HighSpeedDatalog v2.0.0 on STWIN.Box"
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:uuid;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:uuid;1",
         "@type": [
           "Property",
           "StringValue"
@@ -3334,7 +3334,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:start_time;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:start_time;1",
         "@type": [
           "Property",
           "StringValue"
@@ -3347,7 +3347,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:end_time;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:end_time;1",
         "@type": [
           "Property",
           "StringValue"
@@ -3360,7 +3360,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:data_ext;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:data_ext;1",
         "@type": [
           "Property",
           "StringValue"
@@ -3373,7 +3373,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:data_fmt;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:data_fmt;1",
         "@type": [
           "Property",
           "StringValue"
@@ -3386,7 +3386,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:tags;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:tags;1",
         "@type": "Property",
         "comment": "JSON Value",
         "displayName": {
@@ -3397,21 +3397,21 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:interface;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:interface;1",
         "@type": "Property",
         "displayName": {
           "en": "Acquisition Interface"
         },
         "name": "interface",
         "schema": {
-          "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:interface:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:interface:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:interface:schema:sd;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:interface:schema:sd;1",
               "displayName": {
                 "en": "SD Card"
               },
@@ -3419,7 +3419,7 @@
               "name": "sd"
             },
             {
-              "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:interface:schema:usb;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:interface:schema:usb;1",
               "displayName": {
                 "en": "USB"
               },
@@ -3432,7 +3432,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:vespucci:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:schema_version;1",
+        "@id": "dtmi:appconfig:steval_stwinbx1:fpSnsDatalog2_datalog2:other:acquisition_info:schema_version;1",
         "@type": [
           "Property",
           "StringValue"
