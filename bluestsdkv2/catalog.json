@@ -8262,12 +8262,13 @@
       "id": 221,
       "option_bytes": [
         {
-          "escape_message": "Unknown",
-          "escape_value": 255,
           "format": "int",
+          "escape_value": 255,
+          "escape_message": "Unknown",
+          "negative_offset": 0,
+          "scale_factor": 1,
           "name": "Memory Usage (of 255 MB): ",
-          "offset": 0,
-          "scale": 1
+          "type": " MB"
         },
         {
           "format": "enum_icon",
