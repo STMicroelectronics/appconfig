@@ -1608,12 +1608,12 @@
       ],
       "cloud_apps": [
         {
-          "description": "",
-          "dtmi": "dtmi:ST Default PnP App:FP-SNS-STBOX1_BLESensors;1",
+          "description": "Default IoT Central application for testing different ST sensor board types",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
           "dtmi_type": "iotc",
           "name": "ST Default PnP App",
-          "shareable_link": "",
-          "url": ""
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
       "fota": {
@@ -2148,8 +2148,10 @@
       "id": 174,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -2242,8 +2244,10 @@
       "id": 210,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -3422,8 +3426,10 @@
       "id": 145,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -3781,8 +3787,10 @@
       "id": 164,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -3875,8 +3883,10 @@
       "id": 171,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -3969,8 +3979,10 @@
       "id": 175,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -4210,12 +4222,12 @@
       ],
       "cloud_apps": [
         {
-          "description": "",
-          "dtmi": "dtmi:ST Default PnP App:FP-SNS-STBOX1_BLESensors;1",
+          "description": "Default IoT Central application for testing different ST sensor board types",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
           "dtmi_type": "iotc",
           "name": "ST Default PnP App",
-          "shareable_link": "",
-          "url": ""
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
       "fota": {
@@ -4743,8 +4755,10 @@
       "id": 208,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -5192,8 +5206,10 @@
       "id": 90,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -5339,8 +5355,10 @@
       "id": 91,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2-ISPU"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2-ISPU"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -5486,8 +5504,10 @@
       "id": 121,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -5633,8 +5653,10 @@
       "id": 122,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2-ISPU"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2-ISPU"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -6145,8 +6167,10 @@
       "id": 142,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -6292,8 +6316,10 @@
       "id": 143,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2-ISPU"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2-ISPU"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -6439,8 +6465,10 @@
       "id": 163,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -6586,8 +6614,10 @@
       "id": 165,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2-ISPU"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2-ISPU"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -6733,8 +6763,10 @@
       "id": 172,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -6880,8 +6912,10 @@
       "id": 173,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2-ISPU"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2-ISPU"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -7027,8 +7061,10 @@
       "id": 177,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -7296,12 +7332,12 @@
       ],
       "cloud_apps": [
         {
-          "description": "",
-          "dtmi": "dtmi:ST Default PnP App:FP-SNS-STBOX1_BLEDefaultFw;1",
+          "description": "Default IoT Central application for testing different ST sensor board types",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
           "dtmi_type": "iotc",
           "name": "ST Default PnP App",
-          "shareable_link": "",
-          "url": ""
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
       "fota": {
@@ -7454,12 +7490,12 @@
       ],
       "cloud_apps": [
         {
-          "description": "",
-          "dtmi": "dtmi:ST Default PnP App:FP-SNS-STBOX1_BLESensors;1",
+          "description": "Default IoT Central application for testing different ST sensor board types",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
           "dtmi_type": "iotc",
           "name": "ST Default PnP App",
-          "shareable_link": "",
-          "url": ""
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
       "fota": {
@@ -7539,8 +7575,10 @@
       "id": 206,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -8686,12 +8724,12 @@
       "characteristics": [],
       "cloud_apps": [
         {
-          "description": "",
-          "dtmi": "dtmi:ST Default PnP App:FP-SNS-STBOX1_BLESensors;1",
+          "description": "Default IoT Central application for testing different ST sensor board types",
+          "dtmi": "dtmi:stDefaultPnpApp:DEFAULTdraftv1;1",
           "dtmi_type": "iotc",
           "name": "ST Default PnP App",
-          "shareable_link": "",
-          "url": ""
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/2e076a73-7fb9-46c4-b024-27f26d34ff84",
+          "url": "https://st-default-pnp-app.azureiotcentral.com"
         }
       ],
       "fota": {
@@ -8998,8 +9036,10 @@
       "id": 176,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -9360,8 +9400,10 @@
       "id": 209,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -9454,8 +9496,10 @@
       "id": 178,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -9601,8 +9645,10 @@
       "id": 207,
       "demo_decorator": {
         "add": [],
-        "remove": ["FP-SNS-DATALOG2_Datalog2"],
-        "rename" : []
+        "remove": [
+          "FP-SNS-DATALOG2_Datalog2"
+        ],
+        "rename": []
       },
       "option_bytes": [
         {
@@ -13767,7 +13813,7 @@
       }
     }
   ],
-  "checksum": "4471e0f8a8f5a7ade763a023baa8d2d1",
-  "date": "2023-12-05T13:12:07.495702Z",
-  "version": "0.5.11"
+  "checksum": "4971e0f8a8f5a7ade763a023baa8d2d1",
+  "date": "2023-12-15T13:12:07.495702Z",
+  "version": "0.5.12"
 }
