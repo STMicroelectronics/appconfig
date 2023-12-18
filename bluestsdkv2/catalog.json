@@ -13745,9 +13745,10 @@
       "bleMaxOdr": 52,
       "configuration": {
         "powerMode": "LOW_POWER",
-        "odr": 52
-      },
-      "fullScale": 32
+        "odr": 52,
+        "fullScale": 32,
+        "acquisitionTime": 0
+      }
     },
     {
       "unique_id": 4,
@@ -13813,7 +13814,7 @@
       }
     }
   ],
-  "checksum": "4971e0f8a8f5a7ade763a023baa8d2d1",
-  "date": "2023-12-15T13:12:07.495702Z",
+  "checksum": "4999e0f8a8f5a7ade763a023baa8d2d1",
+  "date": "2023-12-18T13:12:07.495702Z",
   "version": "0.5.12"
 }
