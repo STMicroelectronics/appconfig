@@ -7267,7 +7267,7 @@
       "cloud_apps": [],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "0x1B https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-STBOX1_BLEMLC_1_6_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-STBOX1_BLEMLC_1_6_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -7342,7 +7342,7 @@
       ],
       "fota": {
         "bootloader_type": "none",
-        "fw_url": "0x1C https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-STBOX1_BLEDefaultFw_1_6_0.bin",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-STBOX1_BLEDefaultFw_1_6_0.bin",
         "max_chunk_length": 0,
         "max_divisor_constraint": 0,
         "partial_fota": 0,
@@ -13814,7 +13814,7 @@
       }
     }
   ],
-  "checksum": "4999e0f8a8f5a7ade763a023baa8d2d1",
-  "date": "2023-12-18T13:12:07.495702Z",
-  "version": "0.5.12"
+  "checksum": "5599e0f8a8f5a7ade763a023baa8d2d1",
+  "date": "2024-01-08T09:00:07.495702Z",
+  "version": "0.5.13"
 }
