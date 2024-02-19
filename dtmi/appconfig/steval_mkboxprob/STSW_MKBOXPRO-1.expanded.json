@@ -1,0 +1,117 @@
+[
+  {
+    "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL;1",
+    "@type": "Interface",
+    "contents": [
+	  {
+        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:control;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Control"
+        },
+        "name": "control",
+        "schema": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:applications_stblesensor;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Applications ST BLE Sensor"
+        },
+        "name": "applications_stblesensor",
+        "schema": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor;1"
+      }
+    ],
+    "displayName": {
+      "en": "BLE PnP-L Example"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor:flow;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Flow"
+        },
+        "name": "flow",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor:flow:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor:flow:schema:control;1",
+              "displayName": {
+                "en": "Control"
+              },
+              "name": "control",
+              "schema": "string"
+            }
+          ]
+        },
+        "writable": false
+      }
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control:start_stop;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Start/Stop command"
+        },
+        "name": "start_stop"
+      },
+	  {
+        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control:log_status;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Log Status"
+        },
+        "name": "log_status",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control:file_name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "File Name"
+        },
+        "name": "file_name",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Control"
+    }
+  }
+]
