@@ -9426,6 +9426,147 @@
     },
     {
       "ble_dev_id": "0x0F",
+      "ble_fw_id": "0x06",
+      "brd_name": "STEVAL-PROTEUS1",
+      "changelog": "Added: Auto mode, stop logging if FatF volume is full. Bug fixes.",
+      "characteristics": [
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Binary Content",
+          "uuid": "00000022-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "RebootOTAModeFeature",
+          "uuid": "0000fe11-8e22-4541-9d4c-21edae82ed19"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [],
+      "demo_decorator": {
+        "add": [],
+        "remove": [
+          "FP-SNS-DATAPRO1",
+          "Textual Monitor",
+          "Cloud MQTT"
+        ],
+        "rename": [
+          {
+            "new": "Proteus Data Logging",
+            "old": "HighSpeed DataLog2"
+          }
+        ]
+      },
+      "dtmi": "dtmi:appconfig:steval_proteus1:FP_SNS_DATAPRO1;2",
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/FP-SNS-DATAPRO1_1_1_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_mode"
+      },
+      "fw_desc": "Comprehensive solution for sensor data logging and file transfer over BLE and USB",
+      "fw_name": "FP-SNS-DATAPRO1",
+      "fw_version": "1.1.0",
+      "maturity": "release",
+      "option_bytes": [
+        {
+          "format": "int",
+          "name": "Free space on FatFs volume: ",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": " MB"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "HS_DATALOG_IDLE",
+              "icon_code": 32,
+              "value": 0
+            },
+            {
+              "comment": "HS_DATALOG_EM_STARTED",
+              "icon_code": 10,
+              "value": 1
+            },
+            {
+              "comment": "HS_DATALOG_USB_STARTED",
+              "icon_code": 20,
+              "value": 2
+            },
+            {
+              "comment": "HS_DATALOG_EM_FULL",
+              "icon_code": 11,
+              "value": 3
+            }
+          ],
+          "name": "Datalog Status"
+        },
+        {
+          "format": "enum_string",
+          "name": "Battery Status: ",
+          "string_values": [
+            {
+              "display_name": "Disconnected",
+              "value": 0
+            },
+            {
+              "display_name": "Low",
+              "value": 1
+            },
+            {
+              "display_name": "Medium",
+              "value": 2
+            },
+            {
+              "display_name": "High",
+              "value": 3
+            },
+            {
+              "display_name": "Low (Charging)",
+              "value": 4
+            },
+            {
+              "display_name": "Medium (Charging)",
+              "value": 5
+            },
+            {
+              "display_name": "High (Charging)",
+              "value": 6
+            },
+            {
+              "display_name": "Full",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ble_dev_id": "0x0F",
       "ble_fw_id": "0xFE",
       "brd_name": "STEVAL-PROTEUS1",
       "characteristics": [
@@ -14870,6 +15011,13 @@
       "uuid": "00000023-0002-11e1-ac36-0002a5d5c51b"
     },
     {
+      "name": "NEAI Extrapolation",
+      "description": "NanoEdge AI Extrapolation",
+      "uuid": "00000024-0002-11e1-ac36-0002a5d5c51b",
+      "dtmi_name": null,
+      "format_notify": null
+    },
+    {
       "description": "Compass",
       "dtmi_name": "compass",
       "format_notify": [
@@ -16490,7 +16638,7 @@
       }
     }
   ],
-  "checksum": "5bc26db4cc8ead41db016cceb0ec200b",
-  "date": "2024-03-13 10:37:52.928752",
+  "checksum": "dfbe5e69e763f60990e21ae02e368069",
+  "date": "2024-03-13 15:57:31.608176",
   "version": "0.7.1"
 }
