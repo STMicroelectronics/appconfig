@@ -5806,6 +5806,327 @@
       ]
     },
     {
+      "ble_dev_id": "0x0D",
+      "ble_fw_id": "0x17",
+      "option_bytes": [
+        {
+          "name": "adapter mounted: ",
+          "type": "string",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 1,
+              "display_name": "SHT40AD1B"
+            },
+            {
+              "value": 2,
+              "display_name": "STHS34PF80"
+            },
+            {
+              "value": 3,
+              "display_name": "LSM6DSO32"
+            },
+            {
+              "value": 4,
+              "display_name": "LSM6DSV16BX"
+            },
+            {
+              "value": 5,
+              "display_name": "LSM6DSO16IS"
+            },
+            {
+              "value": 6,
+              "display_name": "LSM6DSV32X"
+            },
+            {
+              "value": 254,
+              "display_name": "no supported adapter detected"
+            }
+          ]
+        },
+        {
+          "name": "loaded app: ",
+          "type": "string",
+          "format": "enum_string",
+          "escape_value": 255,
+          "string_values": [
+            {
+              "value": 0,
+              "display_name": "Custom"
+            },
+            {
+              "value": 1,
+              "display_name": "Compass"
+            },
+            {
+              "value": 2,
+              "display_name": "FreeFall Detection"
+            },
+            {
+              "value": 3,
+              "display_name": "Level"
+            },
+            {
+              "value": 4,
+              "display_name": "Pedometer"
+            },
+            {
+              "value": 5,
+              "display_name": "Sensor Fusion Quaternion"
+            },
+            {
+              "value": 6,
+              "display_name": "Barometer"
+            },
+            {
+              "value": 7,
+              "display_name": "SD_Log"
+            },
+            {
+              "value": 8,
+              "display_name": "Baby Crying Detector"
+            },
+            {
+              "value": 9,
+              "display_name": "Human Activity Recognition"
+            },
+            {
+              "value": 10,
+              "display_name": "InVehicle Baby Alarm"
+            },
+            {
+              "value": 11,
+              "display_name": "Q Touch"
+            },
+            {
+              "value": 12,
+              "display_name": "NFC Writer"
+            },
+            {
+              "value": 13,
+              "display_name": "FFT Compare"
+            },
+            {
+              "value": 14,
+              "display_name": "FFT Line Compare"
+            },
+            {
+              "value": 15,
+              "display_name": "Qvar Data Plot"
+            },
+            {
+              "value": 16,
+              "display_name": "Microphone FFT"
+            },
+            {
+              "value": 17,
+              "display_name": "Smart Toilet"
+            },
+            {
+              "value": 18,
+              "display_name": "Asset Tracking"
+            },
+            {
+              "value": 19,
+              "display_name": "Adapter Interface"
+            },
+            {
+              "value": 254,
+              "display_name": "not able to read loaded app"
+            },
+            {
+              "value": 255,
+              "display_name": "no flow in memory"
+            }
+          ],
+          "escape_message": ""
+        },
+        {
+          "name": "battery_status",
+          "type": "icon",
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "value": 0,
+              "comment": "battery low",
+              "icon_code": 0
+            },
+            {
+              "value": 1,
+              "comment": "battery 50%",
+              "icon_code": 1
+            },
+            {
+              "value": 2,
+              "comment": "battery full and charging",
+              "icon_code": 27
+            },
+            {
+              "value": 3,
+              "comment": "battery charging",
+              "icon_code": 3
+            },
+            {
+              "value": 5,
+              "comment": "battery full",
+              "icon_code": 2
+            },
+            {
+              "value": 255,
+              "comment": "battery not present",
+              "icon_code": 255
+            }
+          ]
+        }
+      ],
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_name": "STSW-MKBOXPRO Entry/Expert Mode",
+      "fw_version": "1.1.1",
+      "fw_desc": "Fw supporting app creation with ST BLE Sensor app",
+      "changelog": "Support for MLC on 32x + bug fixes",
+      "compatible_sensor_adapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "demo_decorator": {
+        "add": [
+          "Flow"
+        ],
+        "remove": [
+          "STSW-MKBOXPRO Entry/Expert Mode"
+        ],
+        "rename": []
+      },
+      "dtmi": "dtmi:appconfig:steval_mkboxpro:STSW_MKBOXPRO_Entry_Expert_Mode;1",
+      "maturity": "release",
+      "fota": {
+        "type": "fast",
+        "bootloader_type": "none",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/STSW-MKBOXPRO_1_1_1.bin",
+        "partial_fota": 0
+      },
+      "cloud_apps": [],
+      "characteristics": [
+        {
+          "name": "Pedometer",
+          "uuid": "00000001-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Audio Classification",
+          "uuid": "00000003-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Euler Angle",
+          "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Machine Learning Core",
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Finite State Machine",
+          "uuid": "00000010-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "QVAR",
+          "uuid": "00000016-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Piano",
+          "uuid": "0000001c-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Event Counter",
+          "uuid": "0000001d-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gesture Navigation",
+          "uuid": "0000001f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "JSON NFC",
+          "uuid": "00000020-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion Compact",
+          "uuid": "00000100-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "SD Logging",
+          "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ]
+    },
+    {
       "ble_dev_id": "0x0E",
       "ble_fw_id": "0x01",
       "brd_name": "STEVAL-STWINBX1",
@@ -11884,6 +12205,327 @@
       ]
     },
     {
+      "ble_dev_id": "0x11",
+      "ble_fw_id": "0x0E",
+      "option_bytes": [
+        {
+          "name": "adapter mounted: ",
+          "type": "string",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 1,
+              "display_name": "SHT40AD1B"
+            },
+            {
+              "value": 2,
+              "display_name": "STHS34PF80"
+            },
+            {
+              "value": 3,
+              "display_name": "LSM6DSO32"
+            },
+            {
+              "value": 4,
+              "display_name": "LSM6DSV16BX"
+            },
+            {
+              "value": 5,
+              "display_name": "LSM6DSO16IS"
+            },
+            {
+              "value": 6,
+              "display_name": "LSM6DSV32X"
+            },
+            {
+              "value": 254,
+              "display_name": "no supported adapter detected"
+            }
+          ]
+        },
+        {
+          "name": "loaded app: ",
+          "type": "string",
+          "format": "enum_string",
+          "escape_value": 255,
+          "string_values": [
+            {
+              "value": 0,
+              "display_name": "Custom"
+            },
+            {
+              "value": 1,
+              "display_name": "Compass"
+            },
+            {
+              "value": 2,
+              "display_name": "FreeFall Detection"
+            },
+            {
+              "value": 3,
+              "display_name": "Level"
+            },
+            {
+              "value": 4,
+              "display_name": "Pedometer"
+            },
+            {
+              "value": 5,
+              "display_name": "Sensor Fusion Quaternion"
+            },
+            {
+              "value": 6,
+              "display_name": "Barometer"
+            },
+            {
+              "value": 7,
+              "display_name": "SD_Log"
+            },
+            {
+              "value": 8,
+              "display_name": "Baby Crying Detector"
+            },
+            {
+              "value": 9,
+              "display_name": "Human Activity Recognition"
+            },
+            {
+              "value": 10,
+              "display_name": "InVehicle Baby Alarm"
+            },
+            {
+              "value": 11,
+              "display_name": "Q Touch"
+            },
+            {
+              "value": 12,
+              "display_name": "NFC Writer"
+            },
+            {
+              "value": 13,
+              "display_name": "FFT Compare"
+            },
+            {
+              "value": 14,
+              "display_name": "FFT Line Compare"
+            },
+            {
+              "value": 15,
+              "display_name": "Qvar Data Plot"
+            },
+            {
+              "value": 16,
+              "display_name": "Microphone FFT"
+            },
+            {
+              "value": 17,
+              "display_name": "Smart Toilet"
+            },
+            {
+              "value": 18,
+              "display_name": "Asset Tracking"
+            },
+            {
+              "value": 19,
+              "display_name": "Adapter Interface"
+            },
+            {
+              "value": 254,
+              "display_name": "not able to read loaded app"
+            },
+            {
+              "value": 255,
+              "display_name": "no flow in memory"
+            }
+          ],
+          "escape_message": ""
+        },
+        {
+          "name": "battery_status",
+          "type": "icon",
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "value": 0,
+              "comment": "battery low",
+              "icon_code": 0
+            },
+            {
+              "value": 1,
+              "comment": "battery 50%",
+              "icon_code": 1
+            },
+            {
+              "value": 2,
+              "comment": "battery full and charging",
+              "icon_code": 27
+            },
+            {
+              "value": 3,
+              "comment": "battery charging",
+              "icon_code": 3
+            },
+            {
+              "value": 5,
+              "comment": "battery full",
+              "icon_code": 2
+            },
+            {
+              "value": 255,
+              "comment": "battery not present",
+              "icon_code": 255
+            }
+          ]
+        }
+      ],
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_name": "STSW-MKBOXPRO Entry/Expert Mode",
+      "fw_version": "1.1.1",
+      "fw_desc": "Fw supporting app creation with ST BLE Sensor app",
+      "changelog": "Support for MLC on 32x + bug fixes",
+      "compatible_sensor_adapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "demo_decorator": {
+        "add": [
+          "Flow"
+        ],
+        "remove": [
+          "STSW-MKBOXPRO Entry/Expert Mode"
+        ],
+        "rename": []
+      },
+      "dtmi": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode;1",
+      "maturity": "release",
+      "fota": {
+        "type": "fast",
+        "bootloader_type": "none",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxprob/STSW-MKBOXPRO_1_1_1.bin",
+        "partial_fota": 0
+      },
+      "cloud_apps": [],
+      "characteristics": [
+        {
+          "name": "Pedometer",
+          "uuid": "00000001-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Audio Classification",
+          "uuid": "00000003-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Euler Angle",
+          "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Machine Learning Core",
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Finite State Machine",
+          "uuid": "00000010-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "QVAR",
+          "uuid": "00000016-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Piano",
+          "uuid": "0000001c-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Event Counter",
+          "uuid": "0000001d-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gesture Navigation",
+          "uuid": "0000001f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "JSON NFC",
+          "uuid": "00000020-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion Compact",
+          "uuid": "00000100-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "SD Logging",
+          "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ]
+    },
+    {
       "ble_dev_id": "0x12",
       "ble_fw_id": "0x01",
       "brd_name": "STEVAL-STWINBX1",
@@ -17567,7 +18209,7 @@
       }
     }
   ],
-  "checksum": "03f98637e66c866c2f7080faf74410ed",
-  "date": "2024-04-10 12:48:24.121181",
-  "version": "0.7.1"
+  "date": "2024-04-29 08:58:24.537976",
+  "version": "0.7.1",
+  "checksum": "56b2aaeaa3736a71c97e5bf3f81304cb"
 }
