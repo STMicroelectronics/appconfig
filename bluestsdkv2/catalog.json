@@ -18207,6 +18207,31 @@
         "fullScale": 4000,
         "acquisitionTime": 0
       }
+    },
+    {
+      "unique_id": 16,
+      "id": "D16",
+      "description": "IMU with MLC",
+      "output": "MLC Output",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "configuration": {
+        "regConfig": "",
+        "mlcLabels": "",
+        "ucfFilename": ""
+      },
+      "icon": "ic_inemo",
+      "dataType": "uint8_t vector x8",
+      "model": "LSM6DSV32X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB"
+      ],
+      "datasheetLink": "https://www.st.com/resource/en/data_brief/lsm6dsv32x.pdf",
+      "um": ""
     }
   ],
   "date": "2024-04-29 08:58:24.537976",
