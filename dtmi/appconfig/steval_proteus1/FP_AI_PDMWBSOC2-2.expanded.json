@@ -1,0 +1,980 @@
+[
+  {
+    "@id": "dtmi:appconfig:steval_proteus1:FP_AI_PDMWBSOC2;2",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_AI_PDMWBSOC2:applications_stblesensor;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Applications ST BLE Sensor"
+        },
+        "name": "applications_stblesensor",
+        "schema": "dtmi:appconfig:steval_proteus1:applications_stblesensor;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_AI_PDMWBSOC2:neai_anomaly_detection;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "NEAI Anomaly Detection"
+        },
+        "name": "neai_anomaly_detection",
+        "schema": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_AI_PDMWBSOC2:ism330dhcx_acc;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "ISM330DHCX_ACC"
+        },
+        "name": "ism330dhcx_acc",
+        "schema": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_AI_PDMWBSOC2:ism330dhcx_gyro;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "ISM330DHCX_GYRO"
+        },
+        "name": "ism330dhcx_gyro",
+        "schema": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_AI_PDMWBSOC2:iis3dwb_acc;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "IIS3DWB_ACC"
+        },
+        "name": "iis3dwb_acc",
+        "schema": "dtmi:appconfig:steval_proteus1:iis3dwb_acc;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:FP_AI_PDMWBSOC2:iis2dlpc_acc;2",
+        "@type": "Component",
+        "displayName": {
+          "en": "IIS2DLPC_ACC"
+        },
+        "name": "iis2dlpc_acc",
+        "schema": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc;1"
+      }
+    ],
+    "displayName": {
+      "en": "FP_AI_PDMWBSOC2 v2.0.0 (Application Template)"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_anomaly_detection;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "NEAI Anomaly Detection"
+        },
+        "name": "neai_anomaly_detection",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_anomaly_detection:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_anomaly_detection:schema:neai_anomaly_detection;1",
+              "displayName": {
+                "en": "NEAI Anomaly Detection"
+              },
+              "name": "neai_anomaly_detection",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_anomaly_detection:schema:ism330dhcx_acc;1",
+              "displayName": {
+                "en": "ISM330DHCX_ACC"
+              },
+              "name": "ism330dhcx_acc",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_anomaly_detection:schema:ism330dhcx_gyro;1",
+              "displayName": {
+                "en": "ISM330DHCX_GYRO"
+              },
+              "name": "ism330dhcx_gyro",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_anomaly_detection:schema:iis3dwb_acc;1",
+              "displayName": {
+                "en": "IIS3DWB_ACC"
+              },
+              "name": "iis3dwb_acc",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_anomaly_detection:schema:iis2dlpc_acc;1",
+              "displayName": {
+                "en": "IIS2DLPC_ACC"
+              },
+              "name": "iis2dlpc_acc",
+              "schema": "string"
+            }
+          ]
+        },
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_classification;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "NEAI Classification"
+        },
+        "name": "neai_classification",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_classification:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_classification:schema:ism330dhcx_acc;1",
+              "displayName": {
+                "en": "ISM330DHCX_ACC"
+              },
+              "name": "ism330dhcx_acc",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_classification:schema:ism330dhcx_gyro;1",
+              "displayName": {
+                "en": "ISM330DHCX_GYRO"
+              },
+              "name": "ism330dhcx_gyro",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_classification:schema:iis3dwb_acc;1",
+              "displayName": {
+                "en": "IIS3DWB_ACC"
+              },
+              "name": "iis3dwb_acc",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_classification:schema:iis2dlpc_acc;1",
+              "displayName": {
+                "en": "IIS2DLPC_ACC"
+              },
+              "name": "iis2dlpc_acc",
+              "schema": "string"
+            }
+          ]
+        },
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_extrapolation;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "NEAI Extrapolation"
+        },
+        "name": "neai_extrapolation",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_extrapolation:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_extrapolation:schema:ism330dhcx_acc;1",
+              "displayName": {
+                "en": "ISM330DHCX_ACC"
+              },
+              "name": "ism330dhcx_acc",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_extrapolation:schema:ism330dhcx_gyro;1",
+              "displayName": {
+                "en": "ISM330DHCX_GYRO"
+              },
+              "name": "ism330dhcx_gyro",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_extrapolation:schema:iis3dwb_acc;1",
+              "displayName": {
+                "en": "IIS3DWB_ACC"
+              },
+              "name": "iis3dwb_acc",
+              "schema": "string"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:applications_stblesensor:neai_extrapolation:schema:iis2dlpc_acc;1",
+              "displayName": {
+                "en": "IIS2DLPC_ACC"
+              },
+              "name": "iis2dlpc_acc",
+              "schema": "string"
+            }
+          ]
+        },
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Applications ST BLE Sensor"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection:threshold;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Threshold [%]"
+        },
+        "name": "threshold",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection:learning_param;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Learning Parameter"
+        },
+        "name": "learning_param",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection:learning_param:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection:learning_param:schema:time;1",
+              "displayName": {
+                "en": "Time [s]"
+              },
+              "enumValue": 0,
+              "name": "time"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection:learning_param:schema:signals;1",
+              "displayName": {
+                "en": "Signals"
+              },
+              "enumValue": 1,
+              "name": "signals"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection:time_or_signals;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Time / Signals"
+        },
+        "name": "time_or_signals",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection:save_model;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Save Model"
+        },
+        "name": "save_model"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:neai_anomaly_detection:load_model;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Load Model"
+        },
+        "name": "load_model"
+      }
+    ],
+    "displayName": {
+      "en": "NEAI Anomaly Detection"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enable"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR [Hz]"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz12_5;1",
+              "displayName": {
+                "en": "12.5"
+              },
+              "enumValue": 0,
+              "name": "hz12_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz26;1",
+              "displayName": {
+                "en": "26"
+              },
+              "enumValue": 1,
+              "name": "hz26"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz52;1",
+              "displayName": {
+                "en": "52"
+              },
+              "enumValue": 2,
+              "name": "hz52"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz104;1",
+              "displayName": {
+                "en": "104"
+              },
+              "enumValue": 3,
+              "name": "hz104"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz208;1",
+              "displayName": {
+                "en": "208"
+              },
+              "enumValue": 4,
+              "name": "hz208"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz416;1",
+              "displayName": {
+                "en": "417"
+              },
+              "enumValue": 5,
+              "name": "hz416"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz833;1",
+              "displayName": {
+                "en": "833"
+              },
+              "enumValue": 6,
+              "name": "hz833"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz1666;1",
+              "displayName": {
+                "en": "1666"
+              },
+              "enumValue": 7,
+              "name": "hz1666"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz3332;1",
+              "displayName": {
+                "en": "3332"
+              },
+              "enumValue": 8,
+              "name": "hz3332"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:odr:schema:hz6667;1",
+              "displayName": {
+                "en": "6667"
+              },
+              "enumValue": 9,
+              "name": "hz6667"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS [g]"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:fs:schema:g2;1",
+              "displayName": {
+                "en": "2"
+              },
+              "enumValue": 0,
+              "name": "g2"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:fs:schema:g4;1",
+              "displayName": {
+                "en": "4"
+              },
+              "enumValue": 1,
+              "name": "g4"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:fs:schema:g8;1",
+              "displayName": {
+                "en": "8"
+              },
+              "enumValue": 2,
+              "name": "g8"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_acc:fs:schema:g16;1",
+              "displayName": {
+                "en": "16"
+              },
+              "enumValue": 3,
+              "name": "g16"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "gForce",
+        "writable": true
+      }
+    ],
+    "displayName": {
+      "en": "ISM330DHCX_ACC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enable"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR [Hz]"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz12_5;1",
+              "displayName": {
+                "en": "12.5"
+              },
+              "enumValue": 0,
+              "name": "hz12_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz26;1",
+              "displayName": {
+                "en": "26"
+              },
+              "enumValue": 1,
+              "name": "hz26"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz52;1",
+              "displayName": {
+                "en": "52"
+              },
+              "enumValue": 2,
+              "name": "hz52"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz104;1",
+              "displayName": {
+                "en": "104"
+              },
+              "enumValue": 3,
+              "name": "hz104"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz208;1",
+              "displayName": {
+                "en": "208"
+              },
+              "enumValue": 4,
+              "name": "hz208"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz416;1",
+              "displayName": {
+                "en": "416"
+              },
+              "enumValue": 5,
+              "name": "hz416"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz833;1",
+              "displayName": {
+                "en": "833"
+              },
+              "enumValue": 6,
+              "name": "hz833"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz1666;1",
+              "displayName": {
+                "en": "1666"
+              },
+              "enumValue": 7,
+              "name": "hz1666"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz3332;1",
+              "displayName": {
+                "en": "3332"
+              },
+              "enumValue": 8,
+              "name": "hz3332"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:odr:schema:hz6667;1",
+              "displayName": {
+                "en": "6667"
+              },
+              "enumValue": 9,
+              "name": "hz6667"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS [dps]"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:fs:schema:dps125;1",
+              "displayName": {
+                "en": "125"
+              },
+              "enumValue": 0,
+              "name": "dps125"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:fs:schema:dps250;1",
+              "displayName": {
+                "en": "250"
+              },
+              "enumValue": 1,
+              "name": "dps250"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:fs:schema:dps500;1",
+              "displayName": {
+                "en": "500"
+              },
+              "enumValue": 2,
+              "name": "dps500"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:fs:schema:dps1000;1",
+              "displayName": {
+                "en": "1000"
+              },
+              "enumValue": 3,
+              "name": "dps1000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:fs:schema:dps2000;1",
+              "displayName": {
+                "en": "2000"
+              },
+              "enumValue": 4,
+              "name": "dps2000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:ism330dhcx_gyro:fs:schema:dps4000;1",
+              "displayName": {
+                "en": "4000"
+              },
+              "enumValue": 5,
+              "name": "dps4000"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "degreePerSecond",
+        "writable": true
+      }
+    ],
+    "displayName": {
+      "en": "ISM330DHCX_GYRO"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enable"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:odr;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR [Hz]"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:odr:schema:hz26667;1",
+              "displayName": {
+                "en": "26667"
+              },
+              "enumValue": 0,
+              "name": "hz26667"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS [g]"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:fs:schema:g2;1",
+              "displayName": {
+                "en": "2"
+              },
+              "enumValue": 0,
+              "name": "g2"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:fs:schema:g4;1",
+              "displayName": {
+                "en": "4"
+              },
+              "enumValue": 1,
+              "name": "g4"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:fs:schema:g8;1",
+              "displayName": {
+                "en": "8"
+              },
+              "enumValue": 2,
+              "name": "g8"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis3dwb_acc:fs:schema:g16;1",
+              "displayName": {
+                "en": "16"
+              },
+              "enumValue": 3,
+              "name": "g16"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "gForce",
+        "writable": true
+      }
+    ],
+    "displayName": {
+      "en": "IIS3DWB_ACC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enable"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ODR [Hz]"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema:hz1_6;1",
+              "displayName": {
+                "en": "1.6"
+              },
+              "enumValue": 0,
+              "name": "hz1_6"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema:hz12_5;1",
+              "displayName": {
+                "en": "12.5"
+              },
+              "enumValue": 1,
+              "name": "hz12_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema:hz25;1",
+              "displayName": {
+                "en": "25"
+              },
+              "enumValue": 2,
+              "name": "hz25"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema:hz50;1",
+              "displayName": {
+                "en": "50"
+              },
+              "enumValue": 3,
+              "name": "hz50"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema:hz100;1",
+              "displayName": {
+                "en": "100"
+              },
+              "enumValue": 4,
+              "name": "hz100"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema:hz200;1",
+              "displayName": {
+                "en": "200"
+              },
+              "enumValue": 5,
+              "name": "hz200"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema:hz400;1",
+              "displayName": {
+                "en": "400"
+              },
+              "enumValue": 6,
+              "name": "hz400"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema:hz800;1",
+              "displayName": {
+                "en": "800"
+              },
+              "enumValue": 7,
+              "name": "hz800"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:odr:schema:hz1600;1",
+              "displayName": {
+                "en": "1600"
+              },
+              "enumValue": 8,
+              "name": "hz1600"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS [g]"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:fs:schema:g2;1",
+              "displayName": {
+                "en": "2"
+              },
+              "enumValue": 0,
+              "name": "g2"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:fs:schema:g4;1",
+              "displayName": {
+                "en": "4"
+              },
+              "enumValue": 1,
+              "name": "g4"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:fs:schema:g8;1",
+              "displayName": {
+                "en": "8"
+              },
+              "enumValue": 2,
+              "name": "g8"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_proteus1:iis2dlpc_acc:fs:schema:g16;1",
+              "displayName": {
+                "en": "16"
+              },
+              "enumValue": 3,
+              "name": "g16"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "gForce",
+        "writable": true
+      }
+    ],
+    "displayName": {
+      "en": "IIS2DLPC_ACC"
+    }
+  }
+]
