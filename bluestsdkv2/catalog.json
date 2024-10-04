@@ -12824,6 +12824,151 @@
     },
     {
       "ble_dev_id": "0x0F",
+      "ble_fw_id": "0x08",
+      "option_bytes": [
+        {
+          "name": "Battery Level: ",
+          "format": "int",
+          "escape_value": 255,
+          "scale_factor": 10,
+          "negative_offset": 0
+        },
+        {
+          "name": "Equipment Status",
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "value": 0,
+              "comment": "No Alarm",
+              "icon_code": 7
+            },
+            {
+              "value": 1,
+              "comment": "Warning",
+              "icon_code": 5
+            },
+            {
+              "value": 2,
+              "comment": "Alarm",
+              "icon_code": 6
+            }
+          ]
+        },
+        {
+          "name": "Battery Status: ",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 0,
+              "display_name": "Low Battery"
+            },
+            {
+              "value": 1,
+              "display_name": "Discharging"
+            },
+            {
+              "value": 2,
+              "display_name": "End of Charging"
+            },
+            {
+              "value": 3,
+              "display_name": "Charging"
+            },
+            {
+              "value": 4,
+              "display_name": "Not Plugged"
+            }
+          ]
+        }
+      ],
+      "brd_name": "STEVAL-PROTEUS1",
+      "fw_name": "STSW-PROTEUS",
+      "fw_version": "1.1.0",
+      "fw_desc": "STM32WB predictive maintenance applications",
+      "changelog": "Support Low Power Mode. Support ST BLE Sensor App.",
+      "maturity": "release",
+      "fota": {},
+      "cloud_apps": [],
+      "characteristics": [
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Motor Time Parameter",
+          "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Predictive Speed Status",
+          "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Predictive Acceleration Status",
+          "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Predictive Frequency Domain Status",
+          "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "RebootOTAModeFeature",
+          "uuid": "0000fe11-8e22-4541-9d4c-21edae82ed19",
+          "max_write_length": 20
+        },
+        {
+          "name": "FeatureControlLed",
+          "uuid": "0000fe41-8e22-4541-9d4c-21edae82ed19",
+          "max_write_length": 20
+        },
+        {
+          "name": "FeatureSwitchStatus",
+          "uuid": "0000fe42-8e22-4541-9d4c-21edae82ed19",
+          "max_write_length": 20
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        }
+      ]
+    },
+    {
+      "ble_dev_id": "0x0F",
       "ble_fw_id": "0xFE",
       "brd_name": "STEVAL-PROTEUS1",
       "characteristics": [
@@ -21594,7 +21739,7 @@
       "um": ""
     }
   ],
-  "date": "2024-09-23 08:51:52.143562",
+  "date": "2024-10-04 11:05:22.806580",
   "version": "0.7.4",
-  "checksum": "732ddd8f68d3d7d09323619d85d10596"
+  "checksum": "d6f7b201d52a18418a89ce7f4f486c29"
 }
