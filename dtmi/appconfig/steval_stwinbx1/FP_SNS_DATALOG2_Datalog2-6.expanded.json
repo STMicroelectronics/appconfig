@@ -302,7 +302,10 @@
       },
       {
         "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:iis3dwb_acc:fs;1",
-        "@type": "Property",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
         "displayName": {
           "en": "FS"
         },
@@ -350,7 +353,11 @@
           "valueSchema": "integer"
         },
         "unit": "gForce",
-        "writable": true
+        "writable": true,
+        "displayUnit": {
+          "en": "g"
+        },
+        "initialValue": 3
       },
       {
         "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:iis3dwb_acc:enable;1",
@@ -645,7 +652,10 @@
       },
       {
         "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:iis3dwb_ext_acc:fs;1",
-        "@type": "Property",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
         "displayName": {
           "en": "FS"
         },
@@ -693,7 +703,11 @@
           "valueSchema": "integer"
         },
         "unit": "gForce",
-        "writable": true
+        "writable": true,
+        "displayUnit": {
+          "en": "g"
+        },
+        "initialValue": 3
       },
       {
         "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:iis3dwb_ext_acc:enable;1",
@@ -1769,6 +1783,9 @@
         },
         "unit": "gForce",
         "writable": true,
+        "displayUnit": {
+          "en": "g"
+        },
         "initialValue": 3
       },
       {
@@ -2210,6 +2227,9 @@
         },
         "unit": "degreePerSecond",
         "writable": true,
+        "displayUnit": {
+          "en": "dps"
+        },
         "initialValue": 5
       },
       {
@@ -2872,7 +2892,10 @@
       },
       {
         "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:ism330is_acc:fs;1",
-        "@type": "Property",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
         "displayName": {
           "en": "FS"
         },
@@ -2920,7 +2943,11 @@
           "valueSchema": "integer"
         },
         "unit": "gForce",
-        "writable": true
+        "writable": true,
+        "displayUnit": {
+          "en": "g"
+        },
+        "initialValue": 3
       },
       {
         "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:ism330is_acc:enable;1",
@@ -3362,6 +3389,9 @@
         },
         "unit": "degreePerSecond",
         "writable": true,
+        "displayUnit": {
+          "en": "dps"
+        },
         "initialValue": 4
       },
       {
@@ -4008,6 +4038,9 @@
         },
         "unit": "gForce",
         "writable": true,
+        "displayUnit": {
+          "en": "g"
+        },
         "initialValue": 3
       },
       {
@@ -4365,7 +4398,10 @@
           "valueSchema": "integer"
         },
         "unit": "degreeCelsius",
-        "writable": false
+        "writable": false,
+        "displayUnit": {
+          "en": "C"
+        }
       },
       {
         "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:stts22h_temp:enable;1",
@@ -4722,7 +4758,10 @@
           "valueSchema": "integer"
         },
         "unit": "degreeCelsius",
-        "writable": false
+        "writable": false,
+        "displayUnit": {
+          "en": "C"
+        }
       },
       {
         "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:stts22h_temp_ext:enable;1",
@@ -5806,6 +5845,9 @@
         },
         "unit": "gForce",
         "writable": true,
+        "displayUnit": {
+          "en": "g"
+        },
         "initialValue": 3
       },
       {
@@ -6225,21 +6267,16 @@
               },
               "enumValue": 2,
               "name": "g8"
-            },
-            {
-              "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:ism330bx_acc:fs:schema:g16;1",
-              "displayName": {
-                "en": "16"
-              },
-              "enumValue": 3,
-              "name": "g16"
             }
           ],
           "valueSchema": "integer"
         },
         "unit": "gForce",
         "writable": true,
-        "initialValue": 3
+        "displayUnit": {
+          "en": "g"
+        },
+        "initialValue": 2
       },
       {
         "@id": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2:sensors:ism330bx_acc:enable;1",
@@ -6703,6 +6740,9 @@
         },
         "unit": "degreePerSecond",
         "writable": true,
+        "displayUnit": {
+          "en": "dps"
+        },
         "initialValue": 5
       },
       {

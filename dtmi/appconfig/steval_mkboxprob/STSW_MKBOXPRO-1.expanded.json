@@ -1,25 +1,25 @@
 [
   {
-    "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL;1",
+    "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL;1",
     "@type": "Interface",
     "contents": [
 	  {
-        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:control;1",
+        "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:control;1",
         "@type": "Component",
         "displayName": {
           "en": "Control"
         },
         "name": "control",
-        "schema": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control;1"
+        "schema": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:control:control;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:applications_stblesensor;1",
+        "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:applications_stblesensor;1",
         "@type": "Component",
         "displayName": {
           "en": "Applications ST BLE Sensor"
         },
         "name": "applications_stblesensor",
-        "schema": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor;1"
+        "schema": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:applications_stblesensor;1"
       }
     ],
     "displayName": {
@@ -35,25 +35,25 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor;1",
+    "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:applications_stblesensor;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor:flow;1",
+        "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:applications_stblesensor:flow;1",
         "@type": "Property",
         "displayName": {
           "en": "Flow"
         },
         "name": "flow",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor:flow:schema;1",
+          "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:applications_stblesensor:flow:schema;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:applications_stblesensor:flow:schema:control;1",
+              "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:applications_stblesensor:flow:schema:control;1",
               "displayName": {
                 "en": "Control"
               },
@@ -71,11 +71,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control;1",
+    "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:control:control;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control:start_stop;1",
+        "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:control:control:start_stop;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -84,7 +84,7 @@
         "name": "start_stop"
       },
 	  {
-        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control:log_status;1",
+        "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:control:control:log_status;1",
         "@type": [
           "Property",
           "StringValue"
@@ -97,7 +97,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stbox_pro:STBProPnPL:other:control:control:file_name;1",
+        "@id": "dtmi:appconfig:steval_stbox_prob:STBProPnPL:other:control:control:file_name;1",
         "@type": [
           "Property",
           "StringValue"

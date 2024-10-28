@@ -18375,7 +18375,7 @@
       "components": [],
       "description": "SensorTile Wireless Industrial Node development kit and reference design for industrial IoT applications",
       "documentation_url": "https://www.st.com/en/evaluation-tools/steval-stwinkt1.html#documentation",
-      "friendly_name": "STWIN",
+      "friendly_name": "STWIN kit",
       "nfc_dev_id": null,
       "order_url": null,
       "release_date": "2019_Q2",
@@ -18463,7 +18463,7 @@
       ],
       "description": "SensorTile Wireless Industrial Node development kit and reference design for industrial IoT applications",
       "documentation_url": "https://www.st.com/en/evaluation-tools/steval-stwinkt1b.html#documentation",
-      "friendly_name": "STWIN",
+      "friendly_name": "STWIN kit",
       "nfc_dev_id": null,
       "order_url": "https://estore.st.com/en/steval-stwinkt1b-cpn.html",
       "release_date": "2020_Q4",
@@ -18547,7 +18547,7 @@
       ],
       "description": "multi-sensors and wireless connectivity for any intelligent IoT node",
       "documentation_url": "https://www.st.com/en/evaluation-tools/steval-mkboxpro.html#documentation",
-      "friendly_name": "SensorTile.box-Pro",
+      "friendly_name": "SensorTile.box PRO",
       "nfc_dev_id": "0x03",
       "order_url": "https://www.st.com/en/evaluation-tools/steval-mkboxpro.html#sample-buy",
       "release_date": "2023_Q2",
@@ -18686,7 +18686,7 @@
       "components": [],
       "description": "multi-sensors and wireless connectivity for any intelligent IoT node",
       "documentation_url": "https://www.st.com/en/evaluation-tools/steval-mkboxpro.html#documentation",
-      "friendly_name": "SensorTile.box-Pro",
+      "friendly_name": "SensorTile.box PRO",
       "nfc_dev_id": null,
       "order_url": "https://www.st.com/en/evaluation-tools/steval-mkboxpro.html#sample-buy",
       "release_date": "2023_Q4",
@@ -21739,7 +21739,7 @@
       "um": ""
     }
   ],
-  "date": "2024-10-04 11:05:22.806580",
+  "date": "2024-10-28 11:05:22.806580",
   "version": "0.7.4",
-  "checksum": "d6f7b201d52a18418a89ce7f4f486c29"
+  "checksum": "ddf7b201d52a18418a89ce7f4f486c29"
 }
