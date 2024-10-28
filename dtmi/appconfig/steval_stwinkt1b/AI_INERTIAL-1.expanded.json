@@ -1,46 +1,55 @@
 [
   {
-    "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL;1",
+    "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:ism330dhcx_acc;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:ism330dhcx_acc;1",
         "@type": "Component",
         "displayName": {
           "en": "ISM330DHCX_ACC"
         },
         "name": "ism330dhcx_acc",
-        "schema": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:sensors:ism330dhcx_acc;1"
+        "schema": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_acc;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:stm32l4r9_mcu;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:ism330dhcx_gyro;1",
         "@type": "Component",
         "displayName": {
-          "en": "STM32L4R9 MCU"
+          "en": "ISM330DHCX_GYRO"
         },
-        "name": "stm32l4r9_mcu",
-        "schema": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu;1"
+        "name": "ism330dhcx_gyro",
+        "schema": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_gyro;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:ism330dhcx_mlc;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:stm32l4r9ai_mcu;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "STM32L4R9AI MCU"
+        },
+        "name": "stm32l4r9ai_mcu",
+        "schema": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:ism330dhcx_mlc;1",
         "@type": "Component",
         "displayName": {
           "en": "ISM330DHCX MLC"
         },
         "name": "ism330dhcx_mlc",
-        "schema": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc;1"
+        "schema": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:controller;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:controller;1",
         "@type": "Component",
         "displayName": {
           "en": "Controller"
         },
         "name": "controller",
-        "schema": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:controller;1"
+        "schema": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:controller;1"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:firmware_info;3",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:firmware_info;3",
         "@type": "Component",
         "displayName": {
           "en": "Firmware Information"
@@ -49,7 +58,7 @@
         "schema": "dtmi:appconfig:other:firmware_info;3"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:deviceinfo;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:DeviceInformation;1",
         "@type": "Component",
         "displayName": {
           "en": "Device Information"
@@ -71,11 +80,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:sensors:ism330dhcx_acc;1",
+    "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_acc;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:sensors:ism330dhcx_acc:odr;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_acc:odr;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -89,7 +98,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:sensors:ism330dhcx_acc:fs;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_acc:fs;1",
         "@type": [
           "Property",
           "NumberValue"
@@ -112,11 +121,52 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu;1",
+    "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_gyro;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:start;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_gyro:odr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_gyro:fs;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": "double",
+        "unit": "gForce",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "ISM330DHCX_GYRO"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:start;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -125,7 +175,7 @@
         "name": "start"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:stop;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:stop;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -134,25 +184,25 @@
         "name": "stop"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:label_id;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:label_id;1",
         "@type": [
           "Telemetry",
           "State"
         ],
-        "comment": "Vibration Monitoring",
+        "comment": "Motor Classification",
         "displayName": {
           "en": "Label ID"
         },
         "name": "label_id",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:label_id:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:label_id:schema;1",
           "@type": "Enum",
           "displayName": {
             "en": "Enum"
           },
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:label_id:schema:slow;1",
+              "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:label_id:schema:slow;1",
               "displayName": {
                 "en": "Slow"
               },
@@ -160,7 +210,7 @@
               "name": "slow"
             },
             {
-              "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:label_id:schema:fast;1",
+              "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:label_id:schema:fast;1",
               "displayName": {
                 "en": "Fast"
               },
@@ -168,7 +218,7 @@
               "name": "fast"
             },
             {
-              "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:label_id:schema:slow_with_disturbance;1",
+              "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:label_id:schema:slow_with_disturbance;1",
               "displayName": {
                 "en": "Slow with disturbance"
               },
@@ -176,7 +226,7 @@
               "name": "slow_with_disturbance"
             },
             {
-              "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:label_id:schema:fast_with_disturbance;1",
+              "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:label_id:schema:fast_with_disturbance;1",
               "displayName": {
                 "en": "Fast with disturbance"
               },
@@ -188,7 +238,7 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:accuracy;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:accuracy;1",
         "@type": [
           "Telemetry",
           "NumberValue"
@@ -201,7 +251,7 @@
         "unit": "percent"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:stm32l4r9_mcu:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:stm32l4r9ai_mcu:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -215,7 +265,7 @@
       }
     ],
     "displayName": {
-      "en": "STM32L4R9 MCU"
+      "en": "STM32L4R9AI MCU"
     }
   },
   {
@@ -223,11 +273,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc;1",
+    "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:start;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:start;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -236,7 +286,7 @@
         "name": "start"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:stop;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:stop;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -245,7 +295,7 @@
         "name": "stop"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:load_json;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:load_json;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -290,7 +340,7 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:load_ucf;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:load_ucf;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -335,50 +385,58 @@
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:label_id;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:label_id;1",
         "@type": [
           "Telemetry",
           "State"
         ],
-        "comment": "Vibration Monitoring",
+        "comment": "Asset Tracking",
         "displayName": {
           "en": "Label ID"
         },
         "name": "label_id",
         "schema": {
-          "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:label_id:schema;1",
+          "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:label_id:schema;1",
           "@type": "Enum",
           "enumValues": [
             {
-              "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:label_id:schema:no_vibration;1",
+              "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:label_id:schema:stationary_upright;1",
               "displayName": {
-                "en": "No Vibration"
+                "en": "Stationary - Upright"
               },
               "enumValue": 0,
-              "name": "no_vibration"
+              "name": "stationary_upright"
             },
             {
-              "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:label_id:schema:low_vibration;1",
+              "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:label_id:schema:stationary_not_upright;1",
               "displayName": {
-                "en": "Low Vibration"
+                "en": "Stationary - Not upright"
               },
-              "enumValue": 1,
-              "name": "low_vibration"
+              "enumValue": 4,
+              "name": "stationary_not_upright"
             },
             {
-              "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:label_id:schema:high_vibration;1",
+              "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:label_id:schema:in_motion;1",
               "displayName": {
-                "en": "High Vibration"
+                "en": "In motion"
               },
-              "enumValue": 2,
-              "name": "high_vibration"
+              "enumValue": 8,
+              "name": "in_motion"
             },
+            {
+              "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:label_id:schema:shaken;1",
+              "displayName": {
+                "en": "Shaken"
+              },
+              "enumValue": 12,
+              "name": "shaken"
+            }
           ],
           "valueSchema": "integer"
         }
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:enable;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:enable;1",
         "@type": [
           "Property",
           "BooleanValue"
@@ -391,7 +449,7 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:ism330dhcx_mlc:model_filename;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:sensors:ism330dhcx_mlc:model_filename;1",
         "@type": [
           "Property",
           "StringValue"
@@ -413,11 +471,11 @@
       "dtmi:iotcentral:context;2",
       "dtmi:dtdl:context;2"
     ],
-    "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:controller;1",
+    "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:controller;1",
     "@type": "Interface",
     "contents": [
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:controller:set_dfu_mode;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:controller:set_dfu_mode;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
@@ -426,7 +484,7 @@
         "name": "set_dfu_mode"
       },
       {
-        "@id": "dtmi:appconfig:steval_stwinkt1b:AI_INERTIAL:other:controller:switch_bank;1",
+        "@id": "dtmi:appconfig:steval_stwinkt1b:ai_inertial:other:controller:switch_bank;1",
         "@type": "Command",
         "commandType": "synchronous",
         "displayName": {
