@@ -13543,6 +13543,163 @@
     },
     {
       "ble_dev_id": "0x0F",
+      "ble_fw_id": "0x09",
+      "option_bytes": [
+        {
+          "name": "Battery Level: ",
+          "format": "int",
+          "escape_value": 255,
+          "scale_factor": 10,
+          "negative_offset": 0
+        },
+        {
+          "name": "Equipment Status",
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "value": 0,
+              "comment": "No Alarm",
+              "icon_code": 7
+            },
+            {
+              "value": 1,
+              "comment": "Warning",
+              "icon_code": 5
+            },
+            {
+              "value": 2,
+              "comment": "Alarm",
+              "icon_code": 6
+            }
+          ]
+        },
+        {
+          "name": "Battery Status: ",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 0,
+              "display_name": "Low Battery"
+            },
+            {
+              "value": 1,
+              "display_name": "Discharging"
+            },
+            {
+              "value": 3,
+              "display_name": "Charging"
+            },
+            {
+              "value": 4,
+              "display_name": "Not Plugged"
+            }
+          ]
+        }
+      ],
+      "brd_name": "STEVAL-PROTEUS1",
+      "fw_name": "STSW-PROTEUS",
+      "fw_version": "1.1.1",
+      "fw_desc": "Predictive maintenance applications based on STM32WB.",
+      "changelog": "Fixed the issue related the application crash when a BLE stack version lower than v1.19.0 was installed. Other minor bug fixes.",
+      "maturity": "release",
+      "fota": {
+        "type": "wb_mode",
+        "bootloader_type": "wb",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/STSW-PROTEUS_1_1_1.bin",
+        "partial_fota": 0
+      },
+      "cloud_apps": [
+        {
+          "description": "PoC",
+          "dtmi": "dtmi:proteusPoc:PROTEUSdraftv254f;1",
+          "dtmi_type": "iotc",
+          "name": "Proteus PoC",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/833f2c88-b5c5-402d-adfd-b81ed5dfed05",
+          "url": "https://proteus-poc.azureiotcentral.com"
+        }
+      ],
+      "characteristics": [
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Motor Time Parameter",
+          "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Predictive Speed Status",
+          "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Predictive Acceleration Status",
+          "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Predictive Frequency Domain Status",
+          "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "RebootOTAModeFeature",
+          "uuid": "0000fe11-8e22-4541-9d4c-21edae82ed19",
+          "max_write_length": 20
+        },
+        {
+          "name": "FeatureControlLed",
+          "uuid": "0000fe41-8e22-4541-9d4c-21edae82ed19",
+          "max_write_length": 20
+        },
+        {
+          "name": "FeatureSwitchStatus",
+          "uuid": "0000fe42-8e22-4541-9d4c-21edae82ed19",
+          "max_write_length": 20
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        }
+      ]
+    },
+    {
+      "ble_dev_id": "0x0F",
       "ble_fw_id": "0xFE",
       "brd_name": "STEVAL-PROTEUS1",
       "characteristics": [
@@ -22418,7 +22575,7 @@
       "um": ""
     }
   ],
-  "date": "2024-11-04 09:32:37.529043",
+  "date": "2024-11-14 13:55:28.439453",
   "version": "0.7.4",
-  "checksum": "0ea5d5387737f1868746126c6c3753ed"
+  "checksum": "9cc97c4bc65d30ff28b2ca23e2671bc9"
 }
