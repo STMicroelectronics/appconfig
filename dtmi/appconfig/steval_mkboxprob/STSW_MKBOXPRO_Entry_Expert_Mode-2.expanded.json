@@ -1,0 +1,173 @@
+[
+  {
+    "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode;2",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:sd_log;2",
+        "@type": "Component",
+        "displayName": {
+          "en": "SD_Log"
+        },
+        "name": "sd_log",
+        "schema": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:sd_log;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:applications_stblesensor;2",
+        "@type": "Component",
+        "displayName": {
+          "en": "Applications ST BLE Sensor"
+        },
+        "name": "applications_stblesensor",
+        "schema": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:applications_stblesensor;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:ecg_synthetic_data;2",
+        "@type": "Component",
+        "displayName": {
+          "en": "ECG Synthetic Data"
+        },
+        "name": "ecg_synthetic_data",
+        "schema": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:ecg_synthetic_data;1"
+      }
+    ],
+    "displayName": {
+      "en": "STSW_MKBOXPRO_Entry_Expert_Mode-2"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:sd_log;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:sd_log:start_stop;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Start/Stop command"
+        },
+        "name": "start_stop"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:sd_log:log_status;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Log Status"
+        },
+        "name": "log_status",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:sd_log:file_name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "File Name"
+        },
+        "name": "file_name",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "SD_Log"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:applications_stblesensor;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:applications_stblesensor:flow;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Flow"
+        },
+        "name": "flow",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:applications_stblesensor:flow:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:applications_stblesensor:flow:schema:control;1",
+              "displayName": {
+                "en": "Control"
+              },
+              "name": "control",
+              "schema": "string"
+            }
+          ]
+        },
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "BLE PnP-L Example"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:ecg_synthetic_data;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode:other:ecg_synthetic_data:st_ble_stream;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "ECG Synthetic Data"
+        },
+        "name": "st_ble_stream",
+        "writable": true,
+        "schema": {
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "displayName": {
+                "en": "id"
+              },
+              "name": "id",
+              "schema": "integer"
+            },
+            {
+              "displayName": {
+                "en": "Custom"
+              },
+              "name": "custom",
+              "schema": "string"
+            }
+          ]
+        }
+      }
+    ],
+    "displayName": {
+      "en": "ECG Synthetic Data"
+    }
+  }
+]

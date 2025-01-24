@@ -3214,117 +3214,40 @@
     {
       "ble_dev_id": "0x09",
       "ble_fw_id": "0x0F",
-      "option_bytes": [
+      "brd_name": "STEVAL-STWINKT1B",
+      "changelog": "Added hw tags, fixed ioffset and PnPL init",
+      "characteristics": [
         {
-          "name": "battery:",
-          "type": "%",
-          "format": "int",
-          "scale_factor": 1,
-          "negative_offset": 0
+          "max_write_length": 20,
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
-          "name": "alarm:",
-          "type": "string",
-          "format": "enum_string",
-          "string_values": [
-            {
-              "value": 0,
-              "display_name": "No Alarm"
-            },
-            {
-              "value": 1,
-              "display_name": "Battery Charging"
-            },
-            {
-              "value": 2,
-              "display_name": "No Battery"
-            },
-            {
-              "value": 3,
-              "display_name": "Logging Ongoing"
-            },
-            {
-              "value": 4,
-              "display_name": "Low Battery"
-            },
-            {
-              "value": 5,
-              "display_name": "Missing SD Card"
-            },
-            {
-              "value": 6,
-              "display_name": "SD Card Full"
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
-          "name": "status",
-          "type": "icon",
-          "format": "enum_icon",
-          "icon_values": [
-            {
-              "value": 0,
-              "comment": "USB Plug, No Battery",
-              "icon_code": 18
-            },
-            {
-              "value": 1,
-              "comment": "USB Plug, Battery in charge",
-              "icon_code": 3
-            },
-            {
-              "value": 2,
-              "comment": "Battery",
-              "icon_code": 1
-            },
-            {
-              "value": 3,
-              "comment": "icon for Log ongoing",
-              "icon_code": 10
-            },
-            {
-              "value": 4,
-              "comment": "icon for low battery",
-              "icon_code": 0
-            },
-            {
-              "value": 5,
-              "comment": "icon for Missing SD Card",
-              "icon_code": 5
-            },
-            {
-              "value": 6,
-              "comment": "icon for SD Card full",
-              "icon_code": 11
-            },
-            {
-              "value": 7,
-              "comment": "icon for full battery",
-              "icon_code": 2
-            },
-            {
-              "value": 8,
-              "comment": "icon for error",
-              "icon_code": 6
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Machine Learning Core",
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 217,
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b"
         }
       ],
-      "brd_name": "STEVAL-STWINKT1B",
-      "fw_name": "FP-SNS-DATALOG2_Datalog2",
-      "fw_version": "2.3.0",
-      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "changelog": "Added hw tags, fixed ioffset and PnPL init",
-      "dtmi": "dtmi:appconfig:steval_stwinkt1b:FP_SNS_DATALOG2_Datalog2;3",
-      "maturity": "release",
-      "fota": {
-        "type": "fast",
-        "bootloader_type": "none",
-        "max_chunk_length": 0,
-        "max_divisor_constraint": 8,
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinkt1b/FP-SNS-DATALOG2_Datalog2_2_3_0.bin",
-        "partial_fota": 0
-      },
       "cloud_apps": [],
       "demo_decorator": {
         "add": [],
@@ -3336,36 +3259,113 @@
         ],
         "rename": []
       },
-      "characteristics": [
+      "dtmi": "dtmi:appconfig:steval_stwinkt1b:FP_SNS_DATALOG2_Datalog2;3",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinkt1b/FP-SNS-DATALOG2_Datalog2_2_3_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 8,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "2.3.0",
+      "maturity": "release",
+      "option_bytes": [
         {
-          "name": "Debug Console stdin/stdout",
-          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "format": "int",
+          "name": "battery:",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
         },
         {
-          "name": "Debug Console stderr",
-          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "format": "enum_string",
+          "name": "alarm:",
+          "string_values": [
+            {
+              "display_name": "No Alarm",
+              "value": 0
+            },
+            {
+              "display_name": "Battery Charging",
+              "value": 1
+            },
+            {
+              "display_name": "No Battery",
+              "value": 2
+            },
+            {
+              "display_name": "Logging Ongoing",
+              "value": 3
+            },
+            {
+              "display_name": "Low Battery",
+              "value": 4
+            },
+            {
+              "display_name": "Missing SD Card",
+              "value": 5
+            },
+            {
+              "display_name": "SD Card Full",
+              "value": 6
+            }
+          ],
+          "type": "string"
         },
         {
-          "name": "Machine Learning Core",
-          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "HS Datalog Config",
-          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Ext Configuration",
-          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "PnPLike",
-          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 217
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "USB Plug, No Battery",
+              "icon_code": 18,
+              "value": 0
+            },
+            {
+              "comment": "USB Plug, Battery in charge",
+              "icon_code": 3,
+              "value": 1
+            },
+            {
+              "comment": "Battery",
+              "icon_code": 1,
+              "value": 2
+            },
+            {
+              "comment": "icon for Log ongoing",
+              "icon_code": 10,
+              "value": 3
+            },
+            {
+              "comment": "icon for low battery",
+              "icon_code": 0,
+              "value": 4
+            },
+            {
+              "comment": "icon for Missing SD Card",
+              "icon_code": 5,
+              "value": 5
+            },
+            {
+              "comment": "icon for SD Card full",
+              "icon_code": 11,
+              "value": 6
+            },
+            {
+              "comment": "icon for full battery",
+              "icon_code": 2,
+              "value": 7
+            },
+            {
+              "comment": "icon for error",
+              "icon_code": 6,
+              "value": 8
+            }
+          ],
+          "name": "status",
+          "type": "icon"
         }
       ]
     },
@@ -7286,64 +7286,40 @@
     {
       "ble_dev_id": "0x0D",
       "ble_fw_id": "0x19",
-      "option_bytes": [
+      "brd_name": "STEVAL-MKBOXPRO",
+      "changelog": "Added hw tags, fixed ioffset and PnPL init",
+      "characteristics": [
         {
-          "name": "alarm:",
-          "type": "string",
-          "format": "enum_string",
-          "string_values": [
-            {
-              "value": 0,
-              "display_name": "No Alarm"
-            },
-            {
-              "value": 1,
-              "display_name": "Missing SD Card"
-            },
-            {
-              "value": 2,
-              "display_name": "Logging Ongoing"
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
-          "name": "status",
-          "type": "icon",
-          "format": "enum_icon",
-          "icon_values": [
-            {
-              "value": 0,
-              "comment": "No Alarm",
-              "icon_code": 7
-            },
-            {
-              "value": 1,
-              "comment": "icon for Missing SD Card",
-              "icon_code": 5
-            },
-            {
-              "value": 2,
-              "comment": "icon for Log ongoing",
-              "icon_code": 10
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Machine Learning Core",
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 244,
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b"
         }
       ],
-      "brd_name": "STEVAL-MKBOXPRO",
-      "fw_name": "FP-SNS-DATALOG2_Datalog2",
-      "fw_version": "2.3.0",
-      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "changelog": "Added hw tags, fixed ioffset and PnPL init",
-      "dtmi": "dtmi:appconfig:steval_mkboxpro:FP_SNS_DATALOG2_Datalog2;5",
-      "maturity": "release",
-      "fota": {
-        "type": "fast",
-        "bootloader_type": "none",
-        "max_chunk_length": 0,
-        "max_divisor_constraint": 0,
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/FP-SNS-DATALOG2_Datalog2_2_3_0.bin",
-        "partial_fota": 0
-      },
       "cloud_apps": [],
       "demo_decorator": {
         "add": [],
@@ -7355,37 +7331,583 @@
         ],
         "rename": []
       },
+      "dtmi": "dtmi:appconfig:steval_mkboxpro:FP_SNS_DATALOG2_Datalog2;5",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/FP-SNS-DATALOG2_Datalog2_2_3_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "2.3.0",
+      "maturity": "release",
+      "option_bytes": [
+        {
+          "format": "enum_string",
+          "name": "alarm:",
+          "string_values": [
+            {
+              "display_name": "No Alarm",
+              "value": 0
+            },
+            {
+              "display_name": "Missing SD Card",
+              "value": 1
+            },
+            {
+              "display_name": "Logging Ongoing",
+              "value": 2
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "No Alarm",
+              "icon_code": 7,
+              "value": 0
+            },
+            {
+              "comment": "icon for Missing SD Card",
+              "icon_code": 5,
+              "value": 1
+            },
+            {
+              "comment": "icon for Log ongoing",
+              "icon_code": 10,
+              "value": 2
+            }
+          ],
+          "name": "status",
+          "type": "icon"
+        }
+      ]
+    },
+    {
+      "ble_dev_id": "0x0D",
+      "ble_fw_id": "0x1B",
+      "option_bytes": [
+        {
+          "name": "adapter mounted: ",
+          "type": "string",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 1,
+              "display_name": "SHT40AD1B"
+            },
+            {
+              "value": 2,
+              "display_name": "STHS34PF80"
+            },
+            {
+              "value": 3,
+              "display_name": "LSM6DSO32"
+            },
+            {
+              "value": 4,
+              "display_name": "LSM6DSV16BX"
+            },
+            {
+              "value": 5,
+              "display_name": "LSM6DSO16IS"
+            },
+            {
+              "value": 6,
+              "display_name": "LSM6DSV32X"
+            },
+            {
+              "value": 8,
+              "display_name": "ST1VAFE3BX"
+            },
+            {
+              "value": 254,
+              "display_name": "no supported adapter detected"
+            }
+          ]
+        },
+        {
+          "name": "loaded app: ",
+          "type": "string",
+          "format": "enum_string",
+          "escape_value": 255,
+          "string_values": [
+            {
+              "value": 0,
+              "display_name": "Custom"
+            },
+            {
+              "value": 1,
+              "display_name": "Compass"
+            },
+            {
+              "value": 2,
+              "display_name": "FreeFall Detection"
+            },
+            {
+              "value": 3,
+              "display_name": "Level"
+            },
+            {
+              "value": 4,
+              "display_name": "Pedometer"
+            },
+            {
+              "value": 5,
+              "display_name": "Sensor Fusion Quaternion"
+            },
+            {
+              "value": 6,
+              "display_name": "Barometer"
+            },
+            {
+              "value": 7,
+              "display_name": "SD_Log"
+            },
+            {
+              "value": 8,
+              "display_name": "Baby Crying Detector"
+            },
+            {
+              "value": 9,
+              "display_name": "Human Activity Recognition"
+            },
+            {
+              "value": 10,
+              "display_name": "InVehicle Baby Alarm"
+            },
+            {
+              "value": 11,
+              "display_name": "Q Touch"
+            },
+            {
+              "value": 12,
+              "display_name": "NFC Writer"
+            },
+            {
+              "value": 13,
+              "display_name": "FFT Compare"
+            },
+            {
+              "value": 14,
+              "display_name": "FFT Line Compare"
+            },
+            {
+              "value": 15,
+              "display_name": "Qvar Data Plot"
+            },
+            {
+              "value": 16,
+              "display_name": "Microphone FFT"
+            },
+            {
+              "value": 17,
+              "display_name": "Smart Toilet"
+            },
+            {
+              "value": 18,
+              "display_name": "Asset Tracking"
+            },
+            {
+              "value": 19,
+              "display_name": "Adapter Interface"
+            },
+            {
+              "value": 254,
+              "display_name": "not able to read loaded app"
+            },
+            {
+              "value": 255,
+              "display_name": "no flow in memory"
+            }
+          ],
+          "escape_message": ""
+        },
+        {
+          "name": "battery_status",
+          "type": "icon",
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "value": 0,
+              "comment": "battery low",
+              "icon_code": 0
+            },
+            {
+              "value": 1,
+              "comment": "battery 50%",
+              "icon_code": 1
+            },
+            {
+              "value": 2,
+              "comment": "battery full and charging",
+              "icon_code": 27
+            },
+            {
+              "value": 3,
+              "comment": "battery charging",
+              "icon_code": 3
+            },
+            {
+              "value": 5,
+              "comment": "battery full",
+              "icon_code": 2
+            },
+            {
+              "value": 255,
+              "comment": "battery not present",
+              "icon_code": 255
+            }
+          ]
+        }
+      ],
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_name": "STSW-MKBOXPRO Entry/Expert Mode",
+      "fw_version": "1.2.0",
+      "fw_desc": "Fw supporting app creation with ST BLE Sensor app",
+      "changelog": "Support for Biosensor (ST1VAFE3BX) with Medical Signal Demo and HRM. General bug fixes related with SD Log.",
+      "dtmi": "dtmi:appconfig:steval_mkboxpro:STSW_MKBOXPRO_Entry_Expert_Mode;2",
+      "demo_decorator": {
+        "add": [
+          "Flow"
+        ],
+        "remove": [
+          "STSW-MKBOXPRO Entry/Expert Mode",
+          "STSW-MKBOXPRO Entry/Expert",
+          "Raw PnPL Controlled",
+          "Smart Motor Control",
+          "Cloud MQTT"
+        ],
+        "rename": []
+      },
+      "maturity": "release",
+      "fota": {
+        "type": "fast",
+        "bootloader_type": "none",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/STSW-MKBOXPRO_1_2_0.bin",
+        "partial_fota": 0
+      },
+      "cloud_apps": [],
       "characteristics": [
         {
+          "name": "Pedometer",
+          "uuid": "00000001-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
           "name": "Debug Console stdin/stdout",
-          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
           "name": "Debug Console stderr",
-          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Audio Classification",
+          "uuid": "00000003-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Euler Angle",
+          "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
         },
         {
           "name": "Machine Learning Core",
-          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
         },
         {
-          "name": "HS Datalog Config",
-          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Finite State Machine",
+          "uuid": "00000010-0002-11e1-ac36-0002a5d5c51b"
         },
         {
           "name": "Ext Configuration",
-          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
         },
         {
-          "name": "PnPLike",
-          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 244
+          "name": "QVAR",
+          "uuid": "00000016-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Piano",
+          "uuid": "0000001c-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Event Counter",
+          "uuid": "0000001d-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gesture Navigation",
+          "uuid": "0000001f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "JSON NFC",
+          "uuid": "00000020-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Normalization",
+          "uuid": "00000021-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion Compact",
+          "uuid": "00000100-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "SD Logging",
+          "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 2,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 2,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 2,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 4,
+              "name": "Acc norm",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "LSB"
+            }
+          ],
+          "name": "Norm",
+          "uuid": "00010000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 1,
+              "name": "Wrist up",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": "#"
+            },
+            {
+              "length": 1,
+              "name": "Wrist down",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": "#"
+            }
+          ],
+          "name": "Wirst Tilt",
+          "uuid": "00020000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 2,
+              "name": "Steps",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt16",
+              "unit": "#"
+            }
+          ],
+          "name": "Pedometer",
+          "uuid": "00030000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 1,
+              "name": "Activity",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": ""
+            },
+            {
+              "length": 1,
+              "name": "Confidence",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": ""
+            }
+          ],
+          "name": "Activity Recognition",
+          "uuid": "00040000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
         }
+      ],
+      "compatible_sensor_adapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18
       ]
     },
     {
@@ -9043,12 +9565,12 @@
               "value": 0
             },
             {
-              "value": 1,
-              "display_name": "Missing SD Card"
+              "display_name": "Missing SD Card",
+              "value": 1
             },
             {
-              "value": 2,
-              "display_name": "Logging Ongoing"
+              "display_name": "Logging Ongoing",
+              "value": 2
             }
           ],
           "type": "string"
@@ -9829,6 +10351,14 @@
         }
       ],
       "cloud_apps": [],
+      "demo_decorator": {
+        "add": [],
+        "remove": [
+          "Raw PnPL Controlled",
+          "FP_IND_DATALOGMC_DatalogMCNEAI"
+        ],
+        "rename": []
+      },
       "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI;1",
       "fota": {
         "bootloader_type": "none",
@@ -9852,12 +10382,12 @@
               "value": 0
             },
             {
-              "value": 1,
-              "display_name": "Missing SD Card"
+              "display_name": "Missing SD Card",
+              "value": 1
             },
             {
-              "value": 2,
-              "display_name": "Logging Ongoing"
+              "display_name": "Logging Ongoing",
+              "value": 2
             }
           ],
           "type": "string"
@@ -11937,117 +12467,40 @@
     {
       "ble_dev_id": "0x0E",
       "ble_fw_id": "0x25",
-      "option_bytes": [
+      "brd_name": "STEVAL-STWINBX1",
+      "changelog": "Added hw tags, fixed ioffset and PnPL init",
+      "characteristics": [
         {
-          "name": "battery:",
-          "type": "%",
-          "format": "int",
-          "scale_factor": 1,
-          "negative_offset": 0
+          "max_write_length": 20,
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
-          "name": "alarm:",
-          "type": "string",
-          "format": "enum_string",
-          "string_values": [
-            {
-              "value": 0,
-              "display_name": "No Alarm"
-            },
-            {
-              "value": 1,
-              "display_name": "Battery Charging"
-            },
-            {
-              "value": 2,
-              "display_name": "No Battery"
-            },
-            {
-              "value": 3,
-              "display_name": "Logging Ongoing"
-            },
-            {
-              "value": 4,
-              "display_name": "Low Battery"
-            },
-            {
-              "value": 5,
-              "display_name": "Missing SD Card"
-            },
-            {
-              "value": 6,
-              "display_name": "SD Card Full"
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
-          "name": "status",
-          "type": "icon",
-          "format": "enum_icon",
-          "icon_values": [
-            {
-              "value": 0,
-              "comment": "USB Plug, No Battery",
-              "icon_code": 18
-            },
-            {
-              "value": 1,
-              "comment": "USB Plug, Battery in charge",
-              "icon_code": 3
-            },
-            {
-              "value": 2,
-              "comment": "Battery",
-              "icon_code": 1
-            },
-            {
-              "value": 3,
-              "comment": "icon for Log ongoing",
-              "icon_code": 10
-            },
-            {
-              "value": 4,
-              "comment": "icon for low battery",
-              "icon_code": 0
-            },
-            {
-              "value": 5,
-              "comment": "icon for Missing SD Card",
-              "icon_code": 5
-            },
-            {
-              "value": 6,
-              "comment": "icon for SD Card full",
-              "icon_code": 11
-            },
-            {
-              "value": 7,
-              "comment": "icon for full battery",
-              "icon_code": 2
-            },
-            {
-              "value": 8,
-              "comment": "icon for error",
-              "icon_code": 6
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Machine Learning Core",
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 217,
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b"
         }
       ],
-      "brd_name": "STEVAL-STWINBX1",
-      "fw_name": "FP-SNS-DATALOG2_Datalog2",
-      "fw_version": "2.3.0",
-      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "changelog": "Added hw tags, fixed ioffset and PnPL init",
-      "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2;7",
-      "maturity": "release",
-      "fota": {
-        "type": "fast",
-        "bootloader_type": "none",
-        "max_chunk_length": 0,
-        "max_divisor_constraint": 0,
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-DATALOG2_Datalog2_2_3_0.bin",
-        "partial_fota": 0
-      },
       "cloud_apps": [],
       "demo_decorator": {
         "add": [],
@@ -12059,36 +12512,113 @@
         ],
         "rename": []
       },
-      "characteristics": [
+      "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2;7",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-DATALOG2_Datalog2_2_3_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "2.3.0",
+      "maturity": "release",
+      "option_bytes": [
         {
-          "name": "Debug Console stdin/stdout",
-          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "format": "int",
+          "name": "battery:",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
         },
         {
-          "name": "Debug Console stderr",
-          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "format": "enum_string",
+          "name": "alarm:",
+          "string_values": [
+            {
+              "display_name": "No Alarm",
+              "value": 0
+            },
+            {
+              "display_name": "Battery Charging",
+              "value": 1
+            },
+            {
+              "display_name": "No Battery",
+              "value": 2
+            },
+            {
+              "display_name": "Logging Ongoing",
+              "value": 3
+            },
+            {
+              "display_name": "Low Battery",
+              "value": 4
+            },
+            {
+              "display_name": "Missing SD Card",
+              "value": 5
+            },
+            {
+              "display_name": "SD Card Full",
+              "value": 6
+            }
+          ],
+          "type": "string"
         },
         {
-          "name": "Machine Learning Core",
-          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "HS Datalog Config",
-          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Ext Configuration",
-          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "PnPLike",
-          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 217
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "USB Plug, No Battery",
+              "icon_code": 18,
+              "value": 0
+            },
+            {
+              "comment": "USB Plug, Battery in charge",
+              "icon_code": 3,
+              "value": 1
+            },
+            {
+              "comment": "Battery",
+              "icon_code": 1,
+              "value": 2
+            },
+            {
+              "comment": "icon for Log ongoing",
+              "icon_code": 10,
+              "value": 3
+            },
+            {
+              "comment": "icon for low battery",
+              "icon_code": 0,
+              "value": 4
+            },
+            {
+              "comment": "icon for Missing SD Card",
+              "icon_code": 5,
+              "value": 5
+            },
+            {
+              "comment": "icon for SD Card full",
+              "icon_code": 11,
+              "value": 6
+            },
+            {
+              "comment": "icon for full battery",
+              "icon_code": 2,
+              "value": 7
+            },
+            {
+              "comment": "icon for error",
+              "icon_code": 6,
+              "value": 8
+            }
+          ],
+          "name": "status",
+          "type": "icon"
         }
       ]
     },
@@ -12324,117 +12854,35 @@
     {
       "ble_dev_id": "0x0E",
       "ble_fw_id": "0x29",
-      "option_bytes": [
+      "brd_name": "STEVAL-STWINBX1",
+      "changelog": "Upgraded ALS management, fixed ioffset and PnPL init",
+      "characteristics": [
         {
-          "name": "battery:",
-          "type": "%",
-          "format": "int",
-          "scale_factor": 1,
-          "negative_offset": 0
+          "max_write_length": 20,
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
-          "name": "alarm:",
-          "type": "string",
-          "format": "enum_string",
-          "string_values": [
-            {
-              "value": 0,
-              "display_name": "No Alarm"
-            },
-            {
-              "value": 1,
-              "display_name": "Battery Charging"
-            },
-            {
-              "value": 2,
-              "display_name": "No Battery"
-            },
-            {
-              "value": 3,
-              "display_name": "Logging Ongoing"
-            },
-            {
-              "value": 4,
-              "display_name": "Low Battery"
-            },
-            {
-              "value": 5,
-              "display_name": "Missing SD Card"
-            },
-            {
-              "value": 6,
-              "display_name": "SD Card Full"
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
-          "name": "status",
-          "type": "icon",
-          "format": "enum_icon",
-          "icon_values": [
-            {
-              "value": 0,
-              "comment": "USB Plug, No Battery",
-              "icon_code": 18
-            },
-            {
-              "value": 1,
-              "comment": "USB Plug, Battery in charge",
-              "icon_code": 3
-            },
-            {
-              "value": 2,
-              "comment": "Battery",
-              "icon_code": 1
-            },
-            {
-              "value": 3,
-              "comment": "icon for Log ongoing",
-              "icon_code": 10
-            },
-            {
-              "value": 4,
-              "comment": "icon for low battery",
-              "icon_code": 0
-            },
-            {
-              "value": 5,
-              "comment": "icon for Missing SD Card",
-              "icon_code": 5
-            },
-            {
-              "value": 6,
-              "comment": "icon for SD Card full",
-              "icon_code": 11
-            },
-            {
-              "value": 7,
-              "comment": "icon for full battery",
-              "icon_code": 2
-            },
-            {
-              "value": 8,
-              "comment": "icon for error",
-              "icon_code": 6
-            }
-          ]
+          "max_write_length": 20,
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 217,
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b"
         }
       ],
-      "brd_name": "STEVAL-STWINBX1",
-      "fw_name": "FP-SNS-DATALOG2_PDetect",
-      "fw_version": "2.3.0",
-      "fw_desc": "Comprehensive solution for saving data for presence detection via STEVAL-PDETECT1 expansion board",
-      "changelog": "Upgraded ALS management, fixed ioffset and PnPL init",
-      "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_PDetect;3",
-      "maturity": "release",
-      "fota": {
-        "type": "fast",
-        "bootloader_type": "none",
-        "max_chunk_length": 0,
-        "max_divisor_constraint": 0,
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-DATALOG2_PDetect_2_3_0.bin",
-        "partial_fota": 0
-      },
       "cloud_apps": [],
       "demo_decorator": {
         "add": [],
@@ -12446,31 +12894,113 @@
         ],
         "rename": []
       },
-      "characteristics": [
+      "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_PDetect;3",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-DATALOG2_PDetect_2_3_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "fw_desc": "Comprehensive solution for saving data for presence detection via STEVAL-PDETECT1 expansion board",
+      "fw_name": "FP-SNS-DATALOG2_PDetect",
+      "fw_version": "2.3.0",
+      "maturity": "release",
+      "option_bytes": [
         {
-          "name": "Debug Console stdin/stdout",
-          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "format": "int",
+          "name": "battery:",
+          "negative_offset": 0,
+          "scale_factor": 1,
+          "type": "%"
         },
         {
-          "name": "Debug Console stderr",
-          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "format": "enum_string",
+          "name": "alarm:",
+          "string_values": [
+            {
+              "display_name": "No Alarm",
+              "value": 0
+            },
+            {
+              "display_name": "Battery Charging",
+              "value": 1
+            },
+            {
+              "display_name": "No Battery",
+              "value": 2
+            },
+            {
+              "display_name": "Logging Ongoing",
+              "value": 3
+            },
+            {
+              "display_name": "Low Battery",
+              "value": 4
+            },
+            {
+              "display_name": "Missing SD Card",
+              "value": 5
+            },
+            {
+              "display_name": "SD Card Full",
+              "value": 6
+            }
+          ],
+          "type": "string"
         },
         {
-          "name": "HS Datalog Config",
-          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Ext Configuration",
-          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "PnPLike",
-          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 217
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "USB Plug, No Battery",
+              "icon_code": 18,
+              "value": 0
+            },
+            {
+              "comment": "USB Plug, Battery in charge",
+              "icon_code": 3,
+              "value": 1
+            },
+            {
+              "comment": "Battery",
+              "icon_code": 1,
+              "value": 2
+            },
+            {
+              "comment": "icon for Log ongoing",
+              "icon_code": 10,
+              "value": 3
+            },
+            {
+              "comment": "icon for low battery",
+              "icon_code": 0,
+              "value": 4
+            },
+            {
+              "comment": "icon for Missing SD Card",
+              "icon_code": 5,
+              "value": 5
+            },
+            {
+              "comment": "icon for SD Card full",
+              "icon_code": 11,
+              "value": 6
+            },
+            {
+              "comment": "icon for full battery",
+              "icon_code": 2,
+              "value": 7
+            },
+            {
+              "comment": "icon for error",
+              "icon_code": 6,
+              "value": 8
+            }
+          ],
+          "name": "status",
+          "type": "icon"
         }
       ]
     },
@@ -13399,217 +13929,230 @@
     {
       "ble_dev_id": "0x0F",
       "ble_fw_id": "0x08",
-      "option_bytes": [
+      "brd_name": "STEVAL-PROTEUS1",
+      "changelog": "Support Low Power Mode. Support ST BLE Sensor App.",
+      "characteristics": [
         {
-          "name": "Battery Level: ",
-          "format": "int",
-          "escape_value": 255,
-          "scale_factor": 10,
-          "negative_offset": 0
+          "max_write_length": 20,
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
         },
         {
-          "name": "Equipment Status",
+          "max_write_length": 20,
+          "name": "Motor Time Parameter",
+          "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Predictive Speed Status",
+          "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Predictive Acceleration Status",
+          "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Predictive Frequency Domain Status",
+          "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "RebootOTAModeFeature",
+          "uuid": "0000fe11-8e22-4541-9d4c-21edae82ed19"
+        },
+        {
+          "max_write_length": 20,
+          "name": "FeatureControlLed",
+          "uuid": "0000fe41-8e22-4541-9d4c-21edae82ed19"
+        },
+        {
+          "max_write_length": 20,
+          "name": "FeatureSwitchStatus",
+          "uuid": "0000fe42-8e22-4541-9d4c-21edae82ed19"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [],
+      "fota": {},
+      "fw_desc": "STM32WB predictive maintenance applications",
+      "fw_name": "STSW-PROTEUS",
+      "fw_version": "1.1.0",
+      "maturity": "release",
+      "option_bytes": [
+        {
+          "escape_value": 255,
+          "format": "int",
+          "name": "Battery Level: ",
+          "negative_offset": 0,
+          "scale_factor": 10
+        },
+        {
           "format": "enum_icon",
           "icon_values": [
             {
-              "value": 0,
               "comment": "No Alarm",
-              "icon_code": 7
+              "icon_code": 7,
+              "value": 0
             },
             {
-              "value": 1,
               "comment": "Warning",
-              "icon_code": 5
+              "icon_code": 5,
+              "value": 1
             },
             {
-              "value": 2,
               "comment": "Alarm",
-              "icon_code": 6
+              "icon_code": 6,
+              "value": 2
             }
-          ]
+          ],
+          "name": "Equipment Status"
         },
         {
-          "name": "Battery Status: ",
           "format": "enum_string",
+          "name": "Battery Status: ",
           "string_values": [
             {
-              "value": 0,
-              "display_name": "Low Battery"
+              "display_name": "Low Battery",
+              "value": 0
             },
             {
-              "value": 1,
-              "display_name": "Discharging"
+              "display_name": "Discharging",
+              "value": 1
             },
             {
-              "value": 2,
-              "display_name": "End of Charging"
+              "display_name": "End of Charging",
+              "value": 2
             },
             {
-              "value": 3,
-              "display_name": "Charging"
+              "display_name": "Charging",
+              "value": 3
             },
             {
-              "value": 4,
-              "display_name": "Not Plugged"
+              "display_name": "Not Plugged",
+              "value": 4
             }
           ]
-        }
-      ],
-      "brd_name": "STEVAL-PROTEUS1",
-      "fw_name": "STSW-PROTEUS",
-      "fw_version": "1.1.0",
-      "fw_desc": "STM32WB predictive maintenance applications",
-      "changelog": "Support Low Power Mode. Support ST BLE Sensor App.",
-      "maturity": "release",
-      "fota": {},
-      "cloud_apps": [],
-      "characteristics": [
-        {
-          "name": "FFT Amplitude",
-          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Motor Time Parameter",
-          "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Predictive Speed Status",
-          "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Predictive Acceleration Status",
-          "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Predictive Frequency Domain Status",
-          "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Ext Configuration",
-          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Acceleration Event",
-          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "RebootOTAModeFeature",
-          "uuid": "0000fe11-8e22-4541-9d4c-21edae82ed19",
-          "max_write_length": 20
-        },
-        {
-          "name": "FeatureControlLed",
-          "uuid": "0000fe41-8e22-4541-9d4c-21edae82ed19",
-          "max_write_length": 20
-        },
-        {
-          "name": "FeatureSwitchStatus",
-          "uuid": "0000fe42-8e22-4541-9d4c-21edae82ed19",
-          "max_write_length": 20
-        },
-        {
-          "name": "Temperature",
-          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Battery",
-          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Gyroscope",
-          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Accelerometer",
-          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Switch",
-          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
         }
       ]
     },
     {
       "ble_dev_id": "0x0F",
       "ble_fw_id": "0x09",
-      "option_bytes": [
+      "brd_name": "STEVAL-PROTEUS1",
+      "changelog": "Fixed the issue related the application crash when a BLE stack version lower than v1.19.0 was installed. Other minor bug fixes.",
+      "characteristics": [
         {
-          "name": "Battery Level: ",
-          "format": "int",
-          "escape_value": 255,
-          "scale_factor": 10,
-          "negative_offset": 0
+          "max_write_length": 20,
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
         },
         {
-          "name": "Equipment Status",
-          "format": "enum_icon",
-          "icon_values": [
-            {
-              "value": 0,
-              "comment": "No Alarm",
-              "icon_code": 7
-            },
-            {
-              "value": 1,
-              "comment": "Warning",
-              "icon_code": 5
-            },
-            {
-              "value": 2,
-              "comment": "Alarm",
-              "icon_code": 6
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Motor Time Parameter",
+          "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b"
         },
         {
-          "name": "Battery Status: ",
-          "format": "enum_string",
-          "string_values": [
-            {
-              "value": 0,
-              "display_name": "Low Battery"
-            },
-            {
-              "value": 1,
-              "display_name": "Discharging"
-            },
-            {
-              "value": 3,
-              "display_name": "Charging"
-            },
-            {
-              "value": 4,
-              "display_name": "Not Plugged"
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Predictive Speed Status",
+          "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Predictive Acceleration Status",
+          "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Predictive Frequency Domain Status",
+          "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Acceleration Event",
+          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "RebootOTAModeFeature",
+          "uuid": "0000fe11-8e22-4541-9d4c-21edae82ed19"
+        },
+        {
+          "max_write_length": 20,
+          "name": "FeatureControlLed",
+          "uuid": "0000fe41-8e22-4541-9d4c-21edae82ed19"
+        },
+        {
+          "max_write_length": 20,
+          "name": "FeatureSwitchStatus",
+          "uuid": "0000fe42-8e22-4541-9d4c-21edae82ed19"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
         }
       ],
-      "brd_name": "STEVAL-PROTEUS1",
-      "fw_name": "STSW-PROTEUS",
-      "fw_version": "1.1.1",
-      "fw_desc": "Predictive maintenance applications based on STM32WB.",
-      "changelog": "Fixed the issue related the application crash when a BLE stack version lower than v1.19.0 was installed. Other minor bug fixes.",
-      "maturity": "release",
-      "fota": {
-        "type": "wb_mode",
-        "bootloader_type": "wb",
-        "max_chunk_length": 0,
-        "max_divisor_constraint": 0,
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/STSW-PROTEUS_1_1_1.bin",
-        "partial_fota": 0
-      },
       "cloud_apps": [
         {
           "description": "PoC",
@@ -13620,81 +14163,68 @@
           "url": "https://proteus-poc.azureiotcentral.com"
         }
       ],
-      "characteristics": [
+      "fota": {
+        "bootloader_type": "wb",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-proteus1/STSW-PROTEUS_1_1_1.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "wb_mode"
+      },
+      "fw_desc": "Predictive maintenance applications based on STM32WB.",
+      "fw_name": "STSW-PROTEUS",
+      "fw_version": "1.1.1",
+      "maturity": "release",
+      "option_bytes": [
         {
-          "name": "FFT Amplitude",
-          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
+          "escape_value": 255,
+          "format": "int",
+          "name": "Battery Level: ",
+          "negative_offset": 0,
+          "scale_factor": 10
         },
         {
-          "name": "Motor Time Parameter",
-          "uuid": "00000006-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "No Alarm",
+              "icon_code": 7,
+              "value": 0
+            },
+            {
+              "comment": "Warning",
+              "icon_code": 5,
+              "value": 1
+            },
+            {
+              "comment": "Alarm",
+              "icon_code": 6,
+              "value": 2
+            }
+          ],
+          "name": "Equipment Status"
         },
         {
-          "name": "Predictive Speed Status",
-          "uuid": "00000007-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Predictive Acceleration Status",
-          "uuid": "00000008-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Predictive Frequency Domain Status",
-          "uuid": "00000009-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Ext Configuration",
-          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Acceleration Event",
-          "uuid": "00000400-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "RebootOTAModeFeature",
-          "uuid": "0000fe11-8e22-4541-9d4c-21edae82ed19",
-          "max_write_length": 20
-        },
-        {
-          "name": "FeatureControlLed",
-          "uuid": "0000fe41-8e22-4541-9d4c-21edae82ed19",
-          "max_write_length": 20
-        },
-        {
-          "name": "FeatureSwitchStatus",
-          "uuid": "0000fe42-8e22-4541-9d4c-21edae82ed19",
-          "max_write_length": 20
-        },
-        {
-          "name": "Temperature",
-          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Battery",
-          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Gyroscope",
-          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Accelerometer",
-          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
-        },
-        {
-          "name": "Switch",
-          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
+          "format": "enum_string",
+          "name": "Battery Status: ",
+          "string_values": [
+            {
+              "display_name": "Low Battery",
+              "value": 0
+            },
+            {
+              "display_name": "Discharging",
+              "value": 1
+            },
+            {
+              "display_name": "Charging",
+              "value": 3
+            },
+            {
+              "display_name": "Not Plugged",
+              "value": 4
+            }
+          ]
         }
       ]
     },
@@ -16521,64 +17051,40 @@
     {
       "ble_dev_id": "0x11",
       "ble_fw_id": "0x14",
-      "option_bytes": [
+      "brd_name": "STEVAL-MKBOXPRO",
+      "changelog": "Added hw tags, fixed ioffset and PnPL init",
+      "characteristics": [
         {
-          "name": "alarm:",
-          "type": "string",
-          "format": "enum_string",
-          "string_values": [
-            {
-              "value": 0,
-              "display_name": "No Alarm"
-            },
-            {
-              "value": 1,
-              "display_name": "Missing SD Card"
-            },
-            {
-              "value": 2,
-              "display_name": "Logging Ongoing"
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
-          "name": "status",
-          "type": "icon",
-          "format": "enum_icon",
-          "icon_values": [
-            {
-              "value": 0,
-              "comment": "No Alarm",
-              "icon_code": 7
-            },
-            {
-              "value": 1,
-              "comment": "icon for Missing SD Card",
-              "icon_code": 5
-            },
-            {
-              "value": 2,
-              "comment": "icon for Log ongoing",
-              "icon_code": 10
-            }
-          ]
+          "max_write_length": 20,
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Machine Learning Core",
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "HS Datalog Config",
+          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 244,
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b"
         }
       ],
-      "brd_name": "STEVAL-MKBOXPRO",
-      "fw_name": "FP-SNS-DATALOG2_Datalog2",
-      "fw_version": "2.3.0",
-      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
-      "changelog": "Added hw tags, fixed ioffset and PnPL init",
-      "dtmi": "dtmi:appconfig:steval_mkboxprob:FP_SNS_DATALOG2_Datalog2;5",
-      "maturity": "release",
-      "fota": {
-        "type": "fast",
-        "bootloader_type": "none",
-        "max_chunk_length": 0,
-        "max_divisor_constraint": 0,
-        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/FP-SNS-DATALOG2_Datalog2_2_3_0.bin",
-        "partial_fota": 0
-      },
       "cloud_apps": [],
       "demo_decorator": {
         "add": [],
@@ -16590,37 +17096,583 @@
         ],
         "rename": []
       },
+      "dtmi": "dtmi:appconfig:steval_mkboxprob:FP_SNS_DATALOG2_Datalog2;5",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/FP-SNS-DATALOG2_Datalog2_2_3_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "fw_desc": "Comprehensive solution for saving data from any combination of sensors",
+      "fw_name": "FP-SNS-DATALOG2_Datalog2",
+      "fw_version": "2.3.0",
+      "maturity": "release",
+      "option_bytes": [
+        {
+          "format": "enum_string",
+          "name": "alarm:",
+          "string_values": [
+            {
+              "display_name": "No Alarm",
+              "value": 0
+            },
+            {
+              "display_name": "Missing SD Card",
+              "value": 1
+            },
+            {
+              "display_name": "Logging Ongoing",
+              "value": 2
+            }
+          ],
+          "type": "string"
+        },
+        {
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "comment": "No Alarm",
+              "icon_code": 7,
+              "value": 0
+            },
+            {
+              "comment": "icon for Missing SD Card",
+              "icon_code": 5,
+              "value": 1
+            },
+            {
+              "comment": "icon for Log ongoing",
+              "icon_code": 10,
+              "value": 2
+            }
+          ],
+          "name": "status",
+          "type": "icon"
+        }
+      ]
+    },
+    {
+      "ble_dev_id": "0x11",
+      "ble_fw_id": "0x16",
+      "option_bytes": [
+        {
+          "name": "adapter mounted: ",
+          "type": "string",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 1,
+              "display_name": "SHT40AD1B"
+            },
+            {
+              "value": 2,
+              "display_name": "STHS34PF80"
+            },
+            {
+              "value": 3,
+              "display_name": "LSM6DSO32"
+            },
+            {
+              "value": 4,
+              "display_name": "LSM6DSV16BX"
+            },
+            {
+              "value": 5,
+              "display_name": "LSM6DSO16IS"
+            },
+            {
+              "value": 6,
+              "display_name": "LSM6DSV32X"
+            },
+            {
+              "value": 8,
+              "display_name": "ST1VAFE3BX"
+            },
+            {
+              "value": 254,
+              "display_name": "no supported adapter detected"
+            }
+          ]
+        },
+        {
+          "name": "loaded app: ",
+          "type": "string",
+          "format": "enum_string",
+          "escape_value": 255,
+          "string_values": [
+            {
+              "value": 0,
+              "display_name": "Custom"
+            },
+            {
+              "value": 1,
+              "display_name": "Compass"
+            },
+            {
+              "value": 2,
+              "display_name": "FreeFall Detection"
+            },
+            {
+              "value": 3,
+              "display_name": "Level"
+            },
+            {
+              "value": 4,
+              "display_name": "Pedometer"
+            },
+            {
+              "value": 5,
+              "display_name": "Sensor Fusion Quaternion"
+            },
+            {
+              "value": 6,
+              "display_name": "Barometer"
+            },
+            {
+              "value": 7,
+              "display_name": "SD_Log"
+            },
+            {
+              "value": 8,
+              "display_name": "Baby Crying Detector"
+            },
+            {
+              "value": 9,
+              "display_name": "Human Activity Recognition"
+            },
+            {
+              "value": 10,
+              "display_name": "InVehicle Baby Alarm"
+            },
+            {
+              "value": 11,
+              "display_name": "Q Touch"
+            },
+            {
+              "value": 12,
+              "display_name": "NFC Writer"
+            },
+            {
+              "value": 13,
+              "display_name": "FFT Compare"
+            },
+            {
+              "value": 14,
+              "display_name": "FFT Line Compare"
+            },
+            {
+              "value": 15,
+              "display_name": "Qvar Data Plot"
+            },
+            {
+              "value": 16,
+              "display_name": "Microphone FFT"
+            },
+            {
+              "value": 17,
+              "display_name": "Smart Toilet"
+            },
+            {
+              "value": 18,
+              "display_name": "Asset Tracking"
+            },
+            {
+              "value": 19,
+              "display_name": "Adapter Interface"
+            },
+            {
+              "value": 254,
+              "display_name": "not able to read loaded app"
+            },
+            {
+              "value": 255,
+              "display_name": "no flow in memory"
+            }
+          ],
+          "escape_message": ""
+        },
+        {
+          "name": "battery_status",
+          "type": "icon",
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "value": 0,
+              "comment": "battery low",
+              "icon_code": 0
+            },
+            {
+              "value": 1,
+              "comment": "battery 50%",
+              "icon_code": 1
+            },
+            {
+              "value": 2,
+              "comment": "battery full and charging",
+              "icon_code": 27
+            },
+            {
+              "value": 3,
+              "comment": "battery charging",
+              "icon_code": 3
+            },
+            {
+              "value": 5,
+              "comment": "battery full",
+              "icon_code": 2
+            },
+            {
+              "value": 255,
+              "comment": "battery not present",
+              "icon_code": 255
+            }
+          ]
+        }
+      ],
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_name": "STSW-MKBOXPRO Entry/Expert Mode",
+      "fw_version": "1.2.0",
+      "fw_desc": "Fw supporting app creation with ST BLE Sensor app",
+      "changelog": "Support for Biosensor (ST1VAFE3BX) with Medical Signal Demo and HRM. General bug fixes related with SD Log.",
+      "dtmi": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode;2",
+      "demo_decorator": {
+        "add": [
+          "Flow"
+        ],
+        "remove": [
+          "STSW-MKBOXPRO Entry/Expert Mode",
+          "STSW-MKBOXPRO Entry/Expert",
+          "Raw PnPL Controlled",
+          "Smart Motor Control",
+          "Cloud MQTT"
+        ],
+        "rename": []
+      },
+      "maturity": "release",
+      "fota": {
+        "type": "fast",
+        "bootloader_type": "none",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxprob/STSW-MKBOXPRO_1_2_0.bin",
+        "partial_fota": 0
+      },
+      "cloud_apps": [],
       "characteristics": [
         {
+          "name": "Pedometer",
+          "uuid": "00000001-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
           "name": "Debug Console stdin/stdout",
-          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
         },
         {
           "name": "Debug Console stderr",
-          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b",
-          "max_write_length": 20
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Audio Classification",
+          "uuid": "00000003-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Euler Angle",
+          "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
         },
         {
           "name": "Machine Learning Core",
-          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
         },
         {
-          "name": "HS Datalog Config",
-          "uuid": "00000011-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Finite State Machine",
+          "uuid": "00000010-0002-11e1-ac36-0002a5d5c51b"
         },
         {
           "name": "Ext Configuration",
-          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 20
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
         },
         {
-          "name": "PnPLike",
-          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b",
-          "max_write_length": 244
+          "name": "QVAR",
+          "uuid": "00000016-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Piano",
+          "uuid": "0000001c-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Event Counter",
+          "uuid": "0000001d-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gesture Navigation",
+          "uuid": "0000001f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "JSON NFC",
+          "uuid": "00000020-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Normalization",
+          "uuid": "00000021-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion Compact",
+          "uuid": "00000100-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "SD Logging",
+          "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 2,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 2,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 2,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 4,
+              "name": "Acc norm",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "LSB"
+            }
+          ],
+          "name": "Norm",
+          "uuid": "00010000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 1,
+              "name": "Wrist up",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": "#"
+            },
+            {
+              "length": 1,
+              "name": "Wrist down",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": "#"
+            }
+          ],
+          "name": "Wirst Tilt",
+          "uuid": "00020000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 2,
+              "name": "Steps",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt16",
+              "unit": "#"
+            }
+          ],
+          "name": "Pedometer",
+          "uuid": "00030000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 1,
+              "name": "Activity",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": ""
+            },
+            {
+              "length": 1,
+              "name": "Confidence",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": ""
+            }
+          ],
+          "name": "Activity Recognition",
+          "uuid": "00040000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
         }
+      ],
+      "compatible_sensor_adapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18
       ]
     },
     {
@@ -22573,9 +23625,49 @@
       ],
       "datasheetLink": "https://www.st.com/resource/en/data_brief/lsm6dsv32x.pdf",
       "um": ""
+    },
+    {
+      "unique_id": 17,
+      "id": "D17",
+      "description": "ECG with vAFE",
+      "output": "Voltage",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "icon": "ic_qvar_sensor",
+      "dataType": "Float vector x1",
+      "model": "ST1VAFE6AX",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB"
+      ],
+      "datasheetLink": "https://www.st.com/resource/en/datasheet/st1vafe6ax.pdf",
+      "um": ""
+    },
+    {
+      "unique_id": 18,
+      "id": "D18",
+      "description": "ECG with vAFE",
+      "output": "Voltage",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "icon": "ic_qvar_sensor",
+      "dataType": "Float vector x1",
+      "model": "ST1VAFE3BX",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB"
+      ],
+      "datasheetLink": "https://www.st.com/resource/en/datasheet/st1vafe3bx.pdf",
+      "um": ""
     }
   ],
-  "date": "2024-11-14 13:55:28.439453",
-  "version": "0.7.4",
-  "checksum": "9cc97c4bc65d30ff28b2ca23e2671bc9"
+  "checksum": "01cb21bdba055f1a25d1b196ac93889f",
+  "date": "2025-01-21 07:52:45.830053",
+  "version": "0.7.7"
 }
