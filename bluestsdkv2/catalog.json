@@ -8154,6 +8154,10 @@
         {
           "name": "Switch",
           "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Medical Signal 16",
+          "uuid": "00000026-0002-11e1-ac36-0002a5d5c51b"
         }
       ],
       "compatible_sensor_adapters": [
@@ -8171,6 +8175,547 @@
         15,
         16,
         18
+      ]
+    },
+    {
+      "ble_dev_id": "0x0D",
+      "ble_fw_id": "0x1C",
+      "option_bytes": [
+        {
+          "name": "adapter mounted: ",
+          "type": "string",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 1,
+              "display_name": "SHT40AD1B"
+            },
+            {
+              "value": 2,
+              "display_name": "STHS34PF80"
+            },
+            {
+              "value": 3,
+              "display_name": "LSM6DSO32"
+            },
+            {
+              "value": 4,
+              "display_name": "LSM6DSV16BX"
+            },
+            {
+              "value": 5,
+              "display_name": "LSM6DSO16IS"
+            },
+            {
+              "value": 6,
+              "display_name": "LSM6DSV32X"
+            },
+            {
+              "value": 8,
+              "display_name": "ST1VAFE3BX"
+            },
+            {
+              "value": 9,
+              "display_name": "LSM6DSV80X"
+            },
+            {
+              "value": 254,
+              "display_name": "no supported adapter detected"
+            }
+          ]
+        },
+        {
+          "name": "loaded app: ",
+          "type": "string",
+          "format": "enum_string",
+          "escape_value": 255,
+          "string_values": [
+            {
+              "value": 0,
+              "display_name": "Custom"
+            },
+            {
+              "value": 1,
+              "display_name": "Compass"
+            },
+            {
+              "value": 2,
+              "display_name": "FreeFall Detection"
+            },
+            {
+              "value": 3,
+              "display_name": "Level"
+            },
+            {
+              "value": 4,
+              "display_name": "Pedometer"
+            },
+            {
+              "value": 5,
+              "display_name": "Sensor Fusion Quaternion"
+            },
+            {
+              "value": 6,
+              "display_name": "Barometer"
+            },
+            {
+              "value": 7,
+              "display_name": "SD_Log"
+            },
+            {
+              "value": 8,
+              "display_name": "Baby Crying Detector"
+            },
+            {
+              "value": 9,
+              "display_name": "Human Activity Recognition"
+            },
+            {
+              "value": 10,
+              "display_name": "InVehicle Baby Alarm"
+            },
+            {
+              "value": 11,
+              "display_name": "Q Touch"
+            },
+            {
+              "value": 12,
+              "display_name": "NFC Writer"
+            },
+            {
+              "value": 13,
+              "display_name": "FFT Compare"
+            },
+            {
+              "value": 14,
+              "display_name": "FFT Line Compare"
+            },
+            {
+              "value": 15,
+              "display_name": "Qvar Data Plot"
+            },
+            {
+              "value": 16,
+              "display_name": "Microphone FFT"
+            },
+            {
+              "value": 17,
+              "display_name": "Smart Toilet"
+            },
+            {
+              "value": 18,
+              "display_name": "Asset Tracking"
+            },
+            {
+              "value": 19,
+              "display_name": "Adapter Interface"
+            },
+            {
+              "value": 20,
+              "display_name": "ECG Demo"
+            },
+            {
+              "value": 254,
+              "display_name": "not able to read loaded app"
+            },
+            {
+              "value": 255,
+              "display_name": "no flow in memory"
+            }
+          ],
+          "escape_message": ""
+        },
+        {
+          "name": "battery_status",
+          "type": "icon",
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "value": 0,
+              "comment": "battery low",
+              "icon_code": 0
+            },
+            {
+              "value": 1,
+              "comment": "battery 50%",
+              "icon_code": 1
+            },
+            {
+              "value": 2,
+              "comment": "battery full and charging",
+              "icon_code": 27
+            },
+            {
+              "value": 3,
+              "comment": "battery charging",
+              "icon_code": 3
+            },
+            {
+              "value": 5,
+              "comment": "battery full",
+              "icon_code": 2
+            },
+            {
+              "value": 255,
+              "comment": "battery not present",
+              "icon_code": 255
+            }
+          ]
+        }
+      ],
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_name": "STSW-MKBOXPRO Entry/Expert Mode",
+      "fw_version": "1.2.1",
+      "fw_desc": "Fw supporting app creation with ST BLE Sensor app",
+      "changelog": "Support for High-G sensor (LSM6DSV80X). General Bug fixes related with ECG demo and SD Log.",
+      "dtmi": "dtmi:appconfig:steval_mkboxpro:STSW_MKBOXPRO_Entry_Expert_Mode;2",
+      "extra_examples_flow": [
+        {
+          "model": "ST1VAFE3BX",
+          "examples_flow": [
+            "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/flow/steval-mkboxpro/st1vafe3bx_ex_flow.json"
+          ]
+        }
+      ],
+      "demo_decorator": {
+        "add": [
+          "Flow"
+        ],
+        "remove": [
+          "STSW-MKBOXPRO Entry/Expert Mode",
+          "STSW-MKBOXPRO Entry/Expert",
+          "Raw PnPL Controlled",
+          "Smart Motor Control",
+          "Cloud MQTT"
+        ],
+        "rename": []
+      },
+      "maturity": "release",
+      "fota": {
+        "type": "fast",
+        "bootloader_type": "none",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/STSW-MKBOXPRO_1_2_1.bin",
+        "partial_fota": 0
+      },
+      "cloud_apps": [],
+      "characteristics": [
+        {
+          "name": "Pedometer",
+          "uuid": "00000001-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Audio Classification",
+          "uuid": "00000003-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Euler Angle",
+          "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Machine Learning Core",
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Finite State Machine",
+          "uuid": "00000010-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "QVAR",
+          "uuid": "00000016-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Piano",
+          "uuid": "0000001c-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Event Counter",
+          "uuid": "0000001d-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gesture Navigation",
+          "uuid": "0000001f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "JSON NFC",
+          "uuid": "00000020-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Normalization",
+          "uuid": "00000021-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion Compact",
+          "uuid": "00000100-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "SD Logging",
+          "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 2,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 2,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 2,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 4,
+              "name": "Acc norm",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "LSB"
+            }
+          ],
+          "name": "Norm",
+          "uuid": "00010000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 1,
+              "name": "Wrist up",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": "#"
+            },
+            {
+              "length": 1,
+              "name": "Wrist down",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": "#"
+            }
+          ],
+          "name": "Wirst Tilt",
+          "uuid": "00020000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 2,
+              "name": "Steps",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt16",
+              "unit": "#"
+            }
+          ],
+          "name": "Pedometer",
+          "uuid": "00030000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 1,
+              "name": "Activity",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": ""
+            },
+            {
+              "length": 1,
+              "name": "Confidence",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": ""
+            }
+          ],
+          "name": "Activity Recognition",
+          "uuid": "00040000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "compatible_sensor_adapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21
       ]
     },
     {
@@ -18536,6 +19081,10 @@
         {
           "name": "Switch",
           "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Medical Signal 16",
+          "uuid": "00000026-0002-11e1-ac36-0002a5d5c51b"
         }
       ],
       "compatible_sensor_adapters": [
@@ -18553,6 +19102,547 @@
         15,
         16,
         18
+      ]
+    },
+    {
+      "ble_dev_id": "0x11",
+      "ble_fw_id": "0x17",
+      "option_bytes": [
+        {
+          "name": "adapter mounted: ",
+          "type": "string",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 1,
+              "display_name": "SHT40AD1B"
+            },
+            {
+              "value": 2,
+              "display_name": "STHS34PF80"
+            },
+            {
+              "value": 3,
+              "display_name": "LSM6DSO32"
+            },
+            {
+              "value": 4,
+              "display_name": "LSM6DSV16BX"
+            },
+            {
+              "value": 5,
+              "display_name": "LSM6DSO16IS"
+            },
+            {
+              "value": 6,
+              "display_name": "LSM6DSV32X"
+            },
+            {
+              "value": 8,
+              "display_name": "ST1VAFE3BX"
+            },
+            {
+              "value": 9,
+              "display_name": "LSM6DSV80X"
+            },
+            {
+              "value": 254,
+              "display_name": "no supported adapter detected"
+            }
+          ]
+        },
+        {
+          "name": "loaded app: ",
+          "type": "string",
+          "format": "enum_string",
+          "escape_value": 255,
+          "string_values": [
+            {
+              "value": 0,
+              "display_name": "Custom"
+            },
+            {
+              "value": 1,
+              "display_name": "Compass"
+            },
+            {
+              "value": 2,
+              "display_name": "FreeFall Detection"
+            },
+            {
+              "value": 3,
+              "display_name": "Level"
+            },
+            {
+              "value": 4,
+              "display_name": "Pedometer"
+            },
+            {
+              "value": 5,
+              "display_name": "Sensor Fusion Quaternion"
+            },
+            {
+              "value": 6,
+              "display_name": "Barometer"
+            },
+            {
+              "value": 7,
+              "display_name": "SD_Log"
+            },
+            {
+              "value": 8,
+              "display_name": "Baby Crying Detector"
+            },
+            {
+              "value": 9,
+              "display_name": "Human Activity Recognition"
+            },
+            {
+              "value": 10,
+              "display_name": "InVehicle Baby Alarm"
+            },
+            {
+              "value": 11,
+              "display_name": "Q Touch"
+            },
+            {
+              "value": 12,
+              "display_name": "NFC Writer"
+            },
+            {
+              "value": 13,
+              "display_name": "FFT Compare"
+            },
+            {
+              "value": 14,
+              "display_name": "FFT Line Compare"
+            },
+            {
+              "value": 15,
+              "display_name": "Qvar Data Plot"
+            },
+            {
+              "value": 16,
+              "display_name": "Microphone FFT"
+            },
+            {
+              "value": 17,
+              "display_name": "Smart Toilet"
+            },
+            {
+              "value": 18,
+              "display_name": "Asset Tracking"
+            },
+            {
+              "value": 19,
+              "display_name": "Adapter Interface"
+            },
+            {
+              "value": 20,
+              "display_name": "ECG Demo"
+            },
+            {
+              "value": 254,
+              "display_name": "not able to read loaded app"
+            },
+            {
+              "value": 255,
+              "display_name": "no flow in memory"
+            }
+          ],
+          "escape_message": ""
+        },
+        {
+          "name": "battery_status",
+          "type": "icon",
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "value": 0,
+              "comment": "battery low",
+              "icon_code": 0
+            },
+            {
+              "value": 1,
+              "comment": "battery 50%",
+              "icon_code": 1
+            },
+            {
+              "value": 2,
+              "comment": "battery full and charging",
+              "icon_code": 27
+            },
+            {
+              "value": 3,
+              "comment": "battery charging",
+              "icon_code": 3
+            },
+            {
+              "value": 5,
+              "comment": "battery full",
+              "icon_code": 2
+            },
+            {
+              "value": 255,
+              "comment": "battery not present",
+              "icon_code": 255
+            }
+          ]
+        }
+      ],
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_name": "STSW-MKBOXPRO Entry/Expert Mode",
+      "fw_version": "1.2.1",
+      "fw_desc": "Fw supporting app creation with ST BLE Sensor app",
+      "changelog": "Support for High-G sensor (LSM6DSV80X). General Bug fixes related with ECG demo and SD Log.",
+      "dtmi": "dtmi:appconfig:steval_mkboxprob:STSW_MKBOXPRO_Entry_Expert_Mode;2",
+      "extra_examples_flow": [
+        {
+          "model": "ST1VAFE3BX",
+          "examples_flow": [
+            "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/flow/steval-mkboxpro/st1vafe3bx_ex_flow.json"
+          ]
+        }
+      ],
+      "demo_decorator": {
+        "add": [
+          "Flow"
+        ],
+        "remove": [
+          "STSW-MKBOXPRO Entry/Expert Mode",
+          "STSW-MKBOXPRO Entry/Expert",
+          "Raw PnPL Controlled",
+          "Smart Motor Control",
+          "Cloud MQTT"
+        ],
+        "rename": []
+      },
+      "maturity": "release",
+      "fota": {
+        "type": "fast",
+        "bootloader_type": "none",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxprob/STSW-MKBOXPRO_1_2_1.bin",
+        "partial_fota": 0
+      },
+      "cloud_apps": [],
+      "characteristics": [
+        {
+          "name": "Pedometer",
+          "uuid": "00000001-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "name": "Audio Classification",
+          "uuid": "00000003-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "FFT Amplitude",
+          "uuid": "00000005-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Euler Angle",
+          "uuid": "0000000D-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Machine Learning Core",
+          "uuid": "0000000f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Activity Detection",
+          "uuid": "00000010-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Finite State Machine",
+          "uuid": "00000010-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "QVAR",
+          "uuid": "00000016-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Piano",
+          "uuid": "0000001c-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Event Counter",
+          "uuid": "0000001d-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gesture Navigation",
+          "uuid": "0000001f-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "JSON NFC",
+          "uuid": "00000020-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Normalization",
+          "uuid": "00000021-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Compass",
+          "uuid": "00000040-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "MEMS Sensor Fusion Compact",
+          "uuid": "00000100-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "SD Logging",
+          "uuid": "00001000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Temperature",
+          "uuid": "00010000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 2,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 2,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 2,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Int16",
+              "unit": "LSB"
+            },
+            {
+              "length": 4,
+              "name": "Acc norm",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "LSB"
+            }
+          ],
+          "name": "Norm",
+          "uuid": "00010000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "name": "Battery",
+          "uuid": "00020000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 1,
+              "name": "Wrist up",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": "#"
+            },
+            {
+              "length": 1,
+              "name": "Wrist down",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": "#"
+            }
+          ],
+          "name": "Wirst Tilt",
+          "uuid": "00020000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 2,
+              "name": "Steps",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt16",
+              "unit": "#"
+            }
+          ],
+          "name": "Pedometer",
+          "uuid": "00030000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "format_notify": [
+            {
+              "length": 2,
+              "name": "timestamp"
+            },
+            {
+              "length": 4,
+              "name": "Acc x",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc y",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 4,
+              "name": "Acc z",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "Float",
+              "unit": "g"
+            },
+            {
+              "length": 1,
+              "name": "Activity",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": ""
+            },
+            {
+              "length": 1,
+              "name": "Confidence",
+              "offset": 0.0,
+              "scalefactor": 1.0,
+              "type": "UInt8",
+              "unit": ""
+            }
+          ],
+          "name": "Activity Recognition",
+          "uuid": "00040000-0003-11e1-ac36-0002a5d5c51b",
+          "uuid_type": 3
+        },
+        {
+          "name": "Pressure",
+          "uuid": "00100000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Magnetometer",
+          "uuid": "00200000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Gyroscope",
+          "uuid": "00400000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Accelerometer",
+          "uuid": "00800000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Mic Level",
+          "uuid": "04000000-0001-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "name": "Switch",
+          "uuid": "20000000-0001-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "compatible_sensor_adapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21
       ]
     },
     {
@@ -21734,6 +22824,23 @@
       "description": "NUCLEO-WBA6",
       "documentation_url": null,
       "components": []
+    },
+    {
+      "release_date": null,
+      "brd_variant": "NUCLEO$WB05KN1",
+      "brd_part": "NUCLEO-WB05KN1",
+      "brd_name": "NUCLEO-WB05KN1",
+      "friendly_name": "NUCLEO-WB05KN1",
+      "ble_dev_id": "0x8F",
+      "nfc_dev_id": null,
+      "usb_dev_id": null,
+      "video_url": null,
+      "order_url": null,
+      "unique_dev_id": 39,
+      "status": "ACTIVE",
+      "description": "Ultra-low-power, 2.4 GHz network processor, Bluetooth LE 5.4 certified",
+      "documentation_url": null,
+      "components": []
     }
   ],
   "characteristics": [
@@ -24562,9 +25669,249 @@
       ],
       "datasheetLink": "https://www.st.com/resource/en/datasheet/st1vafe3bx.pdf",
       "um": ""
+    },
+    {
+      "unique_id": 19,
+      "id": "D19",
+      "description": "IMU Accelerometer sensor",
+      "icon": "ic_inemo",
+      "output": "Acceleration",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "model": "LSM6DSV80X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB"
+      ],
+      "um": "mg",
+      "fullScaleUm": "g",
+      "datasheetLink": "https://www.st.com/resource/en/data_brief/lsm6dsv80x.pdf",
+      "dataType": "Float vector x3",
+      "fullScales": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "powerModes": [
+        {
+          "mode": "LOW_POWER",
+          "label": "Low power",
+          "odrs": [
+            1.875,
+            15,
+            30,
+            60,
+            120,
+            240
+          ]
+        },
+        {
+          "mode": "NORMAL_MODE",
+          "label": "Normal mode",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920
+          ]
+        },
+        {
+          "mode": "NONE",
+          "label": "High performance",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        },
+        {
+          "mode": "LOW_NOISE",
+          "label": "High accuracy",
+          "odrs": [
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 100,
+      "configuration": {
+        "powerMode": "NONE",
+        "odr": 30,
+        "fullScale": 16,
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 20,
+      "id": "D20",
+      "description": "IMU Gyroscope sensor",
+      "output": "Angular rate",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "icon": "ic_inemo",
+      "model": "LSM6DSV80X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB"
+      ],
+      "um": "mdps",
+      "fullScaleUm": "dps",
+      "datasheetLink": "https://www.st.com/resource/en/data_brief/lsm6dsv80x.pdf",
+      "dataType": "Float vector x3",
+      "fullScales": [
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "powerModes": [
+        {
+          "mode": "LOW_POWER",
+          "label": "Low power",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240
+          ]
+        },
+        {
+          "mode": "NONE",
+          "label": "High performance",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        },
+        {
+          "mode": "LOW_NOISE",
+          "label": "High accuracy",
+          "odrs": [
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 100,
+      "configuration": {
+        "powerMode": "NONE",
+        "odr": 30,
+        "fullScale": 4000,
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 21,
+      "id": "D21",
+      "description": "IMU High G Accelerometer sensor",
+      "icon": "ic_inemo",
+      "output": "Acceleration",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "model": "LSM6DSV80X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB"
+      ],
+      "um": "mg",
+      "fullScaleUm": "g",
+      "datasheetLink": "https://www.st.com/resource/en/data_brief/lsm6dsv80x.pdf",
+      "dataType": "Float vector x3",
+      "fullScales": [
+        32,
+        64,
+        80
+      ],
+      "powerModes": [
+        {
+          "mode": "NONE",
+          "label": "High performance",
+          "odrs": [
+            100,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        },
+        {
+          "mode": "LOW_NOISE",
+          "label": "High accuracy",
+          "odrs": [
+            100,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 100,
+      "configuration": {
+        "powerMode": "NONE",
+        "odr": 100,
+        "fullScale": 80,
+        "acquisitionTime": 0
+      }
     }
   ],
-  "checksum": "b79a3475bcbcd8bfc5a15d51315e716b",
-  "date": "2025-01-27 15:13:51.973851",
-  "version": "0.7.7"
+  "date": "2025-03-07 12:20:57.309941",
+  "version": "0.7.7",
+  "checksum": "0eae427a1a4aec666c9b53dd02731f7a"
 }
