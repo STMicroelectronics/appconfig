@@ -3,7 +3,9 @@
   "category": "ST1VAFE3BX",
   "ex_app" : 20,
   "board_compatibility": [
-    "SENSOR_TILE_BOX_PRO"
+    "SENSOR_TILE_BOX_PRO",
+    "SENSOR_TILE_BOX_PROB",
+    "SENSOR_TILE_BOX_PROC"
   ],
   "notes": "This app allows the Sensor Tile.boxPRO to capture ECG signals using the biosensor evaluation kit STEVAL-MKI250KA (ST1VAFE3BX). By activating it, you can view ECG signals and key parameters with the Medical Signal Demo and the heartbeat rate overtime with the Heart Rate Demo.\n\nTo obtain valid data, place one finger from each hand on the electrodes, ensuring they do not touch each other. Avoid excessive pressure to prevent muscle interference and unplug the board to minimize power line interference. If the ECG signal it not clear, lift your hands and place them back on the electrodes, or clean them with an alcohol solution as continuous usage can create a dirty film. \n\nThe BioVSM library embedded in the Sensor Tile.boxPRO MCU processes the data, detecting peaks and computing parameters like average, maximum, and minimum heart rate. Check the library documentation for specific details.",
   "flows": [],
@@ -31,7 +33,8 @@
       "model": "ST1VAFE3BX",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-		"SENSOR_TILE_BOX_PROB"
+		    "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "",
       "datasheetLink": "https://www.st.com/resource/en/datasheet/st1vafe3bx.pdf",
