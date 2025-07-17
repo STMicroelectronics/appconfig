@@ -1757,7 +1757,7 @@
             "usb_fw_id": "0x12",
             "package_id": 418,
             "binary_id": 418,
-            "dtmi": null,
+            "dtmi": "dtmi:appconfig:steval_mkboxpro:FP_SNS_STAIOTCFT_AI_Inertial;1",
             "dwn_url": null
         },
         {
@@ -1773,7 +1773,7 @@
             "usb_fw_id": "0x13",
             "package_id": 419,
             "binary_id": 419,
-            "dtmi": null,
+            "dtmi": "dtmi:appconfig:steval_mkboxpro:FP_SNS_STAIOTCFT_AI_Inertial;1",
             "dwn_url": null
         },
         {
@@ -1789,7 +1789,7 @@
             "usb_fw_id": "0x14",
             "package_id": 420,
             "binary_id": 420,
-            "dtmi": null,
+            "dtmi": "dtmi:appconfig:steval_mkboxpro:FP_SNS_STAIOTCFT_AI_Inertial;1",
             "dwn_url": null
         },
         {
@@ -1805,7 +1805,7 @@
             "usb_fw_id": "0x31",
             "package_id": 419,
             "binary_id": 421,
-            "dtmi": null,
+            "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_STAIOTCFT_AI_Inertial;1",
             "dwn_url": null
         },
         {
@@ -1821,7 +1821,7 @@
             "usb_fw_id": "0x32",
             "package_id": 421,
             "binary_id": 422,
-            "dtmi": null,
+            "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_STAIOTCFT_AI_Inertial;1",
             "dwn_url": null
         },
         {
@@ -1837,7 +1837,7 @@
             "usb_fw_id": "0x33",
             "package_id": 420,
             "binary_id": 423,
-            "dtmi": null,
+            "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_STAIOTCFT_AI_Inertial;1",
             "dwn_url": null
         },
         {
@@ -1853,7 +1853,7 @@
             "usb_fw_id": "0x34",
             "package_id": 422,
             "binary_id": 424,
-            "dtmi": null,
+            "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_SNS_STAIOTCFT_AI_Inertial;1",
             "dwn_url": null
         },
         {
@@ -1869,7 +1869,7 @@
             "usb_fw_id": "0x10",
             "package_id": 420,
             "binary_id": 425,
-            "dtmi": null,
+            "dtmi": "dtmi:appconfig:steval_stwinkt1b:FP_SNS_STAIOTCFT_AI_Inertial;1",
             "dwn_url": null
         },
         {
@@ -1885,11 +1885,11 @@
             "usb_fw_id": "0x11",
             "package_id": 422,
             "binary_id": 426,
-            "dtmi": null,
+            "dtmi": "dtmi:appconfig:steval_stwinkt1b:FP_SNS_STAIOTCFT_AI_Inertial;1",
             "dwn_url": null
         }
     ],
-    "date": "2025-07-11 13:51:44.030904",
+    "date": "2025-07-17 13:15:11.255594",
     "version": "0.8.0",
-    "checksum": "e890a34f7e58ce2419286f685819a141"
+    "checksum": "d7deff580b9683a217d724d8eae300d8"
 }
