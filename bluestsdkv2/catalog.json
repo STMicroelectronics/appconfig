@@ -16849,12 +16849,12 @@
         }
       ],
       "cloud_apps": [
-        {
+       {
           "description": "PoC",
-          "dtmi": "dtmi:proteusPoc:PROTEUSdraftv254f;1",
+          "dtmi": "dtmi:stDefaultPnpApp:STSWProteus;1",
           "dtmi_type": "iotc",
-          "name": "Proteus PoC",
-          "shareable_link": "https://apps.azureiotcentral.com/build/new/833f2c88-b5c5-402d-adfd-b81ed5dfed05",
+          "name": "Proteus development",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/5a26d322-f0e0-49ba-ba20-ba6701f608bf",
           "url": "https://proteus-poc.azureiotcentral.com"
         }
       ],
@@ -17919,10 +17919,10 @@
       "cloud_apps": [
         {
           "description": "PoC",
-          "dtmi": "dtmi:proteusPoc:PROTEUSdraftv254f;1",
+          "dtmi": "dtmi:stDefaultPnpApp:STSWProteus;1",
           "dtmi_type": "iotc",
-          "name": "Proteus PoC",
-          "shareable_link": "https://apps.azureiotcentral.com/build/new/833f2c88-b5c5-402d-adfd-b81ed5dfed05",
+          "name": "Proteus development",
+          "shareable_link": "https://apps.azureiotcentral.com/build/new/5a26d322-f0e0-49ba-ba20-ba6701f608bf",
           "url": "https://proteus-poc.azureiotcentral.com"
         }
       ],
