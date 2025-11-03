@@ -10422,6 +10422,64 @@
     },
     {
       "ble_dev_id": "0x0D",
+      "ble_fw_id": "0x25",
+      "option_bytes": [
+        {
+          "name": "Running on:",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 1,
+              "display_name": "Bank 1"
+            },
+            {
+              "value": 2,
+              "display_name": "Bank 2"
+            }
+          ]
+        }
+      ],
+      "brd_name": "STEVAL-MKBOXPRO",
+      "fw_name": "AI-SSM",
+      "fw_version": "1.0.0",
+      "fw_desc": "AI Smart Sensor Monitoring with BLE support",
+      "changelog": "",
+      "dtmi": "dtmi:appconfig:steval_mkboxpro:AI_SSM;1",
+      "maturity": "demo",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/AI-SSM_1_0_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "demo_decorator": {
+        "add": ["ST AIoT Craft"],
+        "remove": [],
+        "rename": []
+      },
+      "cloud_apps": [],
+      "characteristics": [
+        {
+          "name": "Debug console",
+          "uuid": "00000000-000E-11e1-9ab4-0002a5d5c51b",
+          "max_write_length": 244
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        }
+      ]
+    },
+    {
+      "ble_dev_id": "0x0D",
       "ble_fw_id": "0x2F",
       "brd_name": "STEVAL-MKBOXPRO",
       "changelog": "Add Support to ST25KC, Drivers and HAL update",
@@ -26231,6 +26289,64 @@
       ]
     },
     {
+      "ble_dev_id": "0x13",
+      "ble_fw_id": "0x07",
+      "brd_name": "STEVAL-MKBOXPRO",
+      "changelog": "",
+      "characteristics": [
+        {
+          "name": "Debug console",
+          "uuid": "00000000-000E-11e1-9ab4-0002a5d5c51b",
+          "max_write_length": 244
+        },
+        {
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        },
+        {
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b",
+          "max_write_length": 20
+        }
+      ],
+      "cloud_apps": [],
+      "dtmi": "dtmi:appconfig:steval_mkboxproc:AI_SSM;1",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxproc/AI-SSM_1_0_0.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "demo_decorator": {
+        "add": ["ST AIoT Craft"],
+        "remove": [],
+        "rename": []
+      },
+      "fw_desc": "AI Smart Sensor Monitoring with BLE support",
+      "fw_name": "AI-SSM",
+      "fw_version": "1.0.0",
+      "maturity": "demo",
+      "option_bytes": [
+        {
+          "name": "Running on:",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 1,
+              "display_name": "Bank 1"
+            },
+            {
+              "value": 2,
+              "display_name": "Bank 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "ble_dev_id": "0x7B",
       "ble_fw_id": "0x02",
       "option_bytes": [
@@ -32345,7 +32461,8 @@
       }
     }
   ],
-  "checksum": "1a2350beb7e1d3f9e33aa3e428ee9493",
-  "date": "2025-08-01 13:13:26.993512",
-  "version": "0.9.0"
+  "date": "2025-10-14 05:44:57.515192",
+  "version": "0.10.0",
+  "stable_release": true,
+  "checksum": "f3a2f5f7260f44cbc1b6e45014f6ed5b"
 }
