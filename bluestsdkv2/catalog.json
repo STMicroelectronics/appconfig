@@ -28114,9 +28114,9 @@
       "nfc_dev_id": null,
       "usb_dev_id": null,
       "video_url": "https://www.youtube.com/watch?v=C9cuRzYCiAs",
-      "order_url": "https://estore.st.com/en/steval-stlkt01v1-cpn.html",
+      "order_url": null,
       "unique_dev_id": 5,
-      "status": "ACTIVE",
+      "status": "NRND",
       "description": "SensorTile development kit",
       "documentation_url": "https://www.st.com/en/evaluation-tools/steval-stlkt01v1.html#documentation",
       "components": []
