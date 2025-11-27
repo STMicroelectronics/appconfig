@@ -208,20 +208,20 @@
               "schema": "integer"
             },
             {
-              "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_neai;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai;1",
               "displayName": {
                 "en": "Class"
               },
-              "name": "class_neai",
+              "name": "class_cubeai",
               "schema": {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_neai:schema;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema;1",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_neai:schema:enable;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema:enable;1",
                     "displayName": {
                       "en": "enable"
                     },
@@ -229,7 +229,7 @@
                     "schema": "boolean"
                   },
                   {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_neai:schema:unit;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema:unit;1",
                     "displayName": {
                       "en": "unit"
                     },
@@ -237,7 +237,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_neai:schema:format;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema:format;1",
                     "displayName": {
                       "en": "format"
                     },
@@ -245,7 +245,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_neai:schema:labels;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:class_cubeai:schema:labels;1",
                     "displayName": {
                       "en": "labels"
                     },
@@ -256,20 +256,20 @@
               }
             },
             {
-              "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_neai;1",
+              "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai;1",
               "displayName": {
                 "en": "Probability"
               },
-              "name": "probability_neai",
+              "name": "probability_cubeai",
               "schema": {
-                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_neai:schema;1",
+                "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai:schema;1",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_neai:schema:enable;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai:schema:enable;1",
                     "displayName": {
                       "en": "enable"
                     },
@@ -277,7 +277,7 @@
                     "schema": "boolean"
                   },
                   {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_neai:schema:unit;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai:schema:unit;1",
                     "displayName": {
                       "en": "unit"
                     },
@@ -285,7 +285,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_neai:schema:format;1",
+                    "@id": "dtmi:appconfig:steval_stwinbx1:fpIndDatalogMC_datalog2MC_AI:algorithms:ai_motor_classifier:st_ble_stream:schema:probability_cubeai:schema:format;1",
                     "displayName": {
                       "en": "format"
                     },
@@ -419,21 +419,21 @@
         "writable": false
       },
       {
-        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream;2",
+        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream;2",
         "@type": "Property",
         "displayName": {
           "en": "Slow Telemetries Configuration"
         },
-        "name": "slow_telemetries_st_ble_stream",
+        "name": "st_ble_stream",
         "schema": {
-          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema;2",
+          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema;2",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:id;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:id;2",
               "displayName": {
                 "en": "Id"
               },
@@ -441,167 +441,108 @@
               "schema": "integer"
             },
             {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:temperature;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature;2",
               "displayName": {
                 "en": "Temperature"
               },
               "name": "temperature",
               "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:temperature:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:temperature:schema:enable;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:enable;2",
                     "displayName": {
                       "en": "enable"
                     },
                     "name": "enable",
                     "schema": "boolean"
+                  },
+                  {
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:unit;2",
+                    "displayName": {
+                      "en": "unit"
+                    },
+                    "name": "unit",
+                    "schema": "string"
+                  },
+                  {
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:temperature:schema:format;2",
+                    "displayName": {
+                      "en": "format"
+                    },
+                    "name": "format",
+                    "schema": "string"
                   }
                 ]
               }
             },
             {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:ref_speed;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed;2",
               "displayName": {
                 "en": "Ref Speed"
               },
               "name": "ref_speed",
               "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:ref_speed:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:ref_speed:schema:enable;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:enable;2",
                     "displayName": {
                       "en": "enable"
                     },
                     "name": "enable",
                     "schema": "boolean"
+                  },
+                  {
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:unit;2",
+                    "displayName": {
+                      "en": "unit"
+                    },
+                    "name": "unit",
+                    "schema": "string"
+                  },
+                  {
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:ref_speed:schema:format;2",
+                    "displayName": {
+                      "en": "format"
+                    },
+                    "name": "format",
+                    "schema": "string"
                   }
                 ]
               }
             },
             {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:speed;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed;2",
               "displayName": {
                 "en": "Speed"
               },
               "name": "speed",
               "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:speed:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:speed:schema:enable;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:enable;2",
                     "displayName": {
                       "en": "enable"
                     },
                     "name": "enable",
                     "schema": "boolean"
-                  }
-                ]
-              }
-            },
-            {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:bus_voltage;2",
-              "displayName": {
-                "en": "Bus Voltage"
-              },
-              "name": "bus_voltage",
-              "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:bus_voltage:schema;2",
-                "@type": "Object",
-                "displayName": {
-                  "en": "Object"
-                },
-                "fields": [
+                  },
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:bus_voltage:schema:enable;2",
-                    "displayName": {
-                      "en": "enable"
-                    },
-                    "name": "enable",
-                    "schema": "boolean"
-                  }
-                ]
-              }
-            },
-            {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:fault;2",
-              "displayName": {
-                "en": "Fault"
-              },
-              "name": "fault",
-              "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:fault:schema;2",
-                "@type": "Object",
-                "displayName": {
-                  "en": "Object"
-                },
-                "fields": [
-                  {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries_st_ble_stream:schema:fault:schema:enable;2",
-                    "displayName": {
-                      "en": "enable"
-                    },
-                    "name": "enable",
-                    "schema": "boolean"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        "writable": true
-      },
-      {
-        "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries;4",
-        "@type": "Telemetry",
-        "comment": "BINARY",
-        "displayName": {
-          "en": "Slow Telemetries"
-        },
-        "name": "slow_telemetries",
-        "schema": {
-          "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema;2",
-          "@type": "Object",
-          "displayName": {
-            "en": "Object"
-          },
-          "fields": [
-            {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:id;2",
-              "displayName": {
-                "en": "Id"
-              },
-              "name": "id",
-              "schema": "integer"
-            },
-            {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:temperature;2",
-              "displayName": {
-                "en": "Temperature"
-              },
-              "name": "temperature",
-              "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:temperature:schema;2",
-                "@type": "Object",
-                "displayName": {
-                  "en": "Object"
-                },
-                "fields": [
-                  {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:temperature:schema:unit;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:unit;2",
                     "displayName": {
                       "en": "unit"
                     },
@@ -609,71 +550,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:temperature:schema:format;2",
-                    "displayName": {
-                      "en": "format"
-                    },
-                    "name": "format",
-                    "schema": "string"
-                  }
-                ]
-              }
-            },
-            {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:ref_speed;2",
-              "displayName": {
-                "en": "Ref Speed"
-              },
-              "name": "ref_speed",
-              "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:ref_speed:schema;2",
-                "@type": "Object",
-                "displayName": {
-                  "en": "Object"
-                },
-                "fields": [
-                  {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:ref_speed:schema:unit;2",
-                    "displayName": {
-                      "en": "unit"
-                    },
-                    "name": "unit",
-                    "schema": "string"
-                  },
-                  {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:ref_speed:schema:format;2",
-                    "displayName": {
-                      "en": "format"
-                    },
-                    "name": "format",
-                    "schema": "string"
-                  }
-                ]
-              }
-            },
-            {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:speed;2",
-              "displayName": {
-                "en": "Speed"
-              },
-              "name": "speed",
-              "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:speed:schema;2",
-                "@type": "Object",
-                "displayName": {
-                  "en": "Object"
-                },
-                "fields": [
-                  {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:speed:schema:unit;2",
-                    "displayName": {
-                      "en": "unit"
-                    },
-                    "name": "unit",
-                    "schema": "string"
-                  },
-                  {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:speed:schema:format;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:format;2",
                     "displayName": {
                       "en": "format"
                     },
@@ -681,7 +558,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:speed:schema:max;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:max;2",
                     "displayName": {
                       "en": "max"
                     },
@@ -689,7 +566,7 @@
                     "schema": "integer"
                   },
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:speed:schema:initial_value;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:speed:schema:initial_value;2",
                     "displayName": {
                       "en": "initial_value"
                     },
@@ -700,20 +577,28 @@
               }
             },
             {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:bus_voltage;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage;2",
               "displayName": {
                 "en": "Bus Voltage"
               },
               "name": "bus_voltage",
               "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:bus_voltage:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:bus_voltage:schema:unit;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:enable;2",
+                    "displayName": {
+                      "en": "enable"
+                    },
+                    "name": "enable",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:unit;2",
                     "displayName": {
                       "en": "unit"
                     },
@@ -721,7 +606,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:bus_voltage:schema:format;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:bus_voltage:schema:format;2",
                     "displayName": {
                       "en": "format"
                     },
@@ -732,20 +617,28 @@
               }
             },
             {
-              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:fault;2",
+              "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault;2",
               "displayName": {
                 "en": "Fault"
               },
               "name": "fault",
               "schema": {
-                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:fault:schema;2",
+                "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema;2",
                 "@type": "Object",
                 "displayName": {
                   "en": "Object"
                 },
                 "fields": [
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:fault:schema:unit;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:enable;2",
+                    "displayName": {
+                      "en": "enable"
+                    },
+                    "name": "enable",
+                    "schema": "boolean"
+                  },
+                  {
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:unit;2",
                     "displayName": {
                       "en": "unit"
                     },
@@ -753,7 +646,7 @@
                     "schema": "string"
                   },
                   {
-                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:slow_telemetries:schema:fault:schema:format;2",
+                    "@id": "dtmi:dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMC:actuators:slow_mc_telemetries:st_ble_stream:schema:fault:schema:format;2",
                     "displayName": {
                       "en": "format"
                     },
@@ -765,7 +658,7 @@
             }
           ]
         },
-        "writable": false
+        "writable": true
       }
     ],
     "displayName": {
