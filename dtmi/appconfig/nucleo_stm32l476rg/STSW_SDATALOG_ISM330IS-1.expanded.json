@@ -1,0 +1,1208 @@
+[
+    {
+        "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS;1",
+        "@type": "Interface",
+        "contents": [
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:ism330is_acc;1",
+                "@type": "Component",
+                "displayName": {
+                    "en": "ISM330IS_ACC"
+                },
+                "name": "ism330is_acc",
+                "schema": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc;1"
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:ism330is_gyro;1",
+                "@type": "Component",
+                "displayName": {
+                    "en": "ISM330IS_GYRO"
+                },
+                "name": "ism330is_gyro",
+                "schema": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro;1"
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:log_controller;1",
+                "@type": "Component",
+                "displayName": {
+                    "en": "Log Controller"
+                },
+                "name": "log_controller",
+                "schema": "dtmi:appconfig:other:log_controller;2"
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:acquisition_info;1",
+                "@type": "Component",
+                "displayName": {
+                    "en": "Acquisition Information"
+                },
+                "name": "acquisition_info",
+                "schema": "dtmi:appconfig:other:acquisition_info;2"
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:firmware_info;1",
+                "@type": "Component",
+                "displayName": {
+                    "en": "Firmware Information"
+                },
+                "name": "firmware_info",
+                "schema": "dtmi:appconfig:other:firmware_info;3"
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:DeviceInformation;1",
+                "@type": "Component",
+                "displayName": {
+                    "en": "Device Information"
+                },
+                "name": "DeviceInformation",
+                "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+            }
+        ],
+        "displayName": {
+            "en": "STSW_SDATALOG_ISM330IS-1"
+        },
+        "@context": [
+            "dtmi:iotcentral:context;2",
+            "dtmi:dtdl:context;2"
+        ]
+    },
+    {
+        "@context": [
+            "dtmi:iotcentral:context;2",
+            "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc;1",
+        "@type": "Interface",
+        "contents": [
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr;1",
+                "@type": [
+                    "Property",
+                    "Initialized"
+                ],
+                "displayName": {
+                    "en": "ODR"
+                },
+                "name": "odr",
+                "schema": {
+                    "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema;1",
+                    "@type": "Enum",
+                    "displayName": {
+                        "en": "Enum"
+                    },
+                    "enumValues": [
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz12_5;1",
+                            "displayName": {
+                                "en": "12.5"
+                            },
+                            "enumValue": 0,
+                            "name": "hz12_5"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz26;1",
+                            "displayName": {
+                                "en": "26"
+                            },
+                            "enumValue": 1,
+                            "name": "hz26"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz52;1",
+                            "displayName": {
+                                "en": "52"
+                            },
+                            "enumValue": 2,
+                            "name": "hz52"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz104;1",
+                            "displayName": {
+                                "en": "104"
+                            },
+                            "enumValue": 3,
+                            "name": "hz104"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz208;1",
+                            "displayName": {
+                                "en": "208"
+                            },
+                            "enumValue": 4,
+                            "name": "hz208"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz416;1",
+                            "displayName": {
+                                "en": "416"
+                            },
+                            "enumValue": 5,
+                            "name": "hz416"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz833;1",
+                            "displayName": {
+                                "en": "833"
+                            },
+                            "enumValue": 6,
+                            "name": "hz833"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz1667;1",
+                            "displayName": {
+                                "en": "1667"
+                            },
+                            "enumValue": 7,
+                            "name": "hz1667"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz3333;1",
+                            "displayName": {
+                                "en": "3333"
+                            },
+                            "enumValue": 8,
+                            "name": "hz3333"
+                        }
+                    ],
+                    "valueSchema": "integer"
+                },
+                "unit": "hertz",
+                "writable": true,
+                "initialValue": 10
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs;1",
+                "@type": [
+                    "Property",
+                    "Initialized"
+                ],
+                "displayName": {
+                    "en": "FS"
+                },
+                "name": "fs",
+                "schema": {
+                    "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema;1",
+                    "@type": "Enum",
+                    "displayName": {
+                        "en": "Enum"
+                    },
+                    "enumValues": [
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g2;1",
+                            "displayName": {
+                                "en": "2"
+                            },
+                            "enumValue": 0,
+                            "name": "g2"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g4;1",
+                            "displayName": {
+                                "en": "4"
+                            },
+                            "enumValue": 1,
+                            "name": "g4"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g8;1",
+                            "displayName": {
+                                "en": "8"
+                            },
+                            "enumValue": 2,
+                            "name": "g8"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g16;1",
+                            "displayName": {
+                                "en": "16"
+                            },
+                            "enumValue": 3,
+                            "name": "g16"
+                        }
+                    ],
+                    "valueSchema": "integer"
+                },
+                "unit": "gForce",
+                "writable": true,
+                "initialValue": 3
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:enable;1",
+                "@type": [
+                    "Property",
+                    "BooleanValue",
+                    "Initialized"
+                ],
+                "displayName": {
+                    "en": "Enabled"
+                },
+                "name": "enable",
+                "schema": "boolean",
+                "writable": true,
+                "initialValue": true
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:samples_per_ts;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Samples per Timestamp"
+                },
+                "name": "samples_per_ts",
+                "schema": "integer",
+                "writable": false,
+                "maxValue": 1000,
+                "minValue": 0
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:dim;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Dimensions"
+                },
+                "name": "dim",
+                "schema": "integer",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:ioffset;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Initial Offset"
+                },
+                "name": "ioffset",
+                "schema": "double",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:sensitivity;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Sensitivity"
+                },
+                "name": "sensitivity",
+                "schema": "double",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:data_type;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Data Type"
+                },
+                "name": "data_type",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:sensor_category;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "description": {
+                    "en": "0 = ISENSOR_CLASS_MEMS"
+                },
+                "displayName": {
+                    "en": "Sensor Category"
+                },
+                "name": "sensor_category",
+                "schema": "integer",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:serial_dps;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Serial Data Packet Size"
+                },
+                "name": "serial_dps",
+                "schema": "double",
+                "writable": false
+            }
+        ],
+        "displayName": {
+            "en": "ISM330IS_ACC"
+        }
+    },
+    {
+        "@context": [
+            "dtmi:iotcentral:context;2",
+            "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro;1",
+        "@type": "Interface",
+        "contents": [
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr;1",
+                "@type": [
+                    "Property",
+                    "Initialized"
+                ],
+                "displayName": {
+                    "en": "ODR"
+                },
+                "name": "odr",
+                "schema": {
+                    "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema;1",
+                    "@type": "Enum",
+                    "displayName": {
+                        "en": "Enum"
+                    },
+                    "enumValues": [
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz12_5;1",
+                            "displayName": {
+                                "en": "12.5"
+                            },
+                            "enumValue": 0,
+                            "name": "hz12_5"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz26;1",
+                            "displayName": {
+                                "en": "26"
+                            },
+                            "enumValue": 1,
+                            "name": "hz26"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz52;1",
+                            "displayName": {
+                                "en": "52"
+                            },
+                            "enumValue": 2,
+                            "name": "hz52"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz104;1",
+                            "displayName": {
+                                "en": "104"
+                            },
+                            "enumValue": 3,
+                            "name": "hz104"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz208;1",
+                            "displayName": {
+                                "en": "208"
+                            },
+                            "enumValue": 4,
+                            "name": "hz208"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz416;1",
+                            "displayName": {
+                                "en": "416"
+                            },
+                            "enumValue": 5,
+                            "name": "hz416"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz833;1",
+                            "displayName": {
+                                "en": "833"
+                            },
+                            "enumValue": 6,
+                            "name": "hz833"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz1667;1",
+                            "displayName": {
+                                "en": "1667"
+                            },
+                            "enumValue": 7,
+                            "name": "hz1667"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz3333;1",
+                            "displayName": {
+                                "en": "3333"
+                            },
+                            "enumValue": 8,
+                            "name": "hz3333"
+                        }
+                    ],
+                    "valueSchema": "integer"
+                },
+                "unit": "hertz",
+                "writable": true,
+                "initialValue": 10
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs;1",
+                "@type": [
+                    "Property",
+                    "Initialized"
+                ],
+                "displayName": {
+                    "en": "FS"
+                },
+                "name": "fs",
+                "schema": {
+                    "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema;1",
+                    "@type": "Enum",
+                    "displayName": {
+                        "en": "Enum"
+                    },
+                    "enumValues": [
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps125;1",
+                            "displayName": {
+                                "en": "125"
+                            },
+                            "enumValue": 0,
+                            "name": "dps125"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps250;1",
+                            "displayName": {
+                                "en": "250"
+                            },
+                            "enumValue": 1,
+                            "name": "dps250"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps500;1",
+                            "displayName": {
+                                "en": "500"
+                            },
+                            "enumValue": 2,
+                            "name": "dps500"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps1000;1",
+                            "displayName": {
+                                "en": "1000"
+                            },
+                            "enumValue": 3,
+                            "name": "dps1000"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps2000;1",
+                            "displayName": {
+                                "en": "2000"
+                            },
+                            "enumValue": 4,
+                            "name": "dps2000"
+                        }
+                    ],
+                    "valueSchema": "integer"
+                },
+                "writable": true,
+                "displayUnit": {
+                    "en": "mdps"
+                },
+                "initialValue": 5
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:enable;1",
+                "@type": [
+                    "Property",
+                    "BooleanValue",
+                    "Initialized"
+                ],
+                "displayName": {
+                    "en": "Enabled"
+                },
+                "name": "enable",
+                "schema": "boolean",
+                "writable": true,
+                "initialValue": true
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:samples_per_ts;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Samples per Timestamp"
+                },
+                "name": "samples_per_ts",
+                "schema": "integer",
+                "writable": false,
+                "maxValue": 1000,
+                "minValue": 0
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:dim;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Dimensions"
+                },
+                "name": "dim",
+                "schema": "integer",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:ioffset;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Initial Offset"
+                },
+                "name": "ioffset",
+                "schema": "double",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:sensitivity;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Sensitivity"
+                },
+                "name": "sensitivity",
+                "schema": "double",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:data_type;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Data Type"
+                },
+                "name": "data_type",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:serial_dps;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Serial Data Packet Size"
+                },
+                "name": "serial_dps",
+                "schema": "double",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:sensor_category;1",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "description": {
+                    "en": "0 = ISENSOR_CLASS_MEMS"
+                },
+                "displayName": {
+                    "en": "Sensor Category"
+                },
+                "name": "sensor_category",
+                "schema": "integer",
+                "writable": false
+            }
+        ],
+        "displayName": {
+            "en": "ISM330IS_GYRO"
+        }
+    },
+    {
+        "@context": [
+            "dtmi:iotcentral:context;2",
+            "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:appconfig:other:log_controller;2",
+        "@type": "Interface",
+        "contents": [
+            {
+                "@id": "dtmi:appconfig:other:log_controller:save_config;2",
+                "@type": "Command",
+                "commandType": "synchronous",
+                "displayName": {
+                    "en": "Set Default Configuration"
+                },
+                "name": "save_config"
+            },
+            {
+                "@id": "dtmi:appconfig:other:log_controller:log_status;2",
+                "@type": [
+                    "Property",
+                    "BooleanValue"
+                ],
+                "displayName": {
+                    "en": "Log Status"
+                },
+                "name": "log_status",
+                "schema": "boolean",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:log_controller:sd_mounted;2",
+                "@type": [
+                    "Property",
+                    "BooleanValue"
+                ],
+                "displayName": {
+                    "en": "SD Card Mounted"
+                },
+                "name": "sd_mounted",
+                "schema": "boolean",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:log_controller:start_log;2",
+                "@type": "Command",
+                "commandType": "synchronous",
+                "displayName": {
+                    "en": "Start Acquisition"
+                },
+                "name": "start_log",
+                "request": {
+                    "@type": "CommandPayload",
+                    "displayName": {
+                        "en": "Log Interface"
+                    },
+                    "name": "interface",
+                    "schema": {
+                        "@type": "Enum",
+                        "displayName": {
+                            "en": "Enum"
+                        },
+                        "enumValues": [
+                            {
+                                "displayName": {
+                                    "en": "SD Card"
+                                },
+                                "enumValue": 0,
+                                "name": "sd_card"
+                            },
+                            {
+                                "displayName": {
+                                    "en": "USB"
+                                },
+                                "enumValue": 1,
+                                "name": "usb"
+                            }
+                        ],
+                        "valueSchema": "integer"
+                    }
+                }
+            },
+            {
+                "@id": "dtmi:appconfig:other:log_controller:stop_log;2",
+                "@type": "Command",
+                "commandType": "synchronous",
+                "displayName": {
+                    "en": "Stop Acquisition"
+                },
+                "name": "stop_log"
+            },
+            {
+                "@id": "dtmi:appconfig:other:log_controller:set_time;2",
+                "@type": "Command",
+                "commandType": "synchronous",
+                "displayName": {
+                    "en": "Set Time"
+                },
+                "name": "set_time",
+                "request": {
+                    "@type": "CommandPayload",
+                    "description": {
+                        "en": "yyyyMMdd_hh_mm_ss"
+                    },
+                    "displayName": {
+                        "en": "datetime"
+                    },
+                    "name": "datetime",
+                    "schema": "string"
+                }
+            },
+            {
+                "@id": "dtmi:appconfig:other:log_controller:controller_type;2",
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName": {
+                    "en": "Controller Type"
+                },
+                "name": "controller_type",
+                "schema": "integer",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:log_controller:switch_bank;2",
+                "@type": "Command",
+                "commandType": "synchronous",
+                "displayName": {
+                    "en": "Switch Bank"
+                },
+                "name": "switch_bank"
+            },
+            {
+                "@id": "dtmi:appconfig:other:log_controller:set_dfu_mode;2",
+                "@type": "Command",
+                "commandType": "synchronous",
+                "displayName": {
+                    "en": "Set DFU Mode"
+                },
+                "name": "set_dfu_mode"
+            }
+        ],
+        "displayName": {
+            "en": "Log Controller"
+        }
+    },
+    {
+        "@context": [
+            "dtmi:iotcentral:context;2",
+            "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:appconfig:other:acquisition_info;2",
+        "@type": "Interface",
+        "contents": [
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:name;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Acquisition Name"
+                },
+                "name": "name",
+                "schema": "string",
+                "writable": true
+            },
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:description;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Acquisition Description"
+                },
+                "name": "description",
+                "schema": "string",
+                "writable": true
+            },
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:uuid;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Acquisition UUID"
+                },
+                "name": "uuid",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:start_time;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Acquisition Start Time"
+                },
+                "name": "start_time",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:end_time;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Acquisition End Time"
+                },
+                "name": "end_time",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:data_ext;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Exported Data Extension"
+                },
+                "name": "data_ext",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:data_fmt;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Exported Data Format"
+                },
+                "name": "data_fmt",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:tags;1",
+                "@type": "Property",
+                "comment": "JSON Value",
+                "displayName": {
+                    "en": "Tag List"
+                },
+                "name": "tags",
+                "schema": "vector",
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:interface;1",
+                "@type": "Property",
+                "displayName": {
+                    "en": "Acquisition Interface"
+                },
+                "name": "interface",
+                "schema": {
+                    "@id": "dtmi:appconfig:other:acquisition_info:interface:schema;1",
+                    "@type": "Enum",
+                    "displayName": {
+                        "en": "Enum"
+                    },
+                    "enumValues": [
+                        {
+                            "@id": "dtmi:appconfig:other:acquisition_info:interface:schema:sd;1",
+                            "displayName": {
+                                "en": "SD Card"
+                            },
+                            "enumValue": "0",
+                            "name": "sd"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:other:acquisition_info:interface:schema:usb;1",
+                            "displayName": {
+                                "en": "USB"
+                            },
+                            "enumValue": "1",
+                            "name": "usb"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:other:acquisition_info:interface:schema:ble;1",
+                            "displayName": {
+                                "en": "BLE"
+                            },
+                            "enumValue": "2",
+                            "name": "ble"
+                        },
+                        {
+                            "@id": "dtmi:appconfig:other:acquisition_info:interface:schema:serial;1",
+                            "displayName": {
+                                "en": "Serial"
+                            },
+                            "enumValue": "3",
+                            "name": "serial"
+                        }
+                    ],
+                    "valueSchema": "string"
+                },
+                "writable": false
+            },
+            {
+                "@id": "dtmi:appconfig:other:acquisition_info:schema_version;1",
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName": {
+                    "en": "Schema Version"
+                },
+                "name": "schema_version",
+                "schema": "string",
+                "writable": false
+            }
+        ],
+        "displayName": {
+            "en": "Acquisition Information"
+        }
+    },
+    {
+        "@context": [
+            "dtmi:iotcentral:context;2",
+            "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:appconfig:other:firmware_info;3",
+        "@type": "Interface",
+        "contents": [
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Alias name of the firmware"
+                },
+                "displayName": {
+                    "en": "Alias"
+                },
+                "name": "alias",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Firmware name"
+                },
+                "displayName": {
+                    "en": "Firmware name"
+                },
+                "name": "fw_name",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Firmware version"
+                },
+                "displayName": {
+                    "en": "Firmware version"
+                },
+                "name": "fw_version",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Part number"
+                },
+                "displayName": {
+                    "en": "Part number"
+                },
+                "name": "part_number",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Device URL"
+                },
+                "displayName": {
+                    "en": "Device URL"
+                },
+                "name": "device_url",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Firmware URL"
+                },
+                "displayName": {
+                    "en": "Firmware URL"
+                },
+                "name": "fw_url",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "MAC Address"
+                },
+                "displayName": {
+                    "en": "MAC Address"
+                },
+                "name": "mac_address",
+                "schema": "string",
+                "writable": false
+            }
+        ],
+        "displayName": {
+            "en": "Firmware Information"
+        }
+    },
+    {
+        "@context": [
+            "dtmi:iotcentral:context;2",
+            "dtmi:dtdl:context;2"
+        ],
+        "@id": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+        "@type": "Interface",
+        "contents": [
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Contoso."
+                },
+                "displayName": {
+                    "en": "Manufacturer"
+                },
+                "name": "manufacturer",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Device model name or ID. Ex. Surface Book 2."
+                },
+                "displayName": {
+                    "en": "Device model"
+                },
+                "name": "model",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Version of the software on your device. This could be the version of your firmware. Ex. 1.3.45"
+                },
+                "displayName": {
+                    "en": "Software version"
+                },
+                "name": "swVersion",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Name of the operating system on the device. Ex. Windows 10 IoT Core."
+                },
+                "displayName": {
+                    "en": "Operating system name"
+                },
+                "name": "osName",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Architecture of the processor on the device. Ex. x64 or ARM."
+                },
+                "displayName": {
+                    "en": "Processor architecture"
+                },
+                "name": "processorArchitecture",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "StringValue"
+                ],
+                "description": {
+                    "en": "Name of the manufacturer of the processor on the device. Ex. Intel."
+                },
+                "displayName": {
+                    "en": "Processor manufacturer"
+                },
+                "name": "processorManufacturer",
+                "schema": "string",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "description": {
+                    "en": "Total available storage on the device in kilobytes. Ex. 2083300 kilobytes."
+                },
+                "displayName": {
+                    "en": "Total storage"
+                },
+                "name": "totalStorage",
+                "schema": "double",
+                "writable": false
+            },
+            {
+                "@type": [
+                    "Property",
+                    "NumberValue"
+                ],
+                "description": {
+                    "en": "Total available memory on the device in kilobytes. Ex. 2510400 kilobytes."
+                },
+                "displayName": {
+                    "en": "Total memory"
+                },
+                "name": "totalMemory",
+                "schema": "double",
+                "writable": false
+            }
+        ],
+        "displayName": {
+            "en": "Device Information"
+        }
+    }
+]
