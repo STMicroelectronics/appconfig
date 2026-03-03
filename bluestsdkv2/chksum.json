@@ -1,6 +1,6 @@
 {
-  "checksum": "a7bde6b237ab210566bcf293e3001bba",
-  "date": "2026-01-05 05:33:47.434004",
-  "version": "0.11.2",
-  "stable_release": true
+  "date": "2026-03-03 09:00:40.534682",
+  "version": "0.11.4",
+  "stable_release": false,
+  "checksum": "be22fa5e2680d84a6a4575b579e76adb"
 }
