@@ -1,0 +1,1199 @@
+[
+  {
+    "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:ov5640_cam;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "OV5640_CAM"
+        },
+        "name": "ov5640_cam",
+        "schema": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam;1"
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:log_controller;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Log Controller"
+        },
+        "name": "log_controller",
+        "schema": "dtmi:appconfig:other:log_controller;2"
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:acquisition_info;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Acquisition Information"
+        },
+        "name": "acquisition_info",
+        "schema": "dtmi:appconfig:other:acquisition_info;2"
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:firmware_info;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Firmware Information"
+        },
+        "name": "firmware_info",
+        "schema": "dtmi:appconfig:other:firmware_info;4"
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:DeviceInformation;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Device Information"
+        },
+        "name": "DeviceInformation",
+        "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+      }
+    ],
+    "displayName": {
+      "en": "STSW_SDATALOG_OV5640"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:pixel_format;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Pixel Format"
+        },
+        "name": "pixel_format",
+        "schema": {
+          "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:pixel_format:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:pixel_format:schema:rgb565;1",
+              "displayName": {
+                "en": "RGB565"
+              },
+              "enumValue": 0,
+              "name": "rgb565"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:pixel_format:schema:rgb888;1",
+              "displayName": {
+                "en": "RGB888"
+              },
+              "enumValue": 1,
+              "name": "rgb888"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:pixel_format:schema:yuv;1",
+              "displayName": {
+                "en": "YUV"
+              },
+              "enumValue": 2,
+              "name": "yuv"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:pixel_format:schema:y8;1",
+              "displayName": {
+                "en": "Y8"
+              },
+              "enumValue": 7,
+              "name": "y8"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:pixel_format:schema:jpeg;1",
+              "displayName": {
+                "en": "JPEG"
+              },
+              "enumValue": 8,
+              "name": "jpeg"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": true,
+        "initialValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:resolution;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Resolution"
+        },
+        "name": "resolution",
+        "schema": {
+          "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:resolution:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:resolution:schema:r160x120;1",
+              "displayName": {
+                "en": "160x120"
+              },
+              "enumValue": 0,
+              "name": "r160x120"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:resolution:schema:r320x240;1",
+              "displayName": {
+                "en": "320x240"
+              },
+              "enumValue": 1,
+              "name": "r320x240"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:resolution:schema:r480x272;1",
+              "displayName": {
+                "en": "480x272"
+              },
+              "enumValue": 2,
+              "name": "r480x272"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:resolution:schema:r640x480;1",
+              "displayName": {
+                "en": "640x480"
+              },
+              "enumValue": 3,
+              "name": "r640x480"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:resolution:schema:r800x480;1",
+              "displayName": {
+                "en": "800x480"
+              },
+              "enumValue": 4,
+              "name": "r800x480"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": true,
+        "initialValue": 1
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:light_mode;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Light Mode"
+        },
+        "name": "light_mode",
+        "schema": {
+          "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:light_mode:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:light_mode:schema:auto;1",
+              "displayName": {
+                "en": "AUTO"
+              },
+              "enumValue": 0,
+              "name": "auto"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:light_mode:schema:sunny;1",
+              "displayName": {
+                "en": "SUNNY"
+              },
+              "enumValue": 1,
+              "name": "sunny"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:light_mode:schema:office;1",
+              "displayName": {
+                "en": "OFFICE"
+              },
+              "enumValue": 2,
+              "name": "office"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:light_mode:schema:home;1",
+              "displayName": {
+                "en": "HOME"
+              },
+              "enumValue": 4,
+              "name": "home"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:light_mode:schema:cloudy;1",
+              "displayName": {
+                "en": "CLOUDY"
+              },
+              "enumValue": 8,
+              "name": "cloudy"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": true,
+        "initialValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:color_effect;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Color Effect"
+        },
+        "name": "color_effect",
+        "schema": {
+          "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:color_effect:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:color_effect:schema:none;1",
+              "displayName": {
+                "en": "NONE"
+              },
+              "enumValue": 0,
+              "name": "none"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:color_effect:schema:blue;1",
+              "displayName": {
+                "en": "BLUE"
+              },
+              "enumValue": 1,
+              "name": "blue"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:color_effect:schema:red;1",
+              "displayName": {
+                "en": "RED"
+              },
+              "enumValue": 2,
+              "name": "red"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:color_effect:schema:green;1",
+              "displayName": {
+                "en": "GREEN"
+              },
+              "enumValue": 4,
+              "name": "green"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:color_effect:schema:bw;1",
+              "displayName": {
+                "en": "BW"
+              },
+              "enumValue": 8,
+              "name": "bw"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:color_effect:schema:sepia;1",
+              "displayName": {
+                "en": "SEPIA"
+              },
+              "enumValue": 10,
+              "name": "sepia"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:color_effect:schema:negative;1",
+              "displayName": {
+                "en": "NEGATIVE"
+              },
+              "enumValue": 20,
+              "name": "negative"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": true,
+        "initialValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:brightness;1",
+        "@type": [
+          "Property",
+          "Initialized",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Brightness"
+        },
+        "name": "brightness",
+        "schema": "integer",
+        "writable": true,
+        "initialValue": 0,
+        "maxValue": 4,
+        "minValue": -4
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:contrast;1",
+        "@type": [
+          "Property",
+          "Initialized",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Contrast"
+        },
+        "name": "contrast",
+        "schema": "integer",
+        "writable": true,
+        "initialValue": 0,
+        "maxValue": 4,
+        "minValue": -4
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:hue_degree;1",
+        "@type": [
+          "Property",
+          "Initialized",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Hue Degree"
+        },
+        "name": "hue_degree",
+        "schema": "integer",
+        "writable": true,
+        "initialValue": 0,
+        "maxValue": 4,
+        "minValue": -4
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:mirror_flip;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Mirror Flip"
+        },
+        "name": "mirror_flip",
+        "schema": {
+          "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:mirror_flip:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:mirror_flip:schema:none;1",
+              "displayName": {
+                "en": "NONE"
+              },
+              "enumValue": 0,
+              "name": "none"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:mirror_flip:schema:flip;1",
+              "displayName": {
+                "en": "FLIP"
+              },
+              "enumValue": 1,
+              "name": "flip"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:mirror_flip:schema:mirror;1",
+              "displayName": {
+                "en": "MIRROR"
+              },
+              "enumValue": 2,
+              "name": "mirror"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:mirror_flip:schema:mirror_flip;1",
+              "displayName": {
+                "en": "MIRROR + FLIP"
+              },
+              "enumValue": 3,
+              "name": "mirror_flip"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": true,
+        "initialValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:night_mode;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Night Mode"
+        },
+        "name": "night_mode",
+        "schema": {
+          "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:night_mode:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:night_mode:schema:enable;1",
+              "displayName": {
+                "en": "ENABLE"
+              },
+              "enumValue": 0,
+              "name": "enable"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:night_mode:schema:disable;1",
+              "displayName": {
+                "en": "DISABLE"
+              },
+              "enumValue": 1,
+              "name": "disable"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": true,
+        "initialValue": 1
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:saturation;1",
+        "@type": [
+          "Property",
+          "Initialized",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Saturation"
+        },
+        "name": "saturation",
+        "schema": "integer",
+        "writable": true,
+        "initialValue": 0,
+        "maxValue": 4,
+        "minValue": -4
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "5 = ISENSOR_CLASS_CAM"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:start_camera;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Start"
+        },
+        "name": "start_camera"
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:stop_camera;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Stop"
+        },
+        "name": "stop_camera"
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:serial_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Serial Data Packet Size"
+        },
+        "name": "serial_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:status;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Status"
+        },
+        "name": "status",
+        "schema": {
+          "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:status:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:status:schema:not_initialized;1",
+              "displayName": {
+                "en": "Not Initialized"
+              },
+              "enumValue": 0,
+              "name": "not_initialized"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:status:schema:initialized;1",
+              "displayName": {
+                "en": "Initialized"
+              },
+              "enumValue": 1,
+              "name": "initialized"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:status:schema:actived;1",
+              "displayName": {
+                "en": "Started or Resumed"
+              },
+              "enumValue": 2,
+              "name": "actived"
+            },
+            {
+              "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:status:schema:stopped;1",
+              "displayName": {
+                "en": "Stopped"
+              },
+              "enumValue": 3,
+              "name": "stopped"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:b_u585i_iot02a:STSW_SDATALOG_OV5640:sensors:ov5640_cam:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "OV5640_CAM"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:other:log_controller;2",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:other:log_controller:save_config;2",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set Default Configuration"
+        },
+        "name": "save_config"
+      },
+      {
+        "@id": "dtmi:appconfig:other:log_controller:log_status;2",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Log Status"
+        },
+        "name": "log_status",
+        "schema": "boolean",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:other:log_controller:sd_mounted;2",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "SD Card Mounted"
+        },
+        "name": "sd_mounted",
+        "schema": "boolean",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:other:log_controller:start_log;2",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Start Acquisition"
+        },
+        "name": "start_log",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Log Interface"
+          },
+          "name": "interface",
+          "schema": {
+            "@type": "Enum",
+            "displayName": {
+              "en": "Enum"
+            },
+            "enumValues": [
+              {
+                "displayName": {
+                  "en": "SD Card"
+                },
+                "enumValue": 0,
+                "name": "sd_card"
+              },
+              {
+                "displayName": {
+                  "en": "USB"
+                },
+                "enumValue": 1,
+                "name": "usb"
+              }
+            ],
+            "valueSchema": "integer"
+          }
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:other:log_controller:stop_log;2",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Stop Acquisition"
+        },
+        "name": "stop_log"
+      },
+      {
+        "@id": "dtmi:appconfig:other:log_controller:set_time;2",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set Time"
+        },
+        "name": "set_time",
+        "request": {
+          "@type": "CommandPayload",
+          "description": {
+            "en": "yyyyMMdd_hh_mm_ss"
+          },
+          "displayName": {
+            "en": "datetime"
+          },
+          "name": "datetime",
+          "schema": "string"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:other:log_controller:controller_type;2",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Controller Type"
+        },
+        "name": "controller_type",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Log Controller"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:other:acquisition_info;2",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition Name"
+        },
+        "name": "name",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:description;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition Description"
+        },
+        "name": "description",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:uuid;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition UUID"
+        },
+        "name": "uuid",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:start_time;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition Start Time"
+        },
+        "name": "start_time",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:end_time;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition End Time"
+        },
+        "name": "end_time",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:data_ext;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Exported Data Extension"
+        },
+        "name": "data_ext",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:data_fmt;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Exported Data Format"
+        },
+        "name": "data_fmt",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:tags;1",
+        "@type": "Property",
+        "comment": "JSON Value",
+        "displayName": {
+          "en": "Tag List"
+        },
+        "name": "tags",
+        "schema": "vector",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:interface;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Acquisition Interface"
+        },
+        "name": "interface",
+        "schema": {
+          "@id": "dtmi:appconfig:other:acquisition_info:interface:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:other:acquisition_info:interface:schema:sd;1",
+              "displayName": {
+                "en": "SD Card"
+              },
+              "enumValue": "0",
+              "name": "sd"
+            },
+            {
+              "@id": "dtmi:appconfig:other:acquisition_info:interface:schema:usb;1",
+              "displayName": {
+                "en": "USB"
+              },
+              "enumValue": "1",
+              "name": "usb"
+            },
+            {
+              "@id": "dtmi:appconfig:other:acquisition_info:interface:schema:ble;1",
+              "displayName": {
+                "en": "BLE"
+              },
+              "enumValue": "2",
+              "name": "ble"
+            },
+            {
+              "@id": "dtmi:appconfig:other:acquisition_info:interface:schema:serial;1",
+              "displayName": {
+                "en": "Serial"
+              },
+              "enumValue": "3",
+              "name": "serial"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:other:acquisition_info:schema_version;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Schema Version"
+        },
+        "name": "schema_version",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Acquisition Information"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:other:firmware_info;4",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Alias name of the firmware"
+        },
+        "displayName": {
+          "en": "Alias"
+        },
+        "name": "alias",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware name"
+        },
+        "displayName": {
+          "en": "Firmware name"
+        },
+        "name": "fw_name",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware version"
+        },
+        "displayName": {
+          "en": "Firmware version"
+        },
+        "name": "fw_version",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Part number"
+        },
+        "displayName": {
+          "en": "Part number"
+        },
+        "name": "part_number",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Device URL"
+        },
+        "displayName": {
+          "en": "Device URL"
+        },
+        "name": "device_url",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware URL"
+        },
+        "displayName": {
+          "en": "Firmware URL"
+        },
+        "name": "fw_url",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "MAC Address"
+        },
+        "displayName": {
+          "en": "MAC Address"
+        },
+        "name": "mac_address",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Firmware Information"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Contoso."
+        },
+        "displayName": {
+          "en": "Manufacturer"
+        },
+        "name": "manufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Device model name or ID. Ex. Surface Book 2."
+        },
+        "displayName": {
+          "en": "Device model"
+        },
+        "name": "model",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Version of the software on your device. This could be the version of your firmware. Ex. 1.3.45"
+        },
+        "displayName": {
+          "en": "Software version"
+        },
+        "name": "swVersion",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Name of the operating system on the device. Ex. Windows 10 IoT Core."
+        },
+        "displayName": {
+          "en": "Operating system name"
+        },
+        "name": "osName",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Architecture of the processor on the device. Ex. x64 or ARM."
+        },
+        "displayName": {
+          "en": "Processor architecture"
+        },
+        "name": "processorArchitecture",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Name of the manufacturer of the processor on the device. Ex. Intel."
+        },
+        "displayName": {
+          "en": "Processor manufacturer"
+        },
+        "name": "processorManufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Total available storage on the device in kilobytes. Ex. 2048000 kilobytes."
+        },
+        "displayName": {
+          "en": "Total storage"
+        },
+        "name": "totalStorage",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Total available memory on the device in kilobytes. Ex. 256000 kilobytes."
+        },
+        "displayName": {
+          "en": "Total memory"
+        },
+        "name": "totalMemory",
+        "schema": "double",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Device Information"
+    }
+  }
+]

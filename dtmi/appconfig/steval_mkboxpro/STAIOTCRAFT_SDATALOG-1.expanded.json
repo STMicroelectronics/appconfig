@@ -1,0 +1,2441 @@
+[
+  {
+    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:lsm6dsv16x_acc;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "LSM6DSV16X_ACC"
+        },
+        "name": "lsm6dsv16x_acc",
+        "schema": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:lsm6dsv16x_gyro;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "LSM6DSV16X_GYRO"
+        },
+        "name": "lsm6dsv16x_gyro",
+        "schema": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:lsm6dsv16x_mlc;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "LSM6DSV16X_MLC"
+        },
+        "name": "lsm6dsv16x_mlc",
+        "schema": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:log_controller;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Log Controller"
+        },
+        "name": "log_controller",
+        "schema": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:acquisition_information;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Acquisition Information"
+        },
+        "name": "acquisition_information",
+        "schema": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:device_information;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Device Information"
+        },
+        "name": "device_information",
+        "schema": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information;1"
+      }
+    ],
+    "displayName": {
+      "en": "STAIOTCRAFT_SDATALOG"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enable"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:dimensions;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dimensions",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:unit;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Unit"
+        },
+        "name": "unit",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:short_unit;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Short Unit"
+        },
+        "name": "short_unit",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz7_5;1",
+              "displayName": {
+                "en": "7.5"
+              },
+              "enumValue": 0,
+              "name": "hz7_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz15;1",
+              "displayName": {
+                "en": "15"
+              },
+              "enumValue": 1,
+              "name": "hz15"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz30;1",
+              "displayName": {
+                "en": "30"
+              },
+              "enumValue": 2,
+              "name": "hz30"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz60;1",
+              "displayName": {
+                "en": "60"
+              },
+              "enumValue": 3,
+              "name": "hz60"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz120;1",
+              "displayName": {
+                "en": "120"
+              },
+              "enumValue": 4,
+              "name": "hz120"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz240;1",
+              "displayName": {
+                "en": "240"
+              },
+              "enumValue": 5,
+              "name": "hz240"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz480;1",
+              "displayName": {
+                "en": "480"
+              },
+              "enumValue": 6,
+              "name": "hz480"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz960;1",
+              "displayName": {
+                "en": "960"
+              },
+              "enumValue": 7,
+              "name": "hz960"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz1920;1",
+              "displayName": {
+                "en": "1920"
+              },
+              "enumValue": 8,
+              "name": "hz1920"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz3840;1",
+              "displayName": {
+                "en": "3840"
+              },
+              "enumValue": 9,
+              "name": "hz3840"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:odr:schema:hz7680;1",
+              "displayName": {
+                "en": "7680"
+              },
+              "enumValue": 10,
+              "name": "hz7680"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true,
+        "displayUnit": {
+          "en": "Hz"
+        },
+        "initialValue": 5
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:fs;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:fs:schema:g2;1",
+              "displayName": {
+                "en": "2"
+              },
+              "enumValue": 0,
+              "name": "g2"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:fs:schema:g4;1",
+              "displayName": {
+                "en": "4"
+              },
+              "enumValue": 1,
+              "name": "g4"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:fs:schema:g8;1",
+              "displayName": {
+                "en": "8"
+              },
+              "enumValue": 2,
+              "name": "g8"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:fs:schema:g16;1",
+              "displayName": {
+                "en": "16"
+              },
+              "enumValue": 3,
+              "name": "g16"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "gForce",
+        "writable": true,
+        "displayUnit": {
+          "en": "g"
+        },
+        "initialValue": 1
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:initial_timestamp;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Timestamp"
+        },
+        "name": "initial_timestamp",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:measured_odr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measured_odr",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Annotation"
+        },
+        "name": "annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output;1",
+        "@type": [
+          "Telemetry",
+          "StringValue"
+        ],
+        "description": {
+          "en": "BINARY"
+        },
+        "displayName": {
+          "en": "Output"
+        },
+        "name": "output",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Output ST Stream"
+        },
+        "name": "output_st_stream",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification;1",
+              "displayName": {
+                "en": "Channel Specification"
+              },
+              "name": "channel_specification",
+              "schema": {
+                "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema;1",
+                "@type": "Object",
+                "displayName": {
+                  "en": "Object"
+                },
+                "fields": [
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:interface;1",
+                    "displayName": {
+                      "en": "Interface"
+                    },
+                    "name": "interface",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:interface:schema;1",
+                      "@type": "Enum",
+                      "displayName": {
+                        "en": "Enum"
+                      },
+                      "enumValues": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:interface:schema:sd;1",
+                          "displayName": {
+                            "en": "SD"
+                          },
+                          "enumValue": "0",
+                          "name": "sd"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:interface:schema:usb;1",
+                          "displayName": {
+                            "en": "USB"
+                          },
+                          "enumValue": "1",
+                          "name": "usb"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:interface:schema:ble;1",
+                          "displayName": {
+                            "en": "BLE"
+                          },
+                          "enumValue": "2",
+                          "name": "ble"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:interface:schema:serial;1",
+                          "displayName": {
+                            "en": "Serial"
+                          },
+                          "enumValue": "3",
+                          "name": "serial"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:interface:schema:link;1",
+                          "displayName": {
+                            "en": "Link"
+                          },
+                          "enumValue": "4",
+                          "name": "link"
+                        }
+                      ],
+                      "valueSchema": "string"
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:protocol_type;1",
+                    "displayName": {
+                      "en": "Protocol Type"
+                    },
+                    "name": "protocol_type",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:protocol_type:schema;1",
+                      "@type": "Enum",
+                      "displayName": {
+                        "en": "Enum"
+                      },
+                      "enumValues": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:protocol_type:schema:hsd;1",
+                          "displayName": {
+                            "en": "HSD"
+                          },
+                          "enumValue": "0",
+                          "name": "hsd"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:protocol_type:schema:bluest;1",
+                          "displayName": {
+                            "en": "BLUEST"
+                          },
+                          "enumValue": "1",
+                          "name": "bluest"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:protocol_type:schema:aspep_sstl;1",
+                          "displayName": {
+                            "en": "ASPEP_SSTL"
+                          },
+                          "enumValue": "2",
+                          "name": "aspep_sstl"
+                        }
+                      ],
+                      "valueSchema": "string"
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:protocol_version;1",
+                    "displayName": {
+                      "en": "Protocol Version"
+                    },
+                    "name": "protocol_version",
+                    "schema": "string"
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:payload_type;1",
+                    "displayName": {
+                      "en": "Payload Type"
+                    },
+                    "name": "payload_type",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:payload_type:schema;1",
+                      "@type": "Enum",
+                      "displayName": {
+                        "en": "Enum"
+                      },
+                      "enumValues": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:payload_type:schema:custom;1",
+                          "displayName": {
+                            "en": "CUSTOM"
+                          },
+                          "enumValue": "0",
+                          "name": "custom"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:payload_type:schema:standard;1",
+                          "displayName": {
+                            "en": "STANDARD"
+                          },
+                          "enumValue": "1",
+                          "name": "standard"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:payload_type:schema:hsd;1",
+                          "displayName": {
+                            "en": "HSD"
+                          },
+                          "enumValue": "2",
+                          "name": "hsd"
+                        }
+                      ],
+                      "valueSchema": "string"
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:payload_version;1",
+                    "displayName": {
+                      "en": "Payload Version"
+                    },
+                    "name": "payload_version",
+                    "schema": "string"
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:channel_specification:schema:stream_id;1",
+                    "displayName": {
+                      "en": "Stream ID"
+                    },
+                    "name": "stream_id",
+                    "schema": "integer"
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification;1",
+              "displayName": {
+                "en": "Payload Specification"
+              },
+              "name": "payload_specification",
+              "schema": {
+                "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema;1",
+                "@type": "Object",
+                "displayName": {
+                  "en": "Object"
+                },
+                "fields": [
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:timestamp;1",
+                    "displayName": {
+                      "en": "Timestamp"
+                    },
+                    "name": "timestamp",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:timestamp:schema;1",
+                      "@type": "Object",
+                      "displayName": {
+                        "en": "Object"
+                      },
+                      "fields": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:timestamp:schema:data_type;1",
+                          "displayName": {
+                            "en": "Data Type"
+                          },
+                          "name": "data_type",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:timestamp:schema:dimensions;1",
+                          "displayName": {
+                            "en": "Dimensions"
+                          },
+                          "name": "dimensions",
+                          "schema": "integer"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:timestamp:schema:unit;1",
+                          "displayName": {
+                            "en": "Unit"
+                          },
+                          "name": "unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:timestamp:schema:short_unit;1",
+                          "displayName": {
+                            "en": "Short Unit"
+                          },
+                          "name": "short_unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:timestamp:schema:labels;1",
+                          "displayName": {
+                            "en": "Labels"
+                          },
+                          "name": "labels",
+                          "schema": "string"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:x;1",
+                    "displayName": {
+                      "en": "X"
+                    },
+                    "name": "x",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:x:schema;1",
+                      "@type": "Object",
+                      "displayName": {
+                        "en": "Object"
+                      },
+                      "fields": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:x:schema:data_type;1",
+                          "displayName": {
+                            "en": "Data Type"
+                          },
+                          "name": "data_type",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:x:schema:dimensions;1",
+                          "displayName": {
+                            "en": "Dimensions"
+                          },
+                          "name": "dimensions",
+                          "schema": "integer"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:x:schema:unit;1",
+                          "displayName": {
+                            "en": "Unit"
+                          },
+                          "name": "unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:x:schema:short_unit;1",
+                          "displayName": {
+                            "en": "Short Unit"
+                          },
+                          "name": "short_unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:x:schema:labels;1",
+                          "displayName": {
+                            "en": "Labels"
+                          },
+                          "name": "labels",
+                          "schema": "string"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:y;1",
+                    "displayName": {
+                      "en": "Y"
+                    },
+                    "name": "y",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:y:schema;1",
+                      "@type": "Object",
+                      "displayName": {
+                        "en": "Object"
+                      },
+                      "fields": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:y:schema:data_type;1",
+                          "displayName": {
+                            "en": "Data Type"
+                          },
+                          "name": "data_type",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:y:schema:dimensions;1",
+                          "displayName": {
+                            "en": "Dimensions"
+                          },
+                          "name": "dimensions",
+                          "schema": "integer"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:y:schema:unit;1",
+                          "displayName": {
+                            "en": "Unit"
+                          },
+                          "name": "unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:y:schema:short_unit;1",
+                          "displayName": {
+                            "en": "Short Unit"
+                          },
+                          "name": "short_unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:y:schema:labels;1",
+                          "displayName": {
+                            "en": "Labels"
+                          },
+                          "name": "labels",
+                          "schema": "string"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:z;1",
+                    "displayName": {
+                      "en": "Z"
+                    },
+                    "name": "z",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:z:schema;1",
+                      "@type": "Object",
+                      "displayName": {
+                        "en": "Object"
+                      },
+                      "fields": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:z:schema:data_type;1",
+                          "displayName": {
+                            "en": "Data Type"
+                          },
+                          "name": "data_type",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:z:schema:dimensions;1",
+                          "displayName": {
+                            "en": "Dimensions"
+                          },
+                          "name": "dimensions",
+                          "schema": "integer"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:z:schema:unit;1",
+                          "displayName": {
+                            "en": "Unit"
+                          },
+                          "name": "unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:z:schema:short_unit;1",
+                          "displayName": {
+                            "en": "Short Unit"
+                          },
+                          "name": "short_unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_acc:output_st_stream:schema:payload_specification:schema:z:schema:labels;1",
+                          "displayName": {
+                            "en": "Labels"
+                          },
+                          "name": "labels",
+                          "schema": "string"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "LSM6DSV16X_ACC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enable"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:dimensions;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dimensions",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:unit;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Unit"
+        },
+        "name": "unit",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:short_unit;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Short Unit"
+        },
+        "name": "short_unit",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz7_5;1",
+              "displayName": {
+                "en": "7.5"
+              },
+              "enumValue": 0,
+              "name": "hz7_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz15;1",
+              "displayName": {
+                "en": "15"
+              },
+              "enumValue": 1,
+              "name": "hz15"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz30;1",
+              "displayName": {
+                "en": "30"
+              },
+              "enumValue": 2,
+              "name": "hz30"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz60;1",
+              "displayName": {
+                "en": "60"
+              },
+              "enumValue": 3,
+              "name": "hz60"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz120;1",
+              "displayName": {
+                "en": "120"
+              },
+              "enumValue": 4,
+              "name": "hz120"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz240;1",
+              "displayName": {
+                "en": "240"
+              },
+              "enumValue": 5,
+              "name": "hz240"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz480;1",
+              "displayName": {
+                "en": "480"
+              },
+              "enumValue": 6,
+              "name": "hz480"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz960;1",
+              "displayName": {
+                "en": "960"
+              },
+              "enumValue": 7,
+              "name": "hz960"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz1920;1",
+              "displayName": {
+                "en": "1920"
+              },
+              "enumValue": 8,
+              "name": "hz1920"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz3840;1",
+              "displayName": {
+                "en": "3840"
+              },
+              "enumValue": 9,
+              "name": "hz3840"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:odr:schema:hz7680;1",
+              "displayName": {
+                "en": "7680"
+              },
+              "enumValue": 10,
+              "name": "hz7680"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true,
+        "displayUnit": {
+          "en": "Hz"
+        },
+        "initialValue": 5
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:fs;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:fs:schema:dps125;1",
+              "displayName": {
+                "en": "125"
+              },
+              "enumValue": 0,
+              "name": "dps125"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:fs:schema:dps250;1",
+              "displayName": {
+                "en": "250"
+              },
+              "enumValue": 1,
+              "name": "dps250"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:fs:schema:dps500;1",
+              "displayName": {
+                "en": "500"
+              },
+              "enumValue": 2,
+              "name": "dps500"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:fs:schema:dps1000;1",
+              "displayName": {
+                "en": "1000"
+              },
+              "enumValue": 3,
+              "name": "dps1000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:fs:schema:dps2000;1",
+              "displayName": {
+                "en": "2000"
+              },
+              "enumValue": 4,
+              "name": "dps2000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:fs:schema:dps4000;1",
+              "displayName": {
+                "en": "4000"
+              },
+              "enumValue": 5,
+              "name": "dps4000"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "degreePerSecond",
+        "writable": true,
+        "displayUnit": {
+          "en": "dps"
+        },
+        "initialValue": 5
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:initial_timestamp;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Timestamp"
+        },
+        "name": "initial_timestamp",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:measured_odr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measured_odr",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Annotation"
+        },
+        "name": "annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output;1",
+        "@type": [
+          "Telemetry",
+          "StringValue"
+        ],
+        "description": {
+          "en": "BINARY"
+        },
+        "displayName": {
+          "en": "Output"
+        },
+        "name": "output",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Output ST Stream"
+        },
+        "name": "output_st_stream",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema;1",
+          "@type": "Object",
+          "displayName": {
+            "en": "Object"
+          },
+          "fields": [
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification;1",
+              "displayName": {
+                "en": "Channel Specification"
+              },
+              "name": "channel_specification",
+              "schema": {
+                "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema;1",
+                "@type": "Object",
+                "displayName": {
+                  "en": "Object"
+                },
+                "fields": [
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:interface;1",
+                    "displayName": {
+                      "en": "Interface"
+                    },
+                    "name": "interface",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:interface:schema;1",
+                      "@type": "Enum",
+                      "displayName": {
+                        "en": "Enum"
+                      },
+                      "enumValues": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:interface:schema:sd;1",
+                          "displayName": {
+                            "en": "SD"
+                          },
+                          "enumValue": "0",
+                          "name": "sd"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:interface:schema:usb;1",
+                          "displayName": {
+                            "en": "USB"
+                          },
+                          "enumValue": "1",
+                          "name": "usb"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:interface:schema:ble;1",
+                          "displayName": {
+                            "en": "BLE"
+                          },
+                          "enumValue": "2",
+                          "name": "ble"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:interface:schema:serial;1",
+                          "displayName": {
+                            "en": "Serial"
+                          },
+                          "enumValue": "3",
+                          "name": "serial"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:interface:schema:link;1",
+                          "displayName": {
+                            "en": "Link"
+                          },
+                          "enumValue": "4",
+                          "name": "link"
+                        }
+                      ],
+                      "valueSchema": "string"
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:protocol_type;1",
+                    "displayName": {
+                      "en": "Protocol Type"
+                    },
+                    "name": "protocol_type",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:protocol_type:schema;1",
+                      "@type": "Enum",
+                      "displayName": {
+                        "en": "Enum"
+                      },
+                      "enumValues": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:protocol_type:schema:hsd;1",
+                          "displayName": {
+                            "en": "HSD"
+                          },
+                          "enumValue": "0",
+                          "name": "hsd"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:protocol_type:schema:bluest;1",
+                          "displayName": {
+                            "en": "BLUEST"
+                          },
+                          "enumValue": "1",
+                          "name": "bluest"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:protocol_type:schema:aspep_sstl;1",
+                          "displayName": {
+                            "en": "ASPEP_SSTL"
+                          },
+                          "enumValue": "2",
+                          "name": "aspep_sstl"
+                        }
+                      ],
+                      "valueSchema": "string"
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:protocol_version;1",
+                    "displayName": {
+                      "en": "Protocol Version"
+                    },
+                    "name": "protocol_version",
+                    "schema": "string"
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:payload_type;1",
+                    "displayName": {
+                      "en": "Payload Type"
+                    },
+                    "name": "payload_type",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:payload_type:schema;1",
+                      "@type": "Enum",
+                      "displayName": {
+                        "en": "Enum"
+                      },
+                      "enumValues": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:payload_type:schema:custom;1",
+                          "displayName": {
+                            "en": "CUSTOM"
+                          },
+                          "enumValue": "0",
+                          "name": "custom"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:payload_type:schema:standard;1",
+                          "displayName": {
+                            "en": "STANDARD"
+                          },
+                          "enumValue": "1",
+                          "name": "standard"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:payload_type:schema:hsd;1",
+                          "displayName": {
+                            "en": "HSD"
+                          },
+                          "enumValue": "2",
+                          "name": "hsd"
+                        }
+                      ],
+                      "valueSchema": "string"
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:payload_version;1",
+                    "displayName": {
+                      "en": "Payload Version"
+                    },
+                    "name": "payload_version",
+                    "schema": "string"
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:channel_specification:schema:stream_id;1",
+                    "displayName": {
+                      "en": "Stream ID"
+                    },
+                    "name": "stream_id",
+                    "schema": "integer"
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification;1",
+              "displayName": {
+                "en": "Payload Specification"
+              },
+              "name": "payload_specification",
+              "schema": {
+                "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema;1",
+                "@type": "Object",
+                "displayName": {
+                  "en": "Object"
+                },
+                "fields": [
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:timestamp;1",
+                    "displayName": {
+                      "en": "Timestamp"
+                    },
+                    "name": "timestamp",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:timestamp:schema;1",
+                      "@type": "Object",
+                      "displayName": {
+                        "en": "Object"
+                      },
+                      "fields": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:timestamp:schema:data_type;1",
+                          "displayName": {
+                            "en": "Data Type"
+                          },
+                          "name": "data_type",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:timestamp:schema:dimensions;1",
+                          "displayName": {
+                            "en": "Dimensions"
+                          },
+                          "name": "dimensions",
+                          "schema": "integer"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:timestamp:schema:unit;1",
+                          "displayName": {
+                            "en": "Unit"
+                          },
+                          "name": "unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:timestamp:schema:short_unit;1",
+                          "displayName": {
+                            "en": "Short Unit"
+                          },
+                          "name": "short_unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:timestamp:schema:labels;1",
+                          "displayName": {
+                            "en": "Labels"
+                          },
+                          "name": "labels",
+                          "schema": "string"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:x;1",
+                    "displayName": {
+                      "en": "X"
+                    },
+                    "name": "x",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:x:schema;1",
+                      "@type": "Object",
+                      "displayName": {
+                        "en": "Object"
+                      },
+                      "fields": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:x:schema:data_type;1",
+                          "displayName": {
+                            "en": "Data Type"
+                          },
+                          "name": "data_type",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:x:schema:dimensions;1",
+                          "displayName": {
+                            "en": "Dimensions"
+                          },
+                          "name": "dimensions",
+                          "schema": "integer"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:x:schema:unit;1",
+                          "displayName": {
+                            "en": "Unit"
+                          },
+                          "name": "unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:x:schema:short_unit;1",
+                          "displayName": {
+                            "en": "Short Unit"
+                          },
+                          "name": "short_unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:x:schema:labels;1",
+                          "displayName": {
+                            "en": "Labels"
+                          },
+                          "name": "labels",
+                          "schema": "string"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:y;1",
+                    "displayName": {
+                      "en": "Y"
+                    },
+                    "name": "y",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:y:schema;1",
+                      "@type": "Object",
+                      "displayName": {
+                        "en": "Object"
+                      },
+                      "fields": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:y:schema:data_type;1",
+                          "displayName": {
+                            "en": "Data Type"
+                          },
+                          "name": "data_type",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:y:schema:dimensions;1",
+                          "displayName": {
+                            "en": "Dimensions"
+                          },
+                          "name": "dimensions",
+                          "schema": "integer"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:y:schema:unit;1",
+                          "displayName": {
+                            "en": "Unit"
+                          },
+                          "name": "unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:y:schema:short_unit;1",
+                          "displayName": {
+                            "en": "Short Unit"
+                          },
+                          "name": "short_unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:y:schema:labels;1",
+                          "displayName": {
+                            "en": "Labels"
+                          },
+                          "name": "labels",
+                          "schema": "string"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:z;1",
+                    "displayName": {
+                      "en": "Z"
+                    },
+                    "name": "z",
+                    "schema": {
+                      "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:z:schema;1",
+                      "@type": "Object",
+                      "displayName": {
+                        "en": "Object"
+                      },
+                      "fields": [
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:z:schema:data_type;1",
+                          "displayName": {
+                            "en": "Data Type"
+                          },
+                          "name": "data_type",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:z:schema:dimensions;1",
+                          "displayName": {
+                            "en": "Dimensions"
+                          },
+                          "name": "dimensions",
+                          "schema": "integer"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:z:schema:unit;1",
+                          "displayName": {
+                            "en": "Unit"
+                          },
+                          "name": "unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:z:schema:short_unit;1",
+                          "displayName": {
+                            "en": "Short Unit"
+                          },
+                          "name": "short_unit",
+                          "schema": "string"
+                        },
+                        {
+                          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_gyro:output_st_stream:schema:payload_specification:schema:z:schema:labels;1",
+                          "displayName": {
+                            "en": "Labels"
+                          },
+                          "name": "labels",
+                          "schema": "string"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "LSM6DSV16X_GYRO"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Enable"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc:model_filename;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Model Filename"
+        },
+        "name": "model_filename",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc:label_id;1",
+        "@type": [
+          "Telemetry",
+          "State"
+        ],
+        "description": {
+          "en": "TEXT"
+        },
+        "displayName": {
+          "en": "Label ID"
+        },
+        "name": "label_id",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc:label_id:schema;1",
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc:label_id:schema:stationary_upright;1",
+              "displayName": {
+                "en": "Stationary Upright"
+              },
+              "enumValue": 0,
+              "name": "stationary_upright"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc:label_id:schema:stationary_not_upright;1",
+              "displayName": {
+                "en": "Stationary Not upright"
+              },
+              "enumValue": 4,
+              "name": "stationary_not_upright"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc:label_id:schema:motion;1",
+              "displayName": {
+                "en": "Motion"
+              },
+              "enumValue": 8,
+              "name": "motion"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc:label_id:schema:shaken;1",
+              "displayName": {
+                "en": "Shaken"
+              },
+              "enumValue": 12,
+              "name": "shaken"
+            }
+          ],
+          "valueSchema": "integer"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:sensors:lsm6dsv16x_mlc:load_model;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Load Model"
+        },
+        "name": "load_model",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Arguments"
+          },
+          "name": "arguments",
+          "schema": {
+            "@type": "Object",
+            "displayName": {
+              "en": "Object"
+            },
+            "fields": [
+              {
+                "displayName": {
+                  "en": "Filename"
+                },
+                "name": "filename",
+                "schema": "string"
+              },
+              {
+                "displayName": {
+                  "en": "Size"
+                },
+                "name": "size",
+                "schema": "integer"
+              },
+              {
+                "displayName": {
+                  "en": "Content "
+                },
+                "name": "content",
+                "schema": "string"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "displayName": {
+      "en": "LSM6DSV16X_MLC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:save_configuration;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Save Configuration"
+        },
+        "name": "save_configuration"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:log_status;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "Log Status"
+        },
+        "name": "log_status",
+        "schema": "boolean",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:sd_mounted;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "SD Card Mounted"
+        },
+        "name": "sd_mounted",
+        "schema": "boolean",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:sd_failed;1",
+        "@type": [
+          "Property",
+          "BooleanValue"
+        ],
+        "displayName": {
+          "en": "SD Card Failed"
+        },
+        "name": "sd_failed",
+        "schema": "boolean",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:start_log;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Start Log"
+        },
+        "name": "start_log",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Log Interface"
+          },
+          "name": "interface",
+          "schema": {
+            "@type": "Enum",
+            "displayName": {
+              "en": "Enum"
+            },
+            "enumValues": [
+              {
+                "displayName": {
+                  "en": "SD Card"
+                },
+                "enumValue": 0,
+                "name": "sd_card"
+              },
+              {
+                "displayName": {
+                  "en": "USB"
+                },
+                "enumValue": 1,
+                "name": "usb"
+              }
+            ],
+            "valueSchema": "integer"
+          }
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:stop_log;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Stop Log"
+        },
+        "name": "stop_log"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:set_time;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set Time"
+        },
+        "name": "set_time",
+        "request": {
+          "@type": "CommandPayload",
+          "description": {
+            "en": "yyyyMMdd_hh_mm_ss"
+          },
+          "displayName": {
+            "en": "datetime"
+          },
+          "name": "datetime",
+          "schema": "string"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:controller_type;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Controller Type"
+        },
+        "name": "controller_type",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:switch_bank;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Switch Bank"
+        },
+        "name": "switch_bank"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:set_dfu_mode;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Set DFU Mode"
+        },
+        "name": "set_dfu_mode"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:applications:log_controller:enable_all;1",
+        "@type": "Command",
+        "commandType": "synchronous",
+        "displayName": {
+          "en": "Enable/Disable All Sensors"
+        },
+        "name": "enable_all",
+        "request": {
+          "@type": "CommandPayload",
+          "displayName": {
+            "en": "Status"
+          },
+          "name": "status",
+          "schema": "boolean"
+        }
+      }
+    ],
+    "displayName": {
+      "en": "Controller"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:acquisition_name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition Name"
+        },
+        "name": "acquisition_name",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:acquisition_description;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition Description"
+        },
+        "name": "acquisition_description",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:acquisition_uuid;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Acquisition UUID"
+        },
+        "name": "acquisition_uuid",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:start_time;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Start Time"
+        },
+        "name": "start_time",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:end_time;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "End Time"
+        },
+        "name": "end_time",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:exported_data_extension;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Exported Data Extension"
+        },
+        "name": "exported_data_extension",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:exported_data_format;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Exported Data Format"
+        },
+        "name": "exported_data_format",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:tags;1",
+        "@type": "Property",
+        "comment": "JSON Value",
+        "displayName": {
+          "en": "Tags"
+        },
+        "name": "tags",
+        "schema": "vector",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:interface;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "Interface"
+        },
+        "name": "interface",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:interface:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:interface:schema:sd;1",
+              "displayName": {
+                "en": "SD Card"
+              },
+              "enumValue": "0",
+              "name": "sd"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:interface:schema:usb;1",
+              "displayName": {
+                "en": "USB"
+              },
+              "enumValue": "1",
+              "name": "usb"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:interface:schema:ble;1",
+              "displayName": {
+                "en": "BLE"
+              },
+              "enumValue": "2",
+              "name": "ble"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:interface:schema:serial;1",
+              "displayName": {
+                "en": "Serial"
+              },
+              "enumValue": "3",
+              "name": "serial"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:acquisition_information:schema_version;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Schema Version"
+        },
+        "name": "schema_version",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Acquisition Information"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:device_alias;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Alias name of the device"
+        },
+        "displayName": {
+          "en": "Device Alias"
+        },
+        "name": "device_alias",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:device_manufacturer;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Manufacturer of the device"
+        },
+        "displayName": {
+          "en": "Device Manufacturer"
+        },
+        "name": "device_manufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:device_name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Name of the device"
+        },
+        "displayName": {
+          "en": "Device Name"
+        },
+        "name": "device_name",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:processor_manufacturer;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Manufacturer of the processor"
+        },
+        "displayName": {
+          "en": "Processor Manufacturer"
+        },
+        "name": "processor_manufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:processor_architecture;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Architecture of the processor"
+        },
+        "displayName": {
+          "en": "Processor Architecture"
+        },
+        "name": "processor_architecture",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:total_storage_megabytes;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Total storage on the device in megabytes"
+        },
+        "displayName": {
+          "en": "Total Storage MB"
+        },
+        "name": "total_storage_megabytes",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:available_storage_megabytes;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Available storage on the device in megabytes"
+        },
+        "displayName": {
+          "en": "Available Storage MB"
+        },
+        "name": "available_storage_megabytes",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:total_rom_memory_megabytes;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Total ROM memory on the device in megabytes"
+        },
+        "displayName": {
+          "en": "Total ROM Memory MB"
+        },
+        "name": "total_rom_memory_megabytes",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:available_rom_memory_megabytes;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Available ROM memory on the device in megabytes"
+        },
+        "displayName": {
+          "en": "Available ROM Memory MB"
+        },
+        "name": "available_rom_memory_megabytes",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:total_ram_memory_megabytes;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Total RAM memory on the device in megabytes"
+        },
+        "displayName": {
+          "en": "Total RAM Memory MB"
+        },
+        "name": "total_ram_memory_megabytes",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:available_ram_memory_megabytes;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Available RAM memory on the device in megabytes"
+        },
+        "displayName": {
+          "en": "Available RAM Memory MB"
+        },
+        "name": "available_ram_memory_megabytes",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:physical_address;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Physical address"
+        },
+        "displayName": {
+          "en": "Physical Address"
+        },
+        "name": "physical_address",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:device_url;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Device URL"
+        },
+        "displayName": {
+          "en": "Device URL"
+        },
+        "name": "device_url",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:os_name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "OS name"
+        },
+        "displayName": {
+          "en": "OS Name"
+        },
+        "name": "os_name",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:os_version;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "OS version"
+        },
+        "displayName": {
+          "en": "OS Version"
+        },
+        "name": "os_version",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:firmware_part_number;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware part number"
+        },
+        "displayName": {
+          "en": "Firmware Part Number"
+        },
+        "name": "firmware_part_number",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:firmware_name;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware name"
+        },
+        "displayName": {
+          "en": "Firmware Name"
+        },
+        "name": "firmware_name",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:firmware_version;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware version"
+        },
+        "displayName": {
+          "en": "Firmware Version"
+        },
+        "name": "firmware_version",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG:services:device_information:firmware_url;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware URL"
+        },
+        "displayName": {
+          "en": "Firmware URL"
+        },
+        "name": "firmware_url",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Information"
+    }
+  }
+]

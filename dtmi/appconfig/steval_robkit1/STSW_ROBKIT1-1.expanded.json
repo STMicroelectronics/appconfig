@@ -1,0 +1,1498 @@
+[
+  {
+    "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:lsm6dsv16bx_acc;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "LSM6DSV16BX_ACC"
+        },
+        "name": "lsm6dsv16bx_acc",
+        "schema": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:lsm6dsv16bx_gyro;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "LSM6DSV16BX_GYRO"
+        },
+        "name": "lsm6dsv16bx_gyro",
+        "schema": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:lis2mdl_mag;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "LIS2MDL_MAG"
+        },
+        "name": "lis2mdl_mag",
+        "schema": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:mp34dt06j_mic;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "MP34DT06J_MIC"
+        },
+        "name": "mp34dt06j_mic",
+        "schema": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic;1"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:firmware_info;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Firmware Information"
+        },
+        "name": "firmware_info",
+        "schema": "dtmi:stdev:other:firmware_info;3"
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:device_information;1",
+        "@type": "Component",
+        "displayName": {
+          "en": "Device Information"
+        },
+        "name": "device_information",
+        "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
+      }
+    ],
+    "displayName": {
+      "en": "Robkit_VanillaDL_STEVAL_ROBKIT1-1"
+    },
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ]
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz7_5;1",
+              "displayName": {
+                "en": "7.5"
+              },
+              "enumValue": 0,
+              "name": "hz7_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz15;1",
+              "displayName": {
+                "en": "15"
+              },
+              "enumValue": 1,
+              "name": "hz15"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz30;1",
+              "displayName": {
+                "en": "30"
+              },
+              "enumValue": 2,
+              "name": "hz30"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz60;1",
+              "displayName": {
+                "en": "60"
+              },
+              "enumValue": 3,
+              "name": "hz60"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz120;1",
+              "displayName": {
+                "en": "120"
+              },
+              "enumValue": 4,
+              "name": "hz120"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz240;1",
+              "displayName": {
+                "en": "240"
+              },
+              "enumValue": 5,
+              "name": "hz240"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz480;1",
+              "displayName": {
+                "en": "480"
+              },
+              "enumValue": 6,
+              "name": "hz480"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz960;1",
+              "displayName": {
+                "en": "960"
+              },
+              "enumValue": 7,
+              "name": "hz960"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz1920;1",
+              "displayName": {
+                "en": "1920"
+              },
+              "enumValue": 8,
+              "name": "hz1920"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz3840;1",
+              "displayName": {
+                "en": "3840"
+              },
+              "enumValue": 9,
+              "name": "hz3840"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:odr:schema:hz7680;1",
+              "displayName": {
+                "en": "7680"
+              },
+              "enumValue": 10,
+              "name": "hz7680"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true,
+        "displayUnit": {
+          "en": "Hz"
+        },
+        "initialValue": 10
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:fs;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:fs:schema:g2;1",
+              "displayName": {
+                "en": "2"
+              },
+              "enumValue": 0,
+              "name": "g2"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:fs:schema:g4;1",
+              "displayName": {
+                "en": "4"
+              },
+              "enumValue": 1,
+              "name": "g4"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:fs:schema:g8;1",
+              "displayName": {
+                "en": "8"
+              },
+              "enumValue": 2,
+              "name": "g8"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:fs:schema:g16;1",
+              "displayName": {
+                "en": "16"
+              },
+              "enumValue": 3,
+              "name": "g16"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "gForce",
+        "writable": true,
+        "displayUnit": {
+          "en": "g"
+        },
+        "initialValue": 3
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true,
+        "initialValue": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": true,
+        "initialValue": 1000,
+        "maxValue": 1000,
+        "minValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:dim;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:ioffset;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:measodr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measodr",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:sd_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "SD Data Packet Size"
+        },
+        "name": "sd_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:sensor_annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Sensor Annotation"
+        },
+        "name": "sensor_annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_acc:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "LSM6DSV16BX_ACC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz7_5;1",
+              "displayName": {
+                "en": "7.5"
+              },
+              "enumValue": 0,
+              "name": "hz7_5"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz15;1",
+              "displayName": {
+                "en": "15"
+              },
+              "enumValue": 1,
+              "name": "hz15"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz30;1",
+              "displayName": {
+                "en": "30"
+              },
+              "enumValue": 2,
+              "name": "hz30"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz60;1",
+              "displayName": {
+                "en": "60"
+              },
+              "enumValue": 3,
+              "name": "hz60"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz120;1",
+              "displayName": {
+                "en": "120"
+              },
+              "enumValue": 4,
+              "name": "hz120"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz240;1",
+              "displayName": {
+                "en": "240"
+              },
+              "enumValue": 5,
+              "name": "hz240"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz480;1",
+              "displayName": {
+                "en": "480"
+              },
+              "enumValue": 6,
+              "name": "hz480"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz960;1",
+              "displayName": {
+                "en": "960"
+              },
+              "enumValue": 7,
+              "name": "hz960"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz1920;1",
+              "displayName": {
+                "en": "1920"
+              },
+              "enumValue": 8,
+              "name": "hz1920"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz3840;1",
+              "displayName": {
+                "en": "3840"
+              },
+              "enumValue": 9,
+              "name": "hz3840"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:odr:schema:hz7680;1",
+              "displayName": {
+                "en": "7680"
+              },
+              "enumValue": 10,
+              "name": "hz7680"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true,
+        "displayUnit": {
+          "en": "Hz"
+        },
+        "initialValue": 10
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:fs;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:fs:schema:dps125;1",
+              "displayName": {
+                "en": "125"
+              },
+              "enumValue": 0,
+              "name": "dps125"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:fs:schema:dps250;1",
+              "displayName": {
+                "en": "250"
+              },
+              "enumValue": 1,
+              "name": "dps250"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:fs:schema:dps500;1",
+              "displayName": {
+                "en": "500"
+              },
+              "enumValue": 2,
+              "name": "dps500"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:fs:schema:dps1000;1",
+              "displayName": {
+                "en": "1000"
+              },
+              "enumValue": 3,
+              "name": "dps1000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:fs:schema:dps2000;1",
+              "displayName": {
+                "en": "2000"
+              },
+              "enumValue": 4,
+              "name": "dps2000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:fs:schema:dps4000;1",
+              "displayName": {
+                "en": "4000"
+              },
+              "enumValue": 5,
+              "name": "dps4000"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "degreePerSecond",
+        "writable": true,
+        "displayUnit": {
+          "en": "dps"
+        },
+        "initialValue": 5
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true,
+        "initialValue": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": true,
+        "initialValue": 1000,
+        "maxValue": 1000,
+        "minValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:dim;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:ioffset;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:measodr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measodr",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:sd_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "SD Data Packet Size"
+        },
+        "name": "sd_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:sensor_annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Sensor Annotation"
+        },
+        "name": "sensor_annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lsm6dsv16bx_gyro:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "LSM6DSV16X_GYRO"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:odr;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:odr:schema:hz10;1",
+              "displayName": {
+                "en": "10"
+              },
+              "enumValue": 0,
+              "name": "hz10"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:odr:schema:hz20;1",
+              "displayName": {
+                "en": "20"
+              },
+              "enumValue": 1,
+              "name": "hz20"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:odr:schema:hz50;1",
+              "displayName": {
+                "en": "50"
+              },
+              "enumValue": 2,
+              "name": "hz50"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:odr:schema:hz100;1",
+              "displayName": {
+                "en": "100"
+              },
+              "enumValue": 3,
+              "name": "hz100"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true,
+        "displayUnit": {
+          "en": "Hz"
+        },
+        "initialValue": 3
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:fs;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "FS"
+        },
+        "name": "fs",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:fs:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:fs:schema:g50;1",
+              "displayName": {
+                "en": "50"
+              },
+              "enumValue": 0,
+              "name": "g50"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": false,
+        "displayUnit": {
+          "en": "G"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true,
+        "initialValue": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": true,
+        "initialValue": 100,
+        "maxValue": 100,
+        "minValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:dim;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:ioffset;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:measodr;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Measured ODR"
+        },
+        "name": "measodr",
+        "schema": "double",
+        "unit": "hertz",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:sd_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "SD Data Packet Size"
+        },
+        "name": "sd_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:sensor_annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Sensor Annotation"
+        },
+        "name": "sensor_annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:lis2mdl_mag:sensor_category;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "0 = ISENSOR_CLASS_MEMS"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "LIS2MDL_MAG"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:odr;1",
+        "@type": [
+          "Property",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "ODR"
+        },
+        "name": "odr",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:odr:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:odr:schema:hz16000;1",
+              "displayName": {
+                "en": "16000"
+              },
+              "enumValue": 0,
+              "name": "hz16000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:odr:schema:hz32000;1",
+              "displayName": {
+                "en": "32000"
+              },
+              "enumValue": 1,
+              "name": "hz32000"
+            },
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:odr:schema:hz48000;1",
+              "displayName": {
+                "en": "48000"
+              },
+              "enumValue": 2,
+              "name": "hz48000"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "hertz",
+        "writable": true,
+        "displayUnit": {
+          "en": "Hz"
+        },
+        "initialValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:aop;1",
+        "@type": "Property",
+        "displayName": {
+          "en": "AOP"
+        },
+        "name": "aop",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:aop:schema;1",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:aop:schema:dbspl130;1",
+              "displayName": {
+                "en": "130"
+              },
+              "enumValue": 0,
+              "name": "dbspl130"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "writable": false,
+        "displayUnit": {
+          "en": "Waveform"
+        }
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:enable;1",
+        "@type": [
+          "Property",
+          "BooleanValue",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Enabled"
+        },
+        "name": "enable",
+        "schema": "boolean",
+        "writable": true,
+        "initialValue": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:volume;5",
+        "@type": [
+          "Property",
+          "Initialized",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Volume"
+        },
+        "name": "volume",
+        "schema": "integer",
+        "unit": "percent",
+        "writable": true,
+        "initialValue": 100,
+        "maxValue": 100,
+        "minValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:resolution;5",
+        "@type": "Property",
+        "displayName": {
+          "en": "Resolution"
+        },
+        "name": "resolution",
+        "schema": {
+          "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:resolution:schema;5",
+          "@type": "Enum",
+          "displayName": {
+            "en": "Enum"
+          },
+          "enumValues": [
+            {
+              "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:resolution:schema:bit16;5",
+              "displayName": {
+                "en": "16"
+              },
+              "enumValue": 0,
+              "name": "bit16"
+            }
+          ],
+          "valueSchema": "integer"
+        },
+        "unit": "bit",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:samples_per_ts;1",
+        "@type": [
+          "Property",
+          "NumberValue",
+          "Initialized"
+        ],
+        "displayName": {
+          "en": "Samples per Timestamp"
+        },
+        "name": "samples_per_ts",
+        "schema": "integer",
+        "writable": true,
+        "initialValue": 1000,
+        "maxValue": 1000,
+        "minValue": 0
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:dim;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Dimensions"
+        },
+        "name": "dim",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:ioffset;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Initial Offset"
+        },
+        "name": "ioffset",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:sd_dps;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "SD Data Packet Size"
+        },
+        "name": "sd_dps",
+        "schema": "integer",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:sensitivity;1",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "displayName": {
+          "en": "Sensitivity"
+        },
+        "name": "sensitivity",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:data_type;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Data Type"
+        },
+        "name": "data_type",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:sensor_annotation;1",
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "displayName": {
+          "en": "Sensor Annotation"
+        },
+        "name": "sensor_annotation",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@id": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1:sensors:mp34dt06j_mic:sensor_category;3",
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "1 = ISENSOR_CLASS_AUDIO"
+        },
+        "displayName": {
+          "en": "Sensor Category"
+        },
+        "name": "sensor_category",
+        "schema": "integer",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "MP34DT06J_MIC"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:stdev:other:firmware_info;3",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Alias name of the firmware"
+        },
+        "displayName": {
+          "en": "Alias"
+        },
+        "name": "alias",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware name"
+        },
+        "displayName": {
+          "en": "Firmware name"
+        },
+        "name": "fw_name",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware version"
+        },
+        "displayName": {
+          "en": "Firmware version"
+        },
+        "name": "fw_version",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Part number"
+        },
+        "displayName": {
+          "en": "Part number"
+        },
+        "name": "part_number",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Device URL"
+        },
+        "displayName": {
+          "en": "Device URL"
+        },
+        "name": "device_url",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Firmware URL"
+        },
+        "displayName": {
+          "en": "Firmware URL"
+        },
+        "name": "fw_url",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "MAC Address"
+        },
+        "displayName": {
+          "en": "MAC Address"
+        },
+        "name": "mac_address",
+        "schema": "string",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Firmware Information"
+    }
+  },
+  {
+    "@context": [
+      "dtmi:iotcentral:context;2",
+      "dtmi:dtdl:context;2"
+    ],
+    "@id": "dtmi:azure:DeviceManagement:DeviceInformation;1",
+    "@type": "Interface",
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Contoso."
+        },
+        "displayName": {
+          "en": "Manufacturer"
+        },
+        "name": "manufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Device model name or ID. Ex. Surface Book 2."
+        },
+        "displayName": {
+          "en": "Device model"
+        },
+        "name": "model",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Version of the software on your device. This could be the version of your firmware. Ex. 1.3.45"
+        },
+        "displayName": {
+          "en": "Software version"
+        },
+        "name": "swVersion",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Name of the operating system on the device. Ex. Windows 10 IoT Core."
+        },
+        "displayName": {
+          "en": "Operating system name"
+        },
+        "name": "osName",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Architecture of the processor on the device. Ex. x64 or ARM."
+        },
+        "displayName": {
+          "en": "Processor architecture"
+        },
+        "name": "processorArchitecture",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "StringValue"
+        ],
+        "description": {
+          "en": "Name of the manufacturer of the processor on the device. Ex. Intel."
+        },
+        "displayName": {
+          "en": "Processor manufacturer"
+        },
+        "name": "processorManufacturer",
+        "schema": "string",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Total available storage on the device in kilobytes. Ex. 2048000 kilobytes."
+        },
+        "displayName": {
+          "en": "Total storage"
+        },
+        "name": "totalStorage",
+        "schema": "double",
+        "writable": false
+      },
+      {
+        "@type": [
+          "Property",
+          "NumberValue"
+        ],
+        "description": {
+          "en": "Total available memory on the device in kilobytes. Ex. 256000 kilobytes."
+        },
+        "displayName": {
+          "en": "Total memory"
+        },
+        "name": "totalMemory",
+        "schema": "double",
+        "writable": false
+      }
+    ],
+    "displayName": {
+      "en": "Device Information"
+    }
+  }
+]
