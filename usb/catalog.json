@@ -3110,9 +3110,26 @@
             "dtmi": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG;1",
             "dwn_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-u575zi-q/STAIOTCRAFT_SDATALOG_1_0_0.bin",
             "fw_page_url": ""
+        },
+        {
+            "protocol": "serial",
+            "usb_vendor_id": "0x0483",
+            "usb_product_id": "0x5744",
+            "baudrate": 1843200,
+            "brd_name": "NUCLEO-H7A3ZI-Q",
+            "board_id": "0x30",
+            "fw_desc": "Simple datalogger over serial",
+            "fw_name": "STAIOTCRAFT_SDATALOG",
+            "fw_version": "1.0.0",
+            "usb_fw_id": "0x0E",
+            "package_id": 462,
+            "binary_id": 537,
+            "dtmi": "dtmi:appconfig:nucleo_h7a3zi_q:STAIOTCRAFT_SDATALOG;1",
+            "dwn_url": null,
+            "fw_page_url": ""
         }
     ],
-    "date": "2026-05-29 09:54:00.550420",
+    "date": "2026-06-08 14:29:32.049275",
     "version": "0.12.8",
-    "checksum": "001e5e92ac0a2a1f731e94da556a2c6e"
+    "checksum": "73466c31496a38d6a7057fb4d016ca84"
 }
