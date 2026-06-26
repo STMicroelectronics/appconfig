@@ -3125,11 +3125,11 @@
             "package_id": 462,
             "binary_id": 537,
             "dtmi": "dtmi:appconfig:nucleo_h7a3zi_q:STAIOTCRAFT_SDATALOG;1",
-            "dwn_url": null,
+            "dwn_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-h7a3zi-q/STAIOTCRAFT_SDATALOG_1_0_0.bin",
             "fw_page_url": ""
         }
     ],
-    "date": "2026-06-08 14:29:32.049275",
-    "version": "0.12.8",
-    "checksum": "73466c31496a38d6a7057fb4d016ca84"
+    "date": "2026-06-26 08:09:29.509075",
+    "version": "0.13.0",
+    "checksum": "275294e5e14dd62d8d1dc612599108db"
 }
