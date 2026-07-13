@@ -35340,7 +35340,8 @@
       "model": "SHT40AD1B",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "output": "Temperature",
       "outputs": [
@@ -35381,7 +35382,8 @@
       "model": "STHS34PF80",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "output": "TMOS output",
       "outputs": [
@@ -35430,7 +35432,8 @@
       "model": "LSM6DSO32",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "mg",
       "fullScaleUm": "g",
@@ -35495,7 +35498,8 @@
       "model": "LSM6DSO32",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "mdps",
       "fullScaleUm": "dps",
@@ -35559,7 +35563,8 @@
       "model": "LSM6DSV16BX",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "mg",
       "fullScaleUm": "g",
@@ -35625,7 +35630,8 @@
       "model": "LSM6DSV16BX",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "mdps",
       "fullScaleUm": "dps",
@@ -35693,7 +35699,8 @@
       "model": "SHT40AD1B",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "% RH",
       "datasheetLink": "https://sensirion.com/media/documents/33FD6951/6555C40E/Sensirion_Datasheet_SHT4x.pdf",
@@ -35734,7 +35741,8 @@
       "model": "LSM6DSO16IS",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "mg",
       "fullScaleUm": "g",
@@ -35799,7 +35807,8 @@
       "model": "LSM6DSO16IS",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "mdps",
       "fullScaleUm": "dps",
@@ -35856,15 +35865,14 @@
       "description": "IMU with ISPU Functionalities",
       "output": "ISPU Output",
       "outputs": [
-        "O1",
-        "O2",
         "O3"
       ],
       "icon": "ic_inemo",
       "model": "LSM6DSO16IS",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "",
       "fullScaleUm": "",
@@ -35904,7 +35912,8 @@
       "model": "LSM6DSV32X",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "mg",
       "fullScaleUm": "g",
@@ -36025,7 +36034,8 @@
       "model": "LSM6DSV32X",
       "board_compatibility": [
         "SENSOR_TILE_BOX_PRO",
-        "SENSOR_TILE_BOX_PROB"
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
       ],
       "um": "mdps",
       "fullScaleUm": "dps",
@@ -36092,6 +36102,647 @@
         "powerMode": "NONE",
         "odr": 30,
         "fullScale": 4000,
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 16,
+      "id": "D16",
+      "description": "IMU with MLC",
+      "output": "MLC Output",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "configuration": {
+        "regConfig": "",
+        "mlcLabels": "",
+        "ucfFilename": ""
+      },
+      "icon": "ic_inemo",
+      "dataType": "uint8_t vector x8",
+      "model": "LSM6DSV32X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "datasheetLink": "https://www.st.com/resource/en/data_brief/lsm6dsv32x.pdf",
+      "um": ""
+    },
+    {
+      "unique_id": 17,
+      "id": "D17",
+      "description": "ECG with vAFE",
+      "output": "Voltage",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "icon": "ic_qvar_sensor",
+      "dataType": "Float vector x1",
+      "model": "ST1VAFE6AX",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "datasheetLink": "https://www.st.com/resource/en/datasheet/st1vafe6ax.pdf",
+      "um": ""
+    },
+    {
+      "unique_id": 18,
+      "id": "D18",
+      "description": "ECG with vAFE",
+      "output": "Voltage",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "icon": "ic_qvar_sensor",
+      "dataType": "Float vector x1",
+      "model": "ST1VAFE3BX",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "datasheetLink": "https://www.st.com/resource/en/datasheet/st1vafe3bx.pdf",
+      "um": ""
+    },
+    {
+      "unique_id": 19,
+      "id": "D19",
+      "description": "IMU Accelerometer sensor",
+      "icon": "ic_inemo",
+      "output": "Acceleration",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "model": "LSM6DSV80X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "um": "mg",
+      "fullScaleUm": "g",
+      "datasheetLink": "https://www.st.com/resource/en/data_brief/lsm6dsv80x.pdf",
+      "dataType": "Float vector x3",
+      "fullScales": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "powerModes": [
+        {
+          "mode": "LOW_POWER",
+          "label": "Low power",
+          "odrs": [
+            1.875,
+            15,
+            30,
+            60,
+            120,
+            240
+          ]
+        },
+        {
+          "mode": "NORMAL_MODE",
+          "label": "Normal mode",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920
+          ]
+        },
+        {
+          "mode": "NONE",
+          "label": "High performance",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        },
+        {
+          "mode": "LOW_NOISE",
+          "label": "High accuracy",
+          "odrs": [
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 100,
+      "configuration": {
+        "powerMode": "NONE",
+        "odr": 30,
+        "fullScale": 16,
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 20,
+      "id": "D20",
+      "description": "IMU Gyroscope sensor",
+      "output": "Angular rate",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "icon": "ic_inemo",
+      "model": "LSM6DSV80X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "um": "mdps",
+      "fullScaleUm": "dps",
+      "datasheetLink": "https://www.st.com/resource/en/data_brief/lsm6dsv80x.pdf",
+      "dataType": "Float vector x3",
+      "fullScales": [
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "powerModes": [
+        {
+          "mode": "LOW_POWER",
+          "label": "Low power",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240
+          ]
+        },
+        {
+          "mode": "NONE",
+          "label": "High performance",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        },
+        {
+          "mode": "LOW_NOISE",
+          "label": "High accuracy",
+          "odrs": [
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 100,
+      "configuration": {
+        "powerMode": "NONE",
+        "odr": 30,
+        "fullScale": 4000,
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 21,
+      "id": "D21",
+      "description": "IMU High G Accelerometer sensor",
+      "icon": "ic_inemo",
+      "output": "Acceleration",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "model": "LSM6DSV80X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "um": "mg",
+      "fullScaleUm": "g",
+      "datasheetLink": "https://www.st.com/resource/en/data_brief/lsm6dsv80x.pdf",
+      "dataType": "Float vector x3",
+      "fullScales": [
+        32,
+        64,
+        80
+      ],
+      "powerModes": [
+        {
+          "mode": "NONE",
+          "label": "High performance",
+          "odrs": [
+            100,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        },
+        {
+          "mode": "LOW_NOISE",
+          "label": "High accuracy",
+          "odrs": [
+            100,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 100,
+      "configuration": {
+        "powerMode": "NONE",
+        "odr": 100,
+        "fullScale": 80,
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 22,
+      "id": "D22",
+      "description": "Pressure sensor",
+      "icon": "ic_pressure",
+      "model": "LPS28DFW",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "output": "Pressure",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "um": "hPa",
+      "datasheetLink": "https://www.st.com/resource/en/datasheet/LPS28DFW.pdf",
+      "dataType": "Float scalar",
+      "powerModes": [
+        {
+          "mode": "LOW_POWER",
+          "label": "Low power",
+          "odrs": [
+            1,
+            4,
+            10,
+            25,
+            50,
+            75,
+            100,
+            200
+          ],
+          "minCustomOdr": 2
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 75,
+      "configuration": {
+        "powerMode": "LOW_POWER",
+        "odr": 1,
+        "filters": {
+          "lowPass": {
+            "label": "ODR/9",
+            "value": 3
+          }
+        },
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 23,
+      "id": "D23",
+      "description": "Temperature Sensor",
+      "icon": "ic_termometer",
+      "model": "LPS28DFW",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "output": "Temperature",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "dataType": "Float scalar",
+      "um": "degC",
+      "datasheetLink": "https://www.st.com/resource/en/datasheet/LPS28DFW.pdf",
+      "powerModes": [
+        {
+          "mode": "LOW_POWER",
+          "label": "Low power",
+          "odrs": [
+            1,
+            4,
+            10,
+            25,
+            50,
+            75,
+            100,
+            200
+          ],
+          "minCustomOdr": 0.2
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 75,
+      "configuration": {
+        "powerMode": "LOW_POWER",
+        "odr": 1,
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 24,
+      "id": "D24",
+      "description": "IMU Accelerometer sensor",
+      "icon": "ic_inemo",
+      "output": "Acceleration",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "model": "LSM6DSV320X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "um": "mg",
+      "fullScaleUm": "g",
+      "datasheetLink": "https://www.st.com/resource/en/datasheet/lsm6dsv320x.pdf",
+      "dataType": "Float vector x3",
+      "fullScales": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "powerModes": [
+        {
+          "mode": "LOW_POWER",
+          "label": "Low power",
+          "odrs": [
+            1.875,
+            15,
+            30,
+            60,
+            120,
+            240
+          ]
+        },
+        {
+          "mode": "NORMAL_MODE",
+          "label": "Normal mode",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920
+          ]
+        },
+        {
+          "mode": "NONE",
+          "label": "High performance",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        },
+        {
+          "mode": "LOW_NOISE",
+          "label": "High accuracy",
+          "odrs": [
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 100,
+      "configuration": {
+        "powerMode": "NONE",
+        "odr": 30,
+        "fullScale": 16,
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 25,
+      "id": "D25",
+      "description": "IMU Gyroscope sensor",
+      "output": "Angular rate",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "icon": "ic_inemo",
+      "model": "LSM6DSV320X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "um": "mdps",
+      "fullScaleUm": "dps",
+      "datasheetLink": "https://www.st.com/resource/en/datasheet/lsm6dsv320x.pdf",
+      "dataType": "Float vector x3",
+      "fullScales": [
+        250,
+        500,
+        1000,
+        2000,
+        4000
+      ],
+      "powerModes": [
+        {
+          "mode": "LOW_POWER",
+          "label": "Low power",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240
+          ]
+        },
+        {
+          "mode": "NONE",
+          "label": "High performance",
+          "odrs": [
+            7.5,
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        },
+        {
+          "mode": "LOW_NOISE",
+          "label": "High accuracy",
+          "odrs": [
+            15,
+            30,
+            60,
+            120,
+            240,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 100,
+      "configuration": {
+        "powerMode": "NONE",
+        "odr": 30,
+        "fullScale": 4000,
+        "acquisitionTime": 0
+      }
+    },
+    {
+      "unique_id": 26,
+      "id": "D26",
+      "description": "IMU High G Accelerometer sensor",
+      "icon": "ic_inemo",
+      "output": "Acceleration",
+      "outputs": [
+        "O1",
+        "O2",
+        "O3"
+      ],
+      "model": "LSM6DSV320X",
+      "board_compatibility": [
+        "SENSOR_TILE_BOX_PRO",
+        "SENSOR_TILE_BOX_PROB",
+        "SENSOR_TILE_BOX_PROC"
+      ],
+      "um": "mg",
+      "fullScaleUm": "g",
+      "datasheetLink": "https://www.st.com/resource/en/datasheet/lsm6dsv320x.pdf",
+      "dataType": "Float vector x3",
+      "fullScales": [
+        32,
+        64,
+        80,
+        128,
+        256,
+        320
+      ],
+      "powerModes": [
+        {
+          "mode": "NONE",
+          "label": "High performance",
+          "odrs": [
+            100,
+            480,
+            960,
+            1920,
+            3840,
+            7680
+          ]
+        }
+      ],
+      "acquisitionTime": 0,
+      "bleMaxOdr": 100,
+      "configuration": {
+        "powerMode": "NONE",
+        "odr": 100,
+        "fullScale": 320,
         "acquisitionTime": 0
       }
     }
