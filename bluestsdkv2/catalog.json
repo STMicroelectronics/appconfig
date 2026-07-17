@@ -19121,6 +19121,109 @@
       ]
     },
     {
+      "ble_dev_id": "0x0E",
+      "ble_fw_id": "0x3C",
+      "brd_name": "STEVAL-STWINBX1",
+      "changelog": "Patch release",
+      "characteristics": [
+        {
+          "max_write_length": 20,
+          "name": "Debug Console stdin/stdout",
+          "uuid": "00000001-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Debug Console stderr",
+          "uuid": "00000002-000E-11e1-9ab4-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "Ext Configuration",
+          "uuid": "00000014-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "NEAI Classification",
+          "uuid": "0000001a-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "PnPLike",
+          "uuid": "0000001b-0002-11e1-ac36-0002a5d5c51b"
+        },
+        {
+          "max_write_length": 20,
+          "name": "RawPnPL",
+          "uuid": "00000023-0002-11e1-ac36-0002a5d5c51b"
+        }
+      ],
+      "cloud_apps": [],
+      "demo_decorator": {
+        "add": [],
+        "remove": [
+          "Raw PnPL Controlled",
+          "FP_IND_DATALOGMC_DatalogMCNEAI"
+        ],
+        "rename": []
+      },
+      "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI;3",
+      "fota": {
+        "bootloader_type": "none",
+        "fw_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-IND-DATALOGMC_DatalogMCNEAI_2_2_1.bin",
+        "max_chunk_length": 0,
+        "max_divisor_constraint": 0,
+        "partial_fota": 0,
+        "type": "fast"
+      },
+      "fw_name": "FP-IND-DATALOGMC_DatalogMCNEAI",
+      "fw_desc": "Motor fault classification with NanoEdge AI Studio",
+      "fw_version": "2.2.1",
+      "maturity": "release",
+      "option_bytes": [
+        {
+          "name": "alarm:",
+          "type": "string",
+          "format": "enum_string",
+          "string_values": [
+            {
+              "value": 0,
+              "display_name": "No Alarm"
+            },
+            {
+              "value": 1,
+              "display_name": "Missing SD Card"
+            },
+            {
+              "value": 2,
+              "display_name": "Logging Ongoing"
+            }
+          ]
+        },
+        {
+          "name": "status",
+          "type": "icon",
+          "format": "enum_icon",
+          "icon_values": [
+            {
+              "value": 0,
+              "comment": "No Alarm",
+              "icon_code": 7
+            },
+            {
+              "value": 1,
+              "comment": "icon for Missing SD Card",
+              "icon_code": 5
+            },
+            {
+              "value": 2,
+              "comment": "icon for Log ongoing",
+              "icon_code": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
       "ble_dev_id": "0x0F",
       "ble_fw_id": "0x01",
       "brd_name": "STEVAL-PROTEUS1",
@@ -36747,7 +36850,7 @@
       }
     }
   ],
-  "checksum": "61b9ee2c6080c08871c27c310dee06cb",
-  "date": "2026-06-08 14:29:31.769234",
-  "version": "0.12.8"
+  "checksum": "af5f9fc035b28fe32ec7cd10fcac2978",
+  "date": "2026-07-17 10:01:56.665196",
+  "version": "0.13.1"
 }
