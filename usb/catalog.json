@@ -3127,9 +3127,26 @@
             "dtmi": "dtmi:appconfig:nucleo_h7a3zi_q:STAIOTCRAFT_SDATALOG;1",
             "dwn_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-h7a3zi-q/STAIOTCRAFT_SDATALOG_1_0_0.bin",
             "fw_page_url": ""
+        },
+        {
+            "protocol": "libusb",
+            "usb_vendor_id": "0x0483",
+            "usb_product_id": "0x5744",
+            "baudrate": 0,
+            "brd_name": "STEVAL-STWINBX1",
+            "board_id": "0x0E",
+            "fw_desc": "Motor fault classification with NanoEdge AI Studio",
+            "fw_name": "FP-IND-DATALOGMC_DatalogMCNEAI",
+            "fw_version": "2.2.1",
+            "usb_fw_id": "0x3C",
+            "package_id": 468,
+            "binary_id": 538,
+            "dtmi": "dtmi:appconfig:steval_stwinbx1:FP_IND_DATALOGMC_DatalogMCNEAI;3",
+            "dwn_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-IND-DATALOGMC_DatalogMCNEAI_2_2_1.bin",
+            "fw_page_url": "https://www.st.com/en/embedded-software/fp-ind-datalogmc.html"
         }
     ],
-    "date": "2026-06-26 08:09:29.509075",
-    "version": "0.13.0",
-    "checksum": "275294e5e14dd62d8d1dc612599108db"
+    "date": "2026-07-17 10:01:56.894712",
+    "version": "0.13.1",
+    "checksum": "fec413c6ad59b8041e3e7a581bdc842e"
 }
