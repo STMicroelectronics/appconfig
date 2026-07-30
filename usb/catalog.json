@@ -3091,7 +3091,7 @@
             "package_id": 466,
             "binary_id": 533,
             "dtmi": "dtmi:appconfig:nucleo_stm32f401re:STAIOTCRAFT_AI_Inertial;1",
-            "dwn_url": null,
+            "dwn_url": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/STAIOTCRAFT_AI_Inertial_1_0_0.bin",
             "fw_page_url": ""
         },
         {
@@ -3146,7 +3146,7 @@
             "fw_page_url": "https://www.st.com/en/embedded-software/fp-ind-datalogmc.html"
         }
     ],
-    "date": "2026-07-17 10:01:56.894712",
-    "version": "0.13.1",
+    "date": "2026-07-22 07:29:50.997006",
+    "version": "0.14.0",
     "checksum": "fec413c6ad59b8041e3e7a581bdc842e"
 }
