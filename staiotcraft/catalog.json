@@ -1,0 +1,837 @@
+{
+    "boards": [
+        {
+            "ble_dev_id": "0x09",
+            "serial_dev_id": "0x09",
+            "board_name": "STEVAL-STWINKT1B",
+            "vespucci_support": true,
+            "image_url": "https://www.st.com/bin/ecommerce/api/image.PF270329.en.feature-description-include-personalized-no-cpn-large.jpg",
+            "firmwares": [
+                {
+                    "ble_fw_id": "0x12",
+                    "serial_fw_id": "0x12",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 428,
+                    "application_name": "FP-SNS-DATALOG2_Datalog2",
+                    "fw_version": "3.2.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinkt1b/FP-SNS-DATALOG2_Datalog2_3_2_0.bin",
+                    "description": "Comprehensive solution for saving data from any combination of sensors",
+                    "dtmi_uri": "dtmi:appconfig:steval_stwinkt1b:FP_SNS_DATALOG2_Datalog2;4",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                }
+            ],
+            "components": [
+                {
+                    "id": 13,
+                    "component": "IIS3DWB",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 14,
+                    "component": "ISM330DHCX",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "1",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 15,
+                    "component": "IIS2DH",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 16,
+                    "component": "IIS2MDC",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 17,
+                    "component": "LPS22HH",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 18,
+                    "component": "STTS751",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 19,
+                    "component": "IMP34DT05",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 20,
+                    "component": "IMP23ABSU",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 28,
+                    "component": "STM32L4R9",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 30,
+                    "component": "STSAFE-A110",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                }
+            ]
+        },
+        {
+            "ble_dev_id": "0x0E",
+            "serial_dev_id": "0x0E",
+            "board_name": "STEVAL-STWINBX1",
+            "vespucci_support": true,
+            "image_url": "https://www.st.com/bin/ecommerce/api/image.PF272138.en.feature-description-include-personalized-no-cpn-large.jpg",
+            "firmwares": [
+                {
+                    "ble_fw_id": "0x38",
+                    "serial_fw_id": "0x38",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 428,
+                    "application_name": "FP-SNS-DATALOG2_Datalog2",
+                    "fw_version": "3.2.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-stwinbx1/FP-SNS-DATALOG2_Datalog2_3_2_0.bin",
+                    "description": "Comprehensive solution for saving data from any combination of sensors",
+                    "dtmi_uri": "dtmi:appconfig:steval_stwinbx1:FP_SNS_DATALOG2_Datalog2;9",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                }
+            ],
+            "components": [
+                {
+                    "id": 3,
+                    "component": "ISM330DHCX",
+                    "type": "accelerometer, gyroscope",
+                    "description": "6 axis (accelerometer + gyroscope) industrial grade",
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "1",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 4,
+                    "component": "IIS3DWB",
+                    "type": null,
+                    "description": "26.7 kHz ODR industrial grade",
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 5,
+                    "component": "IIS2DLPC",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 6,
+                    "component": "IIS2MDC",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 7,
+                    "component": "IIS2ICLX",
+                    "type": null,
+                    "description": "biaxial clinometer, ceramic package",
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "1",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 8,
+                    "component": "ILPS22QS",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 9,
+                    "component": "STTS22H",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 10,
+                    "component": "IMP34DT05",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 11,
+                    "component": "IMP23ABSU",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 27,
+                    "component": "STM32U585AI",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                }
+            ]
+        },
+        {
+            "ble_dev_id": "0x0D",
+            "serial_dev_id": "0x0D",
+            "board_name": "STEVAL-MKBOXPRO",
+            "vespucci_support": true,
+            "image_url": "https://www.digikey.at/-/media/Images/Product%20Highlights/S/STMicroelectronics/SensorTile%20box%20PRO%20Programmable%20Wireless%20Box%20Kit/stmicroelectronics-sensortile-box-pro-programmable-wireless-box-kit.jpg?la=en&ts=e6c7a122-d7a6-475d-9823-a970b6237",
+            "firmwares": [
+                {
+                    "ble_fw_id": "0x26",
+                    "serial_fw_id": "0x16",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 428,
+                    "application_name": "FP-SNS-DATALOG2_Datalog2",
+                    "fw_version": "3.2.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/FP-SNS-DATALOG2_Datalog2_3_2_0.bin",
+                    "description": "Comprehensive solution for saving data from any combination of sensors",
+                    "dtmi_uri": "dtmi:appconfig:steval_mkboxpro:FP_SNS_DATALOG2_Datalog2;7",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                },
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x18",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 461,
+                    "application_name": "STAIOTCRAFT_SDATALOG_RUST",
+                    "fw_version": "1.0.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/STAIOTCRAFT_SDATALOG_RUST_1_0_0.bin",
+                    "description": "Datalogger with several sensors, written entirely in Rust",
+                    "dtmi_uri": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG_RUST;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                },
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x15",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 462,
+                    "application_name": "STAIOTCRAFT_SDATALOG",
+                    "fw_version": "1.0.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxpro/STAIOTCRAFT_SDATALOG_1_0_0.bin",
+                    "description": "Simple datalogger over serial",
+                    "dtmi_uri": "dtmi:appconfig:steval_mkboxpro:STAIOTCRAFT_SDATALOG;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                }
+            ],
+            "components": [
+                {
+                    "id": 21,
+                    "component": "STTS22H",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 22,
+                    "component": "LSM6DSV16X",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 23,
+                    "component": "LIS2DU12",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 24,
+                    "component": "LIS2MDL",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 25,
+                    "component": "LPS22DF",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 26,
+                    "component": "MP23DB01HP",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 29,
+                    "component": "STM32U585AI",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                },
+                {
+                    "id": 31,
+                    "component": "LSM6DSV32X",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "STEVAL-MKI240KA"
+                },
+                {
+                    "id": 32,
+                    "component": "LSM6DSV16BX",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "STEVAL-MKI234KA"
+                },
+                {
+                    "id": 33,
+                    "component": "LSM6DSV80X",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "STEVAL-MKI247A"
+                },
+                {
+                    "id": 34,
+                    "component": "LSM6DSV320X",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "STEVAL-MKI251A"
+                }
+            ]
+        },
+        {
+            "ble_dev_id": "0x7F",
+            "serial_dev_id": "0x7F",
+            "board_name": "NUCLEO-STM32F401RE",
+            "vespucci_support": true,
+            "image_url": "https://www.st.com/bin/ecommerce/api/image.PF260000.en.feature-description-include-personalized-no-cpn-large.jpg",
+            "firmwares": [
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x06",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 435,
+                    "application_name": "STSW-SDATALOG_ISM330IS",
+                    "fw_version": "1.0.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/STSW-SDATALOG_ISM330IS_1_0_0.bin",
+                    "description": "Bare-metal firmware examples designed to stream sensor data via serial port compliant with the FP-SNS-DATALOG2 data format",
+                    "dtmi_uri": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                },
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x08",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 437,
+                    "application_name": "STSW-SDATALOG_IIS2MDC",
+                    "fw_version": "1.0.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/STSW-SDATALOG_IIS2MDC_1_0_0.bin",
+                    "description": "Bare-metal firmware examples designed to stream sensor data via serial port compliant with the FP-SNS-DATALOG2 data format",
+                    "dtmi_uri": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_IIS2MDC;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                },
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x01",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 462,
+                    "application_name": "STAIOTCRAFT_SDATALOG",
+                    "fw_version": "1.0.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-stm32f401re/STAIOTCRAFT_SDATALOG_1_0_0.bin",
+                    "description": "Simple datalogger over serial",
+                    "dtmi_uri": "dtmi:appconfig:nucleo_stm32f401re:STAIOTCRAFT_SDATALOG;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                }
+            ],
+            "components": [
+                {
+                    "id": 46,
+                    "component": "IIS2MDC",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 47,
+                    "component": "ILPS22QS",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 48,
+                    "component": "IIS2DULPX",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 49,
+                    "component": "ISM330IS",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 50,
+                    "component": "ISM6HG256X",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                }
+            ]
+        },
+        {
+            "ble_dev_id": null,
+            "serial_dev_id": "0x30",
+            "board_name": "NUCLEO-H7A3ZI-Q",
+            "vespucci_support": true,
+            "image_url": "https://www.st.com/bin/ecommerce/api/image.PF267690.en.feature-description-include-personalized-no-cpn-large.jpg",
+            "firmwares": [
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x0A",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 430,
+                    "application_name": "FP-SNS-DATALOG2_Datalog2-IKS5A1",
+                    "fw_version": "3.2.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-h7a3zi-q/FP-SNS-DATALOG2_Datalog2-IKS5A1_3_2_0.bin",
+                    "description": "Comprehensive solution for saving data from any combination of sensors",
+                    "dtmi_uri": "dtmi:appconfig:nucleo_h7a3zi_q:FP_SNS_DATALOG2_Datalog2_IKS5A1;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                },
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x0E",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 462,
+                    "application_name": "STAIOTCRAFT_SDATALOG",
+                    "fw_version": "1.0.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-h7a3zi-q/STAIOTCRAFT_SDATALOG_1_0_0.bin",
+                    "description": "Simple datalogger over serial",
+                    "dtmi_uri": "dtmi:appconfig:nucleo_h7a3zi_q:STAIOTCRAFT_SDATALOG;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                }
+            ],
+            "components": [
+                {
+                    "id": 40,
+                    "component": "ISM6HG256X",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 41,
+                    "component": "ISM330IS",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 42,
+                    "component": "IIS2DULPX",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 43,
+                    "component": "ILPS22QS",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 44,
+                    "component": "IIS2MDC",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 51,
+                    "component": "LIS2DUX12",
+                    "type": "accelerometer",
+                    "description": "Ultralow-power 3-axis smart accelerometer with AI",
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS4A1"
+                }
+            ]
+        },
+        {
+            "ble_dev_id": "0x7B",
+            "serial_dev_id": "0x10",
+            "board_name": "NUCLEO-U575ZI-Q",
+            "vespucci_support": true,
+            "image_url": "https://www.st.com/bin/ecommerce/api/image.PF271812.en.feature-description-include-personalized-no-cpn-large.jpg",
+            "firmwares": [
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x0B",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 430,
+                    "application_name": "FP-SNS-DATALOG2_Datalog2-IKS5A1",
+                    "fw_version": "3.2.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-u575zi-q/FP-SNS-DATALOG2_Datalog2-IKS5A1_3_2_0.bin",
+                    "description": "Comprehensive solution for saving data from any combination of sensors",
+                    "dtmi_uri": "dtmi:appconfig:nucleo_u575zi_q:FP_SNS_DATALOG2_Datalog2_IKS5A1;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                },
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x0F",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 462,
+                    "application_name": "STAIOTCRAFT_SDATALOG",
+                    "fw_version": "1.0.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/nucleo-u575zi-q/STAIOTCRAFT_SDATALOG_1_0_0.bin",
+                    "description": "Simple datalogger over serial",
+                    "dtmi_uri": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                }
+            ],
+            "components": [
+                {
+                    "id": 35,
+                    "component": "ISM6HG256X",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 36,
+                    "component": "ISM330IS",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 37,
+                    "component": "IIS2DULPX",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 38,
+                    "component": "ILPS22QS",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 39,
+                    "component": "IIS2MDC",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "none",
+                    "ai_sensor_version": "0",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS5A1"
+                },
+                {
+                    "id": 52,
+                    "component": "LIS2DUX12",
+                    "type": "accelerometer",
+                    "description": "Ultralow-power 3-axis smart accelerometer with AI",
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": "X-NUCLEO-IKS4A1"
+                }
+            ]
+        },
+        {
+            "ble_dev_id": "0xC3",
+            "serial_dev_id": null,
+            "board_name": "STEVAL-ROBKIT1",
+            "vespucci_support": true,
+            "image_url": "https://www.st.com/bin/ecommerce/api/image.PF274639.en.feature-description-include-personalized-no-cpn-large.jpg",
+            "firmwares": [
+                {
+                    "ble_fw_id": "0xD0",
+                    "serial_fw_id": null,
+                    "serial_vendor_id": null,
+                    "serial_product_id": null,
+                    "firmware": 442,
+                    "application_name": "STSW-ROBKIT1",
+                    "fw_version": "2.1.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-robkit1/STSW-ROBKIT1_2_1_0.bin",
+                    "description": "Firmware for STEVAL-ROBKIT1 evaluation board for Robotics applications",
+                    "dtmi_uri": "dtmi:appconfig:steval_robkit1:STSW_ROBKIT1;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                }
+            ],
+            "components": [
+                {
+                    "id": 45,
+                    "component": "LSM6DSV16BX",
+                    "type": null,
+                    "description": null,
+                    "ai_sensor": "MLC",
+                    "ai_sensor_version": "2",
+                    "vespucci_support": "NOT IMPLEMENTED",
+                    "mount_expansion": null
+                }
+            ]
+        },
+        {
+            "ble_dev_id": "0x13",
+            "serial_dev_id": "0x13",
+            "board_name": "STEVAL-MKBOXPROC",
+            "vespucci_support": true,
+            "image_url": "https://www.digikey.at/-/media/Images/Product%20Highlights/S/STMicroelectronics/SensorTile%20box%20PRO%20Programmable%20Wireless%20Box%20Kit/stmicroelectronics-sensortile-box-pro-programmable-wireless-box-kit.jpg?la=en&ts=e6c7a122-d7a6-475d-9823-a970b6237",
+            "firmwares": [
+                {
+                    "ble_fw_id": "0x08",
+                    "serial_fw_id": "0x01",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 428,
+                    "application_name": "FP-SNS-DATALOG2_Datalog2",
+                    "fw_version": "3.2.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxproc/FP-SNS-DATALOG2_Datalog2_3_2_0.bin",
+                    "description": "Comprehensive solution for saving data from any combination of sensors",
+                    "dtmi_uri": "dtmi:appconfig:steval_mkboxproc:FP_SNS_DATALOG2_Datalog2;7",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                },
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x07",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 461,
+                    "application_name": "STAIOTCRAFT_SDATALOG_RUST",
+                    "fw_version": "1.0.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxproc/STAIOTCRAFT_SDATALOG_RUST_1_0_0.bin",
+                    "description": "Datalogger with several sensors, written entirely in Rust",
+                    "dtmi_uri": "dtmi:appconfig:steval_mkboxproc:STAIOTCRAFT_SDATALOG_RUST;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                },
+                {
+                    "ble_fw_id": null,
+                    "serial_fw_id": "0x08",
+                    "serial_vendor_id": "0x0483",
+                    "serial_product_id": "0x5744",
+                    "firmware": 462,
+                    "application_name": "STAIOTCRAFT_SDATALOG",
+                    "fw_version": "1.0.0",
+                    "fw_artifact_uri": "https://github.com/STMicroelectronics/appconfig/raw/release/bluestsdkv2/bin/steval-mkboxproc/STAIOTCRAFT_SDATALOG_1_0_0.bin",
+                    "description": "Simple datalogger over serial",
+                    "dtmi_uri": "dtmi:appconfig:steval_mkboxproc:STAIOTCRAFT_SDATALOG;1",
+                    "vespucci_support": true,
+                    "vespucci_application_type": "datalog+inference",
+                    "vespucci_data_type": "binary_hsd",
+                    "components": null
+                }
+            ],
+            "components": []
+        }
+    ]
+}
