@@ -243,7 +243,7 @@
                     "Initialized"
                 ],
                 "description": {
-                    "en": "Integration time in ms. Valid range from 1 to 30."
+                    "en": "Integration time in ms. Valid range from 2 to 30."
                 },
                 "displayName": {
                     "en": "Integration Time"
@@ -254,7 +254,7 @@
                 "writable": true,
                 "initialValue": 10,
                 "maxValue": 30,
-                "minValue": 1
+                "minValue": 2
             },
             {
                 "@id": "dtmi:appconfig:nucleo_h563zi:FP_SNS_DATALOG2_Datalog2_VL53L9:sensors:vl53l9cx_tof:power_mode;1",
