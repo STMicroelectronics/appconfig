@@ -33879,24 +33879,6 @@
       "components": []
     },
     {
-      "release_date": "2026_Q4",
-      "brd_variant": "STEVAL$BCNWBCB",
-      "brd_part": "STEVAL-BCNWBCB",
-      "brd_name": "STEVAL-BCNWBCB",
-      "friendly_name": "BLE Sensor Tag",
-      "ble_dev_id": "0x86",
-      "nfc_dev_id": null,
-      "usb_dev_id": null,
-      "video_url": null,
-      "order_url": null,
-      "wiki_url": null,
-      "unique_dev_id": 58,
-      "status": "ACTIVE",
-      "description": "BLE sensor node for automotive and home automation application",
-      "documentation_url": null,
-      "components": []
-    },
-    {
       "release_date": "2023_Q1",
       "brd_variant": "NUCLEO$WBA55CG",
       "brd_part": "NUCLEO-WBA55CG",
