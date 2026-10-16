@@ -1666,7 +1666,7 @@
         "@id": "dtmi:appconfig:nucleo_stm32f401re:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_mlc:label_id;1",
         "@type": [
           "Telemetry",
-          "State"
+          "NumberValue"
         ],
         "description": {
           "en": "TEXT"
@@ -1675,45 +1675,7 @@
           "en": "Label ID"
         },
         "name": "label_id",
-        "schema": {
-          "@id": "dtmi:appconfig:nucleo_stm32f401re:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_mlc:label_id:schema;1",
-          "@type": "Enum",
-          "enumValues": [
-            {
-              "@id": "dtmi:appconfig:nucleo_stm32f401re:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_mlc:label_id:schema:stationary_upright;1",
-              "displayName": {
-                "en": "Stationary Upright"
-              },
-              "enumValue": 0,
-              "name": "stationary_upright"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_stm32f401re:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_mlc:label_id:schema:stationary_not_upright;1",
-              "displayName": {
-                "en": "Stationary Not upright"
-              },
-              "enumValue": 4,
-              "name": "stationary_not_upright"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_stm32f401re:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_mlc:label_id:schema:motion;1",
-              "displayName": {
-                "en": "Motion"
-              },
-              "enumValue": 8,
-              "name": "motion"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_stm32f401re:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_mlc:label_id:schema:shaken;1",
-              "displayName": {
-                "en": "Shaken"
-              },
-              "enumValue": 12,
-              "name": "shaken"
-            }
-          ],
-          "valueSchema": "integer"
-        }
+        "schema": "integer"
       },
       {
         "@id": "dtmi:appconfig:nucleo_stm32f401re:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_mlc:load_model;1",
