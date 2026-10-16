@@ -156,19 +156,6 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_triggered;1",
-        "@type": [
-          "Property",
-          "BooleanValue"
-        ],
-        "displayName": {
-          "en": "ODR Triggered"
-        },
-        "name": "odr_triggered",
-        "schema": "boolean",
-        "writable": true
-      },
-      {
         "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr;1",
         "@type": [
           "Property",
@@ -280,105 +267,6 @@
               },
               "enumValue": 11,
               "name": "hz7680"
-            }
-          ],
-          "valueSchema": "integer"
-        },
-        "unit": "hertz",
-        "writable": true,
-        "displayUnit": {
-          "en": "Hz"
-        },
-        "initialValue": 6
-      },
-      {
-        "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t;1",
-        "@type": [
-          "Property",
-          "Initialized"
-        ],
-        "displayName": {
-          "en": "ODR T"
-        },
-        "name": "odr_t",
-        "schema": {
-          "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema;1",
-          "@type": "Enum",
-          "displayName": {
-            "en": "Enum"
-          },
-          "enumValues": [
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema:hz12_5;1",
-              "displayName": {
-                "en": "12.5"
-              },
-              "enumValue": 0,
-              "name": "hz12_5"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema:hz25;1",
-              "displayName": {
-                "en": "25"
-              },
-              "enumValue": 1,
-              "name": "hz25"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema:hz50;1",
-              "displayName": {
-                "en": "50"
-              },
-              "enumValue": 2,
-              "name": "hz50"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema:hz100;1",
-              "displayName": {
-                "en": "100"
-              },
-              "enumValue": 3,
-              "name": "hz100"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema:hz200;1",
-              "displayName": {
-                "en": "200"
-              },
-              "enumValue": 4,
-              "name": "hz200"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema:hz400;1",
-              "displayName": {
-                "en": "400"
-              },
-              "enumValue": 5,
-              "name": "hz400"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema:hz800;1",
-              "displayName": {
-                "en": "800"
-              },
-              "enumValue": 6,
-              "name": "hz800"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema:hz1600;1",
-              "displayName": {
-                "en": "1600"
-              },
-              "enumValue": 7,
-              "name": "hz1600"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_acc:odr_t:schema:hz3200;1",
-              "displayName": {
-                "en": "3200"
-              },
-              "enumValue": 8,
-              "name": "hz3200"
             }
           ],
           "valueSchema": "integer"
@@ -1049,19 +937,6 @@
         "writable": false
       },
       {
-        "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_triggered;1",
-        "@type": [
-          "Property",
-          "BooleanValue"
-        ],
-        "displayName": {
-          "en": "ODR Triggered"
-        },
-        "name": "odr_triggered",
-        "schema": "boolean",
-        "writable": true
-      },
-      {
         "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr;1",
         "@type": [
           "Property",
@@ -1165,105 +1040,6 @@
               },
               "enumValue": 10,
               "name": "hz7680"
-            }
-          ],
-          "valueSchema": "integer"
-        },
-        "unit": "hertz",
-        "writable": true,
-        "displayUnit": {
-          "en": "Hz"
-        },
-        "initialValue": 5
-      },
-      {
-        "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t;1",
-        "@type": [
-          "Property",
-          "Initialized"
-        ],
-        "displayName": {
-          "en": "ODR T"
-        },
-        "name": "odr_t",
-        "schema": {
-          "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema;1",
-          "@type": "Enum",
-          "displayName": {
-            "en": "Enum"
-          },
-          "enumValues": [
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema:hz12_5;1",
-              "displayName": {
-                "en": "12.5"
-              },
-              "enumValue": 0,
-              "name": "hz12_5"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema:hz25;1",
-              "displayName": {
-                "en": "25"
-              },
-              "enumValue": 1,
-              "name": "hz25"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema:hz50;1",
-              "displayName": {
-                "en": "50"
-              },
-              "enumValue": 2,
-              "name": "hz50"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema:hz100;1",
-              "displayName": {
-                "en": "100"
-              },
-              "enumValue": 3,
-              "name": "hz100"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema:hz200;1",
-              "displayName": {
-                "en": "200"
-              },
-              "enumValue": 4,
-              "name": "hz200"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema:hz400;1",
-              "displayName": {
-                "en": "400"
-              },
-              "enumValue": 5,
-              "name": "hz400"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema:hz800;1",
-              "displayName": {
-                "en": "800"
-              },
-              "enumValue": 6,
-              "name": "hz800"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema:hz1600;1",
-              "displayName": {
-                "en": "1600"
-              },
-              "enumValue": 7,
-              "name": "hz1600"
-            },
-            {
-              "@id": "dtmi:appconfig:nucleo_u575zi_q:STAIOTCRAFT_SDATALOG:sensors:ism6hg256x_gyro:odr_t:schema:hz3200;1",
-              "displayName": {
-                "en": "3200"
-              },
-              "enumValue": 8,
-              "name": "hz3200"
             }
           ],
           "valueSchema": "integer"
