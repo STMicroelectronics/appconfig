@@ -1,28 +1,28 @@
 [
     {
-        "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS;1",
+        "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS;1",
         "@type": "Interface",
         "contents": [
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:ism330is_acc;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:ism330is_acc;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "ISM330IS_ACC"
                 },
                 "name": "ism330is_acc",
-                "schema": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc;1"
+                "schema": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc;1"
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:ism330is_gyro;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:ism330is_gyro;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "ISM330IS_GYRO"
                 },
                 "name": "ism330is_gyro",
-                "schema": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro;1"
+                "schema": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro;1"
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:log_controller;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:log_controller;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Log Controller"
@@ -31,7 +31,7 @@
                 "schema": "dtmi:appconfig:other:log_controller;2"
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:acquisition_info;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:acquisition_info;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Acquisition Information"
@@ -40,7 +40,7 @@
                 "schema": "dtmi:appconfig:other:acquisition_info;2"
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:firmware_info;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:firmware_info;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Firmware Information"
@@ -49,7 +49,7 @@
                 "schema": "dtmi:appconfig:other:firmware_info;3"
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:DeviceInformation;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:DeviceInformation;1",
                 "@type": "Component",
                 "displayName": {
                     "en": "Device Information"
@@ -71,11 +71,11 @@
             "dtmi:iotcentral:context;2",
             "dtmi:dtdl:context;2"
         ],
-        "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc;1",
+        "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc;1",
         "@type": "Interface",
         "contents": [
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr;1",
                 "@type": [
                     "Property",
                     "Initialized"
@@ -85,14 +85,14 @@
                 },
                 "name": "odr",
                 "schema": {
-                    "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema;1",
+                    "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema;1",
                     "@type": "Enum",
                     "displayName": {
                         "en": "Enum"
                     },
                     "enumValues": [
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz12_5;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz12_5;1",
                             "displayName": {
                                 "en": "12.5"
                             },
@@ -100,7 +100,7 @@
                             "name": "hz12_5"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz26;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz26;1",
                             "displayName": {
                                 "en": "26"
                             },
@@ -108,7 +108,7 @@
                             "name": "hz26"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz52;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz52;1",
                             "displayName": {
                                 "en": "52"
                             },
@@ -116,7 +116,7 @@
                             "name": "hz52"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz104;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz104;1",
                             "displayName": {
                                 "en": "104"
                             },
@@ -124,7 +124,7 @@
                             "name": "hz104"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz208;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz208;1",
                             "displayName": {
                                 "en": "208"
                             },
@@ -132,7 +132,7 @@
                             "name": "hz208"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz416;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz416;1",
                             "displayName": {
                                 "en": "416"
                             },
@@ -140,7 +140,7 @@
                             "name": "hz416"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz833;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz833;1",
                             "displayName": {
                                 "en": "833"
                             },
@@ -148,7 +148,7 @@
                             "name": "hz833"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz1667;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz1667;1",
                             "displayName": {
                                 "en": "1667"
                             },
@@ -156,7 +156,7 @@
                             "name": "hz1667"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz3333;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:odr:schema:hz3333;1",
                             "displayName": {
                                 "en": "3333"
                             },
@@ -171,7 +171,7 @@
                 "initialValue": 10
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs;1",
                 "@type": [
                     "Property",
                     "Initialized"
@@ -181,14 +181,14 @@
                 },
                 "name": "fs",
                 "schema": {
-                    "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema;1",
+                    "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema;1",
                     "@type": "Enum",
                     "displayName": {
                         "en": "Enum"
                     },
                     "enumValues": [
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g2;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g2;1",
                             "displayName": {
                                 "en": "2"
                             },
@@ -196,7 +196,7 @@
                             "name": "g2"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g4;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g4;1",
                             "displayName": {
                                 "en": "4"
                             },
@@ -204,7 +204,7 @@
                             "name": "g4"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g8;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g8;1",
                             "displayName": {
                                 "en": "8"
                             },
@@ -212,7 +212,7 @@
                             "name": "g8"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g16;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:fs:schema:g16;1",
                             "displayName": {
                                 "en": "16"
                             },
@@ -227,7 +227,7 @@
                 "initialValue": 3
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:enable;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:enable;1",
                 "@type": [
                     "Property",
                     "BooleanValue",
@@ -242,7 +242,7 @@
                 "initialValue": true
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:samples_per_ts;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:samples_per_ts;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -257,7 +257,7 @@
                 "minValue": 0
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:dim;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:dim;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -270,7 +270,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:ioffset;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:ioffset;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -283,7 +283,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:sensitivity;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:sensitivity;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -296,7 +296,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:data_type;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:data_type;1",
                 "@type": [
                     "Property",
                     "StringValue"
@@ -309,7 +309,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:sensor_category;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:sensor_category;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -325,7 +325,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:serial_dps;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_acc:serial_dps;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -347,11 +347,11 @@
             "dtmi:iotcentral:context;2",
             "dtmi:dtdl:context;2"
         ],
-        "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro;1",
+        "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro;1",
         "@type": "Interface",
         "contents": [
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr;1",
                 "@type": [
                     "Property",
                     "Initialized"
@@ -361,14 +361,14 @@
                 },
                 "name": "odr",
                 "schema": {
-                    "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema;1",
+                    "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema;1",
                     "@type": "Enum",
                     "displayName": {
                         "en": "Enum"
                     },
                     "enumValues": [
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz12_5;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz12_5;1",
                             "displayName": {
                                 "en": "12.5"
                             },
@@ -376,7 +376,7 @@
                             "name": "hz12_5"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz26;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz26;1",
                             "displayName": {
                                 "en": "26"
                             },
@@ -384,7 +384,7 @@
                             "name": "hz26"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz52;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz52;1",
                             "displayName": {
                                 "en": "52"
                             },
@@ -392,7 +392,7 @@
                             "name": "hz52"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz104;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz104;1",
                             "displayName": {
                                 "en": "104"
                             },
@@ -400,7 +400,7 @@
                             "name": "hz104"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz208;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz208;1",
                             "displayName": {
                                 "en": "208"
                             },
@@ -408,7 +408,7 @@
                             "name": "hz208"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz416;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz416;1",
                             "displayName": {
                                 "en": "416"
                             },
@@ -416,7 +416,7 @@
                             "name": "hz416"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz833;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz833;1",
                             "displayName": {
                                 "en": "833"
                             },
@@ -424,7 +424,7 @@
                             "name": "hz833"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz1667;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz1667;1",
                             "displayName": {
                                 "en": "1667"
                             },
@@ -432,7 +432,7 @@
                             "name": "hz1667"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz3333;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:odr:schema:hz3333;1",
                             "displayName": {
                                 "en": "3333"
                             },
@@ -447,7 +447,7 @@
                 "initialValue": 10
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs;1",
                 "@type": [
                     "Property",
                     "Initialized"
@@ -457,14 +457,14 @@
                 },
                 "name": "fs",
                 "schema": {
-                    "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema;1",
+                    "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema;1",
                     "@type": "Enum",
                     "displayName": {
                         "en": "Enum"
                     },
                     "enumValues": [
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps125;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps125;1",
                             "displayName": {
                                 "en": "125"
                             },
@@ -472,7 +472,7 @@
                             "name": "dps125"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps250;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps250;1",
                             "displayName": {
                                 "en": "250"
                             },
@@ -480,7 +480,7 @@
                             "name": "dps250"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps500;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps500;1",
                             "displayName": {
                                 "en": "500"
                             },
@@ -488,7 +488,7 @@
                             "name": "dps500"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps1000;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps1000;1",
                             "displayName": {
                                 "en": "1000"
                             },
@@ -496,7 +496,7 @@
                             "name": "dps1000"
                         },
                         {
-                            "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps2000;1",
+                            "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:fs:schema:dps2000;1",
                             "displayName": {
                                 "en": "2000"
                             },
@@ -513,7 +513,7 @@
                 "initialValue": 5
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:enable;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:enable;1",
                 "@type": [
                     "Property",
                     "BooleanValue",
@@ -528,7 +528,7 @@
                 "initialValue": true
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:samples_per_ts;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:samples_per_ts;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -543,7 +543,7 @@
                 "minValue": 0
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:dim;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:dim;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -556,7 +556,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:ioffset;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:ioffset;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -569,7 +569,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:sensitivity;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:sensitivity;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -582,7 +582,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:data_type;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:data_type;1",
                 "@type": [
                     "Property",
                     "StringValue"
@@ -595,7 +595,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:serial_dps;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:serial_dps;1",
                 "@type": [
                     "Property",
                     "NumberValue"
@@ -608,7 +608,7 @@
                 "writable": false
             },
             {
-                "@id": "dtmi:appconfig:nucleo_stm32f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:sensor_category;1",
+                "@id": "dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_ISM330IS:sensors:ism330is_gyro:sensor_category;1",
                 "@type": [
                     "Property",
                     "NumberValue"

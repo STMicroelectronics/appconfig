@@ -1,19 +1,28 @@
 [
     {
-        "@id":"dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF;1",
+        "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X;1",
         "@type":"Interface",
         "contents":[
             {
-                "@id":"dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:lps22df_press;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:lsm6dsv16x_acc;1",
                 "@type":"Component",
                 "displayName":{
-                    "en":"LPS22DF_PRESS"
+                    "en":"LSM6DSV16X_ACC"
                 },
-                "name":"lps22df_press",
-                "schema":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press;5"
+                "name":"lsm6dsv16x_acc",
+                "schema":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc;4"
             },
             {
-                "@id":"dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:log_controller;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:lsm6dsv16x_gyro;1",
+                "@type":"Component",
+                "displayName":{
+                    "en":"LSM6DSV16X_GYRO"
+                },
+                "name":"lsm6dsv16x_gyro",
+                "schema":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro;5"
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:log_controller;1",
                 "@type":"Component",
                 "displayName":{
                     "en":"Log Controller"
@@ -22,7 +31,7 @@
                 "schema":"dtmi:appconfig:other:log_controller;2"
             },
             {
-                "@id":"dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:acquisition_info;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:acquisition_info;1",
                 "@type":"Component",
                 "displayName":{
                     "en":"Acquisition Information"
@@ -31,7 +40,7 @@
                 "schema":"dtmi:appconfig:other:acquisition_info;2"
             },
             {
-                "@id":"dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:firmware_info;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:firmware_info;1",
                 "@type":"Component",
                 "displayName":{
                     "en":"Firmware Information"
@@ -40,7 +49,7 @@
                 "schema":"dtmi:appconfig:other:firmware_info;3"
             },
             {
-                "@id":"dtmi:appconfig:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:DeviceInformation;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:DeviceInformation;1",
                 "@type":"Component",
                 "displayName":{
                     "en":"Device Information"
@@ -50,7 +59,7 @@
             }
         ],
         "displayName":{
-            "en":"STSW_SDATALOG_LPS22DF-1"
+            "en":"STSW_SDATALOG_LSM6DSV16X-1"
         },
         "@context":[
             "dtmi:iotcentral:context;2",
@@ -62,11 +71,11 @@
             "dtmi:iotcentral:context;2",
             "dtmi:dtdl:context;2"
         ],
-        "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press;5",
+        "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc;4",
         "@type":"Interface",
         "contents":[
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr;1",
                 "@type":[
                     "Property",
                     "Initialized"
@@ -76,115 +85,149 @@
                 },
                 "name":"odr",
                 "schema":{
-                    "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr:schema;1",
+                    "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema;1",
                     "@type":"Enum",
                     "displayName":{
                         "en":"Enum"
                     },
                     "enumValues":[
                         {
-                            "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr:schema:hz1;1",
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema:hz7_5;1",
                             "displayName":{
-                                "en":"1"
+                                "en":"7.5"
                             },
                             "enumValue":0,
-                            "name":"hz1"
+                            "name":"hz7_5"
                         },
                         {
-                            "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr:schema:hz4;1",
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema:hz15;1",
                             "displayName":{
-                                "en":"4"
+                                "en":"15"
                             },
                             "enumValue":1,
-                            "name":"hz4"
+                            "name":"hz15"
                         },
                         {
-                            "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr:schema:hz10;1",
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema:hz30;1",
                             "displayName":{
-                                "en":"10"
+                                "en":"30"
                             },
                             "enumValue":2,
-                            "name":"hz10"
+                            "name":"hz30"
                         },
                         {
-                            "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr:schema:hz25;1",
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema:hz60;1",
                             "displayName":{
-                                "en":"25"
+                                "en":"60"
                             },
                             "enumValue":3,
-                            "name":"hz25"
+                            "name":"hz60"
                         },
                         {
-                            "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr:schema:hz50;1",
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema:hz120;1",
                             "displayName":{
-                                "en":"50"
+                                "en":"120"
                             },
                             "enumValue":4,
-                            "name":"hz50"
+                            "name":"hz120"
                         },
                         {
-                            "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr:schema:hz75;1",
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema:hz240;1",
                             "displayName":{
-                                "en":"75"
+                                "en":"240"
                             },
                             "enumValue":5,
-                            "name":"hz75"
+                            "name":"hz240"
                         },
                         {
-                            "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr:schema:hz100;1",
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema:hz480;1",
                             "displayName":{
-                                "en":"100"
+                                "en":"480"
                             },
                             "enumValue":6,
-                            "name":"hz100"
+                            "name":"hz480"
                         },
                         {
-                            "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:odr:schema:hz200;1",
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema:hz960;1",
                             "displayName":{
-                                "en":"200"
+                                "en":"960"
                             },
                             "enumValue":7,
-                            "name":"hz200"
+                            "name":"hz960"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:odr:schema:hz1920;1",
+                            "displayName":{
+                                "en":"1920"
+                            },
+                            "enumValue":8,
+                            "name":"hz1920"
                         }
                     ],
                     "valueSchema":"integer"
                 },
                 "unit":"hertz",
                 "writable":true,
-                "initialValue":0
+                "initialValue":10
             },
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:fs;1",
-                "@type":"Property",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:fs;1",
+                "@type":[
+                    "Property",
+                    "Initialized"
+                ],
                 "displayName":{
                     "en":"FS"
                 },
                 "name":"fs",
                 "schema":{
-                    "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:fs:schema;1",
+                    "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:fs:schema;1",
                     "@type":"Enum",
                     "displayName":{
                         "en":"Enum"
                     },
                     "enumValues":[
                         {
-                            "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:fs:schema:hpa1260;1",
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:fs:schema:g2;1",
                             "displayName":{
-                                "en":"1260"
+                                "en":"2"
                             },
                             "enumValue":0,
-                            "name":"hpa1260"
+                            "name":"g2"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:fs:schema:g4;1",
+                            "displayName":{
+                                "en":"4"
+                            },
+                            "enumValue":1,
+                            "name":"g4"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:fs:schema:g8;1",
+                            "displayName":{
+                                "en":"8"
+                            },
+                            "enumValue":2,
+                            "name":"g8"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:fs:schema:g16;1",
+                            "displayName":{
+                                "en":"16"
+                            },
+                            "enumValue":3,
+                            "name":"g16"
                         }
                     ],
                     "valueSchema":"integer"
                 },
-                "writable":false,
-                "displayUnit":{
-                    "en":"hPa"
-                }
+                "unit":"gForce",
+                "writable":true,
+                "initialValue":3
             },
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:enable;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:enable;1",
                 "@type":[
                     "Property",
                     "BooleanValue",
@@ -199,7 +242,7 @@
                 "initialValue":true
             },
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:samples_per_ts;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:samples_per_ts;1",
                 "@type":[
                     "Property",
                     "NumberValue"
@@ -210,11 +253,11 @@
                 "name":"samples_per_ts",
                 "schema":"integer",
                 "writable":false,
-                "maxValue":200,
+                "maxValue":1000,
                 "minValue":0
             },
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:dim;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:dim;1",
                 "@type":[
                     "Property",
                     "NumberValue"
@@ -227,7 +270,7 @@
                 "writable":false
             },
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:ioffset;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:ioffset;1",
                 "@type":[
                     "Property",
                     "NumberValue"
@@ -240,21 +283,7 @@
                 "writable":false
             },
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:measodr;1",
-                "@type":[
-                    "Property",
-                    "NumberValue"
-                ],
-                "displayName":{
-                    "en":"Measured ODR"
-                },
-                "name":"measodr",
-                "schema":"double",
-                "unit":"hertz",
-                "writable":false
-            },
-            {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:sensitivity;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:sensitivity;1",
                 "@type":[
                     "Property",
                     "NumberValue"
@@ -267,7 +296,7 @@
                 "writable":false
             },
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:data_type;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:data_type;1",
                 "@type":[
                     "Property",
                     "StringValue"
@@ -280,7 +309,7 @@
                 "writable":false
             },
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:sensor_category;1",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:sensor_category;1",
                 "@type":[
                     "Property",
                     "NumberValue"
@@ -296,7 +325,7 @@
                 "writable":false
             },
             {
-                "@id":"dtmi:vespucci:nucleo_stm32l476rg:STSW_SDATALOG_LPS22DF:sensors:lps22df_press:serial_dps;5",
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_acc:serial_dps;4",
                 "@type":[
                     "Property",
                     "NumberValue"
@@ -305,12 +334,306 @@
                     "en":"Serial Data Packet Size"
                 },
                 "name":"serial_dps",
+                "schema":"double",
+                "writable":false
+            }
+        ],
+        "displayName":{
+            "en":"LSM6DSV16X_ACC"
+        }
+    },
+    {
+        "@context":[
+            "dtmi:iotcentral:context;2",
+            "dtmi:dtdl:context;2"
+        ],
+        "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro;5",
+        "@type":"Interface",
+        "contents":[
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr;1",
+                "@type":[
+                    "Property",
+                    "Initialized"
+                ],
+                "displayName":{
+                    "en":"ODR"
+                },
+                "name":"odr",
+                "schema":{
+                    "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema;1",
+                    "@type":"Enum",
+                    "displayName":{
+                        "en":"Enum"
+                    },
+                    "enumValues":[
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema:hz7_5;1",
+                            "displayName":{
+                                "en":"7.5"
+                            },
+                            "enumValue":0,
+                            "name":"hz7_5"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema:hz15;1",
+                            "displayName":{
+                                "en":"15"
+                            },
+                            "enumValue":1,
+                            "name":"hz15"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema:hz30;1",
+                            "displayName":{
+                                "en":"30"
+                            },
+                            "enumValue":2,
+                            "name":"hz30"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema:hz60;1",
+                            "displayName":{
+                                "en":"60"
+                            },
+                            "enumValue":3,
+                            "name":"hz60"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema:hz120;1",
+                            "displayName":{
+                                "en":"120"
+                            },
+                            "enumValue":4,
+                            "name":"hz120"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema:hz240;1",
+                            "displayName":{
+                                "en":"240"
+                            },
+                            "enumValue":5,
+                            "name":"hz240"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema:hz480;1",
+                            "displayName":{
+                                "en":"480"
+                            },
+                            "enumValue":6,
+                            "name":"hz480"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema:hz960;1",
+                            "displayName":{
+                                "en":"960"
+                            },
+                            "enumValue":7,
+                            "name":"hz960"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:odr:schema:hz1920;1",
+                            "displayName":{
+                                "en":"1920"
+                            },
+                            "enumValue":8,
+                            "name":"hz1920"
+                        }
+                    ],
+                    "valueSchema":"integer"
+                },
+                "unit":"hertz",
+                "writable":true,
+                "initialValue":10
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:fs;1",
+                "@type":[
+                    "Property",
+                    "Initialized"
+                ],
+                "displayName":{
+                    "en":"FS"
+                },
+                "name":"fs",
+                "schema":{
+                    "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:fs:schema;1",
+                    "@type":"Enum",
+                    "displayName":{
+                        "en":"Enum"
+                    },
+                    "enumValues":[
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:fs:schema:dps125;1",
+                            "displayName":{
+                                "en":"125"
+                            },
+                            "enumValue":0,
+                            "name":"dps125"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:fs:schema:dps250;1",
+                            "displayName":{
+                                "en":"250"
+                            },
+                            "enumValue":1,
+                            "name":"dps250"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:fs:schema:dps500;1",
+                            "displayName":{
+                                "en":"500"
+                            },
+                            "enumValue":2,
+                            "name":"dps500"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:fs:schema:dps1000;1",
+                            "displayName":{
+                                "en":"1000"
+                            },
+                            "enumValue":3,
+                            "name":"dps1000"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:fs:schema:dps2000;1",
+                            "displayName":{
+                                "en":"2000"
+                            },
+                            "enumValue":4,
+                            "name":"dps2000"
+                        },
+                        {
+                            "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:fs:schema:dps4000;1",
+                            "displayName":{
+                                "en":"4000"
+                            },
+                            "enumValue":5,
+                            "name":"dps4000"
+                        }
+                    ],
+                    "valueSchema":"integer"
+                },
+                "writable":true,
+                "displayUnit":{
+                    "en":"mdps"
+                },
+                "initialValue":5
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:enable;1",
+                "@type":[
+                    "Property",
+                    "BooleanValue",
+                    "Initialized"
+                ],
+                "displayName":{
+                    "en":"Enabled"
+                },
+                "name":"enable",
+                "schema":"boolean",
+                "writable":true,
+                "initialValue":true
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:samples_per_ts;1",
+                "@type":[
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName":{
+                    "en":"Samples per Timestamp"
+                },
+                "name":"samples_per_ts",
+                "schema":"integer",
+                "writable":false,
+                "maxValue":1000,
+                "minValue":0
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:dim;1",
+                "@type":[
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName":{
+                    "en":"Dimensions"
+                },
+                "name":"dim",
+                "schema":"integer",
+                "writable":false
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:ioffset;1",
+                "@type":[
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName":{
+                    "en":"Initial Offset"
+                },
+                "name":"ioffset",
+                "schema":"double",
+                "writable":false
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:sensitivity;1",
+                "@type":[
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName":{
+                    "en":"Sensitivity"
+                },
+                "name":"sensitivity",
+                "schema":"double",
+                "writable":false
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:data_type;1",
+                "@type":[
+                    "Property",
+                    "StringValue"
+                ],
+                "displayName":{
+                    "en":"Data Type"
+                },
+                "name":"data_type",
+                "schema":"string",
+                "writable":false
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:serial_dps;5",
+                "@type":[
+                    "Property",
+                    "NumberValue"
+                ],
+                "displayName":{
+                    "en":"Serial Data Packet Size"
+                },
+                "name":"serial_dps",
+                "schema":"double",
+                "writable":false
+            },
+            {
+                "@id":"dtmi:appconfig:nucleo_f401re:STSW_SDATALOG_LSM6DSV16X:sensors:lsm6dsv16x_gyro:sensor_category;1",
+                "@type":[
+                    "Property",
+                    "NumberValue"
+                ],
+                "description":{
+                    "en":"0 = ISENSOR_CLASS_MEMS"
+                },
+                "displayName":{
+                    "en":"Sensor Category"
+                },
+                "name":"sensor_category",
                 "schema":"integer",
                 "writable":false
             }
         ],
         "displayName":{
-            "en":"LPS22DF_PRESS"
+            "en":"LSM6DSV16X_GYRO"
         }
     },
     {
